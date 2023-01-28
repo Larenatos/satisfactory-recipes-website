@@ -1,6 +1,7 @@
-const baseRecipeCall = async () => {
+import fs from "fs";
+
+const baseRecipeCall = () => {
   console.log("Base recipes");
-  const response = await fetch('http://localhost:3000/base');
-  const data = await response.json();
+  const data = JSON.parse(fs.readFileSync("http://localhost:3000/baseRecipes.json"));
   console.log(data); 
 }
