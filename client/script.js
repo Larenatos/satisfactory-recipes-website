@@ -3,7 +3,6 @@ const contentBox = document.getElementById("content");
 const constructList = (recipes) => {
   contentBox.innerHTML = "";
   for (const [key, value] of Object.entries(recipes)){
-    console.log("file: script.js:5 ~ key:", key);
     let list = document.createElement("ul");
     list.style.marginTop = "40px";
 
@@ -53,14 +52,12 @@ const constructList = (recipes) => {
 }
 
 const baseRecipeCall = async () => {
-  console.log("Base recipes");
   const response = await fetch('http://localhost:3000/baseRecipes.json');
   const data = await response.json();
   constructList(data); 
 }
 
 const alternateRecipeCall = async () => {
-  console.log("Alternate recipes");
   const response = await fetch('http://localhost:3000/alternateRecipes.json');
   const data = await response.json();
   constructList(data); 
