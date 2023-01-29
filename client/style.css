@@ -48,8 +48,14 @@ button:hover {
 }
 
 .content {
-  width: 80%;
+  width: 60%;
   height: 70vh;
   border: 1px solid var(--primary);
-  background-color: var(--third);
+  background-color: var(--primary);
+  overflow-y: scroll;
+  font-size: 20px;
+}
+
+.content ul {
+  margin-left: 30px;
 }
