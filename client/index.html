@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>interactive</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <header>
@@ -9,12 +9,10 @@
     </header>
     <div class="container">
       <div class="buttons">
-        <button onclick="baseRecipeCall()">Base Recipes</button>
-        <button onclick="alternateRecipeCall()">Alternate Recipes</button>
+        <button onclick="displayRecipes('base')">Base Recipes</button>
+        <button onclick="displayRecipes('alternate')">Alternate Recipes</button>
       </div>
-      <div class="content", id="content">
-        
-      </div>
+      <div class="content"></div>
     </div>
     <script src="script.js"></script>
   </body>
