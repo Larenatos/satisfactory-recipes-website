@@ -8,10 +8,12 @@ const data = JSON.parse(fs.readFileSync(path.join(__dirname, "recipes.json")));
 let baseRecipes = {};
 let alternateRecipes = {};
 
-for (const [key, value] of Object.entries(data)){
-  for (const recipe of value){
-    if (recipe["name"].includes("Alternate")){
-      alternateRecipes[key] = [];
+for (const [key, value] of Object.entries(data)) {
+  for (const recipe of value) {
+    if (recipe["name"].includes("Alternate")) {
+      if (!(key in alternateRecipes)) {
+        alternateRecipes[key] = [];
+      }
       alternateRecipes[key].push(recipe);
     } else {
       baseRecipes[key] = [];

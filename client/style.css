@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Open+Sans&display=swap");
 
 :root {
   --primary: #4d4d4d;
@@ -11,7 +11,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: var(--text);
 }
 
@@ -42,7 +42,7 @@ button {
   height: 50px;
   font-size: 25px;
   color: var(--text);
-  box-shadow: 5px 5px 5px 0  var(--primary);
+  box-shadow: 5px 5px 5px 0 var(--primary);
 }
 
 button:hover {
