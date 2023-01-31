@@ -3,6 +3,10 @@ const [contentBox] = document.getElementsByClassName("content");
 const constructList = (data) => {
   contentBox.innerHTML = "";
   for (const [item, recipes] of Object.entries(data)) {
+    const groupName = document.createElement("h2");
+    groupName.innerText = item;
+    contentBox.append(groupName);
+
     for (const recipe of recipes) {
       const list = document.createElement("ul");
       list.classList.add("list");
