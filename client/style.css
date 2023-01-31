@@ -3,6 +3,7 @@
 :root {
   --primary: #4d4d4d;
   --secondary: #ffcc00;
+  --tertiary: #007acc;
   --text: #efefef;
 }
 
@@ -52,18 +53,38 @@ button {
   height: 50px;
   font-size: 25px;
   color: var(--text);
-  box-shadow: 5px 5px 5px 0 var(--primary);
+  box-shadow: 5px 5px 10px 0 var(--primary);
 }
 
 button:hover {
   cursor: pointer;
 }
 
+.row {
+  display: flex;
+}
+
+.search {
+  width: 25%;
+  height: 30vh;
+  margin: 0 0 0 100px;
+  background-color: var(--tertiary);
+  border: 3px solid var(--primary);
+  padding: 10px;
+  font-size: 20px;
+}
+
+.search select {
+  width: 150px;
+  height: 25px;
+}
+
 .content {
-  margin: 0 auto;
-  width: 50%;
-  height: 70vh;
-  border: 1px solid var(--primary);
+  width: 40%;
+  height: 65vh;
+  margin: 0 0 0 250px;
+  border: 3px solid var(--primary);
+
   background-color: var(--primary);
   overflow-y: scroll;
 }
