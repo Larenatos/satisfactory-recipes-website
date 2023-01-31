@@ -21,7 +21,17 @@ header {
   background-color: var(--primary);
   text-align: center;
   font-size: 36px;
-  text-decoration: underline;
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+.header_underline {
+  width: 700px;
+  height: 8px;
+  background-color: var(--text);
+  margin: 0 auto;
 }
 
 .container {
