@@ -15,13 +15,22 @@
       </div>
       <div class="row">
         <div class="search">
+          <h2>Advanced search</h2>
           <label>Choose the type of data:</label>
-          <select>
-            <option>Recipe</option>
-            <option>Resource</option>
-            <option>Machine</option>
-            <option>Research tree</option>
+          <select id="dataType">
+            <option value="recipe">Recipe</option>
+            <option value="resource">Resource</option>
+            <option value="machine">Machine</option>
+            <option value="research">Research tree</option>
           </select>
+          <br />
+          <label>Enter item/resource/machine/research:</label>
+          <input type="text" />
+          <p class="error"></p>
+          <button onclick="displayInfo()">
+            Show possible entries for selected data type
+          </button>
+          <button onclick="">Send</button>
         </div>
         <div class="content"></div>
       </div>

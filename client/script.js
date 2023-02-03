@@ -49,3 +49,7 @@ const displayRecipes = async (type) => {
   const data = await response.json();
   constructList(data);
 };
+
+const displayInfo = () => {
+  const dataType = document.getElementById("dataType").value;
+};
