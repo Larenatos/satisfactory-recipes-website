@@ -50,6 +50,15 @@ const displayRecipes = async (type) => {
   constructList(data);
 };
 
-const displayInfo = () => {
+const displayInfo = async () => {
   const dataType = document.getElementById("dataType").value;
+  const response = await fetch(`http://localhost:3000/header?type=${dataType}`);
+  const data = await response.json();
+  contentBox.innerHTML = "";
+
+  for (const item in data) {
+    const text = document.createElement("h3");
+    text.innerText = item;
+    contentBox.append(text);
+  }
 };
