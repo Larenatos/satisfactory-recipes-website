@@ -56,7 +56,7 @@ const displayInfo = async () => {
   const data = await response.json();
   contentBox.innerHTML = "";
 
-  for (const item in data) {
+  for (const item of data) {
     const text = document.createElement("h3");
     text.innerText = item;
     contentBox.append(text);
