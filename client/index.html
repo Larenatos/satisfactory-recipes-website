@@ -19,16 +19,17 @@
           <label>Choose the type of data:</label>
           <select id="dataType">
             <option value="recipe">Recipe</option>
-            <option value="resource">Resource</option>
+            <option value="item">item</option>
+            <option value="equipment">Equipment</option>
             <option value="machine">Machine</option>
             <option value="research">Research tree</option>
           </select>
           <br />
-          <label>Enter item/resource/machine/research:</label>
+          <label>Enter the exact item you want below:</label>
           <input type="text" />
           <p class="error"></p>
           <button onclick="displayInfo()">
-            Show possible entries for selected data type
+            Show possible entries from selected data type
           </button>
           <button onclick="">Send</button>
         </div>
