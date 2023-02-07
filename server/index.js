@@ -13,8 +13,7 @@ server.get("/header", (req, res) => {
       const data = JSON.parse(
         fs.readFileSync(path.join(__dirname, "data/newData.json"))
       );
-      console.log("Sending recipe keys");
-      res.send(Object.keys(data.recipes));
+      res.send(Object.keys(data["recipes"]));
       break;
   }
 });
@@ -25,7 +24,7 @@ server.get("/advanced", (req, res) => {
       const data = JSON.parse(
         fs.readFileSync(path.join(__dirname, "data/newData.json"))
       );
-      res.send(data.recipes[req.query.key]);
+      res.send(data["recipes"][req.query.key]);
   }
 });
 

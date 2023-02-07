@@ -44,5 +44,18 @@ for (const [k, v] of Object.entries(tempValues[0])) {
   }
 }
 
+const recipeKeys = Object.keys(newData["recipes"]);
+for (const [k, v] of Object.entries(tempValues[1])) {
+  if (k.includes("Desc")) {
+    newData["items"][v["name"]] = {
+      name: v["name"],
+      sinkPoints: v["sinkPoints"],
+      description: v["description"],
+      stackSize: v["stackSize"],
+      liquid: v["liquid"],
+    };
+  }
+}
+
 let finalData = JSON.stringify(newData, null, 2);
 fs.writeFileSync("newData.json", finalData);

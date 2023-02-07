@@ -4979,5 +4979,1070 @@
       ]
     }
   },
-  "items": {}
+  "items": {
+    "Zipline": {
+      "name": "Zipline",
+      "sinkPoints": 5284,
+      "description": "Slot: Hand\n\nProvides faster traversal in factories by allowing Pioneers to zip along Power lines.\nActivate the Zipline and aim at a nearby Power Line to connect to it.",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "Beacon": {
+      "name": "Beacon",
+      "sinkPoints": 320,
+      "description": "PENDING REMOVAL\nThis item will (likely) be removed in a future update.\n\nCurrently only used as an ingredient in an alternative recipe.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Gas Mask": {
+      "name": "Gas Mask",
+      "sinkPoints": 55000,
+      "description": "Allows Pioneers to breathe normally while in toxic gas areas.\nConsumes Gas Filters from the inventory when in use.",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "Hazmat Suit": {
+      "name": "Hazmat Suit",
+      "sinkPoints": 54100,
+      "description": "Shields Pioneers from the adverse effects of radiation. \nConsumes Iodine Infused Filters from the inventory while worn in radioactive areas.",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "Hover Pack": {
+      "name": "Hover Pack",
+      "sinkPoints": 413920,
+      "description": "Power consumption: 100 MW\n\nAllows for vertical movement and hovering in mid-air to improve building efficiency and factory traversal. Wirelessly connects to nearby power connections, such as Power Poles and Buildings, for power consumption.\n\nSlow-fall: Hold {Jump_Drift} after losing connection mid-air.\nDisable Hoverpack: Double tap {Crouch} while hovering.",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "Jetpack": {
+      "name": "Jetpack",
+      "sinkPoints": 49580,
+      "description": "The Jetpack allows Pioneers to travel through the air with increased control.\nConsumes Fuel when used and automatically refills the Fuel from the inventory, when on the ground.",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "Blade Runners": {
+      "name": "Blade Runners",
+      "sinkPoints": 4988,
+      "description": "An exoskeleton for the lower legs that assists movement, allowing Pioneers to sprint faster and jump higher.\nAlso dampens the impact of landing.",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "Nobelisk Detonator": {
+      "name": "Nobelisk Detonator",
+      "sinkPoints": 39520,
+      "description": "A remote-control device used to handle and detonate Nobelisks.",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "Object Scanner": {
+      "name": "Object Scanner",
+      "sinkPoints": 3080,
+      "description": "Slot: Hands\n\nScans the area for a set item. Beeps at a rate proportional to proximity and direction.",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "Rifle": {
+      "name": "Rifle",
+      "sinkPoints": 99160,
+      "description": "A long-range, rapid fire weapon. Specifically designed to deliver adequate performance within the designated work area.",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "Xeno-Zapper": {
+      "name": "Xeno-Zapper",
+      "sinkPoints": 1880,
+      "description": "Standard issue electroshock self-defense weapon for melee range.",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "Xeno-Basher": {
+      "name": "Xeno-Basher",
+      "sinkPoints": 18800,
+      "description": "Heavy electroshock self-defense weapon for melee range.",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "Portable Miner": {
+      "name": "Portable Miner",
+      "sinkPoints": 56,
+      "description": "Can be set up on a resource node to automatically extract the resource. Note that it has limited storage space.",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "Organic Data Capsule": {
+      "name": "Organic Data Capsule",
+      "sinkPoints": null,
+      "description": "This data capsule translates organic chemicals into readable alien genetics information.\nUsed for researching alien organisms.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Alien Protein": {
+      "name": "Alien Protein",
+      "sinkPoints": null,
+      "description": "Ground down Alien Remains in a neat little package.\nUsed for medical purposed and to research alien organisms.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Alumina Solution": {
+      "name": "Alumina Solution",
+      "sinkPoints": 20,
+      "description": "Dissolved Alumina, extracted from Bauxite. Can be further refined into Aluminum Scrap for Aluminum Ingot production.",
+      "stackSize": 50000,
+      "liquid": true
+    },
+    "Aluminum Casing": {
+      "name": "Aluminum Casing",
+      "sinkPoints": 393,
+      "description": "A versatile container cast from Aluminum Ingots.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Aluminum Ingot": {
+      "name": "Aluminum Ingot",
+      "sinkPoints": 131,
+      "description": "Aluminum Ingots are made from Aluminum Scrap, which is refined from Alumina Solution.\nUsed to produce specialized aluminum-based parts.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Heat Sink": {
+      "name": "Heat Sink",
+      "sinkPoints": 2804,
+      "description": "Used to dissipate heat faster.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Alclad Aluminum Sheet": {
+      "name": "Alclad Aluminum Sheet",
+      "sinkPoints": 266,
+      "description": "Thin, lightweight, and highly durable sheets that are mainly used for products that require high heat conduction or a high specific strength.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Aluminum Scrap": {
+      "name": "Aluminum Scrap",
+      "sinkPoints": 27,
+      "description": "Aluminum Scrap is pure aluminum refined from Alumina. Can be smelted down to Aluminum Ingots for industrial usage.",
+      "stackSize": 500,
+      "liquid": false
+    },
+    "Battery": {
+      "name": "Battery",
+      "sinkPoints": 465,
+      "description": "Primarily used as fuel for Drones and Vehicles.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Paleberry": {
+      "name": "Paleberry",
+      "sinkPoints": 0,
+      "description": "Slot: Hands\nConsumable\n\nCan be eaten to restore one health segment.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Solid Biofuel": {
+      "name": "Solid Biofuel",
+      "sinkPoints": 48,
+      "description": "The most energy-efficient form of solid biomass. Can be used as fuel for the Chainsaw.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Cable": {
+      "name": "Cable",
+      "sinkPoints": 24,
+      "description": "Used for crafting.\nPrimarily used to build power lines.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Turbo Rifle Ammo": {
+      "name": "Turbo Rifle Ammo",
+      "sinkPoints": null,
+      "description": "Lightweight, compact, and volatile. These rounds provide extreme capacity and fire rates, at the cost of accuracy.",
+      "stackSize": 500,
+      "liquid": false
+    },
+    "Homing Rifle Ammo": {
+      "name": "Homing Rifle Ammo",
+      "sinkPoints": null,
+      "description": "The bullet guidance system, build into this ammunition, allows it to accurately hit any target within the reticle area.\nEspecially useful when dealing with agile threats, or for Pioneers who can't be bothered to aim properly.",
+      "stackSize": 500,
+      "liquid": false
+    },
+    "Rifle Ammo": {
+      "name": "Rifle Ammo",
+      "sinkPoints": 664,
+      "description": "Standard issue Rifle ammunition, useful for establishing dominance.",
+      "stackSize": 500,
+      "liquid": false
+    },
+    "Concrete": {
+      "name": "Concrete",
+      "sinkPoints": 12,
+      "description": "Used for building.\nGood for stable foundations.",
+      "stackSize": 500,
+      "liquid": false
+    },
+    "Chainsaw": {
+      "name": "Chainsaw",
+      "sinkPoints": 2760,
+      "description": "Slot: Hands\nFuel: Biofuel\n\nUsed to clear an area of flora that is too difficult to remove by hand.",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "AI Limiter": {
+      "name": "AI Limiter",
+      "sinkPoints": 920,
+      "description": "AI Limiters are super advanced electronics that are used to control AIs and keep them from evolving in malicious ways.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Circuit Board": {
+      "name": "Circuit Board",
+      "sinkPoints": 696,
+      "description": "Circuit Boards are advanced electronics that are used in a plethora of different ways.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Coal": {
+      "name": "Coal",
+      "sinkPoints": 3,
+      "description": "Mainly used as fuel for vehicles & coal generators and for steel production.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Color Cartridge": {
+      "name": "Color Cartridge",
+      "sinkPoints": 10,
+      "description": "Used for applying Patterns to structures with the Customizer.\n\n(Patterns can be purchased in the AWESOME Shop.)",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Compacted Coal": {
+      "name": "Compacted Coal",
+      "sinkPoints": 28,
+      "description": "A much more efficient alternative for Coal. Used as fuel for vehicles & coal generators.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Supercomputer": {
+      "name": "Supercomputer",
+      "sinkPoints": 99576,
+      "description": "The supercomputer is the next-gen version of the computer.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Computer": {
+      "name": "Computer",
+      "sinkPoints": 17260,
+      "description": "A Computer is a complex logic machine that is used to control advanced behaviour in machines.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Cooling System": {
+      "name": "Cooling System",
+      "sinkPoints": 12006,
+      "description": "Used to keep temperatures of advanced parts and buildings from exceeding to inefficient levels.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Copper Powder": {
+      "name": "Copper Powder",
+      "sinkPoints": 72,
+      "description": "Ground down Copper Ingots.\nThe high natural density of Copper, combined with the granularity of the powder, make this part fit for producing Nuclear Pasta in the Particle Accelerator.",
+      "stackSize": 500,
+      "liquid": false
+    },
+    "Copper Ingot": {
+      "name": "Copper Ingot",
+      "sinkPoints": 6,
+      "description": "Used for crafting.\nCrafted into the most basic parts.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Copper Sheet": {
+      "name": "Copper Sheet",
+      "sinkPoints": 24,
+      "description": "Used for crafting.\nPrimarily used for pipelines due to its high corrosion resistance.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Crystal Oscillator": {
+      "name": "Crystal Oscillator",
+      "sinkPoints": 3072,
+      "description": "A crystal oscillator is an electronic oscillator circuit that uses the mechanical resonance of a vibrating crystal to create an electrical signal with a precise frequency.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Power Shard": {
+      "name": "Power Shard",
+      "sinkPoints": 0,
+      "description": "Mucus from the power slugs compressed into a solid crystal-like shard. \nIt radiates a strange power.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Blue Power Slug": {
+      "name": "Blue Power Slug",
+      "sinkPoints": 0,
+      "description": "A strange slug radiating a weak strange power.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Yellow Power Slug": {
+      "name": "Yellow Power Slug",
+      "sinkPoints": 0,
+      "description": "A strange slug radiating a strange power.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Purple Power Slug": {
+      "name": "Purple Power Slug",
+      "sinkPoints": 0,
+      "description": "A strange slug radiating a powerful strange power.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Electromagnetic Control Rod": {
+      "name": "Electromagnetic Control Rod",
+      "sinkPoints": 2560,
+      "description": "Control Rods regulate power output via electromagnetism.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Fabric": {
+      "name": "Fabric",
+      "sinkPoints": 140,
+      "description": "Used for equipment crafting.\nFlexible but durable fabric.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Gas Filter": {
+      "name": "Gas Filter",
+      "sinkPoints": 830,
+      "description": "Used in the Gas Mask to filter out toxics and pollutants from the air.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Flower Petals": {
+      "name": "Flower Petals",
+      "sinkPoints": 10,
+      "description": "Used for crafting.\nColorful native flower petals.",
+      "stackSize": 500,
+      "liquid": false
+    },
+    "Empty Canister": {
+      "name": "Empty Canister",
+      "sinkPoints": 60,
+      "description": "Used to package fluids for transportation.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Packaged Fuel": {
+      "name": "Packaged Fuel",
+      "sinkPoints": 270,
+      "description": "Fuel, packaged for alternative transport. Can be used as fuel for Vehicles or the Jetpack.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Empty Fluid Tank": {
+      "name": "Empty Fluid Tank",
+      "sinkPoints": 225,
+      "description": "Used to package gases and volatile liquids for transportation.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Biomass": {
+      "name": "Biomass",
+      "sinkPoints": 12,
+      "description": "Primarily used as fuel.\nBiomass burners and vehicles can use it for power.\nBiomass is much more energy-efficient than raw biological matter.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Caterium Ingot": {
+      "name": "Caterium Ingot",
+      "sinkPoints": 42,
+      "description": "Caterium Ingots are smelted from Caterium Ore. Caterium Ingots are mostly used for advanced electronics.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Golden Factory Cart™": {
+      "name": "Golden Factory Cart™",
+      "sinkPoints": null,
+      "description": "The one and only Golden FICSIT Factory Cart™\n\nYou have now officially ascended. \nGo forth now, Master of Spaghetti, God of the Factory, Sinker of Cups, Employee of the Planet... travel in STYLE!",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "Factory Cart™": {
+      "name": "Factory Cart™",
+      "sinkPoints": 1552,
+      "description": "The one and only FICSIT Factory Cart™\nNow with special - FICSIT Foundation only - Grip Wheels, for an even smoother and faster factory floor experience!",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "Smokeless Powder": {
+      "name": "Smokeless Powder",
+      "sinkPoints": null,
+      "description": "An explosive powder that is commonly used to produce modern firearms.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Black Powder": {
+      "name": "Black Powder",
+      "sinkPoints": 50,
+      "description": "An explosive powder that is commonly used to produce simple explosives.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "HUB Parts": {
+      "name": "HUB Parts",
+      "sinkPoints": 0,
+      "description": "The parts required to build the basic structure of the HUB.",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "Iodine Infused Filter": {
+      "name": "Iodine Infused Filter",
+      "sinkPoints": 2718,
+      "description": "Used in the Hazmat Suit to absorb radioactive particles.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Heavy Oil Residue": {
+      "name": "Heavy Oil Residue",
+      "sinkPoints": 30,
+      "description": "A by-product of Plastic and Rubber production. Can be further refined into Fuel and Petroleum Coke.",
+      "stackSize": 50000,
+      "liquid": true
+    },
+    "High-Speed Connector": {
+      "name": "High-Speed Connector",
+      "sinkPoints": 3776,
+      "description": "The high-speed connector connects several cables and wires in a very efficient way. Uses a standard pattern so its applications are many and varied.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Quickwire": {
+      "name": "Quickwire",
+      "sinkPoints": 17,
+      "description": "Caterium's high conductivity and resistance to corrosion makes it ideal for small, advanced electronics.",
+      "stackSize": 500,
+      "liquid": false
+    },
+    "Hog Remains": {
+      "name": "Hog Remains",
+      "sinkPoints": 0,
+      "description": "The carapace of the alien Hog creature.\nUsed for MAM research.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Iron Ingot": {
+      "name": "Iron Ingot",
+      "sinkPoints": 2,
+      "description": "Used for crafting.\nCrafted into the most basic parts.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Reinforced Iron Plate": {
+      "name": "Reinforced Iron Plate",
+      "sinkPoints": 120,
+      "description": "Used for crafting.\nA sturdier and more durable Iron Plate.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Iron Plate": {
+      "name": "Iron Plate",
+      "sinkPoints": 6,
+      "description": "Used for crafting.\nOne of the most basic parts.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Iron Rod": {
+      "name": "Iron Rod",
+      "sinkPoints": 4,
+      "description": "Used for crafting.\nOne of the most basic parts.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Screw": {
+      "name": "Screw",
+      "sinkPoints": 2,
+      "description": "Used for crafting.\nOne of the most basic parts.",
+      "stackSize": 500,
+      "liquid": false
+    },
+    "Leaves": {
+      "name": "Leaves",
+      "sinkPoints": 3,
+      "description": "Primarily used as fuel.\nBiomass Burners and vehicles can use it for power.",
+      "stackSize": 500,
+      "liquid": false
+    },
+    "Liquid Biofuel": {
+      "name": "Liquid Biofuel",
+      "sinkPoints": 261,
+      "description": "Liquid Biofuel can be used to generate power or packaged to be used as fuel for Vehicles.",
+      "stackSize": 50000,
+      "liquid": true
+    },
+    "Fuel": {
+      "name": "Fuel",
+      "sinkPoints": 75,
+      "description": "Fuel can be used to generate power or packaged to be used as fuel for Vehicles or the Jetpack.",
+      "stackSize": 50000,
+      "liquid": true
+    },
+    "Crude Oil": {
+      "name": "Crude Oil",
+      "sinkPoints": 30,
+      "description": "Crude Oil is refined into all kinds of Oil-based resources, like Fuel and Plastic.",
+      "stackSize": 50000,
+      "liquid": true
+    },
+    "Turbofuel": {
+      "name": "Turbofuel",
+      "sinkPoints": 225,
+      "description": "A more efficient alternative to Fuel. Can be used to generate power or packaged to be used as fuel for Vehicles.",
+      "stackSize": 50000,
+      "liquid": true
+    },
+    "Medicinal Inhaler": {
+      "name": "Medicinal Inhaler",
+      "sinkPoints": 67,
+      "description": "Fully restores health when used.\n\nThe FICSIT Medicinal Inhaler can be produced from a variety of different ingredients.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Fused Modular Frame": {
+      "name": "Fused Modular Frame",
+      "sinkPoints": 62840,
+      "description": "A corrosion resistant, nitride hardened, highly robust, yet lightweight modular frame.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Heavy Modular Frame": {
+      "name": "Heavy Modular Frame",
+      "sinkPoints": 11520,
+      "description": "A more robust multi-purpose frame.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Radio Control Unit": {
+      "name": "Radio Control Unit",
+      "sinkPoints": 32908,
+      "description": "Enhances and directs radio signals.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Modular Frame": {
+      "name": "Modular Frame",
+      "sinkPoints": 408,
+      "description": "Used for crafting.\nMulti-purpose building block.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Turbo Motor": {
+      "name": "Turbo Motor",
+      "sinkPoints": 242720,
+      "description": "The Turbo Motor is a more complex, and more powerful, version of the regular Motor.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Motor": {
+      "name": "Motor",
+      "sinkPoints": 1520,
+      "description": "The Motor creates a mechanical force that is used to move things from machines to vehicles.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Mycelia": {
+      "name": "Mycelia",
+      "sinkPoints": 10,
+      "description": "Used for crafting.\nBiomass Burners and vehicles can use it for power.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Nitric Acid": {
+      "name": "Nitric Acid",
+      "sinkPoints": 94,
+      "description": "Produced by reaction of Nitrogen Gas with Water. Its high corrosiveness and oxidizing properties make it an excellent choice for refinement and fuel production processes.",
+      "stackSize": 50000,
+      "liquid": true
+    },
+    "Nitrogen Gas": {
+      "name": "Nitrogen Gas",
+      "sinkPoints": 10,
+      "description": "Nitrogen can be used in a variety of ways, such as metallurgy, cooling, and Nitric Acid production. On Massage-2(AB)b, it can be extracted from underground gas wells.",
+      "stackSize": 50000,
+      "liquid": true
+    },
+    "Cluster Nobelisk": {
+      "name": "Cluster Nobelisk",
+      "sinkPoints": null,
+      "description": "A Nobelisk that detonates into multiple smaller explosions. Practical when clearing out large areas of vegetation and other inconveniences.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Nobelisk": {
+      "name": "Nobelisk",
+      "sinkPoints": 980,
+      "description": "A simple explosive, useful for clearing boulders, vegetation, and other obstacles.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Gas Nobelisk": {
+      "name": "Gas Nobelisk",
+      "sinkPoints": null,
+      "description": "Instead of a regular explosion, this Nobelisk creates a deadly gas cloud.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Nuke Nobelisk": {
+      "name": "Nuke Nobelisk",
+      "sinkPoints": null,
+      "description": "This Nobelisk uses a nuclear fission reaction to generate a massive explosion.\n\nWARNING: Ensure all FICSIT property is clear of the blast zone before detonation.\n",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Pulse Nobelisk": {
+      "name": "Pulse Nobelisk",
+      "sinkPoints": null,
+      "description": "Instead of a regular explosion, this Nobelisk generates a powerful shockwave.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Non-fissile Uranium": {
+      "name": "Non-fissile Uranium",
+      "sinkPoints": 0,
+      "description": "The isotope Uranium-238 is non-fissile, meaning it cannot be used for nuclear fission. It can, however, be conversed into fissile Plutonium in the Particle Accelerator.\n\nCaution: Mildly Radioactive.",
+      "stackSize": 500,
+      "liquid": false
+    },
+    "Uranium Fuel Rod": {
+      "name": "Uranium Fuel Rod",
+      "sinkPoints": 44092,
+      "description": "Used as fuel for the Nuclear Power Plant.\n\nCaution: Produces radioactive Uranium Waste when consumed.\nCaution: Moderately Radioactive.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Uranium Waste": {
+      "name": "Uranium Waste",
+      "sinkPoints": 0,
+      "description": "The by-product of consuming Uranium Fuel Rods in the Nuclear Power Plant.\nNon-fissible Uranium can be extracted. Handle with caution.\n\nCaution: HIGHLY Radioactive.",
+      "stackSize": 500,
+      "liquid": false
+    },
+    "Beryl Nut": {
+      "name": "Beryl Nut",
+      "sinkPoints": 0,
+      "description": "Slot: Hands\nConsumable\n\nCan be eaten to restore half a health segment.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Bauxite": {
+      "name": "Bauxite",
+      "sinkPoints": 8,
+      "description": "Bauxite is used to produce Alumina, which can be further refined into the Aluminum Scrap required to produce Aluminum Ingots.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Copper Ore": {
+      "name": "Copper Ore",
+      "sinkPoints": 3,
+      "description": "Used for crafting.\nBasic resource mainly used for electricity.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Caterium Ore": {
+      "name": "Caterium Ore",
+      "sinkPoints": 7,
+      "description": "Caterium Ore is smelted into Caterium Ingots. Caterium Ingots are mostly used for advanced electronics.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Iron Ore": {
+      "name": "Iron Ore",
+      "sinkPoints": 1,
+      "description": "Used for crafting.\nThe most essential basic resource.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Uranium": {
+      "name": "Uranium",
+      "sinkPoints": 35,
+      "description": "Uranium is a radioactive element. \nUsed to produce Encased Uranium Cells for Uranium Fuel Rods.\n\nCaution: Moderately Radioactive.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Packaged Alumina Solution": {
+      "name": "Packaged Alumina Solution",
+      "sinkPoints": 160,
+      "description": "Alumina Solution, packaged for alternative transport.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Packaged Liquid Biofuel": {
+      "name": "Packaged Liquid Biofuel",
+      "sinkPoints": 370,
+      "description": "Liquid Biofuel, packaged for alternative transport. Can be used as fuel for Vehicles.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Packaged Nitric Acid": {
+      "name": "Packaged Nitric Acid",
+      "sinkPoints": 412,
+      "description": "Nitric Acid, packaged for alternative transport.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Packaged Nitrogen Gas": {
+      "name": "Packaged Nitrogen Gas",
+      "sinkPoints": 312,
+      "description": "Nitrogen Gas, packaged for alternative transport.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Packaged Heavy Oil Residue": {
+      "name": "Packaged Heavy Oil Residue",
+      "sinkPoints": 180,
+      "description": "Heavy Oil Residue, packaged for alternative transport. Can be used as fuel for Vehicles.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Packaged Oil": {
+      "name": "Packaged Oil",
+      "sinkPoints": 180,
+      "description": "Crude Oil, packaged for alternative transport. Can be used as fuel for Vehicles.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Packaged Sulfuric Acid": {
+      "name": "Packaged Sulfuric Acid",
+      "sinkPoints": 152,
+      "description": "Sulfuric Acid, packaged for alternative transport.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Packaged Water": {
+      "name": "Packaged Water",
+      "sinkPoints": 130,
+      "description": "Water, packaged for alternative transport.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Parachute": {
+      "name": "Parachute",
+      "sinkPoints": 608,
+      "description": "Slot: Body\nConsumable\n\nSlows down your fall when activated in mid-air.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Petroleum Coke": {
+      "name": "Petroleum Coke",
+      "sinkPoints": 20,
+      "description": "Used for crafting.\nA carbon-rich material distilled from Heavy Oil Residue. \nUsed as a less efficient coal replacement or for aluminum refinement.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Plastic": {
+      "name": "Plastic",
+      "sinkPoints": 75,
+      "description": "A versatile and easy to manufacture material that can be used for a lot of things.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Encased Plutonium Cell": {
+      "name": "Encased Plutonium Cell",
+      "sinkPoints": 0,
+      "description": "Plutonium Cells are concrete encased Plutonium Pellets.\nUsed to produce Plutonium Fuel Rods for Nuclear Power production.\n\nCaution: Moderately Radioactive.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Plutonium Fuel Rod": {
+      "name": "Plutonium Fuel Rod",
+      "sinkPoints": 153184,
+      "description": "Used as fuel for the Nuclear Power Plant.\n\nCaution: Produces radioactive Plutonium Waste when consumed.\nCaution: HIGHLY Radioactive.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Plutonium Pellet": {
+      "name": "Plutonium Pellet",
+      "sinkPoints": 0,
+      "description": "Produced in the Particle Accelerator through conversion of Non-fissile Uranium.\nUsed to produce Encased Plutonium Cells for Plutonium Fuel Rods.\n\nPower Usage: 250-750 MW (500 MW average).\nCaution: Moderately Radioactive.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Plutonium Waste": {
+      "name": "Plutonium Waste",
+      "sinkPoints": 0,
+      "description": "The by-product of consuming Plutonium Fuel Rods in the Nuclear Power Plant.\nNeeds to be stored in a safe location. Handle with caution.\n\nCaution: EXTREMELY Radioactive.",
+      "stackSize": 500,
+      "liquid": false
+    },
+    "Polymer Resin": {
+      "name": "Polymer Resin",
+      "sinkPoints": 12,
+      "description": "Used for crafting.\nA by-product of oil refinement into fuel. Commonly used to manufacture plastics.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Pressure Conversion Cube": {
+      "name": "Pressure Conversion Cube",
+      "sinkPoints": 257312,
+      "description": "Converts outgoing force into internal pressure. Required to contain unstable, high-energy matter.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Quartz Crystal": {
+      "name": "Quartz Crystal",
+      "sinkPoints": 50,
+      "description": "Derived from Raw Quartz. Used in the production of advanced radar technology and high-quality display screens.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Raw Quartz": {
+      "name": "Raw Quartz",
+      "sinkPoints": 15,
+      "description": "Raw Quartz can be processed into Quartz Crystals and Silica, which both offer a variety of applications.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Rebar Gun": {
+      "name": "Rebar Gun",
+      "sinkPoints": 1968,
+      "description": "Improvised ranged weapon for self-defense. Has to be reloaded after each use.",
+      "stackSize": 1,
+      "liquid": false
+    },
+    "Explosive Rebar": {
+      "name": "Explosive Rebar",
+      "sinkPoints": null,
+      "description": "Explodes on impact, dealing heavy damage.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Shatter Rebar": {
+      "name": "Shatter Rebar",
+      "sinkPoints": null,
+      "description": "This rebar fractures when shot, launching deadly debris in a wide spread but with limited range.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Stun Rebar": {
+      "name": "Stun Rebar",
+      "sinkPoints": null,
+      "description": "Electrocutes the target on impact, stunning it for a short time.\n\nStun duration: 5 seconds",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "FICSIT Coupon": {
+      "name": "FICSIT Coupon",
+      "sinkPoints": 1,
+      "description": "A special FICSIT bonus program Coupon, obtained through the AWESOME Sink. Can be redeemed in the AWESOME Shop for bonus milestones and rewards",
+      "stackSize": 500,
+      "liquid": false
+    },
+    "Rotor": {
+      "name": "Rotor",
+      "sinkPoints": 140,
+      "description": "Used for crafting.\nThe moving parts of a motor.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Rubber": {
+      "name": "Rubber",
+      "sinkPoints": 60,
+      "description": "Rubber is a material that is very flexible and has a lot of friction.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Bacon Agaric": {
+      "name": "Bacon Agaric",
+      "sinkPoints": 0,
+      "description": "Slot: Hands\nConsumable\n\nCan be eaten to restore two health segments.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Silica": {
+      "name": "Silica",
+      "sinkPoints": 20,
+      "description": "Derived from Raw Quartz. Commonly used to create glass structures, advanced refinement processes, and alternative production of electronics.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Smart Plating": {
+      "name": "Smart Plating",
+      "sinkPoints": 520,
+      "description": "Project Part #1. Ship with the Space Elevator to complete phases of Project Assembly.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Versatile Framework": {
+      "name": "Versatile Framework",
+      "sinkPoints": 1176,
+      "description": "Project Part #2. Ship with the Space Elevator to complete phases of Project Assembly.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Automated Wiring": {
+      "name": "Automated Wiring",
+      "sinkPoints": 1440,
+      "description": "Project Part #3. Ship with the Space Elevator to complete phases of Project Assembly.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Modular Engine": {
+      "name": "Modular Engine",
+      "sinkPoints": 9960,
+      "description": "Project Part #4. Ship with the Space Elevator to complete phases of Project Assembly.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Adaptive Control Unit": {
+      "name": "Adaptive Control Unit",
+      "sinkPoints": 86120,
+      "description": "Project Part #5. Ship with the Space Elevator to complete phases of Project Assembly.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Magnetic Field Generator": {
+      "name": "Magnetic Field Generator",
+      "sinkPoints": 15650,
+      "description": "Project Part #7. Ship with the Space Elevator to complete phases of Project Assembly.\n\nThese modular generators use superconducting magnets and vast amounts of electricity to produce an easily expandable and powerful magnetic field.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Assembly Director System": {
+      "name": "Assembly Director System",
+      "sinkPoints": 543632,
+      "description": "Project Part #6. Ship with the Space Elevator to complete phases of Project Assembly.\n\nThis extremely fast and precise computing system is specifically designed to direct the Project Assembly: Assembly Phase.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Thermal Propulsion Rocket": {
+      "name": "Thermal Propulsion Rocket",
+      "sinkPoints": 732956,
+      "description": "Project Part #8. Ship with the Space Elevator to complete phases of Project Assembly.\n\nUses extreme heat to produce the high pressure plasma required to get Project Assembly into motion.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Nuclear Pasta": {
+      "name": "Nuclear Pasta",
+      "sinkPoints": 543424,
+      "description": "Project Part #9. Ship with the Space Elevator to complete phases of Project Assembly.\nPower Usage: 500-1500 MW (1000 MW average).\n\nNuclear Pasta is extremely dense degenerate matter, formed when extreme pressure forces protons and electrons together into neutrons. It is theorized to exist naturally within the crust of neutron stars.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Iron Rebar": {
+      "name": "Iron Rebar",
+      "sinkPoints": 8,
+      "description": "A simple iron rebar that can be shot using the Rebar Gun, for self-defense purposes.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Plasma Spitter Remains": {
+      "name": "Plasma Spitter Remains",
+      "sinkPoints": 0,
+      "description": "The remains of a plasma spitting alien creature.\nUsed for MAM research.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Stator": {
+      "name": "Stator",
+      "sinkPoints": 240,
+      "description": "Used for crafting.\nThe static parts of a motor.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Steel Ingot": {
+      "name": "Steel Ingot",
+      "sinkPoints": 8,
+      "description": "Steel Ingots are made from Iron Ore that's been smelted with Coal. They are made into several parts used in building construction.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Steel Pipe": {
+      "name": "Steel Pipe",
+      "sinkPoints": 24,
+      "description": "Steel Pipes are used most often when constructing a little more advanced buildings.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Encased Industrial Beam": {
+      "name": "Encased Industrial Beam",
+      "sinkPoints": 632,
+      "description": "Encased Industrial Beams utilizes the compressive strength of concrete and tensile strength of steel simultaneously.\nMostly used as a stable basis for constructing buildings.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Steel Beam": {
+      "name": "Steel Beam",
+      "sinkPoints": 64,
+      "description": "Steel Beams are used most often when constructing a little more advanced buildings.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Stinger Remains": {
+      "name": "Stinger Remains",
+      "sinkPoints": null,
+      "description": "The remains of whatever that creepy thing was.\nUsed for MAM research.",
+      "stackSize": 50,
+      "liquid": false
+    },
+    "Limestone": {
+      "name": "Limestone",
+      "sinkPoints": 2,
+      "description": "Used for crafting.\nBasic resource mainly used for stable foundations.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Sulfur": {
+      "name": "Sulfur",
+      "sinkPoints": 11,
+      "description": "Sulfur is primarily used for Black Powder.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Sulfuric Acid": {
+      "name": "Sulfuric Acid",
+      "sinkPoints": 16,
+      "description": "A mineral acid produced by combining Sulfur and Water in a complex reaction. Primarily used in refinement processes and Battery production.",
+      "stackSize": 50000,
+      "liquid": true
+    },
+    "Packaged Turbofuel": {
+      "name": "Packaged Turbofuel",
+      "sinkPoints": 570,
+      "description": "Turbofuel, packaged for alternative transport. Can be used as fuel for Vehicles.",
+      "stackSize": 100,
+      "liquid": false
+    },
+    "Encased Uranium Cell": {
+      "name": "Encased Uranium Cell",
+      "sinkPoints": 147,
+      "description": "Uranium Cells are produced from Uranium Ore. \nUsed to produce Uranium Fuel Rods for Nuclear Power production.\n\nCaution: Mildly Radioactive.",
+      "stackSize": 200,
+      "liquid": false
+    },
+    "Water": {
+      "name": "Water",
+      "sinkPoints": 5,
+      "description": "It's water.",
+      "stackSize": 50000,
+      "liquid": true
+    },
+    "Wire": {
+      "name": "Wire",
+      "sinkPoints": 6,
+      "description": "Used for crafting.\nOne of the most basic parts.",
+      "stackSize": 500,
+      "liquid": false
+    },
+    "Wood": {
+      "name": "Wood",
+      "sinkPoints": 30,
+      "description": "Primarily used as fuel.\nBiomass Burners and vehicles can use it for power.",
+      "stackSize": 200,
+      "liquid": false
+    }
+  }
 }
