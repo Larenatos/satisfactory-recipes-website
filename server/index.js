@@ -15,6 +15,17 @@ server.get("/header", (req, res) => {
       );
       console.log("Sending recipe keys");
       res.send(Object.keys(data.recipes));
+      break;
+  }
+});
+
+server.get("/advanced", (req, res) => {
+  switch (req.query.type) {
+    case "recipe":
+      const data = JSON.parse(
+        fs.readFileSync(path.join(__dirname, "data/newData.json"))
+      );
+      res.send(data.recipes[req.query.key]);
   }
 });
 

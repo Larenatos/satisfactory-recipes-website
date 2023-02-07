@@ -26,12 +26,12 @@
           </select>
           <br />
           <label>Enter the exact item you want below:</label>
-          <input type="text" />
+          <input type="text" id="dataKey" />
           <p class="error"></p>
-          <button onclick="displayInfo()">
+          <button onclick="displayKeys()">
             Show possible entries from selected data type
           </button>
-          <button onclick="">Send</button>
+          <button onclick="dataRequest()">Send</button>
         </div>
         <div class="content"></div>
       </div>
