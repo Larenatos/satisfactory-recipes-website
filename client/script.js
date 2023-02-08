@@ -90,7 +90,7 @@ const dataRequest = async () => {
 
   contentBox.innerHTML = "";
   const header = document.createElement("h2");
-  header.innerText = data[0]["name"];
+  header.innerText = dataKey.charAt(0).toUpperCase() + dataKey.slice(1);
   contentBox.append(header);
 
   if (

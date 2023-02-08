@@ -37,7 +37,7 @@ for (const [k, v] of Object.entries(data["recipes"])) {
     for (const target of targets) {
       let name = data["items"][product["item"]]["name"];
       name = name.toLowerCase();
-      if (!target[name]) {
+      if (!newData[target][name]) {
         newData[target][name] = [];
       }
       const producedIn = [];
