@@ -1,4 +1,5 @@
-const baseUrl = "http://localhost:3000/";
+const baseUrl = "http://localhost:3000/satisfactory-recipes";
+//const baseUrl = "https://lare.alwaysdata.net/satisfactory-recipes";
 const [contentBox] = document.getElementsByClassName("content");
 
 const constructList = (data) => {
@@ -63,14 +64,14 @@ const displayRecipe = (recipe) => {
 };
 
 const displayRecipes = async (type) => {
-  const response = await fetch(`${baseUrl}${type}Recipes.json`);
+  const response = await fetch(`${baseUrl}/${type}Recipes.json`);
   const data = await response.json();
   constructList(data);
 };
 
 const displayKeys = async () => {
   const dataType = document.getElementById("dataType").value;
-  const response = await fetch(`${baseUrl}header?type=${dataType}`);
+  const response = await fetch(`${baseUrl}/header?type=${dataType}`);
   const data = await response.json();
   contentBox.innerHTML = "";
 
@@ -85,7 +86,7 @@ const dataRequest = async () => {
   const dataType = document.getElementById("dataType").value;
   const dataKey = document.getElementById("dataKey").value;
   const response = await fetch(
-    `${baseUrl}advanced?type=${dataType}&key=${dataKey.toLowerCase()}`
+    `${baseUrl}/advanced?type=${dataType}&key=${dataKey.toLowerCase()}`
   );
   const data = await response.json();
 
