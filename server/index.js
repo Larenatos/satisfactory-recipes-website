@@ -3,27 +3,31 @@ import path from "path";
 import fs from "fs";
 import { fileURLToPath } from "url";
 const server = express();
-const PORT = 3000;
+const port = process.env.PORT ?? 3000;
+const ip = process.env.IP;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const basePath = "/satisfactory-recipes";
+const router = express.Router();
 
-server.get("/header", (req, res) => {
+router.get("/header", (req, res) => {
   const data = JSON.parse(
     fs.readFileSync(path.join(__dirname, "data/newData.json"))
   );
   res.send(Object.keys(data[req.query.type]));
 });
 
-server.get("/advanced", (req, res) => {
+router.get("/advanced", (req, res) => {
   const data = JSON.parse(
     fs.readFileSync(path.join(__dirname, "data/newData.json"))
   );
   res.send(data[req.query.type][req.query.key]);
 });
 
-server.use(express.static(path.join(__dirname, "../client")));
-server.use(express.static(path.join(__dirname, "/data")));
+router.use(express.static(path.join(__dirname, "../client")));
+router.use(express.static(path.join(__dirname, "/data")));
+server.use(basePath, router);
 
-server.listen(PORT, () => {
-  console.log("Listening to port", PORT);
+server.listen(port, ip, () => {
+  console.log("Listening to port", port);
 });
