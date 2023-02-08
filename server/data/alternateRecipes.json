@@ -1,1972 +1,1535 @@
 {
-  "Alumina Solution": [
+  "Reinforced Iron Plate": [
     {
+      "name": "Alternate: Stitched Iron Plate",
+      "time": 32,
+      "producedIn": [
+        "Assembler"
+      ],
       "ingredients": [
         {
-          "amount": 10,
-          "item": "Bauxite"
+          "item": "Iron Plate",
+          "amount": 10
         },
         {
-          "amount": 10,
-          "item": "Water"
+          "item": "Wire",
+          "amount": 20
         }
       ],
-      "name": "Alternate: Sloppy Alumina",
       "products": [
         {
-          "amount": 12,
-          "item": "Alumina Solution"
+          "item": "Reinforced Iron Plate",
+          "amount": 3
         }
-      ],
-      "time": 3
+      ]
     }
   ],
   "Aluminum Casing": [
     {
-      "ingredients": [
-        {
-          "amount": 20,
-          "item": "Aluminum Ingot"
-        },
-        {
-          "amount": 10,
-          "item": "Copper Ingot"
-        }
-      ],
       "name": "Alternate: Alclad Casing",
-      "products": [
-        {
-          "amount": 15,
-          "item": "Aluminum Casing"
-        }
+      "time": 8,
+      "producedIn": [
+        "Assembler"
       ],
-      "time": 8
-    }
-  ],
-  "Aluminum Ingot": [
-    {
       "ingredients": [
         {
-          "amount": 2,
-          "item": "Aluminum Scrap"
+          "item": "Aluminum Ingot",
+          "amount": 20
+        },
+        {
+          "item": "Copper Ingot",
+          "amount": 10
         }
       ],
-      "name": "Alternate: Pure Aluminum Ingot",
       "products": [
         {
-          "amount": 1,
-          "item": "Aluminum Ingot"
+          "item": "Aluminum Casing",
+          "amount": 15
         }
-      ],
-      "time": 2
-    }
-  ],
-  "Aluminum Scrap": [
-    {
-      "ingredients": [
-        {
-          "amount": 12,
-          "item": "Alumina Solution"
-        },
-        {
-          "amount": 4,
-          "item": "Petroleum Coke"
-        }
-      ],
-      "name": "Alternate: Electrode - Aluminum Scrap",
-      "products": [
-        {
-          "amount": 20,
-          "item": "Aluminum Scrap"
-        },
-        {
-          "amount": 7,
-          "item": "Water"
-        }
-      ],
-      "time": 4
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 15,
-          "item": "Bauxite"
-        },
-        {
-          "amount": 10,
-          "item": "Coal"
-        },
-        {
-          "amount": 5,
-          "item": "Sulfuric Acid"
-        },
-        {
-          "amount": 6,
-          "item": "Water"
-        }
-      ],
-      "name": "Alternate: Instant Scrap",
-      "products": [
-        {
-          "amount": 30,
-          "item": "Aluminum Scrap"
-        },
-        {
-          "amount": 5,
-          "item": "Water"
-        }
-      ],
-      "time": 6
-    }
-  ],
-  "Automated Wiring": [
-    {
-      "ingredients": [
-        {
-          "amount": 2,
-          "item": "Stator"
-        },
-        {
-          "amount": 40,
-          "item": "Wire"
-        },
-        {
-          "amount": 1,
-          "item": "High-Speed Connector"
-        }
-      ],
-      "name": "Alternate: Automated Speed Wiring",
-      "products": [
-        {
-          "amount": 4,
-          "item": "Automated Wiring"
-        }
-      ],
-      "time": 32
-    }
-  ],
-  "Battery": [
-    {
-      "ingredients": [
-        {
-          "amount": 6,
-          "item": "Sulfur"
-        },
-        {
-          "amount": 7,
-          "item": "Alclad Aluminum Sheet"
-        },
-        {
-          "amount": 8,
-          "item": "Plastic"
-        },
-        {
-          "amount": 12,
-          "item": "Wire"
-        }
-      ],
-      "name": "Alternate: Classic Battery",
-      "products": [
-        {
-          "amount": 4,
-          "item": "Battery"
-        }
-      ],
-      "time": 8
-    }
-  ],
-  "Beacon": [
-    {
-      "ingredients": [
-        {
-          "amount": 4,
-          "item": "Steel Beam"
-        },
-        {
-          "amount": 16,
-          "item": "Steel Pipe"
-        },
-        {
-          "amount": 1,
-          "item": "Crystal Oscillator"
-        }
-      ],
-      "name": "Alternate: Crystal Beacon",
-      "products": [
-        {
-          "amount": 20,
-          "item": "Beacon"
-        }
-      ],
-      "time": 120
-    }
-  ],
-  "Black Powder": [
-    {
-      "ingredients": [
-        {
-          "amount": 2,
-          "item": "Sulfur"
-        },
-        {
-          "amount": 1,
-          "item": "Compacted Coal"
-        }
-      ],
-      "name": "Alternate: Fine Black Powder",
-      "products": [
-        {
-          "amount": 4,
-          "item": "Black Powder"
-        }
-      ],
-      "time": 16
-    }
-  ],
-  "Cable": [
-    {
-      "ingredients": [
-        {
-          "amount": 9,
-          "item": "Wire"
-        },
-        {
-          "amount": 6,
-          "item": "Rubber"
-        }
-      ],
-      "name": "Alternate: Insulated Cable",
-      "products": [
-        {
-          "amount": 20,
-          "item": "Cable"
-        }
-      ],
-      "time": 12
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 3,
-          "item": "Quickwire"
-        },
-        {
-          "amount": 2,
-          "item": "Rubber"
-        }
-      ],
-      "name": "Alternate: Quickwire Cable",
-      "products": [
-        {
-          "amount": 11,
-          "item": "Cable"
-        }
-      ],
-      "time": 24
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 5,
-          "item": "Wire"
-        },
-        {
-          "amount": 2,
-          "item": "Heavy Oil Residue"
-        }
-      ],
-      "name": "Alternate: Coated Cable",
-      "products": [
-        {
-          "amount": 9,
-          "item": "Cable"
-        }
-      ],
-      "time": 8
-    }
-  ],
-  "Caterium Ingot": [
-    {
-      "ingredients": [
-        {
-          "amount": 2,
-          "item": "Caterium Ore"
-        },
-        {
-          "amount": 2,
-          "item": "Water"
-        }
-      ],
-      "name": "Alternate: Pure Caterium Ingot",
-      "products": [
-        {
-          "amount": 1,
-          "item": "Caterium Ingot"
-        }
-      ],
-      "time": 5
-    }
-  ],
-  "Circuit Board": [
-    {
-      "ingredients": [
-        {
-          "amount": 11,
-          "item": "Copper Sheet"
-        },
-        {
-          "amount": 11,
-          "item": "Silica"
-        }
-      ],
-      "name": "Alternate: Silicon Circuit Board",
-      "products": [
-        {
-          "amount": 5,
-          "item": "Circuit Board"
-        }
-      ],
-      "time": 24
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 10,
-          "item": "Plastic"
-        },
-        {
-          "amount": 30,
-          "item": "Quickwire"
-        }
-      ],
-      "name": "Alternate: Caterium Circuit Board",
-      "products": [
-        {
-          "amount": 7,
-          "item": "Circuit Board"
-        }
-      ],
-      "time": 48
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 6,
-          "item": "Rubber"
-        },
-        {
-          "amount": 9,
-          "item": "Petroleum Coke"
-        }
-      ],
-      "name": "Alternate: Electrode Circuit Board",
-      "products": [
-        {
-          "amount": 1,
-          "item": "Circuit Board"
-        }
-      ],
-      "time": 12
-    }
-  ],
-  "Compacted Coal": [
-    {
-      "ingredients": [
-        {
-          "amount": 5,
-          "item": "Coal"
-        },
-        {
-          "amount": 5,
-          "item": "Sulfur"
-        }
-      ],
-      "name": "Alternate: Compacted Coal",
-      "products": [
-        {
-          "amount": 5,
-          "item": "Compacted Coal"
-        }
-      ],
-      "time": 12
-    }
-  ],
-  "Computer": [
-    {
-      "ingredients": [
-        {
-          "amount": 7,
-          "item": "Circuit Board"
-        },
-        {
-          "amount": 28,
-          "item": "Quickwire"
-        },
-        {
-          "amount": 12,
-          "item": "Rubber"
-        }
-      ],
-      "name": "Alternate: Caterium Computer",
-      "products": [
-        {
-          "amount": 1,
-          "item": "Computer"
-        }
-      ],
-      "time": 16
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 8,
-          "item": "Circuit Board"
-        },
-        {
-          "amount": 3,
-          "item": "Crystal Oscillator"
-        }
-      ],
-      "name": "Alternate: Crystal Computer",
-      "products": [
-        {
-          "amount": 3,
-          "item": "Computer"
-        }
-      ],
-      "time": 64
-    }
-  ],
-  "Concrete": [
-    {
-      "ingredients": [
-        {
-          "amount": 3,
-          "item": "Silica"
-        },
-        {
-          "amount": 12,
-          "item": "Limestone"
-        }
-      ],
-      "name": "Alternate: Fine Concrete",
-      "products": [
-        {
-          "amount": 10,
-          "item": "Concrete"
-        }
-      ],
-      "time": 24
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 10,
-          "item": "Limestone"
-        },
-        {
-          "amount": 2,
-          "item": "Rubber"
-        }
-      ],
-      "name": "Alternate: Rubber Concrete",
-      "products": [
-        {
-          "amount": 9,
-          "item": "Concrete"
-        }
-      ],
-      "time": 12
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 6,
-          "item": "Limestone"
-        },
-        {
-          "amount": 5,
-          "item": "Water"
-        }
-      ],
-      "name": "Alternate: Wet Concrete",
-      "products": [
-        {
-          "amount": 4,
-          "item": "Concrete"
-        }
-      ],
-      "time": 3
-    }
-  ],
-  "Cooling System": [
-    {
-      "ingredients": [
-        {
-          "amount": 5,
-          "item": "Heat Sink"
-        },
-        {
-          "amount": 1,
-          "item": "Motor"
-        },
-        {
-          "amount": 24,
-          "item": "Nitrogen Gas"
-        }
-      ],
-      "name": "Alternate: Cooling Device",
-      "products": [
-        {
-          "amount": 2,
-          "item": "Cooling System"
-        }
-      ],
-      "time": 32
-    }
-  ],
-  "Copper Ingot": [
-    {
-      "ingredients": [
-        {
-          "amount": 10,
-          "item": "Copper Ore"
-        },
-        {
-          "amount": 5,
-          "item": "Iron Ore"
-        }
-      ],
-      "name": "Alternate: Copper Alloy Ingot",
-      "products": [
-        {
-          "amount": 20,
-          "item": "Copper Ingot"
-        }
-      ],
-      "time": 12
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 6,
-          "item": "Copper Ore"
-        },
-        {
-          "amount": 4,
-          "item": "Water"
-        }
-      ],
-      "name": "Alternate: Pure Copper Ingot",
-      "products": [
-        {
-          "amount": 15,
-          "item": "Copper Ingot"
-        }
-      ],
-      "time": 24
-    }
-  ],
-  "Copper Sheet": [
-    {
-      "ingredients": [
-        {
-          "amount": 3,
-          "item": "Copper Ingot"
-        },
-        {
-          "amount": 3,
-          "item": "Water"
-        }
-      ],
-      "name": "Alternate: Steamed Copper Sheet",
-      "products": [
-        {
-          "amount": 3,
-          "item": "Copper Sheet"
-        }
-      ],
-      "time": 8
-    }
-  ],
-  "Crystal Oscillator": [
-    {
-      "ingredients": [
-        {
-          "amount": 10,
-          "item": "Quartz Crystal"
-        },
-        {
-          "amount": 7,
-          "item": "Rubber"
-        },
-        {
-          "amount": 1,
-          "item": "AI Limiter"
-        }
-      ],
-      "name": "Alternate: Insulated Crystal Oscillator",
-      "products": [
-        {
-          "amount": 1,
-          "item": "Crystal Oscillator"
-        }
-      ],
-      "time": 32
-    }
-  ],
-  "Electromagnetic Control Rod": [
-    {
-      "ingredients": [
-        {
-          "amount": 2,
-          "item": "Stator"
-        },
-        {
-          "amount": 1,
-          "item": "High-Speed Connector"
-        }
-      ],
-      "name": "Alternate: Electromagnetic Connection Rod",
-      "products": [
-        {
-          "amount": 2,
-          "item": "Electromagnetic Control Rod"
-        }
-      ],
-      "time": 15
-    }
-  ],
-  "Empty Canister": [
-    {
-      "ingredients": [
-        {
-          "amount": 2,
-          "item": "Iron Plate"
-        },
-        {
-          "amount": 1,
-          "item": "Copper Sheet"
-        }
-      ],
-      "name": "Alternate: Coated Iron Canister",
-      "products": [
-        {
-          "amount": 4,
-          "item": "Empty Canister"
-        }
-      ],
-      "time": 4
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 3,
-          "item": "Steel Ingot"
-        }
-      ],
-      "name": "Alternate: Steel Canister",
-      "products": [
-        {
-          "amount": 2,
-          "item": "Empty Canister"
-        }
-      ],
-      "time": 3
-    }
-  ],
-  "Encased Industrial Beam": [
-    {
-      "ingredients": [
-        {
-          "amount": 7,
-          "item": "Steel Pipe"
-        },
-        {
-          "amount": 5,
-          "item": "Concrete"
-        }
-      ],
-      "name": "Alternate: Encased Industrial Pipe",
-      "products": [
-        {
-          "amount": 1,
-          "item": "Encased Industrial Beam"
-        }
-      ],
-      "time": 15
-    }
-  ],
-  "Encased Plutonium Cell": [
-    {
-      "ingredients": [
-        {
-          "amount": 150,
-          "item": "Non-fissile Uranium"
-        },
-        {
-          "amount": 20,
-          "item": "Aluminum Casing"
-        }
-      ],
-      "name": "Alternate: Instant Plutonium Cell",
-      "products": [
-        {
-          "amount": 20,
-          "item": "Encased Plutonium Cell"
-        }
-      ],
-      "time": 120
-    }
-  ],
-  "Encased Uranium Cell": [
-    {
-      "ingredients": [
-        {
-          "amount": 5,
-          "item": "Uranium"
-        },
-        {
-          "amount": 3,
-          "item": "Silica"
-        },
-        {
-          "amount": 5,
-          "item": "Sulfur"
-        },
-        {
-          "amount": 15,
-          "item": "Quickwire"
-        }
-      ],
-      "name": "Alternate: Infused Uranium Cell",
-      "products": [
-        {
-          "amount": 4,
-          "item": "Encased Uranium Cell"
-        }
-      ],
-      "time": 12
-    }
-  ],
-  "Fabric": [
-    {
-      "ingredients": [
-        {
-          "amount": 1,
-          "item": "Polymer Resin"
-        },
-        {
-          "amount": 1,
-          "item": "Water"
-        }
-      ],
-      "name": "Alternate: Polyester Fabric",
-      "products": [
-        {
-          "amount": 1,
-          "item": "Fabric"
-        }
-      ],
-      "time": 2
-    }
-  ],
-  "Fuel": [
-    {
-      "ingredients": [
-        {
-          "amount": 5,
-          "item": "Heavy Oil Residue"
-        },
-        {
-          "amount": 10,
-          "item": "Water"
-        }
-      ],
-      "name": "Alternate: Diluted Fuel",
-      "products": [
-        {
-          "amount": 10,
-          "item": "Fuel"
-        }
-      ],
-      "time": 6
-    }
-  ],
-  "Fused Modular Frame": [
-    {
-      "ingredients": [
-        {
-          "amount": 1,
-          "item": "Heavy Modular Frame"
-        },
-        {
-          "amount": 50,
-          "item": "Aluminum Ingot"
-        },
-        {
-          "amount": 8,
-          "item": "Nitric Acid"
-        },
-        {
-          "amount": 10,
-          "item": "Fuel"
-        }
-      ],
-      "name": "Alternate: Heat-Fused Frame",
-      "products": [
-        {
-          "amount": 1,
-          "item": "Fused Modular Frame"
-        }
-      ],
-      "time": 20
-    }
-  ],
-  "Heat Sink": [
-    {
-      "ingredients": [
-        {
-          "amount": 3,
-          "item": "Aluminum Casing"
-        },
-        {
-          "amount": 3,
-          "item": "Rubber"
-        }
-      ],
-      "name": "Alternate: Heat Exchanger",
-      "products": [
-        {
-          "amount": 1,
-          "item": "Heat Sink"
-        }
-      ],
-      "time": 6
-    }
-  ],
-  "Heavy Modular Frame": [
-    {
-      "ingredients": [
-        {
-          "amount": 5,
-          "item": "Modular Frame"
-        },
-        {
-          "amount": 3,
-          "item": "Encased Industrial Beam"
-        },
-        {
-          "amount": 20,
-          "item": "Rubber"
-        },
-        {
-          "amount": 104,
-          "item": "Screw"
-        }
-      ],
-      "name": "Alternate: Heavy Flexible Frame",
-      "products": [
-        {
-          "amount": 1,
-          "item": "Heavy Modular Frame"
-        }
-      ],
-      "time": 16
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 8,
-          "item": "Modular Frame"
-        },
-        {
-          "amount": 10,
-          "item": "Encased Industrial Beam"
-        },
-        {
-          "amount": 36,
-          "item": "Steel Pipe"
-        },
-        {
-          "amount": 22,
-          "item": "Concrete"
-        }
-      ],
-      "name": "Alternate: Heavy Encased Frame",
-      "products": [
-        {
-          "amount": 3,
-          "item": "Heavy Modular Frame"
-        }
-      ],
-      "time": 64
-    }
-  ],
-  "Heavy Oil Residue": [
-    {
-      "ingredients": [
-        {
-          "amount": 3,
-          "item": "Crude Oil"
-        }
-      ],
-      "name": "Alternate: Heavy Oil Residue",
-      "products": [
-        {
-          "amount": 4,
-          "item": "Heavy Oil Residue"
-        },
-        {
-          "amount": 2,
-          "item": "Polymer Resin"
-        }
-      ],
-      "time": 6
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 6,
-          "item": "Crude Oil"
-        }
-      ],
-      "name": "Alternate: Polymer Resin",
-      "products": [
-        {
-          "amount": 13,
-          "item": "Polymer Resin"
-        },
-        {
-          "amount": 2,
-          "item": "Heavy Oil Residue"
-        }
-      ],
-      "time": 6
-    }
-  ],
-  "High-Speed Connector": [
-    {
-      "ingredients": [
-        {
-          "amount": 60,
-          "item": "Quickwire"
-        },
-        {
-          "amount": 25,
-          "item": "Silica"
-        },
-        {
-          "amount": 2,
-          "item": "Circuit Board"
-        }
-      ],
-      "name": "Alternate: Silicon High-Speed Connector",
-      "products": [
-        {
-          "amount": 2,
-          "item": "High-Speed Connector"
-        }
-      ],
-      "time": 40
-    }
-  ],
-  "Iron Ingot": [
-    {
-      "ingredients": [
-        {
-          "amount": 2,
-          "item": "Iron Ore"
-        },
-        {
-          "amount": 2,
-          "item": "Copper Ore"
-        }
-      ],
-      "name": "Alternate: Iron Alloy Ingot",
-      "products": [
-        {
-          "amount": 5,
-          "item": "Iron Ingot"
-        }
-      ],
-      "time": 6
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 7,
-          "item": "Iron Ore"
-        },
-        {
-          "amount": 4,
-          "item": "Water"
-        }
-      ],
-      "name": "Alternate: Pure Iron Ingot",
-      "products": [
-        {
-          "amount": 13,
-          "item": "Iron Ingot"
-        }
-      ],
-      "time": 12
-    }
-  ],
-  "Iron Plate": [
-    {
-      "ingredients": [
-        {
-          "amount": 10,
-          "item": "Iron Ingot"
-        },
-        {
-          "amount": 2,
-          "item": "Plastic"
-        }
-      ],
-      "name": "Alternate: Coated Iron Plate",
-      "products": [
-        {
-          "amount": 15,
-          "item": "Iron Plate"
-        }
-      ],
-      "time": 12
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 3,
-          "item": "Steel Ingot"
-        },
-        {
-          "amount": 2,
-          "item": "Plastic"
-        }
-      ],
-      "name": "Alternate: Steel Coated Plate",
-      "products": [
-        {
-          "amount": 18,
-          "item": "Iron Plate"
-        }
-      ],
-      "time": 24
-    }
-  ],
-  "Iron Rod": [
-    {
-      "ingredients": [
-        {
-          "amount": 1,
-          "item": "Steel Ingot"
-        }
-      ],
-      "name": "Alternate: Steel Rod",
-      "products": [
-        {
-          "amount": 4,
-          "item": "Iron Rod"
-        }
-      ],
-      "time": 5
-    }
-  ],
-  "Modular Frame": [
-    {
-      "ingredients": [
-        {
-          "amount": 3,
-          "item": "Reinforced Iron Plate"
-        },
-        {
-          "amount": 56,
-          "item": "Screw"
-        }
-      ],
-      "name": "Alternate: Bolted Frame",
-      "products": [
-        {
-          "amount": 2,
-          "item": "Modular Frame"
-        }
-      ],
-      "time": 24
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 2,
-          "item": "Reinforced Iron Plate"
-        },
-        {
-          "amount": 10,
-          "item": "Steel Pipe"
-        }
-      ],
-      "name": "Alternate: Steeled Frame",
-      "products": [
-        {
-          "amount": 3,
-          "item": "Modular Frame"
-        }
-      ],
-      "time": 60
-    }
-  ],
-  "Motor": [
-    {
-      "ingredients": [
-        {
-          "amount": 1,
-          "item": "Electromagnetic Control Rod"
-        },
-        {
-          "amount": 2,
-          "item": "Rotor"
-        }
-      ],
-      "name": "Alternate: Electric Motor",
-      "products": [
-        {
-          "amount": 2,
-          "item": "Motor"
-        }
-      ],
-      "time": 16
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 3,
-          "item": "Rotor"
-        },
-        {
-          "amount": 3,
-          "item": "Stator"
-        },
-        {
-          "amount": 1,
-          "item": "Crystal Oscillator"
-        }
-      ],
-      "name": "Alternate: Rigour Motor",
-      "products": [
-        {
-          "amount": 6,
-          "item": "Motor"
-        }
-      ],
-      "time": 48
-    }
-  ],
-  "Non-fissile Uranium": [
-    {
-      "ingredients": [
-        {
-          "amount": 5,
-          "item": "Uranium"
-        },
-        {
-          "amount": 5,
-          "item": "Uranium Waste"
-        },
-        {
-          "amount": 3,
-          "item": "Nitric Acid"
-        },
-        {
-          "amount": 5,
-          "item": "Sulfuric Acid"
-        }
-      ],
-      "name": "Alternate: Fertile Uranium",
-      "products": [
-        {
-          "amount": 20,
-          "item": "Non-fissile Uranium"
-        },
-        {
-          "amount": 8,
-          "item": "Water"
-        }
-      ],
-      "time": 12
-    }
-  ],
-  "Plastic": [
-    {
-      "ingredients": [
-        {
-          "amount": 6,
-          "item": "Rubber"
-        },
-        {
-          "amount": 6,
-          "item": "Fuel"
-        }
-      ],
-      "name": "Alternate: Recycled Plastic",
-      "products": [
-        {
-          "amount": 12,
-          "item": "Plastic"
-        }
-      ],
-      "time": 12
-    }
-  ],
-  "Plutonium Fuel Rod": [
-    {
-      "ingredients": [
-        {
-          "amount": 20,
-          "item": "Encased Plutonium Cell"
-        },
-        {
-          "amount": 1,
-          "item": "Pressure Conversion Cube"
-        }
-      ],
-      "name": "Alternate: Plutonium Fuel Unit",
-      "products": [
-        {
-          "amount": 1,
-          "item": "Plutonium Fuel Rod"
-        }
-      ],
-      "time": 120
-    }
-  ],
-  "Polymer Resin": [
-    {
-      "ingredients": [
-        {
-          "amount": 3,
-          "item": "Crude Oil"
-        }
-      ],
-      "name": "Alternate: Heavy Oil Residue",
-      "products": [
-        {
-          "amount": 4,
-          "item": "Heavy Oil Residue"
-        },
-        {
-          "amount": 2,
-          "item": "Polymer Resin"
-        }
-      ],
-      "time": 6
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 6,
-          "item": "Crude Oil"
-        }
-      ],
-      "name": "Alternate: Polymer Resin",
-      "products": [
-        {
-          "amount": 13,
-          "item": "Polymer Resin"
-        },
-        {
-          "amount": 2,
-          "item": "Heavy Oil Residue"
-        }
-      ],
-      "time": 6
+      ]
     }
   ],
   "Portable Miner": [
     {
-      "ingredients": [
-        {
-          "amount": 1,
-          "item": "Motor"
-        },
-        {
-          "amount": 4,
-          "item": "Steel Pipe"
-        },
-        {
-          "amount": 4,
-          "item": "Iron Rod"
-        },
-        {
-          "amount": 2,
-          "item": "Iron Plate"
-        }
-      ],
       "name": "Alternate: Automated Miner",
-      "products": [
+      "time": 60,
+      "producedIn": [
+        "Manufacturer"
+      ],
+      "ingredients": [
         {
-          "amount": 1,
-          "item": "Portable Miner"
+          "item": "Motor",
+          "amount": 1
+        },
+        {
+          "item": "Steel Pipe",
+          "amount": 4
+        },
+        {
+          "item": "Iron Rod",
+          "amount": 4
+        },
+        {
+          "item": "Iron Plate",
+          "amount": 2
         }
       ],
-      "time": 60
+      "products": [
+        {
+          "item": "Portable Miner",
+          "amount": 1
+        }
+      ]
     }
   ],
-  "Quartz Crystal": [
+  "Beacon": [
     {
+      "name": "Alternate: Crystal Beacon",
+      "time": 120,
+      "producedIn": [
+        "Manufacturer"
+      ],
       "ingredients": [
         {
-          "amount": 9,
-          "item": "Raw Quartz"
+          "item": "Steel Beam",
+          "amount": 4
         },
         {
-          "amount": 5,
-          "item": "Water"
+          "item": "Steel Pipe",
+          "amount": 16
+        },
+        {
+          "item": "Crystal Oscillator",
+          "amount": 1
         }
       ],
-      "name": "Alternate: Pure Quartz Crystal",
       "products": [
         {
-          "amount": 7,
-          "item": "Quartz Crystal"
+          "item": "Beacon",
+          "amount": 20
         }
-      ],
-      "time": 8
+      ]
     }
   ],
-  "Quickwire": [
+  "Modular Frame": [
     {
+      "name": "Alternate: Steeled Frame",
+      "time": 60,
+      "producedIn": [
+        "Assembler"
+      ],
       "ingredients": [
         {
-          "amount": 1,
-          "item": "Caterium Ingot"
+          "item": "Reinforced Iron Plate",
+          "amount": 2
         },
         {
-          "amount": 5,
-          "item": "Copper Ingot"
+          "item": "Steel Pipe",
+          "amount": 10
         }
       ],
-      "name": "Alternate: Fused Quickwire",
       "products": [
         {
-          "amount": 12,
-          "item": "Quickwire"
+          "item": "Modular Frame",
+          "amount": 3
         }
-      ],
-      "time": 8
+      ]
     }
   ],
-  "Radio Control Unit": [
+  "Cable": [
     {
+      "name": "Alternate: Coated Cable",
+      "time": 8,
+      "producedIn": [
+        "Refinery"
+      ],
       "ingredients": [
         {
-          "amount": 1,
-          "item": "Crystal Oscillator"
+          "item": "Wire",
+          "amount": 5
         },
         {
-          "amount": 10,
-          "item": "Circuit Board"
-        },
-        {
-          "amount": 60,
-          "item": "Aluminum Casing"
-        },
-        {
-          "amount": 30,
-          "item": "Rubber"
+          "item": "Heavy Oil Residue",
+          "amount": 2
         }
       ],
-      "name": "Alternate: Radio Control System",
       "products": [
         {
-          "amount": 3,
-          "item": "Radio Control Unit"
+          "item": "Cable",
+          "amount": 9
         }
-      ],
-      "time": 40
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 4,
-          "item": "Heat Sink"
-        },
-        {
-          "amount": 2,
-          "item": "High-Speed Connector"
-        },
-        {
-          "amount": 12,
-          "item": "Quartz Crystal"
-        }
-      ],
-      "name": "Alternate: Radio Connection Unit",
-      "products": [
-        {
-          "amount": 1,
-          "item": "Radio Control Unit"
-        }
-      ],
-      "time": 16
+      ]
     }
   ],
-  "Reinforced Iron Plate": [
+  "Circuit Board": [
     {
+      "name": "Alternate: Electrode Circuit Board",
+      "time": 12,
+      "producedIn": [
+        "Assembler"
+      ],
       "ingredients": [
         {
-          "amount": 3,
-          "item": "Iron Plate"
+          "item": "Rubber",
+          "amount": 6
         },
         {
-          "amount": 1,
-          "item": "Rubber"
+          "item": "Petroleum Coke",
+          "amount": 9
         }
       ],
-      "name": "Alternate: Adhered Iron Plate",
       "products": [
         {
-          "amount": 1,
-          "item": "Reinforced Iron Plate"
+          "item": "Circuit Board",
+          "amount": 1
         }
-      ],
-      "time": 16
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 18,
-          "item": "Iron Plate"
-        },
-        {
-          "amount": 50,
-          "item": "Screw"
-        }
-      ],
-      "name": "Alternate: Bolted Iron Plate",
-      "products": [
-        {
-          "amount": 3,
-          "item": "Reinforced Iron Plate"
-        }
-      ],
-      "time": 12
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 10,
-          "item": "Iron Plate"
-        },
-        {
-          "amount": 20,
-          "item": "Wire"
-        }
-      ],
-      "name": "Alternate: Stitched Iron Plate",
-      "products": [
-        {
-          "amount": 3,
-          "item": "Reinforced Iron Plate"
-        }
-      ],
-      "time": 32
+      ]
     }
   ],
-  "Rotor": [
+  "Battery": [
     {
+      "name": "Alternate: Classic Battery",
+      "time": 8,
+      "producedIn": [
+        "Manufacturer"
+      ],
       "ingredients": [
         {
-          "amount": 6,
-          "item": "Copper Sheet"
+          "item": "Sulfur",
+          "amount": 6
         },
         {
-          "amount": 52,
-          "item": "Screw"
-        }
-      ],
-      "name": "Alternate: Copper Rotor",
-      "products": [
-        {
-          "amount": 3,
-          "item": "Rotor"
-        }
-      ],
-      "time": 16
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 2,
-          "item": "Steel Pipe"
+          "item": "Alclad Aluminum Sheet",
+          "amount": 7
         },
         {
-          "amount": 6,
-          "item": "Wire"
+          "item": "Plastic",
+          "amount": 8
+        },
+        {
+          "item": "Wire",
+          "amount": 12
         }
       ],
-      "name": "Alternate: Steel Rotor",
       "products": [
         {
-          "amount": 1,
-          "item": "Rotor"
+          "item": "Battery",
+          "amount": 4
         }
-      ],
-      "time": 12
+      ]
     }
   ],
-  "Rubber": [
+  "Empty Canister": [
     {
+      "name": "Alternate: Steel Canister",
+      "time": 3,
+      "producedIn": [
+        "Constructor"
+      ],
       "ingredients": [
         {
-          "amount": 6,
-          "item": "Plastic"
-        },
-        {
-          "amount": 6,
-          "item": "Fuel"
+          "item": "Steel Ingot",
+          "amount": 3
         }
       ],
-      "name": "Alternate: Recycled Rubber",
       "products": [
         {
-          "amount": 12,
-          "item": "Rubber"
+          "item": "Empty Canister",
+          "amount": 2
         }
-      ],
-      "time": 12
+      ]
     }
   ],
-  "Screw": [
+  "Iron Plate": [
     {
+      "name": "Alternate: Steel Coated Plate",
+      "time": 24,
+      "producedIn": [
+        "Assembler"
+      ],
       "ingredients": [
         {
-          "amount": 1,
-          "item": "Steel Beam"
-        }
-      ],
-      "name": "Alternate: Steel Screw",
-      "products": [
-        {
-          "amount": 52,
-          "item": "Screw"
-        }
-      ],
-      "time": 12
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 5,
-          "item": "Iron Ingot"
-        }
-      ],
-      "name": "Alternate: Cast Screw",
-      "products": [
-        {
-          "amount": 20,
-          "item": "Screw"
-        }
-      ],
-      "time": 24
-    }
-  ],
-  "Silica": [
-    {
-      "ingredients": [
-        {
-          "amount": 3,
-          "item": "Raw Quartz"
+          "item": "Steel Ingot",
+          "amount": 3
         },
         {
-          "amount": 5,
-          "item": "Limestone"
+          "item": "Plastic",
+          "amount": 2
         }
       ],
-      "name": "Alternate: Cheap Silica",
       "products": [
         {
-          "amount": 7,
-          "item": "Silica"
+          "item": "Iron Plate",
+          "amount": 18
         }
-      ],
-      "time": 16
-    }
-  ],
-  "Smart Plating": [
-    {
-      "ingredients": [
-        {
-          "amount": 1,
-          "item": "Reinforced Iron Plate"
-        },
-        {
-          "amount": 1,
-          "item": "Rotor"
-        },
-        {
-          "amount": 3,
-          "item": "Plastic"
-        }
-      ],
-      "name": "Alternate: Plastic Smart Plating",
-      "products": [
-        {
-          "amount": 2,
-          "item": "Smart Plating"
-        }
-      ],
-      "time": 24
-    }
-  ],
-  "Stator": [
-    {
-      "ingredients": [
-        {
-          "amount": 4,
-          "item": "Steel Pipe"
-        },
-        {
-          "amount": 15,
-          "item": "Quickwire"
-        }
-      ],
-      "name": "Alternate: Quickwire Stator",
-      "products": [
-        {
-          "amount": 2,
-          "item": "Stator"
-        }
-      ],
-      "time": 15
+      ]
     }
   ],
   "Steel Ingot": [
     {
-      "ingredients": [
-        {
-          "amount": 15,
-          "item": "Iron Ore"
-        },
-        {
-          "amount": 15,
-          "item": "Petroleum Coke"
-        }
-      ],
-      "name": "Alternate: Coke Steel Ingot",
-      "products": [
-        {
-          "amount": 20,
-          "item": "Steel Ingot"
-        }
-      ],
-      "time": 12
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 2,
-          "item": "Iron Ingot"
-        },
-        {
-          "amount": 2,
-          "item": "Coal"
-        }
-      ],
-      "name": "Alternate: Solid Steel Ingot",
-      "products": [
-        {
-          "amount": 3,
-          "item": "Steel Ingot"
-        }
-      ],
-      "time": 3
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 6,
-          "item": "Iron Ore"
-        },
-        {
-          "amount": 3,
-          "item": "Compacted Coal"
-        }
-      ],
       "name": "Alternate: Compacted Steel Ingot",
-      "products": [
+      "time": 16,
+      "producedIn": [
+        "Foundry"
+      ],
+      "ingredients": [
         {
-          "amount": 10,
-          "item": "Steel Ingot"
+          "item": "Iron Ore",
+          "amount": 6
+        },
+        {
+          "item": "Compacted Coal",
+          "amount": 3
         }
       ],
-      "time": 16
+      "products": [
+        {
+          "item": "Steel Ingot",
+          "amount": 10
+        }
+      ]
     }
   ],
-  "Supercomputer": [
+  "Computer": [
     {
+      "name": "Alternate: Crystal Computer",
+      "time": 64,
+      "producedIn": [
+        "Assembler"
+      ],
       "ingredients": [
         {
-          "amount": 3,
-          "item": "Radio Control Unit"
+          "item": "Circuit Board",
+          "amount": 8
         },
         {
-          "amount": 3,
-          "item": "Cooling System"
+          "item": "Crystal Oscillator",
+          "amount": 3
         }
       ],
-      "name": "Alternate: OC Supercomputer",
       "products": [
         {
-          "amount": 1,
-          "item": "Supercomputer"
+          "item": "Computer",
+          "amount": 3
         }
-      ],
-      "time": 20
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 3,
-          "item": "Computer"
-        },
-        {
-          "amount": 2,
-          "item": "Electromagnetic Control Rod"
-        },
-        {
-          "amount": 20,
-          "item": "Battery"
-        },
-        {
-          "amount": 45,
-          "item": "Wire"
-        }
-      ],
-      "name": "Alternate: Super-State Computer",
-      "products": [
-        {
-          "amount": 2,
-          "item": "Supercomputer"
-        }
-      ],
-      "time": 50
+      ]
     }
   ],
-  "Turbo Motor": [
+  "Concrete": [
     {
+      "name": "Alternate: Wet Concrete",
+      "time": 3,
+      "producedIn": [
+        "Refinery"
+      ],
       "ingredients": [
         {
-          "amount": 7,
-          "item": "Motor"
+          "item": "Limestone",
+          "amount": 6
         },
         {
-          "amount": 9,
-          "item": "Radio Control Unit"
-        },
-        {
-          "amount": 5,
-          "item": "Electromagnetic Control Rod"
-        },
-        {
-          "amount": 7,
-          "item": "Rotor"
+          "item": "Water",
+          "amount": 5
         }
       ],
-      "name": "Alternate: Turbo Electric Motor",
       "products": [
         {
-          "amount": 3,
-          "item": "Turbo Motor"
+          "item": "Concrete",
+          "amount": 4
         }
-      ],
-      "time": 64
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 4,
-          "item": "Motor"
-        },
-        {
-          "amount": 1,
-          "item": "Pressure Conversion Cube"
-        },
-        {
-          "amount": 24,
-          "item": "Packaged Nitrogen Gas"
-        },
-        {
-          "amount": 8,
-          "item": "Stator"
-        }
-      ],
-      "name": "Alternate: Turbo Pressure Motor",
-      "products": [
-        {
-          "amount": 2,
-          "item": "Turbo Motor"
-        }
-      ],
-      "time": 32
+      ]
     }
   ],
-  "Turbofuel": [
+  "Cooling System": [
     {
+      "name": "Alternate: Cooling Device",
+      "time": 32,
+      "producedIn": [
+        "Blender"
+      ],
       "ingredients": [
         {
-          "amount": 2,
-          "item": "Fuel"
+          "item": "Heat Sink",
+          "amount": 5
         },
         {
-          "amount": 4,
-          "item": "Heavy Oil Residue"
+          "item": "Motor",
+          "amount": 1
         },
         {
-          "amount": 3,
-          "item": "Sulfur"
-        },
-        {
-          "amount": 3,
-          "item": "Petroleum Coke"
+          "item": "Nitrogen Gas",
+          "amount": 24
         }
       ],
-      "name": "Alternate: Turbo Blend Fuel",
       "products": [
         {
-          "amount": 6,
-          "item": "Turbofuel"
+          "item": "Cooling System",
+          "amount": 2
         }
-      ],
-      "time": 8
-    },
-    {
-      "ingredients": [
-        {
-          "amount": 5,
-          "item": "Heavy Oil Residue"
-        },
-        {
-          "amount": 4,
-          "item": "Compacted Coal"
-        }
-      ],
-      "name": "Alternate: Turbo Heavy Fuel",
-      "products": [
-        {
-          "amount": 4,
-          "item": "Turbofuel"
-        }
-      ],
-      "time": 8
+      ]
     }
   ],
-  "Uranium Fuel Rod": [
+  "Copper Ingot": [
     {
+      "name": "Alternate: Pure Copper Ingot",
+      "time": 24,
+      "producedIn": [
+        "Refinery"
+      ],
       "ingredients": [
         {
-          "amount": 100,
-          "item": "Encased Uranium Cell"
+          "item": "Copper Ore",
+          "amount": 6
         },
         {
-          "amount": 10,
-          "item": "Electromagnetic Control Rod"
-        },
-        {
-          "amount": 3,
-          "item": "Crystal Oscillator"
-        },
-        {
-          "amount": 6,
-          "item": "Beacon"
+          "item": "Water",
+          "amount": 4
         }
       ],
-      "name": "Alternate: Uranium Fuel Unit",
       "products": [
         {
-          "amount": 3,
-          "item": "Uranium Fuel Rod"
+          "item": "Copper Ingot",
+          "amount": 15
+        }
+      ]
+    }
+  ],
+  "Rotor": [
+    {
+      "name": "Alternate: Steel Rotor",
+      "time": 12,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Steel Pipe",
+          "amount": 2
+        },
+        {
+          "item": "Wire",
+          "amount": 6
         }
       ],
-      "time": 300
+      "products": [
+        {
+          "item": "Rotor",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "Crystal Oscillator": [
+    {
+      "name": "Alternate: Insulated Crystal Oscillator",
+      "time": 32,
+      "producedIn": [
+        "Manufacturer"
+      ],
+      "ingredients": [
+        {
+          "item": "Quartz Crystal",
+          "amount": 10
+        },
+        {
+          "item": "Rubber",
+          "amount": 7
+        },
+        {
+          "item": "AI Limiter",
+          "amount": 1
+        }
+      ],
+      "products": [
+        {
+          "item": "Crystal Oscillator",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "Fuel": [
+    {
+      "name": "Alternate: Diluted Fuel",
+      "time": 6,
+      "producedIn": [
+        "Blender"
+      ],
+      "ingredients": [
+        {
+          "item": "Heavy Oil Residue",
+          "amount": 5
+        },
+        {
+          "item": "Water",
+          "amount": 10
+        }
+      ],
+      "products": [
+        {
+          "item": "Fuel",
+          "amount": 10
+        }
+      ]
+    }
+  ],
+  "Packaged Fuel": [
+    {
+      "name": "Alternate: Diluted Packaged Fuel",
+      "time": 2,
+      "producedIn": [
+        "Refinery"
+      ],
+      "ingredients": [
+        {
+          "item": "Heavy Oil Residue",
+          "amount": 1
+        },
+        {
+          "item": "Packaged Water",
+          "amount": 2
+        }
+      ],
+      "products": [
+        {
+          "item": "Packaged Fuel",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "Motor": [
+    {
+      "name": "Alternate: Rigour Motor",
+      "time": 48,
+      "producedIn": [
+        "Manufacturer"
+      ],
+      "ingredients": [
+        {
+          "item": "Rotor",
+          "amount": 3
+        },
+        {
+          "item": "Stator",
+          "amount": 3
+        },
+        {
+          "item": "Crystal Oscillator",
+          "amount": 1
+        }
+      ],
+      "products": [
+        {
+          "item": "Motor",
+          "amount": 6
+        }
+      ]
+    }
+  ],
+  "Aluminum Scrap": [
+    {
+      "name": "Alternate: Instant Scrap",
+      "time": 6,
+      "producedIn": [
+        "Blender"
+      ],
+      "ingredients": [
+        {
+          "item": "Bauxite",
+          "amount": 15
+        },
+        {
+          "item": "Coal",
+          "amount": 10
+        },
+        {
+          "item": "Sulfuric Acid",
+          "amount": 5
+        },
+        {
+          "item": "Water",
+          "amount": 6
+        }
+      ],
+      "products": [
+        {
+          "item": "Aluminum Scrap",
+          "amount": 30
+        },
+        {
+          "item": "Water",
+          "amount": 5
+        }
+      ]
+    }
+  ],
+  "Electromagnetic Control Rod": [
+    {
+      "name": "Alternate: Electromagnetic Connection Rod",
+      "time": 15,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Stator",
+          "amount": 2
+        },
+        {
+          "item": "High-Speed Connector",
+          "amount": 1
+        }
+      ],
+      "products": [
+        {
+          "item": "Electromagnetic Control Rod",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "Encased Industrial Beam": [
+    {
+      "name": "Alternate: Encased Industrial Pipe",
+      "time": 15,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Steel Pipe",
+          "amount": 7
+        },
+        {
+          "item": "Concrete",
+          "amount": 5
+        }
+      ],
+      "products": [
+        {
+          "item": "Encased Industrial Beam",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "Compacted Coal": [
+    {
+      "name": "Alternate: Compacted Coal",
+      "time": 12,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Coal",
+          "amount": 5
+        },
+        {
+          "item": "Sulfur",
+          "amount": 5
+        }
+      ],
+      "products": [
+        {
+          "item": "Compacted Coal",
+          "amount": 5
+        }
+      ]
+    }
+  ],
+  "Non-fissile Uranium": [
+    {
+      "name": "Alternate: Fertile Uranium",
+      "time": 12,
+      "producedIn": [
+        "Blender"
+      ],
+      "ingredients": [
+        {
+          "item": "Uranium",
+          "amount": 5
+        },
+        {
+          "item": "Uranium Waste",
+          "amount": 5
+        },
+        {
+          "item": "Nitric Acid",
+          "amount": 3
+        },
+        {
+          "item": "Sulfuric Acid",
+          "amount": 5
+        }
+      ],
+      "products": [
+        {
+          "item": "Non-fissile Uranium",
+          "amount": 20
+        },
+        {
+          "item": "Water",
+          "amount": 8
+        }
+      ]
     }
   ],
   "Versatile Framework": [
     {
+      "name": "Alternate: Flexible Framework",
+      "time": 16,
+      "producedIn": [
+        "Manufacturer"
+      ],
       "ingredients": [
         {
-          "amount": 1,
-          "item": "Modular Frame"
+          "item": "Modular Frame",
+          "amount": 1
         },
         {
-          "amount": 6,
-          "item": "Steel Beam"
+          "item": "Steel Beam",
+          "amount": 6
         },
         {
-          "amount": 8,
-          "item": "Rubber"
+          "item": "Rubber",
+          "amount": 8
         }
       ],
-      "name": "Alternate: Flexible Framework",
       "products": [
         {
-          "amount": 2,
-          "item": "Versatile Framework"
+          "item": "Versatile Framework",
+          "amount": 2
         }
-      ],
-      "time": 16
+      ]
     }
   ],
   "Wire": [
     {
+      "name": "Alternate: Caterium Wire",
+      "time": 4,
+      "producedIn": [
+        "Constructor"
+      ],
       "ingredients": [
         {
-          "amount": 4,
-          "item": "Copper Ingot"
+          "item": "Caterium Ingot",
+          "amount": 1
+        }
+      ],
+      "products": [
+        {
+          "item": "Wire",
+          "amount": 8
+        }
+      ]
+    }
+  ],
+  "Black Powder": [
+    {
+      "name": "Alternate: Fine Black Powder",
+      "time": 16,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Sulfur",
+          "amount": 2
         },
         {
-          "amount": 1,
-          "item": "Caterium Ingot"
+          "item": "Compacted Coal",
+          "amount": 1
         }
       ],
-      "name": "Alternate: Fused Wire",
       "products": [
         {
-          "amount": 30,
-          "item": "Wire"
+          "item": "Black Powder",
+          "amount": 4
         }
-      ],
-      "time": 20
-    },
+      ]
+    }
+  ],
+  "Fused Modular Frame": [
     {
+      "name": "Alternate: Heat-Fused Frame",
+      "time": 20,
+      "producedIn": [
+        "Blender"
+      ],
       "ingredients": [
         {
-          "amount": 5,
-          "item": "Iron Ingot"
+          "item": "Heavy Modular Frame",
+          "amount": 1
+        },
+        {
+          "item": "Aluminum Ingot",
+          "amount": 50
+        },
+        {
+          "item": "Nitric Acid",
+          "amount": 8
+        },
+        {
+          "item": "Fuel",
+          "amount": 10
         }
       ],
-      "name": "Alternate: Iron Wire",
       "products": [
         {
-          "amount": 9,
-          "item": "Wire"
+          "item": "Fused Modular Frame",
+          "amount": 1
         }
-      ],
-      "time": 24
-    },
+      ]
+    }
+  ],
+  "Heat Sink": [
     {
+      "name": "Alternate: Heat Exchanger",
+      "time": 6,
+      "producedIn": [
+        "Assembler"
+      ],
       "ingredients": [
         {
-          "amount": 1,
-          "item": "Caterium Ingot"
+          "item": "Aluminum Casing",
+          "amount": 3
+        },
+        {
+          "item": "Rubber",
+          "amount": 3
         }
       ],
-      "name": "Alternate: Caterium Wire",
       "products": [
         {
-          "amount": 8,
-          "item": "Wire"
+          "item": "Heat Sink",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "Heavy Modular Frame": [
+    {
+      "name": "Alternate: Heavy Encased Frame",
+      "time": 64,
+      "producedIn": [
+        "Manufacturer"
+      ],
+      "ingredients": [
+        {
+          "item": "Modular Frame",
+          "amount": 8
+        },
+        {
+          "item": "Encased Industrial Beam",
+          "amount": 10
+        },
+        {
+          "item": "Steel Pipe",
+          "amount": 36
+        },
+        {
+          "item": "Concrete",
+          "amount": 22
         }
       ],
-      "time": 4
+      "products": [
+        {
+          "item": "Heavy Modular Frame",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "Heavy Oil Residue": [
+    {
+      "name": "Alternate: Polymer Resin",
+      "time": 6,
+      "producedIn": [
+        "Refinery"
+      ],
+      "ingredients": [
+        {
+          "item": "Crude Oil",
+          "amount": 6
+        }
+      ],
+      "products": [
+        {
+          "item": "Polymer Resin",
+          "amount": 13
+        },
+        {
+          "item": "Heavy Oil Residue",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "Polymer Resin": [
+    {
+      "name": "Alternate: Polymer Resin",
+      "time": 6,
+      "producedIn": [
+        "Refinery"
+      ],
+      "ingredients": [
+        {
+          "item": "Crude Oil",
+          "amount": 6
+        }
+      ],
+      "products": [
+        {
+          "item": "Polymer Resin",
+          "amount": 13
+        },
+        {
+          "item": "Heavy Oil Residue",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "High-Speed Connector": [
+    {
+      "name": "Alternate: Silicon High-Speed Connector",
+      "time": 40,
+      "producedIn": [
+        "Manufacturer"
+      ],
+      "ingredients": [
+        {
+          "item": "Quickwire",
+          "amount": 60
+        },
+        {
+          "item": "Silica",
+          "amount": 25
+        },
+        {
+          "item": "Circuit Board",
+          "amount": 2
+        }
+      ],
+      "products": [
+        {
+          "item": "High-Speed Connector",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "Automated Wiring": [
+    {
+      "name": "Alternate: Automated Speed Wiring",
+      "time": 32,
+      "producedIn": [
+        "Manufacturer"
+      ],
+      "ingredients": [
+        {
+          "item": "Stator",
+          "amount": 2
+        },
+        {
+          "item": "Wire",
+          "amount": 40
+        },
+        {
+          "item": "High-Speed Connector",
+          "amount": 1
+        }
+      ],
+      "products": [
+        {
+          "item": "Automated Wiring",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "Iron Ingot": [
+    {
+      "name": "Alternate: Pure Iron Ingot",
+      "time": 12,
+      "producedIn": [
+        "Refinery"
+      ],
+      "ingredients": [
+        {
+          "item": "Iron Ore",
+          "amount": 7
+        },
+        {
+          "item": "Water",
+          "amount": 4
+        }
+      ],
+      "products": [
+        {
+          "item": "Iron Ingot",
+          "amount": 13
+        }
+      ]
+    }
+  ],
+  "Encased Plutonium Cell": [
+    {
+      "name": "Alternate: Instant Plutonium Cell",
+      "time": 120,
+      "producedIn": [
+        "Particle Accelerator"
+      ],
+      "ingredients": [
+        {
+          "item": "Non-fissile Uranium",
+          "amount": 150
+        },
+        {
+          "item": "Aluminum Casing",
+          "amount": 20
+        }
+      ],
+      "products": [
+        {
+          "item": "Encased Plutonium Cell",
+          "amount": 20
+        }
+      ]
+    }
+  ],
+  "Uranium Fuel Rod": [
+    {
+      "name": "Alternate: Uranium Fuel Unit",
+      "time": 300,
+      "producedIn": [
+        "Manufacturer"
+      ],
+      "ingredients": [
+        {
+          "item": "Encased Uranium Cell",
+          "amount": 100
+        },
+        {
+          "item": "Electromagnetic Control Rod",
+          "amount": 10
+        },
+        {
+          "item": "Crystal Oscillator",
+          "amount": 3
+        },
+        {
+          "item": "Beacon",
+          "amount": 6
+        }
+      ],
+      "products": [
+        {
+          "item": "Uranium Fuel Rod",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "Supercomputer": [
+    {
+      "name": "Alternate: Super-State Computer",
+      "time": 50,
+      "producedIn": [
+        "Manufacturer"
+      ],
+      "ingredients": [
+        {
+          "item": "Computer",
+          "amount": 3
+        },
+        {
+          "item": "Electromagnetic Control Rod",
+          "amount": 2
+        },
+        {
+          "item": "Battery",
+          "amount": 20
+        },
+        {
+          "item": "Wire",
+          "amount": 45
+        }
+      ],
+      "products": [
+        {
+          "item": "Supercomputer",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "Smart Plating": [
+    {
+      "name": "Alternate: Plastic Smart Plating",
+      "time": 24,
+      "producedIn": [
+        "Manufacturer"
+      ],
+      "ingredients": [
+        {
+          "item": "Reinforced Iron Plate",
+          "amount": 1
+        },
+        {
+          "item": "Rotor",
+          "amount": 1
+        },
+        {
+          "item": "Plastic",
+          "amount": 3
+        }
+      ],
+      "products": [
+        {
+          "item": "Smart Plating",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "Plastic": [
+    {
+      "name": "Alternate: Recycled Plastic",
+      "time": 12,
+      "producedIn": [
+        "Refinery"
+      ],
+      "ingredients": [
+        {
+          "item": "Rubber",
+          "amount": 6
+        },
+        {
+          "item": "Fuel",
+          "amount": 6
+        }
+      ],
+      "products": [
+        {
+          "item": "Plastic",
+          "amount": 12
+        }
+      ]
+    }
+  ],
+  "Plutonium Fuel Rod": [
+    {
+      "name": "Alternate: Plutonium Fuel Unit",
+      "time": 120,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Encased Plutonium Cell",
+          "amount": 20
+        },
+        {
+          "item": "Pressure Conversion Cube",
+          "amount": 1
+        }
+      ],
+      "products": [
+        {
+          "item": "Plutonium Fuel Rod",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "Fabric": [
+    {
+      "name": "Alternate: Polyester Fabric",
+      "time": 2,
+      "producedIn": [
+        "Refinery"
+      ],
+      "ingredients": [
+        {
+          "item": "Polymer Resin",
+          "amount": 1
+        },
+        {
+          "item": "Water",
+          "amount": 1
+        }
+      ],
+      "products": [
+        {
+          "item": "Fabric",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "Caterium Ingot": [
+    {
+      "name": "Alternate: Pure Caterium Ingot",
+      "time": 5,
+      "producedIn": [
+        "Refinery"
+      ],
+      "ingredients": [
+        {
+          "item": "Caterium Ore",
+          "amount": 2
+        },
+        {
+          "item": "Water",
+          "amount": 2
+        }
+      ],
+      "products": [
+        {
+          "item": "Caterium Ingot",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "Quartz Crystal": [
+    {
+      "name": "Alternate: Pure Quartz Crystal",
+      "time": 8,
+      "producedIn": [
+        "Refinery"
+      ],
+      "ingredients": [
+        {
+          "item": "Raw Quartz",
+          "amount": 9
+        },
+        {
+          "item": "Water",
+          "amount": 5
+        }
+      ],
+      "products": [
+        {
+          "item": "Quartz Crystal",
+          "amount": 7
+        }
+      ]
+    }
+  ],
+  "Quickwire": [
+    {
+      "name": "Alternate: Fused Quickwire",
+      "time": 8,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Caterium Ingot",
+          "amount": 1
+        },
+        {
+          "item": "Copper Ingot",
+          "amount": 5
+        }
+      ],
+      "products": [
+        {
+          "item": "Quickwire",
+          "amount": 12
+        }
+      ]
+    }
+  ],
+  "Radio Control Unit": [
+    {
+      "name": "Alternate: Radio Connection Unit",
+      "time": 16,
+      "producedIn": [
+        "Manufacturer"
+      ],
+      "ingredients": [
+        {
+          "item": "Heat Sink",
+          "amount": 4
+        },
+        {
+          "item": "High-Speed Connector",
+          "amount": 2
+        },
+        {
+          "item": "Quartz Crystal",
+          "amount": 12
+        }
+      ],
+      "products": [
+        {
+          "item": "Radio Control Unit",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "Rubber": [
+    {
+      "name": "Alternate: Recycled Rubber",
+      "time": 12,
+      "producedIn": [
+        "Refinery"
+      ],
+      "ingredients": [
+        {
+          "item": "Plastic",
+          "amount": 6
+        },
+        {
+          "item": "Fuel",
+          "amount": 6
+        }
+      ],
+      "products": [
+        {
+          "item": "Rubber",
+          "amount": 12
+        }
+      ]
+    }
+  ],
+  "Screw": [
+    {
+      "name": "Alternate: Cast Screw",
+      "time": 24,
+      "producedIn": [
+        "Constructor"
+      ],
+      "ingredients": [
+        {
+          "item": "Iron Ingot",
+          "amount": 5
+        }
+      ],
+      "products": [
+        {
+          "item": "Screw",
+          "amount": 20
+        }
+      ]
+    }
+  ],
+  "Silica": [
+    {
+      "name": "Alternate: Cheap Silica",
+      "time": 16,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Raw Quartz",
+          "amount": 3
+        },
+        {
+          "item": "Limestone",
+          "amount": 5
+        }
+      ],
+      "products": [
+        {
+          "item": "Silica",
+          "amount": 7
+        }
+      ]
+    }
+  ],
+  "Alumina Solution": [
+    {
+      "name": "Alternate: Sloppy Alumina",
+      "time": 3,
+      "producedIn": [
+        "Refinery"
+      ],
+      "ingredients": [
+        {
+          "item": "Bauxite",
+          "amount": 10
+        },
+        {
+          "item": "Water",
+          "amount": 10
+        }
+      ],
+      "products": [
+        {
+          "item": "Alumina Solution",
+          "amount": 12
+        }
+      ]
+    }
+  ],
+  "Stator": [
+    {
+      "name": "Alternate: Quickwire Stator",
+      "time": 15,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Steel Pipe",
+          "amount": 4
+        },
+        {
+          "item": "Quickwire",
+          "amount": 15
+        }
+      ],
+      "products": [
+        {
+          "item": "Stator",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "Copper Sheet": [
+    {
+      "name": "Alternate: Steamed Copper Sheet",
+      "time": 8,
+      "producedIn": [
+        "Refinery"
+      ],
+      "ingredients": [
+        {
+          "item": "Copper Ingot",
+          "amount": 3
+        },
+        {
+          "item": "Water",
+          "amount": 3
+        }
+      ],
+      "products": [
+        {
+          "item": "Copper Sheet",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "Iron Rod": [
+    {
+      "name": "Alternate: Steel Rod",
+      "time": 5,
+      "producedIn": [
+        "Constructor"
+      ],
+      "ingredients": [
+        {
+          "item": "Steel Ingot",
+          "amount": 1
+        }
+      ],
+      "products": [
+        {
+          "item": "Iron Rod",
+          "amount": 4
+        }
+      ]
+    }
+  ],
+  "Turbofuel": [
+    {
+      "name": "Turbofuel",
+      "time": 16,
+      "producedIn": [
+        "Refinery"
+      ],
+      "ingredients": [
+        {
+          "item": "Fuel",
+          "amount": 6
+        },
+        {
+          "item": "Compacted Coal",
+          "amount": 4
+        }
+      ],
+      "products": [
+        {
+          "item": "Turbofuel",
+          "amount": 5
+        }
+      ]
+    }
+  ],
+  "Turbo Motor": [
+    {
+      "name": "Alternate: Turbo Pressure Motor",
+      "time": 32,
+      "producedIn": [
+        "Manufacturer"
+      ],
+      "ingredients": [
+        {
+          "item": "Motor",
+          "amount": 4
+        },
+        {
+          "item": "Pressure Conversion Cube",
+          "amount": 1
+        },
+        {
+          "item": "Packaged Nitrogen Gas",
+          "amount": 24
+        },
+        {
+          "item": "Stator",
+          "amount": 8
+        }
+      ],
+      "products": [
+        {
+          "item": "Turbo Motor",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "Encased Uranium Cell": [
+    {
+      "name": "Alternate: Infused Uranium Cell",
+      "time": 12,
+      "producedIn": [
+        "Manufacturer"
+      ],
+      "ingredients": [
+        {
+          "item": "Uranium",
+          "amount": 5
+        },
+        {
+          "item": "Silica",
+          "amount": 3
+        },
+        {
+          "item": "Sulfur",
+          "amount": 5
+        },
+        {
+          "item": "Quickwire",
+          "amount": 15
+        }
+      ],
+      "products": [
+        {
+          "item": "Encased Uranium Cell",
+          "amount": 4
+        }
+      ]
     }
   ]
 }

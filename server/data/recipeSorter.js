@@ -1,3 +1,4 @@
+import { fail } from "assert";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -10,18 +11,58 @@ let alternateRecipes = {};
 
 for (const [k, v] of Object.entries(data["recipes"])) {
   if (v["inMachine"] || v["inHand"] || v["inWorkshop"]) {
-  }
-  for (const recipe of value) {
-    if (recipe["name"].includes("Alternate")) {
-      if (!(key in alternateRecipes)) {
-        alternateRecipes[key] = [];
+    for (const product of v["products"]) {
+      let target;
+      if (k.includes("Alternate")) {
+        target = alternateRecipes;
+      } else {
+        target = baseRecipes;
       }
-      alternateRecipes[key].push(recipe);
-    } else {
-      baseRecipes[key] = [];
-      baseRecipes[key].push(recipe);
+
+      const name = data["items"][product["item"]]["name"];
+      target[name] = [];
+      const ingredients = [];
+      const products = [];
+      const producedIn = [];
+
+      for (const ingredient of v["ingredients"]) {
+        ingredients.push({
+          item: data["items"][ingredient["item"]]["name"],
+          amount: ingredient["amount"],
+        });
+      }
+
+      for (const product of v["products"]) {
+        products.push({
+          item: data["items"][product["item"]]["name"],
+          amount: product["amount"],
+        });
+      }
+
+      if (v["inMachine"]) {
+        producedIn.push(data["buildings"][v["producedIn"]]["name"]);
+      }
+      if (v["inHand"]) {
+        producedIn.push("Craft Bench");
+      }
+      if (v["inWorkshop"]) {
+        producedIn.push("Equipment Workshop");
+      }
+
+      target[name].push({
+        name: v["name"],
+        time: v["time"],
+        producedIn: producedIn,
+        ingredients: ingredients,
+        products: products,
+      });
     }
   }
+}
+
+for (const item of ["Coal", "Water", "Biomass"]) {
+  delete baseRecipes[item];
+  delete alternateRecipes[item];
 }
 
 let baseRecipesData = JSON.stringify(baseRecipes, null, 2);
