@@ -101,5 +101,38 @@ const dataRequest = async () => {
     for (const recipe of data) {
       displayRecipe(recipe);
     }
+  } else if (dataType == "items") {
+    const list = document.createElement("ul");
+    list.classList.add("list");
+
+    const name = document.createElement("li");
+    name.innerText = `name: ${data["name"]}`;
+
+    const sinkPoints = document.createElement("li");
+    sinkPoints.innerText = `sink points: ${data["sinkPoints"]}`;
+
+    const description = document.createElement("li");
+    description.innerText = `description: \n${data["description"]}`;
+
+    const stackSize = document.createElement("li");
+    stackSize.innerText = `stackSize: ${data["stackSize"]}`;
+
+    const liquid = document.createElement("li");
+    liquid.innerText = `liquid: ${data["liquid"]}`;
+
+    const recipeIn = document.createElement("li");
+    recipeIn.innerText = "recipes in:";
+
+    const recipeInUl = document.createElement("ul");
+    for (const place of data["recipeIn"]) {
+      const destination = document.createElement("li");
+      destination.innerText = place;
+
+      recipeInUl.append(destination);
+    }
+    recipeIn.append(recipeInUl);
+
+    list.append(name, sinkPoints, description, stackSize, liquid, recipeIn);
+    contentBox.append(list);
   }
 };
