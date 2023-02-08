@@ -10,17 +10,19 @@ let baseRecipes = {};
 let alternateRecipes = {};
 
 for (const [k, v] of Object.entries(data["recipes"])) {
-  if (v["inMachine"] || v["inHand"] || v["inWorkshop"]) {
-    for (const product of v["products"]) {
-      let target;
-      if (k.includes("Alternate")) {
-        target = alternateRecipes;
-      } else {
-        target = baseRecipes;
-      }
+  if (!(v["inMachine"] || v["inHand"] || v["inWorkshop"])) {
+    let target;
+    if (k.includes("Alternate")) {
+      target = alternateRecipes;
+    } else {
+      target = baseRecipes;
+    }
 
+    for (const product of v["products"]) {
       const name = data["items"][product["item"]]["name"];
-      target[name] = [];
+      if (!target[name]) {
+        target[name] = [];
+      }
       const ingredients = [];
       const products = [];
       const producedIn = [];

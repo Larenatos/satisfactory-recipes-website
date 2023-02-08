@@ -90,7 +90,7 @@ const dataRequest = async () => {
 
   contentBox.innerHTML = "";
   const header = document.createElement("h2");
-  header.innerText = data["name"];
+  header.innerText = data[0]["name"];
   contentBox.append(header);
 
   if (
@@ -98,6 +98,8 @@ const dataRequest = async () => {
     dataType == "inHandRecipes" ||
     dataType == "inWorkshopRecipes"
   ) {
-    displayRecipe(data);
+    for (const recipe of data) {
+      displayRecipe(recipe);
+    }
   }
 };

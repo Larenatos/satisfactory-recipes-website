@@ -1,6 +1,52 @@
 {
   "Reinforced Iron Plate": [
     {
+      "name": "Alternate: Adhered Iron Plate",
+      "time": 16,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Iron Plate",
+          "amount": 3
+        },
+        {
+          "item": "Rubber",
+          "amount": 1
+        }
+      ],
+      "products": [
+        {
+          "item": "Reinforced Iron Plate",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Alternate: Bolted Iron Plate",
+      "time": 12,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Iron Plate",
+          "amount": 18
+        },
+        {
+          "item": "Screw",
+          "amount": 50
+        }
+      ],
+      "products": [
+        {
+          "item": "Reinforced Iron Plate",
+          "amount": 3
+        }
+      ]
+    },
+    {
       "name": "Alternate: Stitched Iron Plate",
       "time": 32,
       "producedIn": [
@@ -113,6 +159,29 @@
   ],
   "Modular Frame": [
     {
+      "name": "Alternate: Bolted Frame",
+      "time": 24,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Reinforced Iron Plate",
+          "amount": 3
+        },
+        {
+          "item": "Screw",
+          "amount": 56
+        }
+      ],
+      "products": [
+        {
+          "item": "Modular Frame",
+          "amount": 2
+        }
+      ]
+    },
+    {
       "name": "Alternate: Steeled Frame",
       "time": 60,
       "producedIn": [
@@ -138,6 +207,52 @@
   ],
   "Cable": [
     {
+      "name": "Alternate: Insulated Cable",
+      "time": 12,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Wire",
+          "amount": 9
+        },
+        {
+          "item": "Rubber",
+          "amount": 6
+        }
+      ],
+      "products": [
+        {
+          "item": "Cable",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Alternate: Quickwire Cable",
+      "time": 24,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Quickwire",
+          "amount": 3
+        },
+        {
+          "item": "Rubber",
+          "amount": 2
+        }
+      ],
+      "products": [
+        {
+          "item": "Cable",
+          "amount": 11
+        }
+      ]
+    },
+    {
       "name": "Alternate: Coated Cable",
       "time": 8,
       "producedIn": [
@@ -162,6 +277,52 @@
     }
   ],
   "Circuit Board": [
+    {
+      "name": "Alternate: Silicon Circuit Board",
+      "time": 24,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Copper Sheet",
+          "amount": 11
+        },
+        {
+          "item": "Silica",
+          "amount": 11
+        }
+      ],
+      "products": [
+        {
+          "item": "Circuit Board",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Alternate: Caterium Circuit Board",
+      "time": 48,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Plastic",
+          "amount": 10
+        },
+        {
+          "item": "Quickwire",
+          "amount": 30
+        }
+      ],
+      "products": [
+        {
+          "item": "Circuit Board",
+          "amount": 7
+        }
+      ]
+    },
     {
       "name": "Alternate: Electrode Circuit Board",
       "time": 12,
@@ -221,6 +382,29 @@
   ],
   "Empty Canister": [
     {
+      "name": "Alternate: Coated Iron Canister",
+      "time": 4,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Iron Plate",
+          "amount": 2
+        },
+        {
+          "item": "Copper Sheet",
+          "amount": 1
+        }
+      ],
+      "products": [
+        {
+          "item": "Empty Canister",
+          "amount": 4
+        }
+      ]
+    },
+    {
       "name": "Alternate: Steel Canister",
       "time": 3,
       "producedIn": [
@@ -241,6 +425,29 @@
     }
   ],
   "Iron Plate": [
+    {
+      "name": "Alternate: Coated Iron Plate",
+      "time": 12,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Iron Ingot",
+          "amount": 10
+        },
+        {
+          "item": "Plastic",
+          "amount": 2
+        }
+      ],
+      "products": [
+        {
+          "item": "Iron Plate",
+          "amount": 15
+        }
+      ]
+    },
     {
       "name": "Alternate: Steel Coated Plate",
       "time": 24,
@@ -267,6 +474,52 @@
   ],
   "Steel Ingot": [
     {
+      "name": "Alternate: Coke Steel Ingot",
+      "time": 12,
+      "producedIn": [
+        "Foundry"
+      ],
+      "ingredients": [
+        {
+          "item": "Iron Ore",
+          "amount": 15
+        },
+        {
+          "item": "Petroleum Coke",
+          "amount": 15
+        }
+      ],
+      "products": [
+        {
+          "item": "Steel Ingot",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Alternate: Solid Steel Ingot",
+      "time": 3,
+      "producedIn": [
+        "Foundry"
+      ],
+      "ingredients": [
+        {
+          "item": "Iron Ingot",
+          "amount": 2
+        },
+        {
+          "item": "Coal",
+          "amount": 2
+        }
+      ],
+      "products": [
+        {
+          "item": "Steel Ingot",
+          "amount": 3
+        }
+      ]
+    },
+    {
       "name": "Alternate: Compacted Steel Ingot",
       "time": 16,
       "producedIn": [
@@ -292,6 +545,33 @@
   ],
   "Computer": [
     {
+      "name": "Alternate: Caterium Computer",
+      "time": 16,
+      "producedIn": [
+        "Manufacturer"
+      ],
+      "ingredients": [
+        {
+          "item": "Circuit Board",
+          "amount": 7
+        },
+        {
+          "item": "Quickwire",
+          "amount": 28
+        },
+        {
+          "item": "Rubber",
+          "amount": 12
+        }
+      ],
+      "products": [
+        {
+          "item": "Computer",
+          "amount": 1
+        }
+      ]
+    },
+    {
       "name": "Alternate: Crystal Computer",
       "time": 64,
       "producedIn": [
@@ -316,6 +596,52 @@
     }
   ],
   "Concrete": [
+    {
+      "name": "Alternate: Fine Concrete",
+      "time": 24,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Silica",
+          "amount": 3
+        },
+        {
+          "item": "Limestone",
+          "amount": 12
+        }
+      ],
+      "products": [
+        {
+          "item": "Concrete",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Alternate: Rubber Concrete",
+      "time": 12,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Limestone",
+          "amount": 10
+        },
+        {
+          "item": "Rubber",
+          "amount": 2
+        }
+      ],
+      "products": [
+        {
+          "item": "Concrete",
+          "amount": 9
+        }
+      ]
+    },
     {
       "name": "Alternate: Wet Concrete",
       "time": 3,
@@ -371,6 +697,29 @@
   ],
   "Copper Ingot": [
     {
+      "name": "Alternate: Copper Alloy Ingot",
+      "time": 12,
+      "producedIn": [
+        "Foundry"
+      ],
+      "ingredients": [
+        {
+          "item": "Copper Ore",
+          "amount": 10
+        },
+        {
+          "item": "Iron Ore",
+          "amount": 5
+        }
+      ],
+      "products": [
+        {
+          "item": "Copper Ingot",
+          "amount": 20
+        }
+      ]
+    },
+    {
       "name": "Alternate: Pure Copper Ingot",
       "time": 24,
       "producedIn": [
@@ -395,6 +744,29 @@
     }
   ],
   "Rotor": [
+    {
+      "name": "Alternate: Copper Rotor",
+      "time": 16,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Copper Sheet",
+          "amount": 6
+        },
+        {
+          "item": "Screw",
+          "amount": 52
+        }
+      ],
+      "products": [
+        {
+          "item": "Rotor",
+          "amount": 3
+        }
+      ]
+    },
     {
       "name": "Alternate: Steel Rotor",
       "time": 12,
@@ -500,6 +872,29 @@
   ],
   "Motor": [
     {
+      "name": "Alternate: Electric Motor",
+      "time": 16,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Electromagnetic Control Rod",
+          "amount": 1
+        },
+        {
+          "item": "Rotor",
+          "amount": 2
+        }
+      ],
+      "products": [
+        {
+          "item": "Motor",
+          "amount": 2
+        }
+      ]
+    },
+    {
       "name": "Alternate: Rigour Motor",
       "time": 48,
       "producedIn": [
@@ -528,6 +923,33 @@
     }
   ],
   "Aluminum Scrap": [
+    {
+      "name": "Alternate: Electrode - Aluminum Scrap",
+      "time": 4,
+      "producedIn": [
+        "Refinery"
+      ],
+      "ingredients": [
+        {
+          "item": "Alumina Solution",
+          "amount": 12
+        },
+        {
+          "item": "Petroleum Coke",
+          "amount": 4
+        }
+      ],
+      "products": [
+        {
+          "item": "Aluminum Scrap",
+          "amount": 20
+        },
+        {
+          "item": "Water",
+          "amount": 7
+        }
+      ]
+    },
     {
       "name": "Alternate: Instant Scrap",
       "time": 6,
@@ -707,6 +1129,48 @@
   ],
   "Wire": [
     {
+      "name": "Alternate: Fused Wire",
+      "time": 20,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Copper Ingot",
+          "amount": 4
+        },
+        {
+          "item": "Caterium Ingot",
+          "amount": 1
+        }
+      ],
+      "products": [
+        {
+          "item": "Wire",
+          "amount": 30
+        }
+      ]
+    },
+    {
+      "name": "Alternate: Iron Wire",
+      "time": 24,
+      "producedIn": [
+        "Constructor"
+      ],
+      "ingredients": [
+        {
+          "item": "Iron Ingot",
+          "amount": 5
+        }
+      ],
+      "products": [
+        {
+          "item": "Wire",
+          "amount": 9
+        }
+      ]
+    },
+    {
       "name": "Alternate: Caterium Wire",
       "time": 4,
       "producedIn": [
@@ -811,6 +1275,37 @@
   ],
   "Heavy Modular Frame": [
     {
+      "name": "Alternate: Heavy Flexible Frame",
+      "time": 16,
+      "producedIn": [
+        "Manufacturer"
+      ],
+      "ingredients": [
+        {
+          "item": "Modular Frame",
+          "amount": 5
+        },
+        {
+          "item": "Encased Industrial Beam",
+          "amount": 3
+        },
+        {
+          "item": "Rubber",
+          "amount": 20
+        },
+        {
+          "item": "Screw",
+          "amount": 104
+        }
+      ],
+      "products": [
+        {
+          "item": "Heavy Modular Frame",
+          "amount": 1
+        }
+      ]
+    },
+    {
       "name": "Alternate: Heavy Encased Frame",
       "time": 64,
       "producedIn": [
@@ -844,6 +1339,29 @@
   ],
   "Heavy Oil Residue": [
     {
+      "name": "Alternate: Heavy Oil Residue",
+      "time": 6,
+      "producedIn": [
+        "Refinery"
+      ],
+      "ingredients": [
+        {
+          "item": "Crude Oil",
+          "amount": 3
+        }
+      ],
+      "products": [
+        {
+          "item": "Heavy Oil Residue",
+          "amount": 4
+        },
+        {
+          "item": "Polymer Resin",
+          "amount": 2
+        }
+      ]
+    },
+    {
       "name": "Alternate: Polymer Resin",
       "time": 6,
       "producedIn": [
@@ -868,6 +1386,29 @@
     }
   ],
   "Polymer Resin": [
+    {
+      "name": "Alternate: Heavy Oil Residue",
+      "time": 6,
+      "producedIn": [
+        "Refinery"
+      ],
+      "ingredients": [
+        {
+          "item": "Crude Oil",
+          "amount": 3
+        }
+      ],
+      "products": [
+        {
+          "item": "Heavy Oil Residue",
+          "amount": 4
+        },
+        {
+          "item": "Polymer Resin",
+          "amount": 2
+        }
+      ]
+    },
     {
       "name": "Alternate: Polymer Resin",
       "time": 6,
@@ -952,6 +1493,29 @@
   ],
   "Iron Ingot": [
     {
+      "name": "Alternate: Iron Alloy Ingot",
+      "time": 6,
+      "producedIn": [
+        "Foundry"
+      ],
+      "ingredients": [
+        {
+          "item": "Iron Ore",
+          "amount": 2
+        },
+        {
+          "item": "Copper Ore",
+          "amount": 2
+        }
+      ],
+      "products": [
+        {
+          "item": "Iron Ingot",
+          "amount": 5
+        }
+      ]
+    },
+    {
       "name": "Alternate: Pure Iron Ingot",
       "time": 12,
       "producedIn": [
@@ -1034,6 +1598,29 @@
     }
   ],
   "Supercomputer": [
+    {
+      "name": "Alternate: OC Supercomputer",
+      "time": 20,
+      "producedIn": [
+        "Assembler"
+      ],
+      "ingredients": [
+        {
+          "item": "Radio Control Unit",
+          "amount": 3
+        },
+        {
+          "item": "Cooling System",
+          "amount": 3
+        }
+      ],
+      "products": [
+        {
+          "item": "Supercomputer",
+          "amount": 1
+        }
+      ]
+    },
     {
       "name": "Alternate: Super-State Computer",
       "time": 50,
@@ -1247,6 +1834,37 @@
   ],
   "Radio Control Unit": [
     {
+      "name": "Alternate: Radio Control System",
+      "time": 40,
+      "producedIn": [
+        "Manufacturer"
+      ],
+      "ingredients": [
+        {
+          "item": "Crystal Oscillator",
+          "amount": 1
+        },
+        {
+          "item": "Circuit Board",
+          "amount": 10
+        },
+        {
+          "item": "Aluminum Casing",
+          "amount": 60
+        },
+        {
+          "item": "Rubber",
+          "amount": 30
+        }
+      ],
+      "products": [
+        {
+          "item": "Radio Control Unit",
+          "amount": 3
+        }
+      ]
+    },
+    {
       "name": "Alternate: Radio Connection Unit",
       "time": 16,
       "producedIn": [
@@ -1300,6 +1918,25 @@
     }
   ],
   "Screw": [
+    {
+      "name": "Alternate: Steel Screw",
+      "time": 12,
+      "producedIn": [
+        "Constructor"
+      ],
+      "ingredients": [
+        {
+          "item": "Steel Beam",
+          "amount": 1
+        }
+      ],
+      "products": [
+        {
+          "item": "Screw",
+          "amount": 52
+        }
+      ]
+    },
     {
       "name": "Alternate: Cast Screw",
       "time": 24,
@@ -1443,6 +2080,60 @@
   ],
   "Turbofuel": [
     {
+      "name": "Alternate: Turbo Blend Fuel",
+      "time": 8,
+      "producedIn": [
+        "Blender"
+      ],
+      "ingredients": [
+        {
+          "item": "Fuel",
+          "amount": 2
+        },
+        {
+          "item": "Heavy Oil Residue",
+          "amount": 4
+        },
+        {
+          "item": "Sulfur",
+          "amount": 3
+        },
+        {
+          "item": "Petroleum Coke",
+          "amount": 3
+        }
+      ],
+      "products": [
+        {
+          "item": "Turbofuel",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "Alternate: Turbo Heavy Fuel",
+      "time": 8,
+      "producedIn": [
+        "Refinery"
+      ],
+      "ingredients": [
+        {
+          "item": "Heavy Oil Residue",
+          "amount": 5
+        },
+        {
+          "item": "Compacted Coal",
+          "amount": 4
+        }
+      ],
+      "products": [
+        {
+          "item": "Turbofuel",
+          "amount": 4
+        }
+      ]
+    },
+    {
       "name": "Turbofuel",
       "time": 16,
       "producedIn": [
@@ -1467,6 +2158,37 @@
     }
   ],
   "Turbo Motor": [
+    {
+      "name": "Alternate: Turbo Electric Motor",
+      "time": 64,
+      "producedIn": [
+        "Manufacturer"
+      ],
+      "ingredients": [
+        {
+          "item": "Motor",
+          "amount": 7
+        },
+        {
+          "item": "Radio Control Unit",
+          "amount": 9
+        },
+        {
+          "item": "Electromagnetic Control Rod",
+          "amount": 5
+        },
+        {
+          "item": "Rotor",
+          "amount": 7
+        }
+      ],
+      "products": [
+        {
+          "item": "Turbo Motor",
+          "amount": 3
+        }
+      ]
+    },
     {
       "name": "Alternate: Turbo Pressure Motor",
       "time": 32,
