@@ -23,7 +23,16 @@ const displayRecipe = (recipe) => {
   time.innerText = `time to process: ${recipe["time"]}`;
 
   const producedIn = document.createElement("li");
-  producedIn.innerText = `produced in: ${recipe["producedIn"]}`;
+  producedIn.innerText = "produced in:";
+
+  const producedInUl = document.createElement("ul");
+  for (const building of recipe["producedIn"]) {
+    const build = document.createElement("li");
+    build.innerText = building;
+
+    producedInUl.append(build);
+  }
+  producedIn.append(producedInUl);
 
   const productsLi = document.createElement("li");
   productsLi.innerText = "products:";

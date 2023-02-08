@@ -8,13 +8,8 @@ const data = JSON.parse(fs.readFileSync(path.join(__dirname, "data.json")));
 const newData = {};
 let tempValues = [];
 
-let count = 0;
 for (const [key, value] of Object.entries(data)) {
-  if (count == 2) {
-    break;
-  }
   tempValues.push(value);
-  count++;
 }
 
 newData["inMachineRecipes"] = {};
@@ -44,10 +39,22 @@ for (const [k, v] of Object.entries(tempValues[0])) {
     newData[target][name] = {
       name: v["name"],
       time: v["time"],
-      producedIn: v["producedIn"],
+      producedIn: [],
       ingredients: [],
       products: [],
     };
+
+    if (v["inMachine"]) {
+      newData[target][name]["producedIn"].push(
+        tempValues[6][v["producedIn"]]["name"]
+      );
+    }
+    if (v["inHand"]) {
+      newData[target][name]["producedIn"].push("Craft Bench");
+    }
+    if (v["inWorkshop"]) {
+      newData[target][name]["producedIn"].push("Equipment Workshop");
+    }
 
     for (const ingredient of v["ingredients"]) {
       newData[target][name]["ingredients"].push({
