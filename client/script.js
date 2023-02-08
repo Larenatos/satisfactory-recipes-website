@@ -41,8 +41,12 @@ const displayRecipe = (recipe) => {
   const time = document.createElement("li");
   time.innerText = `time to process: ${recipe["time"]}`;
 
+  const producedIn = document.createElement("li");
+  productsLi.innerText = `produced in: ${recipe["producedIn"]}`;
+
   const productsLi = document.createElement("li");
   productsLi.innerText = "products:";
+
   const productsUl = document.createElement("ul");
   for (const product of recipe["products"]) {
     const item = document.createElement("li");
@@ -63,7 +67,7 @@ const displayRecipe = (recipe) => {
   }
   ingredientsLi.append(ingredientsUl);
 
-  list.append(name, time, productsLi, ingredientsLi);
+  list.append(name, time, producedIn, productsLi, ingredientsLi);
   contentBox.append(list);
 };
 
@@ -71,7 +75,7 @@ const dataRequest = async () => {
   const dataType = document.getElementById("dataType").value;
   const dataKey = document.getElementById("dataKey").value;
   const response = await fetch(
-    `http://localhost:3000/advanced?type=${dataType}&key=${dataKey}`
+    `http://localhost:3000/advanced?type=${dataType}&key=${dataKey.toLowerCase()}`
   );
   const data = await response.json();
 

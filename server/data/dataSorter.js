@@ -13,47 +13,98 @@ for (const [key, value] of Object.entries(data)) {
   if (count == 2) {
     break;
   }
-  newData[key] = {};
   tempValues.push(value);
   count++;
 }
 
+newData["inMachineRecipes"] = {};
+newData["inHandRecipes"] = {};
+newData["inWorkshopRecipes"] = {};
+newData["items"] = {};
+
+const machineRecipesFor = [];
+const handRecipesFor = [];
+const workshopRecipesFor = [];
+
 for (const [k, v] of Object.entries(tempValues[0])) {
+  let targets = [];
+
   if (v["inMachine"]) {
-    newData["recipes"][v["name"]] = {
+    targets.push("inMachineRecipes");
+  }
+  if (v["inHand"]) {
+    targets.push("inHandRecipes");
+  }
+  if (v["inWorkshop"]) {
+    targets.push("inWorkshopRecipes");
+  }
+
+  const name = v["name"].toLowerCase();
+  for (const target of targets) {
+    newData[target][name] = {
       name: v["name"],
       time: v["time"],
+      producedIn: v["producedIn"],
       ingredients: [],
       products: [],
-      producedIn: v["producedIn"],
     };
 
     for (const ingredient of v["ingredients"]) {
-      newData["recipes"][v["name"]]["ingredients"].push({
+      newData[target][name]["ingredients"].push({
         item: tempValues[1][ingredient["item"]]["name"],
         amount: ingredient["amount"],
       });
     }
 
     for (const product of v["products"]) {
-      newData["recipes"][v["name"]]["products"].push({
-        item: tempValues[1][product["item"]]["name"],
+      const itemName = tempValues[1][product["item"]]["name"];
+      newData[target][name]["products"].push({
+        item: itemName,
         amount: product["amount"],
       });
+
+      switch (target) {
+        case "inMachineRecipes":
+          if (!machineRecipesFor.includes(itemName)) {
+            machineRecipesFor.push(itemName);
+          }
+          break;
+        case "inHandRecipes":
+          if (!handRecipesFor.includes(itemName)) {
+            handRecipesFor.push(itemName);
+          }
+          break;
+        case "inWorkshopRecipes":
+          if (!workshopRecipesFor.includes(itemName)) {
+            workshopRecipesFor.push(itemName);
+          }
+          break;
+      }
     }
   }
 }
 
-const recipeKeys = Object.keys(newData["recipes"]);
+console.log(workshopRecipesFor);
+
 for (const [k, v] of Object.entries(tempValues[1])) {
-  if (k.includes("Desc")) {
-    newData["items"][v["name"]] = {
-      name: v["name"],
-      sinkPoints: v["sinkPoints"],
-      description: v["description"],
-      stackSize: v["stackSize"],
-      liquid: v["liquid"],
-    };
+  const name = v["name"].toLowerCase();
+  newData["items"][name] = {
+    name: v["name"],
+    sinkPoints: v["sinkPoints"],
+    description: v["description"],
+    stackSize: v["stackSize"],
+    liquid: v["liquid"],
+    recipeIn: [],
+  };
+
+  if (machineRecipesFor.includes(v["name"])) {
+    newData["items"][name]["recipeIn"].push("inMachineRecipes");
+  }
+  if (handRecipesFor.includes(v["name"])) {
+    newData["items"][name]["recipeIn"].push("inHandRecipes");
+  }
+  if (workshopRecipesFor.includes(v["name"])) {
+    newData["items"][name]["recipeIn"].push("inWorkshopRecipes");
   }
 }
 
