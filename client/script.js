@@ -20,7 +20,7 @@ const displayRecipe = (recipe) => {
   const name = document.createElement("li");
   name.innerText = `name: ${recipe["name"]}`;
   const time = document.createElement("li");
-  time.innerText = `time to process: ${recipe["time"]}`;
+  time.innerText = `time to process: ${recipe["time"]}s`;
 
   const producedIn = document.createElement("li");
   producedIn.innerText = "produced in:";
@@ -90,7 +90,7 @@ const dataRequest = async () => {
 
   contentBox.innerHTML = "";
   const header = document.createElement("h2");
-  header.innerText = dataKey;
+  header.innerText = data["name"];
   contentBox.append(header);
 
   if (

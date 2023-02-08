@@ -3,12 +3,14 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const data = JSON.parse(fs.readFileSync(path.join(__dirname, "recipes.json")));
+const data = JSON.parse(fs.readFileSync(path.join(__dirname, "data.json")));
 
 let baseRecipes = {};
 let alternateRecipes = {};
 
-for (const [key, value] of Object.entries(data)) {
+for (const [k, v] of Object.entries(data["recipes"])) {
+  if (v["inMachine"] || v["inHand"] || v["inWorkshop"]) {
+  }
   for (const recipe of value) {
     if (recipe["name"].includes("Alternate")) {
       if (!(key in alternateRecipes)) {

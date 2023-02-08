@@ -6,11 +6,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const data = JSON.parse(fs.readFileSync(path.join(__dirname, "data.json")));
 
 const newData = {};
-let tempValues = [];
-
-for (const [key, value] of Object.entries(data)) {
-  tempValues.push(value);
-}
 
 newData["inMachineRecipes"] = {};
 newData["inHandRecipes"] = {};
@@ -21,7 +16,7 @@ const machineRecipesFor = [];
 const handRecipesFor = [];
 const workshopRecipesFor = [];
 
-for (const [k, v] of Object.entries(tempValues[0])) {
+for (const [k, v] of Object.entries(data["recipes"])) {
   let targets = [];
 
   if (v["inMachine"]) {
@@ -46,7 +41,7 @@ for (const [k, v] of Object.entries(tempValues[0])) {
 
     if (v["inMachine"]) {
       newData[target][name]["producedIn"].push(
-        tempValues[6][v["producedIn"]]["name"]
+        data["buildings"][v["producedIn"]]["name"]
       );
     }
     if (v["inHand"]) {
@@ -58,13 +53,13 @@ for (const [k, v] of Object.entries(tempValues[0])) {
 
     for (const ingredient of v["ingredients"]) {
       newData[target][name]["ingredients"].push({
-        item: tempValues[1][ingredient["item"]]["name"],
+        item: data["items"][ingredient["item"]]["name"],
         amount: ingredient["amount"],
       });
     }
 
     for (const product of v["products"]) {
-      const itemName = tempValues[1][product["item"]]["name"];
+      const itemName = data["items"][product["item"]]["name"];
       newData[target][name]["products"].push({
         item: itemName,
         amount: product["amount"],
@@ -91,7 +86,7 @@ for (const [k, v] of Object.entries(tempValues[0])) {
   }
 }
 
-for (const [k, v] of Object.entries(tempValues[1])) {
+for (const [k, v] of Object.entries(data["items"])) {
   const name = v["name"].toLowerCase();
   newData["items"][name] = {
     name: v["name"],
