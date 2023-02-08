@@ -8,24 +8,17 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 server.get("/header", (req, res) => {
-  switch (req.query.type) {
-    case "recipe":
-      const data = JSON.parse(
-        fs.readFileSync(path.join(__dirname, "data/newData.json"))
-      );
-      res.send(Object.keys(data["recipes"]));
-      break;
-  }
+  const data = JSON.parse(
+    fs.readFileSync(path.join(__dirname, "data/newData.json"))
+  );
+  res.send(Object.keys(data[req.query.type]));
 });
 
 server.get("/advanced", (req, res) => {
-  switch (req.query.type) {
-    case "recipe":
-      const data = JSON.parse(
-        fs.readFileSync(path.join(__dirname, "data/newData.json"))
-      );
-      res.send(data["recipes"][req.query.key]);
-  }
+  const data = JSON.parse(
+    fs.readFileSync(path.join(__dirname, "data/newData.json"))
+  );
+  res.send(data[req.query.type][req.query.key]);
 });
 
 server.use(express.static(path.join(__dirname, "../client")));

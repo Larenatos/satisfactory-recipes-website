@@ -84,8 +84,6 @@ for (const [k, v] of Object.entries(tempValues[0])) {
   }
 }
 
-console.log(workshopRecipesFor);
-
 for (const [k, v] of Object.entries(tempValues[1])) {
   const name = v["name"].toLowerCase();
   newData["items"][name] = {

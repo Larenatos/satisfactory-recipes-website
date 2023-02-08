@@ -13,25 +13,6 @@ const constructList = (data) => {
   }
 };
 
-const displayRecipes = async (type) => {
-  const response = await fetch(`http://localhost:3000/${type}Recipes.json`);
-  const data = await response.json();
-  constructList(data);
-};
-
-const displayKeys = async () => {
-  const dataType = document.getElementById("dataType").value;
-  const response = await fetch(`http://localhost:3000/header?type=${dataType}`);
-  const data = await response.json();
-  contentBox.innerHTML = "";
-
-  for (const item of data) {
-    const text = document.createElement("h3");
-    text.innerText = item;
-    contentBox.append(text);
-  }
-};
-
 const displayRecipe = (recipe) => {
   const list = document.createElement("ul");
   list.classList.add("list");
@@ -42,7 +23,7 @@ const displayRecipe = (recipe) => {
   time.innerText = `time to process: ${recipe["time"]}`;
 
   const producedIn = document.createElement("li");
-  productsLi.innerText = `produced in: ${recipe["producedIn"]}`;
+  producedIn.innerText = `produced in: ${recipe["producedIn"]}`;
 
   const productsLi = document.createElement("li");
   productsLi.innerText = "products:";
@@ -71,6 +52,25 @@ const displayRecipe = (recipe) => {
   contentBox.append(list);
 };
 
+const displayRecipes = async (type) => {
+  const response = await fetch(`http://localhost:3000/${type}Recipes.json`);
+  const data = await response.json();
+  constructList(data);
+};
+
+const displayKeys = async () => {
+  const dataType = document.getElementById("dataType").value;
+  const response = await fetch(`http://localhost:3000/header?type=${dataType}`);
+  const data = await response.json();
+  contentBox.innerHTML = "";
+
+  for (const item of data) {
+    const text = document.createElement("h3");
+    text.innerText = item;
+    contentBox.append(text);
+  }
+};
+
 const dataRequest = async () => {
   const dataType = document.getElementById("dataType").value;
   const dataKey = document.getElementById("dataKey").value;
@@ -84,9 +84,11 @@ const dataRequest = async () => {
   header.innerText = dataKey;
   contentBox.append(header);
 
-  switch (dataType) {
-    case "recipe":
-      displayRecipe(data);
-      break;
+  if (
+    dataType == "inMachineRecipes" ||
+    dataType == "inHandRecipes" ||
+    dataType == "inWorkshopRecipes"
+  ) {
+    displayRecipe(data);
   }
 };
