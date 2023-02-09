@@ -154,6 +154,35 @@ const displayMachine = (data) => {
   contentBox.append(list);
 };
 
+const displayMiner = (data) => {
+  const list = document.createElement("ul");
+  list.classList.add("list");
+
+  const name = document.createElement("li");
+  name.innerText = `name: ${data["name"]}`;
+
+  const cycle = document.createElement("li");
+  cycle.innerText = `items per cycle: ${data["itemsPerCycle"]}`;
+
+  const cycleTime = document.createElement("li");
+  cycleTime.innerText = `cycle time: ${data["extractCycleTime"]}s`;
+
+  const resources = document.createElement("li");
+  resources.innerText = "allowed resources:";
+
+  const resourcesUl = document.createElement("ul");
+  for (const resource of data["allowedResources"]) {
+    const resourceText = document.createElement("li");
+    resourceText.innerText = resource;
+
+    resourcesUl.append(resourceText);
+  }
+  resources.append(resourcesUl);
+
+  list.append(name, cycle, cycleTime, resources);
+  contentBox.append(list);
+};
+
 const displayKeys = async () => {
   const dataType = document.getElementById("dataType").value;
   const response = await fetch(`${baseUrl}/header?type=${dataType}`);
@@ -192,6 +221,8 @@ const dataRequest = async () => {
     displayItem(data);
   } else if (dataType == "generators") {
     displayGenerator(data);
+  } else if (dataType == "miners") {
+    displayMiner(data);
   } else if (dataType == "machines") {
     displayMachine(data);
   }

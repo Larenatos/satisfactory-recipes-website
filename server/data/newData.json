@@ -9907,6 +9907,64 @@
       ]
     }
   },
+  "miners": {
+    "miner mk1": {
+      "name": "Miner Mk1",
+      "itemsPerCycle": 1,
+      "extractCycleTime": 1,
+      "allowedResources": [
+        "Coal",
+        "Bauxite",
+        "Copper Ore",
+        "Caterium Ore",
+        "Iron Ore",
+        "Uranium",
+        "Raw Quartz",
+        "Limestone",
+        "Sulfur"
+      ]
+    },
+    "miner mk2": {
+      "name": "Miner Mk2",
+      "itemsPerCycle": 1,
+      "extractCycleTime": 0.5,
+      "allowedResources": [
+        "Coal",
+        "Bauxite",
+        "Copper Ore",
+        "Caterium Ore",
+        "Iron Ore",
+        "Uranium",
+        "Raw Quartz",
+        "Limestone",
+        "Sulfur"
+      ]
+    },
+    "miner mk3": {
+      "name": "Miner Mk3",
+      "itemsPerCycle": 1,
+      "extractCycleTime": 0.25,
+      "allowedResources": [
+        "Coal",
+        "Bauxite",
+        "Copper Ore",
+        "Caterium Ore",
+        "Iron Ore",
+        "Uranium",
+        "Raw Quartz",
+        "Limestone",
+        "Sulfur"
+      ]
+    },
+    "oil pump": {
+      "name": "Oil Pump",
+      "itemsPerCycle": 2000,
+      "extractCycleTime": 1,
+      "allowedResources": [
+        "Crude Oil"
+      ]
+    }
+  },
   "machines": {
     "assembler": {
       "name": "Assembler",

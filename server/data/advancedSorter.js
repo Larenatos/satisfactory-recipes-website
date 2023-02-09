@@ -12,6 +12,7 @@ newData["inHandRecipes"] = {};
 newData["inWorkshopRecipes"] = {};
 newData["items"] = {};
 newData["generators"] = {};
+newData["miners"] = {};
 newData["machines"] = {};
 
 const machineRecipesFor = [];
@@ -165,7 +166,29 @@ for (const [k, v] of Object.entries(data["generators"])) {
   };
 }
 
-//machine
+// miners
+for (const [k, v] of Object.entries(data["miners"])) {
+  let name;
+  if (k.includes("Miner")) {
+    name = `Miner ${k.substring(11, 14)}`;
+  } else {
+    name = "Oil Pump";
+  }
+
+  const resources = [];
+  for (const resource of v["allowedResources"]) {
+    resources.push(data["items"][resource]["name"]);
+  }
+
+  newData["miners"][name.toLowerCase()] = {
+    name: name,
+    itemsPerCycle: v["itemsPerCycle"],
+    extractCycleTime: v["extractCycleTime"],
+    allowedResources: resources,
+  };
+}
+
+// machines
 for (const [k, v] of Object.entries(data["buildings"])) {
   if (
     v["categories"].includes("SC_Manufacturers_C") ||
