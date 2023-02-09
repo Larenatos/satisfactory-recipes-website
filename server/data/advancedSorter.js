@@ -11,11 +11,13 @@ newData["inMachineRecipes"] = {};
 newData["inHandRecipes"] = {};
 newData["inWorkshopRecipes"] = {};
 newData["items"] = {};
+newData["generators"] = {};
 
 const machineRecipesFor = [];
 const handRecipesFor = [];
 const workshopRecipesFor = [];
 
+// recipes
 for (const [k, v] of Object.entries(data["recipes"])) {
   let targets = [];
 
@@ -104,26 +106,62 @@ for (const item of ["Coal", "Water", "Biomass"]) {
   delete newData["inWorkshopRecipes"][item];
 }
 
+// items
 for (const [k, v] of Object.entries(data["items"])) {
-  const name = v["name"].toLowerCase();
-  newData["items"][name] = {
+  const recipeIn = [];
+
+  if (machineRecipesFor.includes(v["name"])) {
+    recipeIn.push("inMachineRecipes");
+  }
+  if (handRecipesFor.includes(v["name"])) {
+    recipeIn.push("inHandRecipes");
+  }
+  if (workshopRecipesFor.includes(v["name"])) {
+    recipeIn.push("inWorkshopRecipes");
+  }
+
+  newData["items"][v["name"].toLowerCase()] = {
     name: v["name"],
     sinkPoints: v["sinkPoints"],
     description: v["description"],
     stackSize: v["stackSize"],
     liquid: v["liquid"],
-    recipeIn: [],
+    recipeIn: recipeIn,
   };
+}
 
-  if (machineRecipesFor.includes(v["name"])) {
-    newData["items"][name]["recipeIn"].push("inMachineRecipes");
+// generators
+for (const [k, v] of Object.entries(data["generators"])) {
+  let name;
+  switch (true) {
+    case k.includes("Biomass"):
+      name = "Biomass Burner";
+      break;
+    case k.includes("Coal"):
+      name = "Coal Generator";
+      break;
+    case k.includes("Fuel"):
+      name = "Fuel Generator";
+      break;
+    case k.includes("GeoThermal"):
+      name = "Geothermal Generator";
+      break;
+    case k.includes("Nuclear"):
+      name = "Nuclear Power Plant";
+      break;
   }
-  if (handRecipesFor.includes(v["name"])) {
-    newData["items"][name]["recipeIn"].push("inHandRecipes");
+
+  const fuels = [];
+  for (const fuel of v["fuel"]) {
+    fuels.push(data["items"][fuel]["name"]);
   }
-  if (workshopRecipesFor.includes(v["name"])) {
-    newData["items"][name]["recipeIn"].push("inWorkshopRecipes");
-  }
+
+  newData["generators"][name.toLowerCase()] = {
+    name: name,
+    powerProduction: v["powerProduction"],
+    waterToPowerRatio: v["waterToPowerRatio"],
+    fuel: fuels,
+  };
 }
 
 let finalData = JSON.stringify(newData, null, 2);

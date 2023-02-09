@@ -9846,5 +9846,65 @@
       "liquid": false,
       "recipeIn": []
     }
+  },
+  "generators": {
+    "biomass burner": {
+      "name": "Biomass Burner",
+      "powerProduction": 30,
+      "waterToPowerRatio": 0,
+      "fuel": [
+        "Hog Remains",
+        "Plasma Spitter Remains",
+        "Flower Petals",
+        "Leaves",
+        "Mycelia",
+        "Wood",
+        "Solid Biofuel",
+        "Packaged Liquid Biofuel",
+        "Biomass",
+        "Liquid Biofuel",
+        "Packaged Alumina Solution",
+        "Packaged Sulfuric Acid",
+        "Packaged Nitrogen Gas",
+        "Packaged Nitric Acid",
+        "Fabric",
+        "Stinger Remains"
+      ]
+    },
+    "coal generator": {
+      "name": "Coal Generator",
+      "powerProduction": 75,
+      "waterToPowerRatio": 10,
+      "fuel": [
+        "Coal",
+        "Compacted Coal",
+        "Petroleum Coke"
+      ]
+    },
+    "fuel generator": {
+      "name": "Fuel Generator",
+      "powerProduction": 150,
+      "waterToPowerRatio": 0,
+      "fuel": [
+        "Fuel",
+        "Turbofuel",
+        "Liquid Biofuel"
+      ]
+    },
+    "geothermal generator": {
+      "name": "Geothermal Generator",
+      "powerProduction": 0,
+      "waterToPowerRatio": 0,
+      "fuel": []
+    },
+    "nuclear power plant": {
+      "name": "Nuclear Power Plant",
+      "powerProduction": 2500,
+      "waterToPowerRatio": 2,
+      "fuel": [
+        "Uranium Fuel Rod",
+        "Plutonium Fuel Rod"
+      ]
+    }
   }
 }

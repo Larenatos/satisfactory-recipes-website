@@ -69,6 +69,70 @@ const displayRecipes = async (type) => {
   constructList(data);
 };
 
+const displayItem = (data) => {
+  const list = document.createElement("ul");
+  list.classList.add("list");
+
+  const name = document.createElement("li");
+  name.innerText = `name: ${data["name"]}`;
+
+  const sinkPoints = document.createElement("li");
+  sinkPoints.innerText = `sink points: ${data["sinkPoints"]}`;
+
+  const description = document.createElement("li");
+  description.innerText = `description: \n${data["description"]}`;
+
+  const stackSize = document.createElement("li");
+  stackSize.innerText = `stackSize: ${data["stackSize"]}`;
+
+  const liquid = document.createElement("li");
+  liquid.innerText = `liquid: ${data["liquid"]}`;
+
+  const recipeIn = document.createElement("li");
+  recipeIn.innerText = "recipes in:";
+
+  const recipeInUl = document.createElement("ul");
+  for (const place of data["recipeIn"]) {
+    const destination = document.createElement("li");
+    destination.innerText = place;
+
+    recipeInUl.append(destination);
+  }
+  recipeIn.append(recipeInUl);
+
+  list.append(name, sinkPoints, description, stackSize, liquid, recipeIn);
+  contentBox.append(list);
+};
+
+const displayGenerator = (data) => {
+  const list = document.createElement("ul");
+  list.classList.add("list");
+
+  const name = document.createElement("li");
+  name.innerText = `name: ${data["name"]}`;
+
+  const power = document.createElement("li");
+  power.innerText = `power production: ${data["powerProduction"]} MW`;
+
+  const waterRatio = document.createElement("li");
+  waterRatio.innerText = `water to power ratio: ${data["waterToPowerRatio"]}`;
+
+  const fuel = document.createElement("li");
+  fuel.innerText = "fuels:";
+
+  const fuelUl = document.createElement("ul");
+  for (const fuel of data["fuel"]) {
+    const fuelText = document.createElement("li");
+    fuelText.innerText = fuel;
+
+    fuelUl.append(fuelText);
+  }
+  fuel.append(fuelUl);
+
+  list.append(name, power, waterRatio, fuel);
+  contentBox.append(list);
+};
+
 const displayKeys = async () => {
   const dataType = document.getElementById("dataType").value;
   const response = await fetch(`${baseUrl}/header?type=${dataType}`);
@@ -104,37 +168,8 @@ const dataRequest = async () => {
       displayRecipe(recipe);
     }
   } else if (dataType == "items") {
-    const list = document.createElement("ul");
-    list.classList.add("list");
-
-    const name = document.createElement("li");
-    name.innerText = `name: ${data["name"]}`;
-
-    const sinkPoints = document.createElement("li");
-    sinkPoints.innerText = `sink points: ${data["sinkPoints"]}`;
-
-    const description = document.createElement("li");
-    description.innerText = `description: \n${data["description"]}`;
-
-    const stackSize = document.createElement("li");
-    stackSize.innerText = `stackSize: ${data["stackSize"]}`;
-
-    const liquid = document.createElement("li");
-    liquid.innerText = `liquid: ${data["liquid"]}`;
-
-    const recipeIn = document.createElement("li");
-    recipeIn.innerText = "recipes in:";
-
-    const recipeInUl = document.createElement("ul");
-    for (const place of data["recipeIn"]) {
-      const destination = document.createElement("li");
-      destination.innerText = place;
-
-      recipeInUl.append(destination);
-    }
-    recipeIn.append(recipeInUl);
-
-    list.append(name, sinkPoints, description, stackSize, liquid, recipeIn);
-    contentBox.append(list);
+    displayItem(data);
+  } else if (dataType == "generators") {
+    displayGenerator(data);
   }
 };
