@@ -1,5 +1,5 @@
 const baseUrl = "http://localhost:3000/satisfactory-recipes";
-//const baseUrl = "https://lare.alwaysdata.net/satisfactory-recipes";
+// const baseUrl = "https://lare.alwaysdata.net/satisfactory-recipes";
 const [contentBox] = document.getElementsByClassName("content");
 
 const constructList = (data) => {

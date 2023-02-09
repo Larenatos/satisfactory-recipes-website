@@ -9,7 +9,7 @@ let baseRecipes = {};
 let alternateRecipes = {};
 
 for (const [k, v] of Object.entries(data["recipes"])) {
-  if (!(v["inMachine"] || v["inHand"] || v["inWorkshop"])) {
+  if (v["inMachine"] || v["inHand"] || v["inWorkshop"]) {
     let target;
     if (k.includes("Alternate")) {
       target = alternateRecipes;
