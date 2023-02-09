@@ -9906,5 +9906,81 @@
         "Plutonium Fuel Rod"
       ]
     }
+  },
+  "machines": {
+    "assembler": {
+      "name": "Assembler",
+      "description": "Crafts two parts into another part.\n\nCan be automated by feeding parts into it with a conveyor belt connected to the input. The produced parts can be automatically extracted by connecting a conveyor belt to the output.",
+      "powerConsumption": 15
+    },
+    "blender": {
+      "name": "Blender",
+      "description": "The Blender is capable of blending fluids and combining them with solid parts in various processes.\nHead Lift: 10 meters.\n(Allows fluids to be transported 10 meters upwards).\n\nContains both Conveyor Belt and Pipe inputs and outputs.",
+      "powerConsumption": 75
+    },
+    "constructor": {
+      "name": "Constructor",
+      "description": "Crafts one part into another part.\n\nCan be automated by feeding parts into it with a conveyor belt connected to the input. The produced parts can be automatically extracted by connecting a conveyor belt to the output.",
+      "powerConsumption": 4
+    },
+    "foundry": {
+      "name": "Foundry",
+      "description": "Smelts two resources into alloy ingots.\n\nCan be automated by feeding ore into it with a conveyor belt connected to the inputs. The produced ingots can be automatically extracted by connecting a conveyor belt to the output.",
+      "powerConsumption": 16
+    },
+    "particle accelerator": {
+      "name": "Particle Accelerator",
+      "description": "The FICSIT Particle Accelerator uses electromagnetic fields to propel particles to very high speeds and energies. The specific design allows for a variety of processes, such as matter generation and conversion.\n\nWarning: Power usage is extremely high, unstable, and varies per recipe.",
+      "powerConsumption": 875
+    },
+    "mam": {
+      "name": "MAM",
+      "description": "The Molecular Analysis Machine is used to analyse new and exotic materials found on alien planets.\nR&D will assist Pioneers through the MAM to turn any valuable data into usable research options and new technologies."
+    },
+    "manufacturer": {
+      "name": "Manufacturer",
+      "description": "Crafts three or four parts into another part.\n\nCan be automated by feeding parts into it with a conveyor belt connected to the input. The produced parts can be automatically extracted by connecting a conveyor belt to the output.",
+      "powerConsumption": 55
+    },
+    "refinery": {
+      "name": "Refinery",
+      "description": "Refines fluid and/or solid parts into other parts.\nHead Lift: 10 meters.\n(Allows fluids to be transported 10 meters upwards.)\n\nContains both a Conveyor Belt and Pipe input and output, to allow for the automation of various recipes.",
+      "powerConsumption": 30
+    },
+    "packager": {
+      "name": "Packager",
+      "description": "Used for the packaging and unpacking of fluids.\nHead Lift: 10 meters.\n(Allows fluids to be transported 10 meters upwards.)\n\nContains both a Conveyor Belt and Pipe input and output, to allow for the automation of various recipes.",
+      "powerConsumption": 10
+    },
+    "awesome shop": {
+      "name": "AWESOME Shop",
+      "description": "Redeem your FICSIT Coupons here! \nFor those employees going the extra kilometer we have set aside special bonus milestones and rewards! Get your Coupons in the AWESOME Sink program now!\n\n*No refunds possible."
+    },
+    "awesome sink": {
+      "name": "AWESOME Sink",
+      "description": "Got excess resources? Fear not, for FICSIT does not waste! The newly developed AWESOME Sink turns any useful part straight into research data, as fast as you can supply it! \nParticipating pioneers will be compensated with Coupons to be spend at the AWESOME Shop.",
+      "powerConsumption": 30
+    },
+    "smelter": {
+      "name": "Smelter",
+      "description": "Smelts ore into ingots.\n\nCan be automated by feeding ore into it with a conveyor belt connected to the input. The produced ingots can be automatically extracted by connecting a conveyor belt to the output.",
+      "powerConsumption": 4
+    },
+    "space elevator": {
+      "name": "Space Elevator",
+      "description": "Requires deliveries of special Project Parts to complete Phases of Project Assembly.\nCompleting Phases in the Space Elevator will unlock new Tiers in the HUB Terminal."
+    },
+    "the hub": {
+      "name": "The HUB",
+      "description": "The heart of your factory. This is where you complete FICSIT milestones to unlock additional blueprints of buildings, vehicles, parts, equipment etc."
+    },
+    "craft bench": {
+      "name": "Craft Bench",
+      "description": "Allows you to manually craft a large range of different parts. \nThese parts can then be used in construction of different factory buildings, vehicles and equipment."
+    },
+    "equipment workshop": {
+      "name": "Equipment Workshop",
+      "description": "Used to manually craft equipment."
+    }
   }
 }

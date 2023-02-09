@@ -133,6 +133,27 @@ const displayGenerator = (data) => {
   contentBox.append(list);
 };
 
+const displayMachine = (data) => {
+  const list = document.createElement("ul");
+  list.classList.add("list");
+
+  const name = document.createElement("li");
+  name.innerText = `name: ${data["name"]}`;
+
+  const description = document.createElement("li");
+  description.innerText = `description: \n${data["description"]}`;
+
+  list.append(name, description);
+
+  if (data["powerConsumption"]) {
+    const power = document.createElement("li");
+    power.innerText = `power consumption: ${data["powerConsumption"]} MW`;
+    list.append(power);
+  }
+
+  contentBox.append(list);
+};
+
 const displayKeys = async () => {
   const dataType = document.getElementById("dataType").value;
   const response = await fetch(`${baseUrl}/header?type=${dataType}`);
@@ -171,5 +192,7 @@ const dataRequest = async () => {
     displayItem(data);
   } else if (dataType == "generators") {
     displayGenerator(data);
+  } else if (dataType == "machines") {
+    displayMachine(data);
   }
 };

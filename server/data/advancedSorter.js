@@ -12,6 +12,7 @@ newData["inHandRecipes"] = {};
 newData["inWorkshopRecipes"] = {};
 newData["items"] = {};
 newData["generators"] = {};
+newData["machines"] = {};
 
 const machineRecipesFor = [];
 const handRecipesFor = [];
@@ -162,6 +163,27 @@ for (const [k, v] of Object.entries(data["generators"])) {
     waterToPowerRatio: v["waterToPowerRatio"],
     fuel: fuels,
   };
+}
+
+//machine
+for (const [k, v] of Object.entries(data["buildings"])) {
+  if (
+    v["categories"].includes("SC_Manufacturers_C") ||
+    v["categories"].includes("SC_Smelters_C") ||
+    v["categories"].includes("SC_Special_C") ||
+    v["categories"].includes("SC_Workstations_C")
+  ) {
+    const name = v["name"].toLowerCase();
+    newData["machines"][name] = {
+      name: v["name"],
+      description: v["description"],
+    };
+
+    if (v["metadata"] && !v["metadata"]["powerConsumption"] == 0) {
+      newData["machines"][name]["powerConsumption"] =
+        v["metadata"]["powerConsumption"];
+    }
+  }
 }
 
 let finalData = JSON.stringify(newData, null, 2);
