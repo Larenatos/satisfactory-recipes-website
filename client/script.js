@@ -5,7 +5,7 @@ const [contentBox] = document.getElementsByClassName("content");
 const constructList = (data) => {
   contentBox.innerHTML = "";
   for (const [item, recipes] of Object.entries(data)) {
-    const groupName = document.createElement("h2");
+    const groupName = document.createElement("h1");
     groupName.innerText = item;
     contentBox.append(groupName);
 
@@ -15,20 +15,21 @@ const constructList = (data) => {
   }
 };
 
-const displayRecipe = (recipe) => {
+const displayRecipe = (data) => {
   const list = document.createElement("ul");
   list.classList.add("list");
 
   const name = document.createElement("li");
-  name.innerText = `name: ${recipe["name"]}`;
+  name.innerText = `name: ${data["name"]}`;
+
   const time = document.createElement("li");
-  time.innerText = `time to process: ${recipe["time"]}s`;
+  time.innerText = `time to process: ${data["time"]}s`;
 
   const producedIn = document.createElement("li");
   producedIn.innerText = "produced in:";
 
   const producedInUl = document.createElement("ul");
-  for (const building of recipe["producedIn"]) {
+  for (const building of data["producedIn"]) {
     const build = document.createElement("li");
     build.innerText = building;
 
@@ -40,7 +41,7 @@ const displayRecipe = (recipe) => {
   productsLi.innerText = "products:";
 
   const productsUl = document.createElement("ul");
-  for (const product of recipe["products"]) {
+  for (const product of data["products"]) {
     const item = document.createElement("li");
     item.innerText = `${product["item"]} (${product["amount"]})`;
 
@@ -51,7 +52,7 @@ const displayRecipe = (recipe) => {
   const ingredientsLi = document.createElement("li");
   ingredientsLi.innerText = "ingredients:";
   const ingredientsUl = document.createElement("ul");
-  for (const ingredient of recipe["ingredients"]) {
+  for (const ingredient of data["ingredients"]) {
     const item = document.createElement("li");
     item.innerText = `${ingredient["item"]} (${ingredient["amount"]})`;
 
@@ -69,13 +70,7 @@ const displayRecipes = async (type) => {
   constructList(data);
 };
 
-const displayItem = (data) => {
-  const list = document.createElement("ul");
-  list.classList.add("list");
-
-  const name = document.createElement("li");
-  name.innerText = `name: ${data["name"]}`;
-
+const displayItem = (data, list) => {
   const sinkPoints = document.createElement("li");
   sinkPoints.innerText = `sink points: ${data["sinkPoints"]}`;
 
@@ -100,17 +95,11 @@ const displayItem = (data) => {
   }
   recipeIn.append(recipeInUl);
 
-  list.append(name, sinkPoints, description, stackSize, liquid, recipeIn);
+  list.append(sinkPoints, description, stackSize, liquid, recipeIn);
   contentBox.append(list);
 };
 
-const displayGenerator = (data) => {
-  const list = document.createElement("ul");
-  list.classList.add("list");
-
-  const name = document.createElement("li");
-  name.innerText = `name: ${data["name"]}`;
-
+const displayGenerator = (data, list) => {
   const power = document.createElement("li");
   power.innerText = `power production: ${data["powerProduction"]} MW`;
 
@@ -129,21 +118,15 @@ const displayGenerator = (data) => {
   }
   fuel.append(fuelUl);
 
-  list.append(name, power, waterRatio, fuel);
+  list.append(power, waterRatio, fuel);
   contentBox.append(list);
 };
 
-const displayMachine = (data) => {
-  const list = document.createElement("ul");
-  list.classList.add("list");
-
-  const name = document.createElement("li");
-  name.innerText = `name: ${data["name"]}`;
-
+const displayMachine = (data, list) => {
   const description = document.createElement("li");
   description.innerText = `description: \n${data["description"]}`;
 
-  list.append(name, description);
+  list.append(description);
 
   if (data["powerConsumption"]) {
     const power = document.createElement("li");
@@ -154,13 +137,7 @@ const displayMachine = (data) => {
   contentBox.append(list);
 };
 
-const displayMiner = (data) => {
-  const list = document.createElement("ul");
-  list.classList.add("list");
-
-  const name = document.createElement("li");
-  name.innerText = `name: ${data["name"]}`;
-
+const displayMiner = (data, list) => {
   const cycle = document.createElement("li");
   cycle.innerText = `items per cycle: ${data["itemsPerCycle"]}`;
 
@@ -179,17 +156,11 @@ const displayMiner = (data) => {
   }
   resources.append(resourcesUl);
 
-  list.append(name, cycle, cycleTime, resources);
+  list.append(cycle, cycleTime, resources);
   contentBox.append(list);
 };
 
-const displayResearch = (data) => {
-  const list = document.createElement("ul");
-  list.classList.add("list");
-
-  const name = document.createElement("li");
-  name.innerText = `name: ${data["name"]}`;
-
+const displayResearch = (data, list) => {
   const time = document.createElement("li");
   time.innerText = `time: ${data["time"]}`;
 
@@ -231,7 +202,7 @@ const displayResearch = (data) => {
   }
   cost.append(costUl);
 
-  list.append(name, time, unlocks, cost);
+  list.append(time, unlocks, cost);
   contentBox.append(list);
 };
 
@@ -248,18 +219,77 @@ const displayKeys = async () => {
   }
 };
 
+const displayAll = (type, data) => {
+  if (
+    type == "inMachineRecipes" ||
+    type == "inHandRecipes" ||
+    type == "inWorkshopRecipes"
+  ) {
+    constructList(data);
+    return;
+  }
+
+  let callBack;
+  switch (type) {
+    case "items":
+      callBack = displayItem;
+      break;
+    case "generators":
+      callBack = displayGenerator;
+      break;
+    case "miners":
+      callBack = displayMiner;
+      break;
+    case "machine":
+      callBack = displayMachine;
+      break;
+    case "research":
+      callBack = displayResearch;
+      break;
+  }
+
+  for (const [k, value] of Object.entries(data)) {
+    const header = document.createElement("h2");
+    header.innerText = value["name"];
+    contentBox.append(header);
+
+    const list = document.createElement("ul");
+    list.classList.add("list");
+
+    const name = document.createElement("li");
+    name.innerText = `name: ${value["name"]}`;
+    list.append(name);
+
+    callBack(value, list);
+  }
+};
+
 const dataRequest = async () => {
   const dataType = document.getElementById("dataType").value;
   const dataKey = document.getElementById("dataKey").value;
+
   const response = await fetch(
     `${baseUrl}/advanced?type=${dataType}&key=${dataKey.toLowerCase()}`
   );
   const data = await response.json();
 
   contentBox.innerHTML = "";
-  const header = document.createElement("h2");
+
+  if (dataKey == "all") {
+    displayAll(dataType, data);
+    return;
+  }
+
+  const header = document.createElement("h1");
   header.innerText = dataKey.charAt(0).toUpperCase() + dataKey.slice(1);
   contentBox.append(header);
+
+  const list = document.createElement("ul");
+  list.classList.add("list");
+
+  const name = document.createElement("li");
+  name.innerText = `name: ${data["name"]}`;
+  list.append(name);
 
   if (
     dataType == "inMachineRecipes" ||
@@ -267,17 +297,17 @@ const dataRequest = async () => {
     dataType == "inWorkshopRecipes"
   ) {
     for (const recipe of data) {
-      displayRecipe(recipe);
+      displayRecipe(recipe, list);
     }
   } else if (dataType == "items") {
-    displayItem(data);
+    displayItem(data, list);
   } else if (dataType == "generators") {
-    displayGenerator(data);
+    displayGenerator(data, list);
   } else if (dataType == "miners") {
-    displayMiner(data);
+    displayMiner(data, list);
   } else if (dataType == "machines") {
-    displayMachine(data);
+    displayMachine(data, list);
   } else if (dataType == "research") {
-    displayResearch(data);
+    displayResearch(data, list);
   }
 };

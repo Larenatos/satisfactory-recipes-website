@@ -18,10 +18,18 @@ router.get("/header", (req, res) => {
 });
 
 router.get("/advanced", (req, res) => {
+  const key = req.query.key;
+  const type = req.query.type;
+
   const data = JSON.parse(
     fs.readFileSync(path.join(__dirname, "data/newData.json"))
   );
-  res.send(data[req.query.type][req.query.key]);
+
+  if (key == "all") {
+    res.send(data[type]);
+  } else {
+    res.send(data[type][key]);
+  }
 });
 
 router.use(express.static(path.join(__dirname, "../client")));
