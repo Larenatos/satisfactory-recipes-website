@@ -35,7 +35,7 @@ for (const [k, v] of Object.entries(data["recipes"])) {
   }
 
   if (!targets) {
-    break;
+    continue;
   }
 
   for (const product of v["products"]) {
@@ -45,6 +45,7 @@ for (const [k, v] of Object.entries(data["recipes"])) {
       if (!newData[target][name]) {
         newData[target][name] = [];
       }
+
       const producedIn = [];
       const ingredients = [];
       const products = [];
@@ -227,6 +228,7 @@ for (const [k, v] of Object.entries(data["schematics"])) {
     if (v["name"] == "Expanded Toolbelt") {
       handSlot = 1;
     }
+
     const items = [];
     for (const item of v["unlock"]["giveItems"]) {
       if (Object.keys(data["items"]).includes(item["item"])) {

@@ -1,10 +1,18 @@
 const baseUrl = "http://localhost:3000/satisfactory-recipes";
 // const baseUrl = "https://lare.alwaysdata.net/satisfactory-recipes";
+
 const [contentBox] = document.getElementsByClassName("content");
 const [errorText] = document.getElementsByClassName("error");
 
-const constructList = (data) => {
+const displayRecipes = async (type) => {
+  const response = await fetch(`${baseUrl}/${type}Recipes.json`);
+  const data = await response.json();
+  displayRecipeList(data);
+};
+
+const displayRecipeList = (data) => {
   contentBox.innerHTML = "";
+
   for (const [item, recipes] of Object.entries(data)) {
     const groupName = document.createElement("h1");
     groupName.innerText = item;
@@ -66,12 +74,6 @@ const displayRecipe = (data) => {
 
   list.append(name, time, alternate, producedIn, productsLi, ingredientsLi);
   contentBox.append(list);
-};
-
-const displayRecipes = async (type) => {
-  const response = await fetch(`${baseUrl}/${type}Recipes.json`);
-  const data = await response.json();
-  constructList(data);
 };
 
 const displayItem = (data, list) => {
@@ -229,7 +231,7 @@ const displayAll = (type, data) => {
     type == "inHandRecipes" ||
     type == "inWorkshopRecipes"
   ) {
-    constructList(data);
+    displayRecipeList(data);
     return;
   }
 
@@ -244,7 +246,7 @@ const displayAll = (type, data) => {
     case "miners":
       callBack = displayMiner;
       break;
-    case "machine":
+    case "machines":
       callBack = displayMachine;
       break;
     case "research":
