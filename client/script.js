@@ -1,6 +1,7 @@
 const baseUrl = "http://localhost:3000/satisfactory-recipes";
 // const baseUrl = "https://lare.alwaysdata.net/satisfactory-recipes";
 const [contentBox] = document.getElementsByClassName("content");
+const [errorText] = document.getElementsByClassName("error");
 
 const constructList = (data) => {
   contentBox.innerHTML = "";
@@ -265,12 +266,19 @@ const displayAll = (type, data) => {
 };
 
 const dataRequest = async () => {
+  errorText.innerText = "";
   const dataType = document.getElementById("dataType").value;
   const dataKey = document.getElementById("dataKey").value;
 
   const response = await fetch(
     `${baseUrl}/advanced?type=${dataType}&key=${dataKey.toLowerCase()}`
   );
+
+  if (response.status == 503) {
+    errorText.innerText = await response.text();
+    return;
+  }
+
   const data = await response.json();
 
   contentBox.innerHTML = "";

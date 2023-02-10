@@ -27,8 +27,10 @@ router.get("/advanced", (req, res) => {
 
   if (key == "all") {
     res.send(data[type]);
-  } else {
+  } else if (Object.keys(data[type]).includes(key)) {
     res.send(data[type][key]);
+  } else {
+    res.status(503).send("You entered an invalid key!");
   }
 });
 
