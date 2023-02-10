@@ -14,6 +14,7 @@ newData["items"] = {};
 newData["generators"] = {};
 newData["miners"] = {};
 newData["machines"] = {};
+newData["research"] = {};
 
 const machineRecipesFor = [];
 const handRecipesFor = [];
@@ -206,6 +207,47 @@ for (const [k, v] of Object.entries(data["buildings"])) {
       newData["machines"][name]["powerConsumption"] =
         v["metadata"]["powerConsumption"];
     }
+  }
+}
+
+// research stuff
+for (const [k, v] of Object.entries(data["schematics"])) {
+  if (k.includes("Research")) {
+    let recipes = [];
+    if (v["unlock"]["recipes"]) {
+      for (const recipe of v["unlock"]["recipes"]) {
+        if (Object.keys(data["recipes"]).includes(recipe)) {
+          recipes.push(data["recipes"][recipe]["name"]);
+        }
+      }
+    }
+
+    let handSlot = 0;
+    if (v["name"] == "Expanded Toolbelt") {
+      handSlot = 1;
+    }
+    const items = [];
+    for (const item of v["unlock"]["giveItems"]) {
+      if (Object.keys(data["items"]).includes(item["item"])) {
+        items.push({
+          item: data["items"][item["item"]]["name"],
+          amount: item["amount"],
+        });
+      }
+    }
+
+    const unlock = {
+      inventorySlots: v["unlock"]["inventorySlots"],
+      handSlots: handSlot,
+      recipes: recipes,
+    };
+
+    newData["research"][v["name"].toLowerCase()] = {
+      name: v["name"],
+      time: v["time"],
+      unlock: unlock,
+      cost: v["cost"],
+    };
   }
 }
 

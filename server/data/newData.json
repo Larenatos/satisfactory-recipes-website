@@ -10040,5 +10040,1526 @@
       "name": "Equipment Workshop",
       "description": "Used to manually craft equipment."
     }
+  },
+  "research": {
+    "hog research": {
+      "name": "Hog Research",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Hog Protein"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_HogParts_C",
+          "amount": 1
+        }
+      ]
+    },
+    "the rebar gun": {
+      "name": "The Rebar Gun",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Rebar Gun",
+          "Iron Rebar"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_Rotor_C",
+          "amount": 25
+        },
+        {
+          "item": "Desc_IronPlateReinforced_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_IronScrew_C",
+          "amount": 500
+        }
+      ]
+    },
+    "expanded toolbelt": {
+      "name": "Expanded Toolbelt",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 1,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_Gunpowder_C",
+          "amount": 100
+        },
+        {
+          "item": "Desc_SteelPlateReinforced_C",
+          "amount": 50
+        }
+      ]
+    },
+    "bio-organic properties": {
+      "name": "Bio-Organic Properties",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Organic Data Capsule",
+          "Biomass (Alien Protein)"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_AlienProtein_C",
+          "amount": 5
+        },
+        {
+          "item": "Desc_GenericBiomass_C",
+          "amount": 15
+        }
+      ]
+    },
+    "hatcher research": {
+      "name": "Hatcher Research",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Hatcher Protein"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_HatcherParts_C",
+          "amount": 1
+        }
+      ]
+    },
+    "structural analysis": {
+      "name": "Structural Analysis",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_AlienDNACapsule_C",
+          "amount": 5
+        },
+        {
+          "item": "Desc_IronRod_C",
+          "amount": 100
+        }
+      ]
+    },
+    "spitter research": {
+      "name": "Spitter Research",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Spitter Protein"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_SpitterParts_C",
+          "amount": 1
+        }
+      ]
+    },
+    "stinger research": {
+      "name": "Stinger Research",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Stinger Protein"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_StingerParts_C",
+          "amount": 1
+        }
+      ]
+    },
+    "hostile organism detection": {
+      "name": "Hostile Organism Detection",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_AlienDNACapsule_C",
+          "amount": 10
+        },
+        {
+          "item": "Desc_CrystalOscillator_C",
+          "amount": 5
+        },
+        {
+          "item": "Desc_HighSpeedConnector_C",
+          "amount": 5
+        }
+      ]
+    },
+    "protein inhaler": {
+      "name": "Protein Inhaler",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Protein Inhaler"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_AlienProtein_C",
+          "amount": 2
+        },
+        {
+          "item": "Desc_Nut_C",
+          "amount": 20
+        },
+        {
+          "item": "Desc_Rotor_C",
+          "amount": 50
+        }
+      ]
+    },
+    "inflated pocket dimension": {
+      "name": "Inflated Pocket Dimension",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 6,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_GunpowderMK2_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_CircuitBoard_C",
+          "amount": 50
+        }
+      ]
+    },
+    "caterium": {
+      "name": "Caterium",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_OreGold_C",
+          "amount": 10
+        }
+      ]
+    },
+    "caterium ingots": {
+      "name": "Caterium Ingots",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Caterium Ingot"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_OreGold_C",
+          "amount": 50
+        }
+      ]
+    },
+    "zipline": {
+      "name": "Zipline",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Zipline"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_HighSpeedWire_C",
+          "amount": 100
+        },
+        {
+          "item": "Desc_Cable_C",
+          "amount": 50
+        }
+      ]
+    },
+    "quickwire": {
+      "name": "Quickwire",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Quickwire"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_GoldIngot_C",
+          "amount": 50
+        }
+      ]
+    },
+    "stun rebar": {
+      "name": "Stun Rebar",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Stun Rebar"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_HighSpeedWire_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_SpikedRebar_C",
+          "amount": 10
+        }
+      ]
+    },
+    "caterium electronics": {
+      "name": "Caterium Electronics",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_HighSpeedWire_C",
+          "amount": 100
+        }
+      ]
+    },
+    "smart splitter": {
+      "name": "Smart Splitter",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Smart Splitter"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_CircuitBoardHighSpeed_C",
+          "amount": 10
+        },
+        {
+          "item": "Desc_IronPlateReinforced_C",
+          "amount": 50
+        }
+      ]
+    },
+    "power switch": {
+      "name": "Power Switch",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Power Switch"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_SteelPlate_C",
+          "amount": 100
+        },
+        {
+          "item": "Desc_CircuitBoardHighSpeed_C",
+          "amount": 50
+        }
+      ]
+    },
+    "ai limiter": {
+      "name": "AI Limiter",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "AI Limiter"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_HighSpeedWire_C",
+          "amount": 200
+        },
+        {
+          "item": "Desc_CopperSheet_C",
+          "amount": 50
+        }
+      ]
+    },
+    "power poles mk.2": {
+      "name": "Power Poles Mk.2",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Power Pole Mk.2"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_HighSpeedWire_C",
+          "amount": 300
+        }
+      ]
+    },
+    "blade runners": {
+      "name": "Blade Runners",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Blade Runners"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_Silica_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_ModularFrame_C",
+          "amount": 10
+        }
+      ]
+    },
+    "high-speed connector": {
+      "name": "High-Speed Connector",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "High-Speed Connector"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_HighSpeedWire_C",
+          "amount": 500
+        },
+        {
+          "item": "Desc_Plastic_C",
+          "amount": 50
+        }
+      ]
+    },
+    "supercomputer": {
+      "name": "Supercomputer",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Supercomputer"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_CircuitBoardHighSpeed_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_HighSpeedConnector_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_Computer_C",
+          "amount": 50
+        }
+      ]
+    },
+    "power poles mk.3": {
+      "name": "Power Poles Mk.3",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Power Pole Mk.3"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_HighSpeedConnector_C",
+          "amount": 100
+        },
+        {
+          "item": "Desc_SteelPipe_C",
+          "amount": 200
+        }
+      ]
+    },
+    "bullet guidance system": {
+      "name": "Bullet Guidance System",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Homing Rifle Ammo"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_HighSpeedConnector_C",
+          "amount": 10
+        },
+        {
+          "item": "Desc_CartridgeStandard_C",
+          "amount": 500
+        }
+      ]
+    },
+    "programmable splitter": {
+      "name": "Programmable Splitter",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Programmable Splitter"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_ComputerSuper_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_ModularFrameHeavy_C",
+          "amount": 50
+        }
+      ]
+    },
+    "geothermal generator": {
+      "name": "Geothermal Generator",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Geothermal Generator"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_ComputerSuper_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_ModularFrameHeavy_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_Rubber_C",
+          "amount": 300
+        }
+      ]
+    },
+    "flower petals": {
+      "name": "Flower Petals",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_FlowerPetals_C",
+          "amount": 10
+        }
+      ]
+    },
+    "color cartridges": {
+      "name": "Color Cartridges",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Color Cartridge"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_FlowerPetals_C",
+          "amount": 100
+        }
+      ]
+    },
+    "hard drive": {
+      "name": "Hard Drive",
+      "time": 600,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_HardDrive_C",
+          "amount": 1
+        }
+      ]
+    },
+    "mycelia": {
+      "name": "Mycelia",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Biomass (Mycelia)"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_Mycelia_C",
+          "amount": 5
+        }
+      ]
+    },
+    "synthethic polyester fabric": {
+      "name": "Synthethic Polyester Fabric",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Alternate: Polyester Fabric"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_Fabric_C",
+          "amount": 25
+        },
+        {
+          "item": "Desc_PolymerResin_C",
+          "amount": 100
+        }
+      ]
+    },
+    "fabric": {
+      "name": "Fabric",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Fabric"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_Mycelia_C",
+          "amount": 25
+        },
+        {
+          "item": "Desc_GenericBiomass_C",
+          "amount": 100
+        }
+      ]
+    },
+    "parachute": {
+      "name": "Parachute",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Parachute"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_Fabric_C",
+          "amount": 10
+        },
+        {
+          "item": "Desc_Cable_C",
+          "amount": 50
+        }
+      ]
+    },
+    "medical properties": {
+      "name": "Medical Properties",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_Mycelia_C",
+          "amount": 25
+        },
+        {
+          "item": "Desc_Stator_C",
+          "amount": 10
+        }
+      ]
+    },
+    "vitamin inhaler": {
+      "name": "Vitamin Inhaler",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Vitamin Inhaler"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_Mycelia_C",
+          "amount": 10
+        },
+        {
+          "item": "Desc_Berry_C",
+          "amount": 5
+        }
+      ]
+    },
+    "therapeutic inhaler": {
+      "name": "Therapeutic Inhaler",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Therapeutic Inhaler"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_Mycelia_C",
+          "amount": 15
+        },
+        {
+          "item": "Desc_Shroom_C",
+          "amount": 1
+        },
+        {
+          "item": "Desc_AlienProtein_C",
+          "amount": 1
+        }
+      ]
+    },
+    "toxic cellular modification": {
+      "name": "Toxic Cellular Modification",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Gas Nobelisk"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_NobeliskExplosive_C",
+          "amount": 10
+        },
+        {
+          "item": "Desc_Mycelia_C",
+          "amount": 100
+        },
+        {
+          "item": "Desc_GenericBiomass_C",
+          "amount": 200
+        }
+      ]
+    },
+    "paleberry": {
+      "name": "Paleberry",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_Berry_C",
+          "amount": 2
+        }
+      ]
+    },
+    "beryl nut": {
+      "name": "Beryl Nut",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_Nut_C",
+          "amount": 5
+        }
+      ]
+    },
+    "bacon agaric": {
+      "name": "Bacon Agaric",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_Shroom_C",
+          "amount": 1
+        }
+      ]
+    },
+    "nutritional processor": {
+      "name": "Nutritional Processor",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_ModularFrame_C",
+          "amount": 25
+        },
+        {
+          "item": "Desc_SteelPipe_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_Wire_C",
+          "amount": 500
+        }
+      ]
+    },
+    "nutritional inhaler": {
+      "name": "Nutritional Inhaler",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Nutritional Inhaler"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_Shroom_C",
+          "amount": 2
+        },
+        {
+          "item": "Desc_Berry_C",
+          "amount": 4
+        },
+        {
+          "item": "Desc_Nut_C",
+          "amount": 10
+        }
+      ]
+    },
+    "blue power slugs": {
+      "name": "Blue Power Slugs",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Power Shard (1)"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_Crystal_C",
+          "amount": 1
+        }
+      ]
+    },
+    "overclock production": {
+      "name": "Overclock Production",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_CrystalShard_C",
+          "amount": 1
+        },
+        {
+          "item": "Desc_IronPlate_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_Wire_C",
+          "amount": 50
+        }
+      ]
+    },
+    "slug scanning": {
+      "name": "Slug Scanning",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_IronRod_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_Wire_C",
+          "amount": 100
+        },
+        {
+          "item": "Desc_IronScrew_C",
+          "amount": 200
+        }
+      ]
+    },
+    "yellow power shards": {
+      "name": "Yellow Power Shards",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Power Shard (2)"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_Crystal_mk2_C",
+          "amount": 1
+        },
+        {
+          "item": "Desc_Rotor_C",
+          "amount": 25
+        },
+        {
+          "item": "Desc_Cable_C",
+          "amount": 100
+        }
+      ]
+    },
+    "purple power shards": {
+      "name": "Purple Power Shards",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Power Shard (5)"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_Crystal_mk3_C",
+          "amount": 1
+        },
+        {
+          "item": "Desc_ModularFrame_C",
+          "amount": 25
+        },
+        {
+          "item": "Desc_CopperSheet_C",
+          "amount": 100
+        }
+      ]
+    },
+    "quartz": {
+      "name": "Quartz",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_RawQuartz_C",
+          "amount": 10
+        }
+      ]
+    },
+    "quartz crystals": {
+      "name": "Quartz Crystals",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Quartz Crystal"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_RawQuartz_C",
+          "amount": 20
+        }
+      ]
+    },
+    "silica": {
+      "name": "Silica",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Silica"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_RawQuartz_C",
+          "amount": 20
+        }
+      ]
+    },
+    "shatter rebar": {
+      "name": "Shatter Rebar",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Shatter Rebar"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_QuartzCrystal_C",
+          "amount": 30
+        },
+        {
+          "item": "Desc_SpikedRebar_C",
+          "amount": 150
+        }
+      ]
+    },
+    "crystal oscillator": {
+      "name": "Crystal Oscillator",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Crystal Oscillator"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_QuartzCrystal_C",
+          "amount": 100
+        },
+        {
+          "item": "Desc_IronPlateReinforced_C",
+          "amount": 50
+        }
+      ]
+    },
+    "the explorer": {
+      "name": "The Explorer",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_CrystalOscillator_C",
+          "amount": 10
+        },
+        {
+          "item": "Desc_ModularFrame_C",
+          "amount": 100
+        }
+      ]
+    },
+    "explosive resonance application": {
+      "name": "Explosive Resonance Application",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Pulse Nobelisk"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_CrystalOscillator_C",
+          "amount": 5
+        },
+        {
+          "item": "Desc_NobeliskExplosive_C",
+          "amount": 100
+        }
+      ]
+    },
+    "signal systems": {
+      "name": "Signal Systems",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_CrystalOscillator_C",
+          "amount": 5
+        },
+        {
+          "item": "Desc_CircuitBoard_C",
+          "amount": 5
+        }
+      ]
+    },
+    "radio signal scanning": {
+      "name": "Radio Signal Scanning",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_CrystalOscillator_C",
+          "amount": 100
+        },
+        {
+          "item": "Desc_Motor_C",
+          "amount": 100
+        },
+        {
+          "item": "BP_EquipmentDescriptorObjectScanner_C",
+          "amount": 1
+        }
+      ]
+    },
+    "radar technology": {
+      "name": "Radar Technology",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Radar Tower"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_CrystalOscillator_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_ModularFrameHeavy_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_CircuitBoard_C",
+          "amount": 100
+        }
+      ]
+    },
+    "sulfur": {
+      "name": "Sulfur",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_Sulfur_C",
+          "amount": 10
+        }
+      ]
+    },
+    "black powder": {
+      "name": "Black Powder",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Black Powder"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_Sulfur_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_Coal_C",
+          "amount": 25
+        }
+      ]
+    },
+    "volatile applications": {
+      "name": "Volatile Applications",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_Gunpowder_C",
+          "amount": 50
+        }
+      ]
+    },
+    "the nobelisk detonator": {
+      "name": "The Nobelisk Detonator",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Nobelisk Detonator",
+          "Nobelisk"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_Gunpowder_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_SteelPipe_C",
+          "amount": 100
+        },
+        {
+          "item": "Desc_Cable_C",
+          "amount": 200
+        }
+      ]
+    },
+    "": {
+      "name": "",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_Gunpowder_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_SteelPipe_C",
+          "amount": 50
+        }
+      ]
+    },
+    "smokeless powder": {
+      "name": "Smokeless Powder",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Smokeless Powder"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_Gunpowder_C",
+          "amount": 100
+        },
+        {
+          "item": "Desc_Plastic_C",
+          "amount": 50
+        }
+      ]
+    },
+    "the rifle": {
+      "name": "The Rifle",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Rifle",
+          "Rifle Ammo"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_GunpowderMK2_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_Motor_C",
+          "amount": 100
+        },
+        {
+          "item": "Desc_Rubber_C",
+          "amount": 200
+        }
+      ]
+    },
+    "explosive rebar": {
+      "name": "Explosive Rebar",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Explosive Rebar"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_GunpowderMK2_C",
+          "amount": 200
+        },
+        {
+          "item": "Desc_SpikedRebar_C",
+          "amount": 200
+        },
+        {
+          "item": "Desc_SteelPlate_C",
+          "amount": 200
+        }
+      ]
+    },
+    "cluster nobelisk": {
+      "name": "Cluster Nobelisk",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Cluster Nobelisk"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_GunpowderMK2_C",
+          "amount": 100
+        },
+        {
+          "item": "Desc_NobeliskExplosive_C",
+          "amount": 200
+        }
+      ]
+    },
+    "nuclear deterrent development": {
+      "name": "Nuclear Deterrent Development",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Nuke Nobelisk"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_NobeliskExplosive_C",
+          "amount": 500
+        },
+        {
+          "item": "Desc_UraniumCell_C",
+          "amount": 10
+        },
+        {
+          "item": "Desc_CircuitBoardHighSpeed_C",
+          "amount": 100
+        }
+      ]
+    },
+    "turbo rifle ammo": {
+      "name": "Turbo Rifle Ammo",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Turbo Rifle Ammo"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_CartridgeStandard_C",
+          "amount": 1000
+        },
+        {
+          "item": "Desc_TurboFuel_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_AluminumCasing_C",
+          "amount": 100
+        }
+      ]
+    },
+    "compacted coal": {
+      "name": "Compacted Coal",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Alternate: Compacted Coal"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_HardDrive_C",
+          "amount": 1
+        },
+        {
+          "item": "Desc_Sulfur_C",
+          "amount": 25
+        },
+        {
+          "item": "Desc_Coal_C",
+          "amount": 25
+        }
+      ]
+    },
+    "experimental power generation": {
+      "name": "Experimental Power Generation",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_Sulfur_C",
+          "amount": 25
+        },
+        {
+          "item": "Desc_ModularFrame_C",
+          "amount": 50
+        },
+        {
+          "item": "Desc_Rotor_C",
+          "amount": 100
+        }
+      ]
+    },
+    "turbo fuel": {
+      "name": "Turbo Fuel",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": [
+          "Turbofuel",
+          "Packaged Turbofuel"
+        ]
+      },
+      "cost": [
+        {
+          "item": "Desc_HardDrive_C",
+          "amount": 1
+        },
+        {
+          "item": "Desc_CompactedCoal_C",
+          "amount": 15
+        },
+        {
+          "item": "Desc_Fuel_C",
+          "amount": 50
+        }
+      ]
+    },
+    "it's snowing!": {
+      "name": "It's snowing!",
+      "time": 3,
+      "unlock": {
+        "inventorySlots": 0,
+        "handSlots": 0,
+        "recipes": []
+      },
+      "cost": [
+        {
+          "item": "Desc_XmasBallCluster_C",
+          "amount": 10
+        },
+        {
+          "item": "Desc_Snow_C",
+          "amount": 100
+        },
+        {
+          "item": "Desc_XmasBranch_C",
+          "amount": 500
+        }
+      ]
+    }
   }
 }

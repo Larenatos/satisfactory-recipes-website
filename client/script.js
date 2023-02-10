@@ -183,6 +183,58 @@ const displayMiner = (data) => {
   contentBox.append(list);
 };
 
+const displayResearch = (data) => {
+  const list = document.createElement("ul");
+  list.classList.add("list");
+
+  const name = document.createElement("li");
+  name.innerText = `name: ${data["name"]}`;
+
+  const time = document.createElement("li");
+  time.innerText = `time: ${data["time"]}`;
+
+  const unlocks = document.createElement("li");
+  unlocks.innerText = "unlocks:";
+
+  const unlocksUl = document.createElement("ul");
+
+  const inventory = document.createElement("li");
+  inventory.innerText = `inventory slots: ${data["unlock"]["inventorySlots"]}`;
+
+  const hand = document.createElement("li");
+  hand.innerText = `hand slots: ${data["unlock"]["handSlots"]}`;
+
+  const recipes = document.createElement("li");
+  recipes.innerText = "recipes:";
+
+  const recipesUl = document.createElement("ul");
+  for (const recipeName of data["unlock"]["recipes"]) {
+    const recipe = document.createElement("li");
+    recipe.innerText = recipeName;
+
+    recipesUl.append(recipe);
+  }
+  recipes.append(recipesUl);
+
+  unlocksUl.append(inventory, hand, recipes);
+  unlocks.append(unlocksUl);
+
+  const cost = document.createElement("li");
+  cost.innerText = "cost:";
+
+  const costUl = document.createElement("ul");
+  for (const costItem of data["cost"]) {
+    const cost = document.createElement("li");
+    cost.innerText = `${costItem["item"]} (${costItem["amount"]})`;
+
+    costUl.append(cost);
+  }
+  cost.append(costUl);
+
+  list.append(name, time, unlocks, cost);
+  contentBox.append(list);
+};
+
 const displayKeys = async () => {
   const dataType = document.getElementById("dataType").value;
   const response = await fetch(`${baseUrl}/header?type=${dataType}`);
@@ -225,5 +277,7 @@ const dataRequest = async () => {
     displayMiner(data);
   } else if (dataType == "machines") {
     displayMachine(data);
+  } else if (dataType == "research") {
+    displayResearch(data);
   }
 };
