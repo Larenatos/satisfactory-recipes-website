@@ -26,6 +26,9 @@ const displayRecipe = (data) => {
   const time = document.createElement("li");
   time.innerText = `time to process: ${data["time"]}s`;
 
+  const alternate = document.createElement("li");
+  alternate.innerText = `alternate: ${data["alternate"]}`;
+
   const producedIn = document.createElement("li");
   producedIn.innerText = "produced in:";
 
@@ -61,7 +64,7 @@ const displayRecipe = (data) => {
   }
   ingredientsLi.append(ingredientsUl);
 
-  list.append(name, time, producedIn, productsLi, ingredientsLi);
+  list.append(name, time, alternate, producedIn, productsLi, ingredientsLi);
   contentBox.append(list);
 };
 

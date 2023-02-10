@@ -95,6 +95,7 @@ for (const [k, v] of Object.entries(data["recipes"])) {
       newData[target][name].push({
         name: v["name"],
         time: v["time"],
+        alternate: v["alternate"],
         producedIn: producedIn,
         ingredients: ingredients,
         products: products,

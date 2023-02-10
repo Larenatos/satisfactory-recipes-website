@@ -9,55 +9,58 @@ let baseRecipes = {};
 let alternateRecipes = {};
 
 for (const [k, v] of Object.entries(data["recipes"])) {
-  if (v["inMachine"] || v["inHand"] || v["inWorkshop"]) {
-    let target;
-    if (k.includes("Alternate")) {
-      target = alternateRecipes;
-    } else {
-      target = baseRecipes;
+  if (!(v["inMachine"] || v["inHand"] || v["inWorkshop"])) {
+    continue;
+  }
+
+  let target;
+  if (v["alternate"]) {
+    target = alternateRecipes;
+  } else {
+    target = baseRecipes;
+  }
+
+  for (const product of v["products"]) {
+    const name = data["items"][product["item"]]["name"];
+    if (!target[name]) {
+      target[name] = [];
+    }
+    const ingredients = [];
+    const products = [];
+    const producedIn = [];
+
+    for (const ingredient of v["ingredients"]) {
+      ingredients.push({
+        item: data["items"][ingredient["item"]]["name"],
+        amount: ingredient["amount"],
+      });
     }
 
     for (const product of v["products"]) {
-      const name = data["items"][product["item"]]["name"];
-      if (!target[name]) {
-        target[name] = [];
-      }
-      const ingredients = [];
-      const products = [];
-      const producedIn = [];
-
-      for (const ingredient of v["ingredients"]) {
-        ingredients.push({
-          item: data["items"][ingredient["item"]]["name"],
-          amount: ingredient["amount"],
-        });
-      }
-
-      for (const product of v["products"]) {
-        products.push({
-          item: data["items"][product["item"]]["name"],
-          amount: product["amount"],
-        });
-      }
-
-      if (v["inMachine"]) {
-        producedIn.push(data["buildings"][v["producedIn"]]["name"]);
-      }
-      if (v["inHand"]) {
-        producedIn.push("Craft Bench");
-      }
-      if (v["inWorkshop"]) {
-        producedIn.push("Equipment Workshop");
-      }
-
-      target[name].push({
-        name: v["name"],
-        time: v["time"],
-        producedIn: producedIn,
-        ingredients: ingredients,
-        products: products,
+      products.push({
+        item: data["items"][product["item"]]["name"],
+        amount: product["amount"],
       });
     }
+
+    if (v["inMachine"]) {
+      producedIn.push(data["buildings"][v["producedIn"]]["name"]);
+    }
+    if (v["inHand"]) {
+      producedIn.push("Craft Bench");
+    }
+    if (v["inWorkshop"]) {
+      producedIn.push("Equipment Workshop");
+    }
+
+    target[name].push({
+      name: v["name"],
+      time: v["time"],
+      alternate: v["alternate"],
+      producedIn: producedIn,
+      ingredients: ingredients,
+      products: products,
+    });
   }
 }
 

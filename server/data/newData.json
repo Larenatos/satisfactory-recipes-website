@@ -4,6 +4,7 @@
       {
         "name": "AI Limiter",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -30,6 +31,7 @@
       {
         "name": "Organic Data Capsule",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -52,6 +54,7 @@
       {
         "name": "Alternate: Adhered Iron Plate",
         "time": 16,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -75,6 +78,7 @@
       {
         "name": "Alternate: Bolted Iron Plate",
         "time": 12,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -98,6 +102,7 @@
       {
         "name": "Alternate: Stitched Iron Plate",
         "time": 32,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -121,6 +126,7 @@
       {
         "name": "Reinforced Iron Plate",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -147,6 +153,7 @@
       {
         "name": "Alternate: Alclad Casing",
         "time": 8,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -170,6 +177,7 @@
       {
         "name": "Aluminum Casing",
         "time": 2,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -192,6 +200,7 @@
       {
         "name": "Alternate: Automated Miner",
         "time": 60,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -225,6 +234,7 @@
       {
         "name": "Alternate: Crystal Beacon",
         "time": 120,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -252,6 +262,7 @@
       {
         "name": "Beacon",
         "time": 8,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Equipment Workshop"
@@ -286,6 +297,7 @@
       {
         "name": "Alternate: Bolted Frame",
         "time": 24,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -309,6 +321,7 @@
       {
         "name": "Alternate: Steeled Frame",
         "time": 60,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -332,6 +345,7 @@
       {
         "name": "Modular Frame",
         "time": 60,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -358,6 +372,7 @@
       {
         "name": "Alternate: Insulated Cable",
         "time": 12,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -381,6 +396,7 @@
       {
         "name": "Alternate: Quickwire Cable",
         "time": 24,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -404,6 +420,7 @@
       {
         "name": "Alternate: Coated Cable",
         "time": 8,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -427,6 +444,7 @@
       {
         "name": "Cable",
         "time": 2,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -449,6 +467,7 @@
       {
         "name": "Alternate: Silicon Circuit Board",
         "time": 24,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -472,6 +491,7 @@
       {
         "name": "Alternate: Caterium Circuit Board",
         "time": 48,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -495,6 +515,7 @@
       {
         "name": "Alternate: Electrode Circuit Board",
         "time": 12,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -518,6 +539,7 @@
       {
         "name": "Circuit Board",
         "time": 8,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -544,6 +566,7 @@
       {
         "name": "Alternate: Classic Battery",
         "time": 8,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -575,6 +598,7 @@
       {
         "name": "Battery",
         "time": 3,
+        "alternate": false,
         "producedIn": [
           "Blender"
         ],
@@ -608,6 +632,7 @@
       {
         "name": "Alternate: Charcoal",
         "time": 4,
+        "alternate": true,
         "producedIn": [
           "Constructor"
         ],
@@ -627,6 +652,7 @@
       {
         "name": "Alternate: Biocoal",
         "time": 8,
+        "alternate": true,
         "producedIn": [
           "Constructor"
         ],
@@ -648,6 +674,7 @@
       {
         "name": "Alternate: Coated Iron Canister",
         "time": 4,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -671,6 +698,7 @@
       {
         "name": "Alternate: Steel Canister",
         "time": 3,
+        "alternate": true,
         "producedIn": [
           "Constructor"
         ],
@@ -690,6 +718,7 @@
       {
         "name": "Empty Canister",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -710,6 +739,7 @@
       {
         "name": "Unpackage Alumina Solution",
         "time": 1,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -733,6 +763,7 @@
       {
         "name": "Unpackage Liquid Biofuel",
         "time": 2,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -756,6 +787,7 @@
       {
         "name": "Unpackage Fuel",
         "time": 2,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -779,6 +811,7 @@
       {
         "name": "Unpackage Heavy Oil Residue",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -802,6 +835,7 @@
       {
         "name": "Unpackage Oil",
         "time": 2,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -825,6 +859,7 @@
       {
         "name": "Unpackage Sulfuric Acid",
         "time": 1,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -848,6 +883,7 @@
       {
         "name": "Unpackage Turbofuel",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -871,6 +907,7 @@
       {
         "name": "Unpackage Water",
         "time": 1,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -896,6 +933,7 @@
       {
         "name": "Alternate: Coated Iron Plate",
         "time": 12,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -919,6 +957,7 @@
       {
         "name": "Alternate: Steel Coated Plate",
         "time": 24,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -942,6 +981,7 @@
       {
         "name": "Iron Plate",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -964,6 +1004,7 @@
       {
         "name": "Alternate: Coke Steel Ingot",
         "time": 12,
+        "alternate": true,
         "producedIn": [
           "Foundry"
         ],
@@ -987,6 +1028,7 @@
       {
         "name": "Alternate: Solid Steel Ingot",
         "time": 3,
+        "alternate": true,
         "producedIn": [
           "Foundry"
         ],
@@ -1010,6 +1052,7 @@
       {
         "name": "Alternate: Compacted Steel Ingot",
         "time": 16,
+        "alternate": true,
         "producedIn": [
           "Foundry"
         ],
@@ -1033,6 +1076,7 @@
       {
         "name": "Steel Ingot",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Foundry",
           "Craft Bench"
@@ -1059,6 +1103,7 @@
       {
         "name": "Alternate: Caterium Computer",
         "time": 16,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -1086,6 +1131,7 @@
       {
         "name": "Alternate: Crystal Computer",
         "time": 64,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -1109,6 +1155,7 @@
       {
         "name": "Computer",
         "time": 24,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Craft Bench"
@@ -1143,6 +1190,7 @@
       {
         "name": "Alternate: Fine Concrete",
         "time": 24,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -1166,6 +1214,7 @@
       {
         "name": "Alternate: Rubber Concrete",
         "time": 12,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -1189,6 +1238,7 @@
       {
         "name": "Alternate: Wet Concrete",
         "time": 3,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -1212,6 +1262,7 @@
       {
         "name": "Concrete",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -1234,6 +1285,7 @@
       {
         "name": "Alternate: Cooling Device",
         "time": 32,
+        "alternate": true,
         "producedIn": [
           "Blender"
         ],
@@ -1261,6 +1313,7 @@
       {
         "name": "Cooling System",
         "time": 10,
+        "alternate": false,
         "producedIn": [
           "Blender"
         ],
@@ -1294,6 +1347,7 @@
       {
         "name": "Alternate: Copper Alloy Ingot",
         "time": 12,
+        "alternate": true,
         "producedIn": [
           "Foundry"
         ],
@@ -1317,6 +1371,7 @@
       {
         "name": "Alternate: Pure Copper Ingot",
         "time": 24,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -1340,6 +1395,7 @@
       {
         "name": "Copper Ingot",
         "time": 2,
+        "alternate": false,
         "producedIn": [
           "Smelter",
           "Craft Bench"
@@ -1362,6 +1418,7 @@
       {
         "name": "Alternate: Copper Rotor",
         "time": 16,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -1385,6 +1442,7 @@
       {
         "name": "Alternate: Steel Rotor",
         "time": 12,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -1408,6 +1466,7 @@
       {
         "name": "Rotor",
         "time": 15,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -1434,6 +1493,7 @@
       {
         "name": "Alternate: Insulated Crystal Oscillator",
         "time": 32,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -1461,6 +1521,7 @@
       {
         "name": "Crystal Oscillator",
         "time": 120,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Craft Bench"
@@ -1491,6 +1552,7 @@
       {
         "name": "Alternate: Diluted Fuel",
         "time": 6,
+        "alternate": true,
         "producedIn": [
           "Blender"
         ],
@@ -1514,6 +1576,7 @@
       {
         "name": "Fuel",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -1537,6 +1600,7 @@
       {
         "name": "Residual Fuel",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -1556,6 +1620,7 @@
       {
         "name": "Unpackage Fuel",
         "time": 2,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -1581,6 +1646,7 @@
       {
         "name": "Alternate: Diluted Packaged Fuel",
         "time": 2,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -1604,6 +1670,7 @@
       {
         "name": "Packaged Fuel",
         "time": 3,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -1629,6 +1696,7 @@
       {
         "name": "Alternate: Electric Motor",
         "time": 16,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -1652,6 +1720,7 @@
       {
         "name": "Alternate: Rigour Motor",
         "time": 48,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -1679,6 +1748,7 @@
       {
         "name": "Motor",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -1705,6 +1775,7 @@
       {
         "name": "Alternate: Electrode - Aluminum Scrap",
         "time": 4,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -1732,6 +1803,7 @@
       {
         "name": "Alternate: Instant Scrap",
         "time": 6,
+        "alternate": true,
         "producedIn": [
           "Blender"
         ],
@@ -1767,6 +1839,7 @@
       {
         "name": "Aluminum Scrap",
         "time": 1,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -1796,6 +1869,7 @@
       {
         "name": "Alternate: Electrode - Aluminum Scrap",
         "time": 4,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -1823,6 +1897,7 @@
       {
         "name": "Alternate: Fertile Uranium",
         "time": 12,
+        "alternate": true,
         "producedIn": [
           "Blender"
         ],
@@ -1858,6 +1933,7 @@
       {
         "name": "Alternate: Instant Scrap",
         "time": 6,
+        "alternate": true,
         "producedIn": [
           "Blender"
         ],
@@ -1893,6 +1969,7 @@
       {
         "name": "Aluminum Scrap",
         "time": 1,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -1920,6 +1997,7 @@
       {
         "name": "Battery",
         "time": 3,
+        "alternate": false,
         "producedIn": [
           "Blender"
         ],
@@ -1951,6 +2029,7 @@
       {
         "name": "Non-fissile Uranium",
         "time": 24,
+        "alternate": false,
         "producedIn": [
           "Blender"
         ],
@@ -1986,6 +2065,7 @@
       {
         "name": "Unpackage Water",
         "time": 1,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -2011,6 +2091,7 @@
       {
         "name": "Alternate: Electromagnetic Connection Rod",
         "time": 15,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -2034,6 +2115,7 @@
       {
         "name": "Electromagnetic Control Rod",
         "time": 30,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -2060,6 +2142,7 @@
       {
         "name": "Alternate: Encased Industrial Pipe",
         "time": 15,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -2083,6 +2166,7 @@
       {
         "name": "Encased Industrial Beam",
         "time": 10,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -2109,6 +2193,7 @@
       {
         "name": "Alternate: Compacted Coal",
         "time": 12,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -2134,6 +2219,7 @@
       {
         "name": "Alternate: Fertile Uranium",
         "time": 12,
+        "alternate": true,
         "producedIn": [
           "Blender"
         ],
@@ -2169,6 +2255,7 @@
       {
         "name": "Non-fissile Uranium",
         "time": 24,
+        "alternate": false,
         "producedIn": [
           "Blender"
         ],
@@ -2206,6 +2293,7 @@
       {
         "name": "Alternate: Flexible Framework",
         "time": 16,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -2233,6 +2321,7 @@
       {
         "name": "Versatile Framework",
         "time": 24,
+        "alternate": false,
         "producedIn": [
           "Assembler"
         ],
@@ -2258,6 +2347,7 @@
       {
         "name": "Alternate: Fused Wire",
         "time": 20,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -2281,6 +2371,7 @@
       {
         "name": "Alternate: Iron Wire",
         "time": 24,
+        "alternate": true,
         "producedIn": [
           "Constructor"
         ],
@@ -2300,6 +2391,7 @@
       {
         "name": "Alternate: Caterium Wire",
         "time": 4,
+        "alternate": true,
         "producedIn": [
           "Constructor"
         ],
@@ -2319,6 +2411,7 @@
       {
         "name": "Wire",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -2341,6 +2434,7 @@
       {
         "name": "Alternate: Fine Black Powder",
         "time": 16,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -2364,6 +2458,7 @@
       {
         "name": "Black Powder",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -2390,6 +2485,7 @@
       {
         "name": "Alternate: Heat-Fused Frame",
         "time": 20,
+        "alternate": true,
         "producedIn": [
           "Blender"
         ],
@@ -2421,6 +2517,7 @@
       {
         "name": "Fused Modular Frame",
         "time": 40,
+        "alternate": false,
         "producedIn": [
           "Blender"
         ],
@@ -2450,6 +2547,7 @@
       {
         "name": "Alternate: Heat Exchanger",
         "time": 6,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -2473,6 +2571,7 @@
       {
         "name": "Heat Sink",
         "time": 8,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -2499,6 +2598,7 @@
       {
         "name": "Alternate: Heavy Flexible Frame",
         "time": 16,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -2530,6 +2630,7 @@
       {
         "name": "Alternate: Heavy Encased Frame",
         "time": 64,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -2561,6 +2662,7 @@
       {
         "name": "Heavy Modular Frame",
         "time": 30,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Craft Bench"
@@ -2595,6 +2697,7 @@
       {
         "name": "Alternate: Heavy Oil Residue",
         "time": 6,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -2618,6 +2721,7 @@
       {
         "name": "Alternate: Polymer Resin",
         "time": 6,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -2641,6 +2745,7 @@
       {
         "name": "Plastic",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -2664,6 +2769,7 @@
       {
         "name": "Rubber",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -2687,6 +2793,7 @@
       {
         "name": "Unpackage Heavy Oil Residue",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -2712,6 +2819,7 @@
       {
         "name": "Alternate: Heavy Oil Residue",
         "time": 6,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -2735,6 +2843,7 @@
       {
         "name": "Alternate: Polymer Resin",
         "time": 6,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -2758,6 +2867,7 @@
       {
         "name": "Fuel",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -2783,6 +2893,7 @@
       {
         "name": "Alternate: Silicon High-Speed Connector",
         "time": 40,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -2810,6 +2921,7 @@
       {
         "name": "High-Speed Connector",
         "time": 16,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Craft Bench"
@@ -2840,6 +2952,7 @@
       {
         "name": "Alternate: Automated Speed Wiring",
         "time": 32,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -2867,6 +2980,7 @@
       {
         "name": "Automated Wiring",
         "time": 24,
+        "alternate": false,
         "producedIn": [
           "Assembler"
         ],
@@ -2892,6 +3006,7 @@
       {
         "name": "Alternate: Iron Alloy Ingot",
         "time": 6,
+        "alternate": true,
         "producedIn": [
           "Foundry"
         ],
@@ -2915,6 +3030,7 @@
       {
         "name": "Alternate: Pure Iron Ingot",
         "time": 12,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -2938,6 +3054,7 @@
       {
         "name": "Iron Ingot",
         "time": 2,
+        "alternate": false,
         "producedIn": [
           "Smelter",
           "Craft Bench"
@@ -2960,6 +3077,7 @@
       {
         "name": "Alternate: Instant Plutonium Cell",
         "time": 120,
+        "alternate": true,
         "producedIn": [
           "Particle Accelerator"
         ],
@@ -2983,6 +3101,7 @@
       {
         "name": "Encased Plutonium Cell",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -3009,6 +3128,7 @@
       {
         "name": "Alternate: Uranium Fuel Unit",
         "time": 300,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -3040,6 +3160,7 @@
       {
         "name": "Uranium Fuel Rod",
         "time": 150,
+        "alternate": false,
         "producedIn": [
           "Manufacturer"
         ],
@@ -3069,6 +3190,7 @@
       {
         "name": "Alternate: OC Supercomputer",
         "time": 20,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -3092,6 +3214,7 @@
       {
         "name": "Alternate: Super-State Computer",
         "time": 50,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -3123,6 +3246,7 @@
       {
         "name": "Supercomputer",
         "time": 32,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Craft Bench"
@@ -3157,6 +3281,7 @@
       {
         "name": "Alternate: Plastic Smart Plating",
         "time": 24,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -3184,6 +3309,7 @@
       {
         "name": "Smart Plating",
         "time": 30,
+        "alternate": false,
         "producedIn": [
           "Assembler"
         ],
@@ -3209,6 +3335,7 @@
       {
         "name": "Alternate: Recycled Plastic",
         "time": 12,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -3232,6 +3359,7 @@
       {
         "name": "Plastic",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -3255,6 +3383,7 @@
       {
         "name": "Residual Plastic",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -3280,6 +3409,7 @@
       {
         "name": "Alternate: Plutonium Fuel Unit",
         "time": 120,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -3303,6 +3433,7 @@
       {
         "name": "Plutonium Fuel Rod",
         "time": 240,
+        "alternate": false,
         "producedIn": [
           "Manufacturer"
         ],
@@ -3336,6 +3467,7 @@
       {
         "name": "Alternate: Polyester Fabric",
         "time": 2,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -3359,6 +3491,7 @@
       {
         "name": "Fabric",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -3385,6 +3518,7 @@
       {
         "name": "Alternate: Pure Caterium Ingot",
         "time": 5,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -3408,6 +3542,7 @@
       {
         "name": "Caterium Ingot",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Smelter",
           "Craft Bench"
@@ -3430,6 +3565,7 @@
       {
         "name": "Alternate: Pure Quartz Crystal",
         "time": 8,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -3453,6 +3589,7 @@
       {
         "name": "Quartz Crystal",
         "time": 8,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -3475,6 +3612,7 @@
       {
         "name": "Alternate: Fused Quickwire",
         "time": 8,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -3498,6 +3636,7 @@
       {
         "name": "Quickwire",
         "time": 5,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -3520,6 +3659,7 @@
       {
         "name": "Alternate: Radio Control System",
         "time": 40,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -3551,6 +3691,7 @@
       {
         "name": "Alternate: Radio Connection Unit",
         "time": 16,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -3578,6 +3719,7 @@
       {
         "name": "Radio Control Unit",
         "time": 48,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Craft Bench"
@@ -3608,6 +3750,7 @@
       {
         "name": "Alternate: Recycled Rubber",
         "time": 12,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -3631,6 +3774,7 @@
       {
         "name": "Residual Rubber",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -3654,6 +3798,7 @@
       {
         "name": "Rubber",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -3679,6 +3824,7 @@
       {
         "name": "Alternate: Steel Screw",
         "time": 12,
+        "alternate": true,
         "producedIn": [
           "Constructor"
         ],
@@ -3698,6 +3844,7 @@
       {
         "name": "Alternate: Cast Screw",
         "time": 24,
+        "alternate": true,
         "producedIn": [
           "Constructor"
         ],
@@ -3717,6 +3864,7 @@
       {
         "name": "Screw",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -3739,6 +3887,7 @@
       {
         "name": "Alternate: Cheap Silica",
         "time": 16,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -3762,6 +3911,7 @@
       {
         "name": "Alumina Solution",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -3789,6 +3939,7 @@
       {
         "name": "Silica",
         "time": 8,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -3811,6 +3962,7 @@
       {
         "name": "Alternate: Sloppy Alumina",
         "time": 3,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -3834,6 +3986,7 @@
       {
         "name": "Alumina Solution",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -3861,6 +4014,7 @@
       {
         "name": "Unpackage Alumina Solution",
         "time": 1,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -3886,6 +4040,7 @@
       {
         "name": "Alternate: Quickwire Stator",
         "time": 15,
+        "alternate": true,
         "producedIn": [
           "Assembler"
         ],
@@ -3909,6 +4064,7 @@
       {
         "name": "Stator",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -3935,6 +4091,7 @@
       {
         "name": "Alternate: Steamed Copper Sheet",
         "time": 8,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -3958,6 +4115,7 @@
       {
         "name": "Copper Sheet",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -3980,6 +4138,7 @@
       {
         "name": "Alternate: Steel Rod",
         "time": 5,
+        "alternate": true,
         "producedIn": [
           "Constructor"
         ],
@@ -3999,6 +4158,7 @@
       {
         "name": "Iron Rod",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -4021,6 +4181,7 @@
       {
         "name": "Alternate: Turbo Blend Fuel",
         "time": 8,
+        "alternate": true,
         "producedIn": [
           "Blender"
         ],
@@ -4052,6 +4213,7 @@
       {
         "name": "Alternate: Turbo Heavy Fuel",
         "time": 8,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -4075,6 +4237,7 @@
       {
         "name": "Turbofuel",
         "time": 16,
+        "alternate": true,
         "producedIn": [
           "Refinery"
         ],
@@ -4098,6 +4261,7 @@
       {
         "name": "Unpackage Turbofuel",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -4123,6 +4287,7 @@
       {
         "name": "Alternate: Turbo Electric Motor",
         "time": 64,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -4154,6 +4319,7 @@
       {
         "name": "Alternate: Turbo Pressure Motor",
         "time": 32,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -4185,6 +4351,7 @@
       {
         "name": "Turbo Motor",
         "time": 32,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Craft Bench"
@@ -4219,6 +4386,7 @@
       {
         "name": "Alternate: Infused Uranium Cell",
         "time": 12,
+        "alternate": true,
         "producedIn": [
           "Manufacturer"
         ],
@@ -4250,6 +4418,7 @@
       {
         "name": "Encased Uranium Cell",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Blender"
         ],
@@ -4283,6 +4452,7 @@
       {
         "name": "Alclad Aluminum Sheet",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -4309,6 +4479,7 @@
       {
         "name": "Solid Biofuel",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -4331,6 +4502,7 @@
       {
         "name": "Biomass (Alien Protein)",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -4351,6 +4523,7 @@
       {
         "name": "Biomass (Leaves)",
         "time": 5,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -4371,6 +4544,7 @@
       {
         "name": "Biomass (Mycelia)",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -4391,6 +4565,7 @@
       {
         "name": "Biomass (Wood)",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -4413,6 +4588,7 @@
       {
         "name": "Turbo Rifle Ammo",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Blender"
         ],
@@ -4440,6 +4616,7 @@
       {
         "name": "Turbo Rifle Ammo",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Equipment Workshop"
@@ -4470,6 +4647,7 @@
       {
         "name": "Homing Rifle Ammo",
         "time": 24,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -4496,6 +4674,7 @@
       {
         "name": "Rifle Ammo",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -4522,6 +4701,7 @@
       {
         "name": "Color Cartridge",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -4544,6 +4724,7 @@
       {
         "name": "Copper Powder",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -4566,6 +4747,7 @@
       {
         "name": "Gas Filter",
         "time": 8,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Equipment Workshop"
@@ -4596,6 +4778,7 @@
       {
         "name": "Iodine Infused Filter",
         "time": 16,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Equipment Workshop"
@@ -4626,6 +4809,7 @@
       {
         "name": "Empty Fluid Tank",
         "time": 1,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -4646,6 +4830,7 @@
       {
         "name": "Unpackage Nitric Acid",
         "time": 3,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -4669,6 +4854,7 @@
       {
         "name": "Unpackage Nitrogen Gas",
         "time": 1,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -4694,6 +4880,7 @@
       {
         "name": "Smokeless Powder",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -4719,6 +4906,7 @@
       {
         "name": "Aluminum Ingot",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Foundry",
           "Craft Bench"
@@ -4743,6 +4931,7 @@
       {
         "name": "Alternate: Pure Aluminum Ingot",
         "time": 2,
+        "alternate": true,
         "producedIn": [
           "Smelter"
         ],
@@ -4764,6 +4953,7 @@
       {
         "name": "Liquid Biofuel",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -4787,6 +4977,7 @@
       {
         "name": "Unpackage Liquid Biofuel",
         "time": 2,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -4812,6 +5003,7 @@
       {
         "name": "Nitric Acid",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Blender"
         ],
@@ -4839,6 +5031,7 @@
       {
         "name": "Unpackage Nitric Acid",
         "time": 3,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -4864,6 +5057,7 @@
       {
         "name": "Cluster Nobelisk",
         "time": 24,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -4890,6 +5084,7 @@
       {
         "name": "Gas Nobelisk",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -4916,6 +5111,7 @@
       {
         "name": "Nuke Nobelisk",
         "time": 120,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Equipment Workshop"
@@ -4950,6 +5146,7 @@
       {
         "name": "Pulse Nobelisk",
         "time": 60,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -4976,6 +5173,7 @@
       {
         "name": "Nobelisk",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -5002,6 +5200,7 @@
       {
         "name": "Packaged Alumina Solution",
         "time": 1,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -5027,6 +5226,7 @@
       {
         "name": "Packaged Liquid Biofuel",
         "time": 3,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -5052,6 +5252,7 @@
       {
         "name": "Packaged Oil",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -5077,6 +5278,7 @@
       {
         "name": "Packaged Nitric Acid",
         "time": 2,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -5102,6 +5304,7 @@
       {
         "name": "Packaged Nitrogen Gas",
         "time": 1,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -5127,6 +5330,7 @@
       {
         "name": "Packaged Heavy Oil Residue",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -5152,6 +5356,7 @@
       {
         "name": "Packaged Sulfuric Acid",
         "time": 3,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -5177,6 +5382,7 @@
       {
         "name": "Packaged Turbofuel",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -5202,6 +5408,7 @@
       {
         "name": "Packaged Water",
         "time": 2,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -5227,6 +5434,7 @@
       {
         "name": "Petroleum Coke",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -5248,6 +5456,7 @@
       {
         "name": "Plutonium Pellet",
         "time": 60,
+        "alternate": false,
         "producedIn": [
           "Particle Accelerator"
         ],
@@ -5273,6 +5482,7 @@
       {
         "name": "Power Shard (1)",
         "time": 8,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -5293,6 +5503,7 @@
       {
         "name": "Power Shard (2)",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -5313,6 +5524,7 @@
       {
         "name": "Power Shard (5)",
         "time": 24,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -5335,6 +5547,7 @@
       {
         "name": "Pressure Conversion Cube",
         "time": 60,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -5361,6 +5574,7 @@
       {
         "name": "Hatcher Protein",
         "time": 3,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -5381,6 +5595,7 @@
       {
         "name": "Hog Protein",
         "time": 3,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -5401,6 +5616,7 @@
       {
         "name": "Spitter Protein",
         "time": 3,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -5421,6 +5637,7 @@
       {
         "name": "Stinger Protein",
         "time": 3,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -5443,6 +5660,7 @@
       {
         "name": "Explosive Rebar",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Equipment Workshop"
@@ -5473,6 +5691,7 @@
       {
         "name": "Shatter Rebar",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -5499,6 +5718,7 @@
       {
         "name": "Stun Rebar",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -5525,6 +5745,7 @@
       {
         "name": "Modular Engine",
         "time": 60,
+        "alternate": false,
         "producedIn": [
           "Manufacturer"
         ],
@@ -5554,6 +5775,7 @@
       {
         "name": "Adaptive Control Unit",
         "time": 120,
+        "alternate": false,
         "producedIn": [
           "Manufacturer"
         ],
@@ -5587,6 +5809,7 @@
       {
         "name": "Magnetic Field Generator",
         "time": 120,
+        "alternate": false,
         "producedIn": [
           "Manufacturer"
         ],
@@ -5616,6 +5839,7 @@
       {
         "name": "Assembly Director System",
         "time": 80,
+        "alternate": false,
         "producedIn": [
           "Assembler"
         ],
@@ -5641,6 +5865,7 @@
       {
         "name": "Thermal Propulsion Rocket",
         "time": 120,
+        "alternate": false,
         "producedIn": [
           "Manufacturer"
         ],
@@ -5674,6 +5899,7 @@
       {
         "name": "Nuclear Pasta",
         "time": 120,
+        "alternate": false,
         "producedIn": [
           "Particle Accelerator"
         ],
@@ -5699,6 +5925,7 @@
       {
         "name": "Iron Rebar",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Equipment Workshop"
@@ -5721,6 +5948,7 @@
       {
         "name": "Steel Beam",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -5743,6 +5971,7 @@
       {
         "name": "Steel Pipe",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -5765,6 +5994,7 @@
       {
         "name": "Sulfuric Acid",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Refinery"
         ],
@@ -5788,6 +6018,7 @@
       {
         "name": "Unpackage Sulfuric Acid",
         "time": 1,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -5811,6 +6042,7 @@
       {
         "name": "Encased Uranium Cell",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Blender"
         ],
@@ -5844,6 +6076,7 @@
       {
         "name": "Unpackage Nitrogen Gas",
         "time": 1,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -5869,6 +6102,7 @@
       {
         "name": "Unpackage Oil",
         "time": 2,
+        "alternate": false,
         "producedIn": [
           "Packager"
         ],
@@ -5896,6 +6130,7 @@
       {
         "name": "AI Limiter",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -5922,6 +6157,7 @@
       {
         "name": "Organic Data Capsule",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -5944,6 +6180,7 @@
       {
         "name": "Aluminum Casing",
         "time": 2,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -5966,6 +6203,7 @@
       {
         "name": "Alclad Aluminum Sheet",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -5992,6 +6230,7 @@
       {
         "name": "Solid Biofuel",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6014,6 +6253,7 @@
       {
         "name": "Biomass (Alien Protein)",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6034,6 +6274,7 @@
       {
         "name": "Biomass (Leaves)",
         "time": 5,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6054,6 +6295,7 @@
       {
         "name": "Biomass (Mycelia)",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6074,6 +6316,7 @@
       {
         "name": "Biomass (Wood)",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6096,6 +6339,7 @@
       {
         "name": "Cable",
         "time": 2,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6118,6 +6362,7 @@
       {
         "name": "Circuit Board",
         "time": 8,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -6144,6 +6389,7 @@
       {
         "name": "Color Cartridge",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6166,6 +6412,7 @@
       {
         "name": "Supercomputer",
         "time": 32,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Craft Bench"
@@ -6200,6 +6447,7 @@
       {
         "name": "Computer",
         "time": 24,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Craft Bench"
@@ -6234,6 +6482,7 @@
       {
         "name": "Concrete",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6256,6 +6505,7 @@
       {
         "name": "Copper Powder",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6278,6 +6528,7 @@
       {
         "name": "Copper Sheet",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6300,6 +6551,7 @@
       {
         "name": "Crystal Oscillator",
         "time": 120,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Craft Bench"
@@ -6330,6 +6582,7 @@
       {
         "name": "Electromagnetic Control Rod",
         "time": 30,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -6356,6 +6609,7 @@
       {
         "name": "Encased Industrial Beam",
         "time": 10,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -6382,6 +6636,7 @@
       {
         "name": "Fabric",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -6408,6 +6663,7 @@
       {
         "name": "Empty Canister",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6430,6 +6686,7 @@
       {
         "name": "Empty Fluid Tank",
         "time": 1,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6452,6 +6709,7 @@
       {
         "name": "Heat Sink",
         "time": 8,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -6478,6 +6736,7 @@
       {
         "name": "High-Speed Connector",
         "time": 16,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Craft Bench"
@@ -6508,6 +6767,7 @@
       {
         "name": "Aluminum Ingot",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Foundry",
           "Craft Bench"
@@ -6534,6 +6794,7 @@
       {
         "name": "Caterium Ingot",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Smelter",
           "Craft Bench"
@@ -6556,6 +6817,7 @@
       {
         "name": "Copper Ingot",
         "time": 2,
+        "alternate": false,
         "producedIn": [
           "Smelter",
           "Craft Bench"
@@ -6578,6 +6840,7 @@
       {
         "name": "Iron Ingot",
         "time": 2,
+        "alternate": false,
         "producedIn": [
           "Smelter",
           "Craft Bench"
@@ -6600,6 +6863,7 @@
       {
         "name": "Steel Ingot",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Foundry",
           "Craft Bench"
@@ -6626,6 +6890,7 @@
       {
         "name": "Reinforced Iron Plate",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -6652,6 +6917,7 @@
       {
         "name": "Iron Plate",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6674,6 +6940,7 @@
       {
         "name": "Iron Rod",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6696,6 +6963,7 @@
       {
         "name": "Heavy Modular Frame",
         "time": 30,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Craft Bench"
@@ -6730,6 +6998,7 @@
       {
         "name": "Modular Frame",
         "time": 60,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -6756,6 +7025,7 @@
       {
         "name": "Turbo Motor",
         "time": 32,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Craft Bench"
@@ -6790,6 +7060,7 @@
       {
         "name": "Motor",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -6816,6 +7087,7 @@
       {
         "name": "Encased Plutonium Cell",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -6842,6 +7114,7 @@
       {
         "name": "Power Shard (1)",
         "time": 8,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6862,6 +7135,7 @@
       {
         "name": "Power Shard (2)",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6882,6 +7156,7 @@
       {
         "name": "Power Shard (5)",
         "time": 24,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6904,6 +7179,7 @@
       {
         "name": "Pressure Conversion Cube",
         "time": 60,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -6930,6 +7206,7 @@
       {
         "name": "Hatcher Protein",
         "time": 3,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6950,6 +7227,7 @@
       {
         "name": "Hog Protein",
         "time": 3,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6970,6 +7248,7 @@
       {
         "name": "Spitter Protein",
         "time": 3,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -6990,6 +7269,7 @@
       {
         "name": "Stinger Protein",
         "time": 3,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -7012,6 +7292,7 @@
       {
         "name": "Quartz Crystal",
         "time": 8,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -7034,6 +7315,7 @@
       {
         "name": "Quickwire",
         "time": 5,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -7056,6 +7338,7 @@
       {
         "name": "Radio Control Unit",
         "time": 48,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Craft Bench"
@@ -7086,6 +7369,7 @@
       {
         "name": "Rotor",
         "time": 15,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -7112,6 +7396,7 @@
       {
         "name": "Screw",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -7134,6 +7419,7 @@
       {
         "name": "Silica",
         "time": 8,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -7156,6 +7442,7 @@
       {
         "name": "Stator",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Craft Bench"
@@ -7182,6 +7469,7 @@
       {
         "name": "Steel Beam",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -7204,6 +7492,7 @@
       {
         "name": "Steel Pipe",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -7226,6 +7515,7 @@
       {
         "name": "Wire",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Craft Bench"
@@ -7250,6 +7540,7 @@
       {
         "name": "Beacon",
         "time": 8,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Equipment Workshop"
@@ -7284,6 +7575,7 @@
       {
         "name": "Blade Runners",
         "time": 60,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -7313,6 +7605,7 @@
       {
         "name": "Turbo Rifle Ammo",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Equipment Workshop"
@@ -7343,6 +7636,7 @@
       {
         "name": "Homing Rifle Ammo",
         "time": 24,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -7369,6 +7663,7 @@
       {
         "name": "Rifle Ammo",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -7395,6 +7690,7 @@
       {
         "name": "Chainsaw",
         "time": 60,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -7428,6 +7724,7 @@
       {
         "name": "Factory Cart™",
         "time": 20,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -7457,6 +7754,7 @@
       {
         "name": "Gas Filter",
         "time": 8,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Equipment Workshop"
@@ -7487,6 +7785,7 @@
       {
         "name": "Iodine Infused Filter",
         "time": 16,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Equipment Workshop"
@@ -7517,6 +7816,7 @@
       {
         "name": "Gas Mask",
         "time": 60,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -7546,6 +7846,7 @@
       {
         "name": "Golden Factory Cart™",
         "time": 20,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -7575,6 +7876,7 @@
       {
         "name": "Black Powder",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -7601,6 +7903,7 @@
       {
         "name": "Hazmat Suit",
         "time": 120,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -7634,6 +7937,7 @@
       {
         "name": "Hover Pack",
         "time": 120,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -7667,6 +7971,7 @@
       {
         "name": "Jetpack",
         "time": 120,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -7700,6 +8005,7 @@
       {
         "name": "Protein Inhaler",
         "time": 20,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -7723,6 +8029,7 @@
       {
         "name": "Vitamin Inhaler",
         "time": 20,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -7746,6 +8053,7 @@
       {
         "name": "Nutritional Inhaler",
         "time": 20,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -7773,6 +8081,7 @@
       {
         "name": "Therapeutic Inhaler",
         "time": 20,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -7802,6 +8111,7 @@
       {
         "name": "Cluster Nobelisk",
         "time": 24,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -7828,6 +8138,7 @@
       {
         "name": "Nobelisk Detonator",
         "time": 80,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -7857,6 +8168,7 @@
       {
         "name": "Gas Nobelisk",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -7883,6 +8195,7 @@
       {
         "name": "Nuke Nobelisk",
         "time": 120,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Equipment Workshop"
@@ -7917,6 +8230,7 @@
       {
         "name": "Pulse Nobelisk",
         "time": 60,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -7943,6 +8257,7 @@
       {
         "name": "Nobelisk",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -7969,6 +8284,7 @@
       {
         "name": "Object Scanner",
         "time": 40,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -7998,6 +8314,7 @@
       {
         "name": "Parachute",
         "time": 20,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -8023,6 +8340,7 @@
       {
         "name": "Portable Miner",
         "time": 40,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -8048,6 +8366,7 @@
       {
         "name": "Rebar Gun",
         "time": 60,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -8077,6 +8396,7 @@
       {
         "name": "Explosive Rebar",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Manufacturer",
           "Equipment Workshop"
@@ -8107,6 +8427,7 @@
       {
         "name": "Shatter Rebar",
         "time": 12,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -8133,6 +8454,7 @@
       {
         "name": "Stun Rebar",
         "time": 6,
+        "alternate": false,
         "producedIn": [
           "Assembler",
           "Equipment Workshop"
@@ -8159,6 +8481,7 @@
       {
         "name": "Rifle",
         "time": 120,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -8192,6 +8515,7 @@
       {
         "name": "Iron Rebar",
         "time": 4,
+        "alternate": false,
         "producedIn": [
           "Constructor",
           "Equipment Workshop"
@@ -8214,6 +8538,7 @@
       {
         "name": "Xeno-Basher",
         "time": 80,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -8247,6 +8572,7 @@
       {
         "name": "Xeno-Zapper",
         "time": 40,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],
@@ -8280,6 +8606,7 @@
       {
         "name": "Zipline",
         "time": 40,
+        "alternate": false,
         "producedIn": [
           "Equipment Workshop"
         ],

@@ -3,6 +3,7 @@
     {
       "name": "Alternate: Adhered Iron Plate",
       "time": 16,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -26,6 +27,7 @@
     {
       "name": "Alternate: Bolted Iron Plate",
       "time": 12,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -49,6 +51,7 @@
     {
       "name": "Alternate: Stitched Iron Plate",
       "time": 32,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -74,6 +77,7 @@
     {
       "name": "Alternate: Alclad Casing",
       "time": 8,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -99,6 +103,7 @@
     {
       "name": "Alternate: Automated Miner",
       "time": 60,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -132,6 +137,7 @@
     {
       "name": "Alternate: Crystal Beacon",
       "time": 120,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -161,6 +167,7 @@
     {
       "name": "Alternate: Bolted Frame",
       "time": 24,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -184,6 +191,7 @@
     {
       "name": "Alternate: Steeled Frame",
       "time": 60,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -209,6 +217,7 @@
     {
       "name": "Alternate: Insulated Cable",
       "time": 12,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -232,6 +241,7 @@
     {
       "name": "Alternate: Quickwire Cable",
       "time": 24,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -255,6 +265,7 @@
     {
       "name": "Alternate: Coated Cable",
       "time": 8,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -280,6 +291,7 @@
     {
       "name": "Alternate: Silicon Circuit Board",
       "time": 24,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -303,6 +315,7 @@
     {
       "name": "Alternate: Caterium Circuit Board",
       "time": 48,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -326,6 +339,7 @@
     {
       "name": "Alternate: Electrode Circuit Board",
       "time": 12,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -351,6 +365,7 @@
     {
       "name": "Alternate: Classic Battery",
       "time": 8,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -384,6 +399,7 @@
     {
       "name": "Alternate: Coated Iron Canister",
       "time": 4,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -407,6 +423,7 @@
     {
       "name": "Alternate: Steel Canister",
       "time": 3,
+      "alternate": true,
       "producedIn": [
         "Constructor"
       ],
@@ -428,6 +445,7 @@
     {
       "name": "Alternate: Coated Iron Plate",
       "time": 12,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -451,6 +469,7 @@
     {
       "name": "Alternate: Steel Coated Plate",
       "time": 24,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -476,6 +495,7 @@
     {
       "name": "Alternate: Coke Steel Ingot",
       "time": 12,
+      "alternate": true,
       "producedIn": [
         "Foundry"
       ],
@@ -499,6 +519,7 @@
     {
       "name": "Alternate: Solid Steel Ingot",
       "time": 3,
+      "alternate": true,
       "producedIn": [
         "Foundry"
       ],
@@ -522,6 +543,7 @@
     {
       "name": "Alternate: Compacted Steel Ingot",
       "time": 16,
+      "alternate": true,
       "producedIn": [
         "Foundry"
       ],
@@ -547,6 +569,7 @@
     {
       "name": "Alternate: Caterium Computer",
       "time": 16,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -574,6 +597,7 @@
     {
       "name": "Alternate: Crystal Computer",
       "time": 64,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -599,6 +623,7 @@
     {
       "name": "Alternate: Fine Concrete",
       "time": 24,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -622,6 +647,7 @@
     {
       "name": "Alternate: Rubber Concrete",
       "time": 12,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -645,6 +671,7 @@
     {
       "name": "Alternate: Wet Concrete",
       "time": 3,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -670,6 +697,7 @@
     {
       "name": "Alternate: Cooling Device",
       "time": 32,
+      "alternate": true,
       "producedIn": [
         "Blender"
       ],
@@ -699,6 +727,7 @@
     {
       "name": "Alternate: Copper Alloy Ingot",
       "time": 12,
+      "alternate": true,
       "producedIn": [
         "Foundry"
       ],
@@ -722,6 +751,7 @@
     {
       "name": "Alternate: Pure Copper Ingot",
       "time": 24,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -747,6 +777,7 @@
     {
       "name": "Alternate: Copper Rotor",
       "time": 16,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -770,6 +801,7 @@
     {
       "name": "Alternate: Steel Rotor",
       "time": 12,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -795,6 +827,7 @@
     {
       "name": "Alternate: Insulated Crystal Oscillator",
       "time": 32,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -824,6 +857,7 @@
     {
       "name": "Alternate: Diluted Fuel",
       "time": 6,
+      "alternate": true,
       "producedIn": [
         "Blender"
       ],
@@ -849,6 +883,7 @@
     {
       "name": "Alternate: Diluted Packaged Fuel",
       "time": 2,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -874,6 +909,7 @@
     {
       "name": "Alternate: Electric Motor",
       "time": 16,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -897,6 +933,7 @@
     {
       "name": "Alternate: Rigour Motor",
       "time": 48,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -926,6 +963,7 @@
     {
       "name": "Alternate: Electrode - Aluminum Scrap",
       "time": 4,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -953,6 +991,7 @@
     {
       "name": "Alternate: Instant Scrap",
       "time": 6,
+      "alternate": true,
       "producedIn": [
         "Blender"
       ],
@@ -990,6 +1029,7 @@
     {
       "name": "Alternate: Electromagnetic Connection Rod",
       "time": 15,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -1015,6 +1055,7 @@
     {
       "name": "Alternate: Encased Industrial Pipe",
       "time": 15,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -1040,6 +1081,7 @@
     {
       "name": "Alternate: Compacted Coal",
       "time": 12,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -1065,6 +1107,7 @@
     {
       "name": "Alternate: Fertile Uranium",
       "time": 12,
+      "alternate": true,
       "producedIn": [
         "Blender"
       ],
@@ -1102,6 +1145,7 @@
     {
       "name": "Alternate: Flexible Framework",
       "time": 16,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -1131,6 +1175,7 @@
     {
       "name": "Alternate: Fused Wire",
       "time": 20,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -1154,6 +1199,7 @@
     {
       "name": "Alternate: Iron Wire",
       "time": 24,
+      "alternate": true,
       "producedIn": [
         "Constructor"
       ],
@@ -1173,6 +1219,7 @@
     {
       "name": "Alternate: Caterium Wire",
       "time": 4,
+      "alternate": true,
       "producedIn": [
         "Constructor"
       ],
@@ -1194,6 +1241,7 @@
     {
       "name": "Alternate: Fine Black Powder",
       "time": 16,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -1219,6 +1267,7 @@
     {
       "name": "Alternate: Heat-Fused Frame",
       "time": 20,
+      "alternate": true,
       "producedIn": [
         "Blender"
       ],
@@ -1252,6 +1301,7 @@
     {
       "name": "Alternate: Heat Exchanger",
       "time": 6,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -1277,6 +1327,7 @@
     {
       "name": "Alternate: Heavy Flexible Frame",
       "time": 16,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -1308,6 +1359,7 @@
     {
       "name": "Alternate: Heavy Encased Frame",
       "time": 64,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -1341,6 +1393,7 @@
     {
       "name": "Alternate: Heavy Oil Residue",
       "time": 6,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -1364,6 +1417,7 @@
     {
       "name": "Alternate: Polymer Resin",
       "time": 6,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -1389,6 +1443,7 @@
     {
       "name": "Alternate: Heavy Oil Residue",
       "time": 6,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -1412,6 +1467,7 @@
     {
       "name": "Alternate: Polymer Resin",
       "time": 6,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -1437,6 +1493,7 @@
     {
       "name": "Alternate: Silicon High-Speed Connector",
       "time": 40,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -1466,6 +1523,7 @@
     {
       "name": "Alternate: Automated Speed Wiring",
       "time": 32,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -1495,6 +1553,7 @@
     {
       "name": "Alternate: Iron Alloy Ingot",
       "time": 6,
+      "alternate": true,
       "producedIn": [
         "Foundry"
       ],
@@ -1518,6 +1577,7 @@
     {
       "name": "Alternate: Pure Iron Ingot",
       "time": 12,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -1543,6 +1603,7 @@
     {
       "name": "Alternate: Instant Plutonium Cell",
       "time": 120,
+      "alternate": true,
       "producedIn": [
         "Particle Accelerator"
       ],
@@ -1568,6 +1629,7 @@
     {
       "name": "Alternate: Uranium Fuel Unit",
       "time": 300,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -1601,6 +1663,7 @@
     {
       "name": "Alternate: OC Supercomputer",
       "time": 20,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -1624,6 +1687,7 @@
     {
       "name": "Alternate: Super-State Computer",
       "time": 50,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -1657,6 +1721,7 @@
     {
       "name": "Alternate: Plastic Smart Plating",
       "time": 24,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -1686,6 +1751,7 @@
     {
       "name": "Alternate: Recycled Plastic",
       "time": 12,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -1711,6 +1777,7 @@
     {
       "name": "Alternate: Plutonium Fuel Unit",
       "time": 120,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -1736,6 +1803,7 @@
     {
       "name": "Alternate: Polyester Fabric",
       "time": 2,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -1761,6 +1829,7 @@
     {
       "name": "Alternate: Pure Caterium Ingot",
       "time": 5,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -1786,6 +1855,7 @@
     {
       "name": "Alternate: Pure Quartz Crystal",
       "time": 8,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -1811,6 +1881,7 @@
     {
       "name": "Alternate: Fused Quickwire",
       "time": 8,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -1836,6 +1907,7 @@
     {
       "name": "Alternate: Radio Control System",
       "time": 40,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -1867,6 +1939,7 @@
     {
       "name": "Alternate: Radio Connection Unit",
       "time": 16,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -1896,6 +1969,7 @@
     {
       "name": "Alternate: Recycled Rubber",
       "time": 12,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -1921,6 +1995,7 @@
     {
       "name": "Alternate: Steel Screw",
       "time": 12,
+      "alternate": true,
       "producedIn": [
         "Constructor"
       ],
@@ -1940,6 +2015,7 @@
     {
       "name": "Alternate: Cast Screw",
       "time": 24,
+      "alternate": true,
       "producedIn": [
         "Constructor"
       ],
@@ -1961,6 +2037,7 @@
     {
       "name": "Alternate: Cheap Silica",
       "time": 16,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -1986,6 +2063,7 @@
     {
       "name": "Alternate: Sloppy Alumina",
       "time": 3,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -2011,6 +2089,7 @@
     {
       "name": "Alternate: Quickwire Stator",
       "time": 15,
+      "alternate": true,
       "producedIn": [
         "Assembler"
       ],
@@ -2036,6 +2115,7 @@
     {
       "name": "Alternate: Steamed Copper Sheet",
       "time": 8,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -2061,6 +2141,7 @@
     {
       "name": "Alternate: Steel Rod",
       "time": 5,
+      "alternate": true,
       "producedIn": [
         "Constructor"
       ],
@@ -2082,6 +2163,7 @@
     {
       "name": "Alternate: Turbo Blend Fuel",
       "time": 8,
+      "alternate": true,
       "producedIn": [
         "Blender"
       ],
@@ -2113,6 +2195,7 @@
     {
       "name": "Alternate: Turbo Heavy Fuel",
       "time": 8,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -2136,6 +2219,7 @@
     {
       "name": "Turbofuel",
       "time": 16,
+      "alternate": true,
       "producedIn": [
         "Refinery"
       ],
@@ -2161,6 +2245,7 @@
     {
       "name": "Alternate: Turbo Electric Motor",
       "time": 64,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -2192,6 +2277,7 @@
     {
       "name": "Alternate: Turbo Pressure Motor",
       "time": 32,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -2225,6 +2311,7 @@
     {
       "name": "Alternate: Infused Uranium Cell",
       "time": 12,
+      "alternate": true,
       "producedIn": [
         "Manufacturer"
       ],
@@ -2250,6 +2337,28 @@
         {
           "item": "Encased Uranium Cell",
           "amount": 4
+        }
+      ]
+    }
+  ],
+  "Aluminum Ingot": [
+    {
+      "name": "Alternate: Pure Aluminum Ingot",
+      "time": 2,
+      "alternate": true,
+      "producedIn": [
+        "Smelter"
+      ],
+      "ingredients": [
+        {
+          "item": "Aluminum Scrap",
+          "amount": 2
+        }
+      ],
+      "products": [
+        {
+          "item": "Aluminum Ingot",
+          "amount": 1
         }
       ]
     }
