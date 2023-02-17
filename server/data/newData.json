@@ -1,6 +1,6 @@
 {
   "inMachineRecipes": {
-    "ai limiter": [
+    "AI Limiter": [
       {
         "name": "AI Limiter",
         "time": 12,
@@ -27,7 +27,7 @@
         ]
       }
     ],
-    "organic data capsule": [
+    "Organic Data Capsule": [
       {
         "name": "Organic Data Capsule",
         "time": 6,
@@ -50,7 +50,7 @@
         ]
       }
     ],
-    "reinforced iron plate": [
+    "Reinforced Iron Plate": [
       {
         "name": "Alternate: Adhered Iron Plate",
         "time": 16,
@@ -149,7 +149,7 @@
         ]
       }
     ],
-    "aluminum casing": [
+    "Aluminum Casing": [
       {
         "name": "Alternate: Alclad Casing",
         "time": 8,
@@ -196,7 +196,7 @@
         ]
       }
     ],
-    "portable miner": [
+    "Portable Miner": [
       {
         "name": "Alternate: Automated Miner",
         "time": 60,
@@ -230,7 +230,7 @@
         ]
       }
     ],
-    "beacon": [
+    "Beacon": [
       {
         "name": "Alternate: Crystal Beacon",
         "time": 120,
@@ -293,7 +293,7 @@
         ]
       }
     ],
-    "modular frame": [
+    "Modular Frame": [
       {
         "name": "Alternate: Bolted Frame",
         "time": 24,
@@ -368,7 +368,7 @@
         ]
       }
     ],
-    "cable": [
+    "Cable": [
       {
         "name": "Alternate: Insulated Cable",
         "time": 12,
@@ -463,7 +463,7 @@
         ]
       }
     ],
-    "circuit board": [
+    "Circuit Board": [
       {
         "name": "Alternate: Silicon Circuit Board",
         "time": 24,
@@ -562,7 +562,7 @@
         ]
       }
     ],
-    "battery": [
+    "Battery": [
       {
         "name": "Alternate: Classic Battery",
         "time": 8,
@@ -628,49 +628,7 @@
         ]
       }
     ],
-    "coal": [
-      {
-        "name": "Alternate: Charcoal",
-        "time": 4,
-        "alternate": true,
-        "producedIn": [
-          "Constructor"
-        ],
-        "ingredients": [
-          {
-            "item": "Wood",
-            "amount": 1
-          }
-        ],
-        "products": [
-          {
-            "item": "Coal",
-            "amount": 10
-          }
-        ]
-      },
-      {
-        "name": "Alternate: Biocoal",
-        "time": 8,
-        "alternate": true,
-        "producedIn": [
-          "Constructor"
-        ],
-        "ingredients": [
-          {
-            "item": "Biomass",
-            "amount": 5
-          }
-        ],
-        "products": [
-          {
-            "item": "Coal",
-            "amount": 6
-          }
-        ]
-      }
-    ],
-    "empty canister": [
+    "Empty Canister": [
       {
         "name": "Alternate: Coated Iron Canister",
         "time": 4,
@@ -929,7 +887,7 @@
         ]
       }
     ],
-    "iron plate": [
+    "Iron Plate": [
       {
         "name": "Alternate: Coated Iron Plate",
         "time": 12,
@@ -1000,7 +958,7 @@
         ]
       }
     ],
-    "steel ingot": [
+    "Steel Ingot": [
       {
         "name": "Alternate: Coke Steel Ingot",
         "time": 12,
@@ -1099,7 +1057,7 @@
         ]
       }
     ],
-    "computer": [
+    "Computer": [
       {
         "name": "Alternate: Caterium Computer",
         "time": 16,
@@ -1186,7 +1144,7 @@
         ]
       }
     ],
-    "concrete": [
+    "Concrete": [
       {
         "name": "Alternate: Fine Concrete",
         "time": 24,
@@ -1281,7 +1239,7 @@
         ]
       }
     ],
-    "cooling system": [
+    "Cooling System": [
       {
         "name": "Alternate: Cooling Device",
         "time": 32,
@@ -1343,7 +1301,7 @@
         ]
       }
     ],
-    "copper ingot": [
+    "Copper Ingot": [
       {
         "name": "Alternate: Copper Alloy Ingot",
         "time": 12,
@@ -1414,7 +1372,7 @@
         ]
       }
     ],
-    "rotor": [
+    "Rotor": [
       {
         "name": "Alternate: Copper Rotor",
         "time": 16,
@@ -1489,7 +1447,7 @@
         ]
       }
     ],
-    "crystal oscillator": [
+    "Crystal Oscillator": [
       {
         "name": "Alternate: Insulated Crystal Oscillator",
         "time": 32,
@@ -1548,7 +1506,7 @@
         ]
       }
     ],
-    "fuel": [
+    "Fuel": [
       {
         "name": "Alternate: Diluted Fuel",
         "time": 6,
@@ -1642,7 +1600,7 @@
         ]
       }
     ],
-    "packaged fuel": [
+    "Packaged Fuel": [
       {
         "name": "Alternate: Diluted Packaged Fuel",
         "time": 2,
@@ -1692,7 +1650,7 @@
         ]
       }
     ],
-    "motor": [
+    "Motor": [
       {
         "name": "Alternate: Electric Motor",
         "time": 16,
@@ -1771,7 +1729,7 @@
         ]
       }
     ],
-    "aluminum scrap": [
+    "Aluminum Scrap": [
       {
         "name": "Alternate: Electrode - Aluminum Scrap",
         "time": 4,
@@ -1865,229 +1823,7 @@
         ]
       }
     ],
-    "water": [
-      {
-        "name": "Alternate: Electrode - Aluminum Scrap",
-        "time": 4,
-        "alternate": true,
-        "producedIn": [
-          "Refinery"
-        ],
-        "ingredients": [
-          {
-            "item": "Alumina Solution",
-            "amount": 12
-          },
-          {
-            "item": "Petroleum Coke",
-            "amount": 4
-          }
-        ],
-        "products": [
-          {
-            "item": "Aluminum Scrap",
-            "amount": 20
-          },
-          {
-            "item": "Water",
-            "amount": 7
-          }
-        ]
-      },
-      {
-        "name": "Alternate: Fertile Uranium",
-        "time": 12,
-        "alternate": true,
-        "producedIn": [
-          "Blender"
-        ],
-        "ingredients": [
-          {
-            "item": "Uranium",
-            "amount": 5
-          },
-          {
-            "item": "Uranium Waste",
-            "amount": 5
-          },
-          {
-            "item": "Nitric Acid",
-            "amount": 3
-          },
-          {
-            "item": "Sulfuric Acid",
-            "amount": 5
-          }
-        ],
-        "products": [
-          {
-            "item": "Non-fissile Uranium",
-            "amount": 20
-          },
-          {
-            "item": "Water",
-            "amount": 8
-          }
-        ]
-      },
-      {
-        "name": "Alternate: Instant Scrap",
-        "time": 6,
-        "alternate": true,
-        "producedIn": [
-          "Blender"
-        ],
-        "ingredients": [
-          {
-            "item": "Bauxite",
-            "amount": 15
-          },
-          {
-            "item": "Coal",
-            "amount": 10
-          },
-          {
-            "item": "Sulfuric Acid",
-            "amount": 5
-          },
-          {
-            "item": "Water",
-            "amount": 6
-          }
-        ],
-        "products": [
-          {
-            "item": "Aluminum Scrap",
-            "amount": 30
-          },
-          {
-            "item": "Water",
-            "amount": 5
-          }
-        ]
-      },
-      {
-        "name": "Aluminum Scrap",
-        "time": 1,
-        "alternate": false,
-        "producedIn": [
-          "Refinery"
-        ],
-        "ingredients": [
-          {
-            "item": "Alumina Solution",
-            "amount": 4
-          },
-          {
-            "item": "Coal",
-            "amount": 2
-          }
-        ],
-        "products": [
-          {
-            "item": "Aluminum Scrap",
-            "amount": 6
-          },
-          {
-            "item": "Water",
-            "amount": 2
-          }
-        ]
-      },
-      {
-        "name": "Battery",
-        "time": 3,
-        "alternate": false,
-        "producedIn": [
-          "Blender"
-        ],
-        "ingredients": [
-          {
-            "item": "Sulfuric Acid",
-            "amount": 2.5
-          },
-          {
-            "item": "Alumina Solution",
-            "amount": 2
-          },
-          {
-            "item": "Aluminum Casing",
-            "amount": 1
-          }
-        ],
-        "products": [
-          {
-            "item": "Battery",
-            "amount": 1
-          },
-          {
-            "item": "Water",
-            "amount": 1.5
-          }
-        ]
-      },
-      {
-        "name": "Non-fissile Uranium",
-        "time": 24,
-        "alternate": false,
-        "producedIn": [
-          "Blender"
-        ],
-        "ingredients": [
-          {
-            "item": "Uranium Waste",
-            "amount": 15
-          },
-          {
-            "item": "Silica",
-            "amount": 10
-          },
-          {
-            "item": "Nitric Acid",
-            "amount": 6
-          },
-          {
-            "item": "Sulfuric Acid",
-            "amount": 6
-          }
-        ],
-        "products": [
-          {
-            "item": "Non-fissile Uranium",
-            "amount": 20
-          },
-          {
-            "item": "Water",
-            "amount": 6
-          }
-        ]
-      },
-      {
-        "name": "Unpackage Water",
-        "time": 1,
-        "alternate": false,
-        "producedIn": [
-          "Packager"
-        ],
-        "ingredients": [
-          {
-            "item": "Packaged Water",
-            "amount": 2
-          }
-        ],
-        "products": [
-          {
-            "item": "Water",
-            "amount": 2
-          },
-          {
-            "item": "Empty Canister",
-            "amount": 2
-          }
-        ]
-      }
-    ],
-    "electromagnetic control rod": [
+    "Electromagnetic Control Rod": [
       {
         "name": "Alternate: Electromagnetic Connection Rod",
         "time": 15,
@@ -2138,7 +1874,7 @@
         ]
       }
     ],
-    "encased industrial beam": [
+    "Encased Industrial Beam": [
       {
         "name": "Alternate: Encased Industrial Pipe",
         "time": 15,
@@ -2189,7 +1925,7 @@
         ]
       }
     ],
-    "compacted coal": [
+    "Compacted Coal": [
       {
         "name": "Alternate: Compacted Coal",
         "time": 12,
@@ -2215,7 +1951,7 @@
         ]
       }
     ],
-    "non-fissile uranium": [
+    "Non-fissile Uranium": [
       {
         "name": "Alternate: Fertile Uranium",
         "time": 12,
@@ -2289,7 +2025,7 @@
         ]
       }
     ],
-    "versatile framework": [
+    "Versatile Framework": [
       {
         "name": "Alternate: Flexible Framework",
         "time": 16,
@@ -2343,7 +2079,7 @@
         ]
       }
     ],
-    "wire": [
+    "Wire": [
       {
         "name": "Alternate: Fused Wire",
         "time": 20,
@@ -2430,7 +2166,7 @@
         ]
       }
     ],
-    "black powder": [
+    "Black Powder": [
       {
         "name": "Alternate: Fine Black Powder",
         "time": 16,
@@ -2481,7 +2217,7 @@
         ]
       }
     ],
-    "fused modular frame": [
+    "Fused Modular Frame": [
       {
         "name": "Alternate: Heat-Fused Frame",
         "time": 20,
@@ -2543,7 +2279,7 @@
         ]
       }
     ],
-    "heat sink": [
+    "Heat Sink": [
       {
         "name": "Alternate: Heat Exchanger",
         "time": 6,
@@ -2594,7 +2330,7 @@
         ]
       }
     ],
-    "heavy modular frame": [
+    "Heavy Modular Frame": [
       {
         "name": "Alternate: Heavy Flexible Frame",
         "time": 16,
@@ -2693,7 +2429,7 @@
         ]
       }
     ],
-    "heavy oil residue": [
+    "Heavy Oil Residue": [
       {
         "name": "Alternate: Heavy Oil Residue",
         "time": 6,
@@ -2815,7 +2551,7 @@
         ]
       }
     ],
-    "polymer resin": [
+    "Polymer Resin": [
       {
         "name": "Alternate: Heavy Oil Residue",
         "time": 6,
@@ -2889,7 +2625,7 @@
         ]
       }
     ],
-    "high-speed connector": [
+    "High-Speed Connector": [
       {
         "name": "Alternate: Silicon High-Speed Connector",
         "time": 40,
@@ -2948,7 +2684,7 @@
         ]
       }
     ],
-    "automated wiring": [
+    "Automated Wiring": [
       {
         "name": "Alternate: Automated Speed Wiring",
         "time": 32,
@@ -3002,7 +2738,7 @@
         ]
       }
     ],
-    "iron ingot": [
+    "Iron Ingot": [
       {
         "name": "Alternate: Iron Alloy Ingot",
         "time": 6,
@@ -3073,7 +2809,7 @@
         ]
       }
     ],
-    "encased plutonium cell": [
+    "Encased Plutonium Cell": [
       {
         "name": "Alternate: Instant Plutonium Cell",
         "time": 120,
@@ -3124,7 +2860,7 @@
         ]
       }
     ],
-    "uranium fuel rod": [
+    "Uranium Fuel Rod": [
       {
         "name": "Alternate: Uranium Fuel Unit",
         "time": 300,
@@ -3186,7 +2922,7 @@
         ]
       }
     ],
-    "supercomputer": [
+    "Supercomputer": [
       {
         "name": "Alternate: OC Supercomputer",
         "time": 20,
@@ -3277,7 +3013,7 @@
         ]
       }
     ],
-    "smart plating": [
+    "Smart Plating": [
       {
         "name": "Alternate: Plastic Smart Plating",
         "time": 24,
@@ -3331,7 +3067,7 @@
         ]
       }
     ],
-    "plastic": [
+    "Plastic": [
       {
         "name": "Alternate: Recycled Plastic",
         "time": 12,
@@ -3405,7 +3141,7 @@
         ]
       }
     ],
-    "plutonium fuel rod": [
+    "Plutonium Fuel Rod": [
       {
         "name": "Alternate: Plutonium Fuel Unit",
         "time": 120,
@@ -3463,7 +3199,7 @@
         ]
       }
     ],
-    "fabric": [
+    "Fabric": [
       {
         "name": "Alternate: Polyester Fabric",
         "time": 2,
@@ -3514,7 +3250,7 @@
         ]
       }
     ],
-    "caterium ingot": [
+    "Caterium Ingot": [
       {
         "name": "Alternate: Pure Caterium Ingot",
         "time": 5,
@@ -3561,7 +3297,7 @@
         ]
       }
     ],
-    "quartz crystal": [
+    "Quartz Crystal": [
       {
         "name": "Alternate: Pure Quartz Crystal",
         "time": 8,
@@ -3608,7 +3344,7 @@
         ]
       }
     ],
-    "quickwire": [
+    "Quickwire": [
       {
         "name": "Alternate: Fused Quickwire",
         "time": 8,
@@ -3655,7 +3391,7 @@
         ]
       }
     ],
-    "radio control unit": [
+    "Radio Control Unit": [
       {
         "name": "Alternate: Radio Control System",
         "time": 40,
@@ -3746,7 +3482,7 @@
         ]
       }
     ],
-    "rubber": [
+    "Rubber": [
       {
         "name": "Alternate: Recycled Rubber",
         "time": 12,
@@ -3820,7 +3556,7 @@
         ]
       }
     ],
-    "screw": [
+    "Screw": [
       {
         "name": "Alternate: Steel Screw",
         "time": 12,
@@ -3883,7 +3619,7 @@
         ]
       }
     ],
-    "silica": [
+    "Silica": [
       {
         "name": "Alternate: Cheap Silica",
         "time": 16,
@@ -3958,7 +3694,7 @@
         ]
       }
     ],
-    "alumina solution": [
+    "Alumina Solution": [
       {
         "name": "Alternate: Sloppy Alumina",
         "time": 3,
@@ -4036,7 +3772,7 @@
         ]
       }
     ],
-    "stator": [
+    "Stator": [
       {
         "name": "Alternate: Quickwire Stator",
         "time": 15,
@@ -4087,7 +3823,7 @@
         ]
       }
     ],
-    "copper sheet": [
+    "Copper Sheet": [
       {
         "name": "Alternate: Steamed Copper Sheet",
         "time": 8,
@@ -4134,7 +3870,7 @@
         ]
       }
     ],
-    "iron rod": [
+    "Iron Rod": [
       {
         "name": "Alternate: Steel Rod",
         "time": 5,
@@ -4177,7 +3913,7 @@
         ]
       }
     ],
-    "turbofuel": [
+    "Turbofuel": [
       {
         "name": "Alternate: Turbo Blend Fuel",
         "time": 8,
@@ -4283,7 +4019,7 @@
         ]
       }
     ],
-    "turbo motor": [
+    "Turbo Motor": [
       {
         "name": "Alternate: Turbo Electric Motor",
         "time": 64,
@@ -4382,7 +4118,7 @@
         ]
       }
     ],
-    "encased uranium cell": [
+    "Encased Uranium Cell": [
       {
         "name": "Alternate: Infused Uranium Cell",
         "time": 12,
@@ -4448,7 +4184,7 @@
         ]
       }
     ],
-    "alclad aluminum sheet": [
+    "Alclad Aluminum Sheet": [
       {
         "name": "Alclad Aluminum Sheet",
         "time": 6,
@@ -4475,7 +4211,7 @@
         ]
       }
     ],
-    "solid biofuel": [
+    "Solid Biofuel": [
       {
         "name": "Solid Biofuel",
         "time": 4,
@@ -4498,7 +4234,7 @@
         ]
       }
     ],
-    "biomass": [
+    "Biomass": [
       {
         "name": "Biomass (Alien Protein)",
         "time": 4,
@@ -4584,7 +4320,7 @@
         ]
       }
     ],
-    "turbo rifle ammo": [
+    "Turbo Rifle Ammo": [
       {
         "name": "Turbo Rifle Ammo",
         "time": 12,
@@ -4643,7 +4379,7 @@
         ]
       }
     ],
-    "homing rifle ammo": [
+    "Homing Rifle Ammo": [
       {
         "name": "Homing Rifle Ammo",
         "time": 24,
@@ -4670,7 +4406,7 @@
         ]
       }
     ],
-    "rifle ammo": [
+    "Rifle Ammo": [
       {
         "name": "Rifle Ammo",
         "time": 12,
@@ -4697,7 +4433,7 @@
         ]
       }
     ],
-    "color cartridge": [
+    "Color Cartridge": [
       {
         "name": "Color Cartridge",
         "time": 6,
@@ -4720,7 +4456,7 @@
         ]
       }
     ],
-    "copper powder": [
+    "Copper Powder": [
       {
         "name": "Copper Powder",
         "time": 6,
@@ -4743,7 +4479,7 @@
         ]
       }
     ],
-    "gas filter": [
+    "Gas Filter": [
       {
         "name": "Gas Filter",
         "time": 8,
@@ -4774,7 +4510,7 @@
         ]
       }
     ],
-    "iodine infused filter": [
+    "Iodine Infused Filter": [
       {
         "name": "Iodine Infused Filter",
         "time": 16,
@@ -4805,7 +4541,7 @@
         ]
       }
     ],
-    "empty fluid tank": [
+    "Empty Fluid Tank": [
       {
         "name": "Empty Fluid Tank",
         "time": 1,
@@ -4876,7 +4612,7 @@
         ]
       }
     ],
-    "smokeless powder": [
+    "Smokeless Powder": [
       {
         "name": "Smokeless Powder",
         "time": 6,
@@ -4902,7 +4638,7 @@
         ]
       }
     ],
-    "aluminum ingot": [
+    "Aluminum Ingot": [
       {
         "name": "Aluminum Ingot",
         "time": 4,
@@ -4949,7 +4685,7 @@
         ]
       }
     ],
-    "liquid biofuel": [
+    "Liquid Biofuel": [
       {
         "name": "Liquid Biofuel",
         "time": 4,
@@ -4999,7 +4735,7 @@
         ]
       }
     ],
-    "nitric acid": [
+    "Nitric Acid": [
       {
         "name": "Nitric Acid",
         "time": 6,
@@ -5053,7 +4789,7 @@
         ]
       }
     ],
-    "cluster nobelisk": [
+    "Cluster Nobelisk": [
       {
         "name": "Cluster Nobelisk",
         "time": 24,
@@ -5080,7 +4816,7 @@
         ]
       }
     ],
-    "gas nobelisk": [
+    "Gas Nobelisk": [
       {
         "name": "Gas Nobelisk",
         "time": 12,
@@ -5107,7 +4843,7 @@
         ]
       }
     ],
-    "nuke nobelisk": [
+    "Nuke Nobelisk": [
       {
         "name": "Nuke Nobelisk",
         "time": 120,
@@ -5142,7 +4878,7 @@
         ]
       }
     ],
-    "pulse nobelisk": [
+    "Pulse Nobelisk": [
       {
         "name": "Pulse Nobelisk",
         "time": 60,
@@ -5169,7 +4905,7 @@
         ]
       }
     ],
-    "nobelisk": [
+    "Nobelisk": [
       {
         "name": "Nobelisk",
         "time": 6,
@@ -5196,7 +4932,7 @@
         ]
       }
     ],
-    "packaged alumina solution": [
+    "Packaged Alumina Solution": [
       {
         "name": "Packaged Alumina Solution",
         "time": 1,
@@ -5222,7 +4958,7 @@
         ]
       }
     ],
-    "packaged liquid biofuel": [
+    "Packaged Liquid Biofuel": [
       {
         "name": "Packaged Liquid Biofuel",
         "time": 3,
@@ -5248,7 +4984,7 @@
         ]
       }
     ],
-    "packaged oil": [
+    "Packaged Oil": [
       {
         "name": "Packaged Oil",
         "time": 4,
@@ -5274,7 +5010,7 @@
         ]
       }
     ],
-    "packaged nitric acid": [
+    "Packaged Nitric Acid": [
       {
         "name": "Packaged Nitric Acid",
         "time": 2,
@@ -5300,7 +5036,7 @@
         ]
       }
     ],
-    "packaged nitrogen gas": [
+    "Packaged Nitrogen Gas": [
       {
         "name": "Packaged Nitrogen Gas",
         "time": 1,
@@ -5326,7 +5062,7 @@
         ]
       }
     ],
-    "packaged heavy oil residue": [
+    "Packaged Heavy Oil Residue": [
       {
         "name": "Packaged Heavy Oil Residue",
         "time": 4,
@@ -5352,7 +5088,7 @@
         ]
       }
     ],
-    "packaged sulfuric acid": [
+    "Packaged Sulfuric Acid": [
       {
         "name": "Packaged Sulfuric Acid",
         "time": 3,
@@ -5378,7 +5114,7 @@
         ]
       }
     ],
-    "packaged turbofuel": [
+    "Packaged Turbofuel": [
       {
         "name": "Packaged Turbofuel",
         "time": 6,
@@ -5404,7 +5140,7 @@
         ]
       }
     ],
-    "packaged water": [
+    "Packaged Water": [
       {
         "name": "Packaged Water",
         "time": 2,
@@ -5430,7 +5166,7 @@
         ]
       }
     ],
-    "petroleum coke": [
+    "Petroleum Coke": [
       {
         "name": "Petroleum Coke",
         "time": 6,
@@ -5452,7 +5188,7 @@
         ]
       }
     ],
-    "plutonium pellet": [
+    "Plutonium Pellet": [
       {
         "name": "Plutonium Pellet",
         "time": 60,
@@ -5478,7 +5214,7 @@
         ]
       }
     ],
-    "power shard": [
+    "Power Shard": [
       {
         "name": "Power Shard (1)",
         "time": 8,
@@ -5543,7 +5279,7 @@
         ]
       }
     ],
-    "pressure conversion cube": [
+    "Pressure Conversion Cube": [
       {
         "name": "Pressure Conversion Cube",
         "time": 60,
@@ -5570,7 +5306,7 @@
         ]
       }
     ],
-    "alien protein": [
+    "Alien Protein": [
       {
         "name": "Hatcher Protein",
         "time": 3,
@@ -5656,7 +5392,7 @@
         ]
       }
     ],
-    "explosive rebar": [
+    "Explosive Rebar": [
       {
         "name": "Explosive Rebar",
         "time": 12,
@@ -5687,7 +5423,7 @@
         ]
       }
     ],
-    "shatter rebar": [
+    "Shatter Rebar": [
       {
         "name": "Shatter Rebar",
         "time": 12,
@@ -5714,7 +5450,7 @@
         ]
       }
     ],
-    "stun rebar": [
+    "Stun Rebar": [
       {
         "name": "Stun Rebar",
         "time": 6,
@@ -5741,7 +5477,7 @@
         ]
       }
     ],
-    "modular engine": [
+    "Modular Engine": [
       {
         "name": "Modular Engine",
         "time": 60,
@@ -5771,7 +5507,7 @@
         ]
       }
     ],
-    "adaptive control unit": [
+    "Adaptive Control Unit": [
       {
         "name": "Adaptive Control Unit",
         "time": 120,
@@ -5805,7 +5541,7 @@
         ]
       }
     ],
-    "magnetic field generator": [
+    "Magnetic Field Generator": [
       {
         "name": "Magnetic Field Generator",
         "time": 120,
@@ -5835,7 +5571,7 @@
         ]
       }
     ],
-    "assembly director system": [
+    "Assembly Director System": [
       {
         "name": "Assembly Director System",
         "time": 80,
@@ -5861,7 +5597,7 @@
         ]
       }
     ],
-    "thermal propulsion rocket": [
+    "Thermal Propulsion Rocket": [
       {
         "name": "Thermal Propulsion Rocket",
         "time": 120,
@@ -5895,7 +5631,7 @@
         ]
       }
     ],
-    "nuclear pasta": [
+    "Nuclear Pasta": [
       {
         "name": "Nuclear Pasta",
         "time": 120,
@@ -5921,7 +5657,7 @@
         ]
       }
     ],
-    "iron rebar": [
+    "Iron Rebar": [
       {
         "name": "Iron Rebar",
         "time": 4,
@@ -5944,7 +5680,7 @@
         ]
       }
     ],
-    "steel beam": [
+    "Steel Beam": [
       {
         "name": "Steel Beam",
         "time": 4,
@@ -5967,7 +5703,7 @@
         ]
       }
     ],
-    "steel pipe": [
+    "Steel Pipe": [
       {
         "name": "Steel Pipe",
         "time": 6,
@@ -5990,7 +5726,7 @@
         ]
       }
     ],
-    "sulfuric acid": [
+    "Sulfuric Acid": [
       {
         "name": "Sulfuric Acid",
         "time": 6,
@@ -6072,7 +5808,7 @@
         ]
       }
     ],
-    "nitrogen gas": [
+    "Nitrogen Gas": [
       {
         "name": "Unpackage Nitrogen Gas",
         "time": 1,
@@ -6098,7 +5834,7 @@
         ]
       }
     ],
-    "crude oil": [
+    "Crude Oil": [
       {
         "name": "Unpackage Oil",
         "time": 2,
@@ -6126,7 +5862,7 @@
     ]
   },
   "inHandRecipes": {
-    "ai limiter": [
+    "AI Limiter": [
       {
         "name": "AI Limiter",
         "time": 12,
@@ -6153,7 +5889,7 @@
         ]
       }
     ],
-    "organic data capsule": [
+    "Organic Data Capsule": [
       {
         "name": "Organic Data Capsule",
         "time": 6,
@@ -6176,7 +5912,7 @@
         ]
       }
     ],
-    "aluminum casing": [
+    "Aluminum Casing": [
       {
         "name": "Aluminum Casing",
         "time": 2,
@@ -6199,7 +5935,7 @@
         ]
       }
     ],
-    "alclad aluminum sheet": [
+    "Alclad Aluminum Sheet": [
       {
         "name": "Alclad Aluminum Sheet",
         "time": 6,
@@ -6226,7 +5962,7 @@
         ]
       }
     ],
-    "solid biofuel": [
+    "Solid Biofuel": [
       {
         "name": "Solid Biofuel",
         "time": 4,
@@ -6249,7 +5985,7 @@
         ]
       }
     ],
-    "biomass": [
+    "Biomass": [
       {
         "name": "Biomass (Alien Protein)",
         "time": 4,
@@ -6335,7 +6071,7 @@
         ]
       }
     ],
-    "cable": [
+    "Cable": [
       {
         "name": "Cable",
         "time": 2,
@@ -6358,7 +6094,7 @@
         ]
       }
     ],
-    "circuit board": [
+    "Circuit Board": [
       {
         "name": "Circuit Board",
         "time": 8,
@@ -6385,7 +6121,7 @@
         ]
       }
     ],
-    "color cartridge": [
+    "Color Cartridge": [
       {
         "name": "Color Cartridge",
         "time": 6,
@@ -6408,7 +6144,7 @@
         ]
       }
     ],
-    "supercomputer": [
+    "Supercomputer": [
       {
         "name": "Supercomputer",
         "time": 32,
@@ -6443,7 +6179,7 @@
         ]
       }
     ],
-    "computer": [
+    "Computer": [
       {
         "name": "Computer",
         "time": 24,
@@ -6478,7 +6214,7 @@
         ]
       }
     ],
-    "concrete": [
+    "Concrete": [
       {
         "name": "Concrete",
         "time": 4,
@@ -6501,7 +6237,7 @@
         ]
       }
     ],
-    "copper powder": [
+    "Copper Powder": [
       {
         "name": "Copper Powder",
         "time": 6,
@@ -6524,7 +6260,7 @@
         ]
       }
     ],
-    "copper sheet": [
+    "Copper Sheet": [
       {
         "name": "Copper Sheet",
         "time": 6,
@@ -6547,7 +6283,7 @@
         ]
       }
     ],
-    "crystal oscillator": [
+    "Crystal Oscillator": [
       {
         "name": "Crystal Oscillator",
         "time": 120,
@@ -6578,7 +6314,7 @@
         ]
       }
     ],
-    "electromagnetic control rod": [
+    "Electromagnetic Control Rod": [
       {
         "name": "Electromagnetic Control Rod",
         "time": 30,
@@ -6605,7 +6341,7 @@
         ]
       }
     ],
-    "encased industrial beam": [
+    "Encased Industrial Beam": [
       {
         "name": "Encased Industrial Beam",
         "time": 10,
@@ -6632,7 +6368,7 @@
         ]
       }
     ],
-    "fabric": [
+    "Fabric": [
       {
         "name": "Fabric",
         "time": 4,
@@ -6659,7 +6395,7 @@
         ]
       }
     ],
-    "empty canister": [
+    "Empty Canister": [
       {
         "name": "Empty Canister",
         "time": 4,
@@ -6682,7 +6418,7 @@
         ]
       }
     ],
-    "empty fluid tank": [
+    "Empty Fluid Tank": [
       {
         "name": "Empty Fluid Tank",
         "time": 1,
@@ -6705,7 +6441,7 @@
         ]
       }
     ],
-    "heat sink": [
+    "Heat Sink": [
       {
         "name": "Heat Sink",
         "time": 8,
@@ -6732,7 +6468,7 @@
         ]
       }
     ],
-    "high-speed connector": [
+    "High-Speed Connector": [
       {
         "name": "High-Speed Connector",
         "time": 16,
@@ -6763,7 +6499,7 @@
         ]
       }
     ],
-    "aluminum ingot": [
+    "Aluminum Ingot": [
       {
         "name": "Aluminum Ingot",
         "time": 4,
@@ -6790,7 +6526,7 @@
         ]
       }
     ],
-    "caterium ingot": [
+    "Caterium Ingot": [
       {
         "name": "Caterium Ingot",
         "time": 4,
@@ -6813,7 +6549,7 @@
         ]
       }
     ],
-    "copper ingot": [
+    "Copper Ingot": [
       {
         "name": "Copper Ingot",
         "time": 2,
@@ -6836,7 +6572,7 @@
         ]
       }
     ],
-    "iron ingot": [
+    "Iron Ingot": [
       {
         "name": "Iron Ingot",
         "time": 2,
@@ -6859,7 +6595,7 @@
         ]
       }
     ],
-    "steel ingot": [
+    "Steel Ingot": [
       {
         "name": "Steel Ingot",
         "time": 4,
@@ -6886,7 +6622,7 @@
         ]
       }
     ],
-    "reinforced iron plate": [
+    "Reinforced Iron Plate": [
       {
         "name": "Reinforced Iron Plate",
         "time": 12,
@@ -6913,7 +6649,7 @@
         ]
       }
     ],
-    "iron plate": [
+    "Iron Plate": [
       {
         "name": "Iron Plate",
         "time": 6,
@@ -6936,7 +6672,7 @@
         ]
       }
     ],
-    "iron rod": [
+    "Iron Rod": [
       {
         "name": "Iron Rod",
         "time": 4,
@@ -6959,7 +6695,7 @@
         ]
       }
     ],
-    "heavy modular frame": [
+    "Heavy Modular Frame": [
       {
         "name": "Heavy Modular Frame",
         "time": 30,
@@ -6994,7 +6730,7 @@
         ]
       }
     ],
-    "modular frame": [
+    "Modular Frame": [
       {
         "name": "Modular Frame",
         "time": 60,
@@ -7021,7 +6757,7 @@
         ]
       }
     ],
-    "turbo motor": [
+    "Turbo Motor": [
       {
         "name": "Turbo Motor",
         "time": 32,
@@ -7056,7 +6792,7 @@
         ]
       }
     ],
-    "motor": [
+    "Motor": [
       {
         "name": "Motor",
         "time": 12,
@@ -7083,7 +6819,7 @@
         ]
       }
     ],
-    "encased plutonium cell": [
+    "Encased Plutonium Cell": [
       {
         "name": "Encased Plutonium Cell",
         "time": 12,
@@ -7110,7 +6846,7 @@
         ]
       }
     ],
-    "power shard": [
+    "Power Shard": [
       {
         "name": "Power Shard (1)",
         "time": 8,
@@ -7175,7 +6911,7 @@
         ]
       }
     ],
-    "pressure conversion cube": [
+    "Pressure Conversion Cube": [
       {
         "name": "Pressure Conversion Cube",
         "time": 60,
@@ -7202,7 +6938,7 @@
         ]
       }
     ],
-    "alien protein": [
+    "Alien Protein": [
       {
         "name": "Hatcher Protein",
         "time": 3,
@@ -7288,7 +7024,7 @@
         ]
       }
     ],
-    "quartz crystal": [
+    "Quartz Crystal": [
       {
         "name": "Quartz Crystal",
         "time": 8,
@@ -7311,7 +7047,7 @@
         ]
       }
     ],
-    "quickwire": [
+    "Quickwire": [
       {
         "name": "Quickwire",
         "time": 5,
@@ -7334,7 +7070,7 @@
         ]
       }
     ],
-    "radio control unit": [
+    "Radio Control Unit": [
       {
         "name": "Radio Control Unit",
         "time": 48,
@@ -7365,7 +7101,7 @@
         ]
       }
     ],
-    "rotor": [
+    "Rotor": [
       {
         "name": "Rotor",
         "time": 15,
@@ -7392,7 +7128,7 @@
         ]
       }
     ],
-    "screw": [
+    "Screw": [
       {
         "name": "Screw",
         "time": 6,
@@ -7415,7 +7151,7 @@
         ]
       }
     ],
-    "silica": [
+    "Silica": [
       {
         "name": "Silica",
         "time": 8,
@@ -7438,7 +7174,7 @@
         ]
       }
     ],
-    "stator": [
+    "Stator": [
       {
         "name": "Stator",
         "time": 12,
@@ -7465,7 +7201,7 @@
         ]
       }
     ],
-    "steel beam": [
+    "Steel Beam": [
       {
         "name": "Steel Beam",
         "time": 4,
@@ -7488,7 +7224,7 @@
         ]
       }
     ],
-    "steel pipe": [
+    "Steel Pipe": [
       {
         "name": "Steel Pipe",
         "time": 6,
@@ -7511,7 +7247,7 @@
         ]
       }
     ],
-    "wire": [
+    "Wire": [
       {
         "name": "Wire",
         "time": 4,
@@ -7536,7 +7272,7 @@
     ]
   },
   "inWorkshopRecipes": {
-    "beacon": [
+    "Beacon": [
       {
         "name": "Beacon",
         "time": 8,
@@ -7571,7 +7307,7 @@
         ]
       }
     ],
-    "blade runners": [
+    "Blade Runners": [
       {
         "name": "Blade Runners",
         "time": 60,
@@ -7601,7 +7337,7 @@
         ]
       }
     ],
-    "turbo rifle ammo": [
+    "Turbo Rifle Ammo": [
       {
         "name": "Turbo Rifle Ammo",
         "time": 12,
@@ -7632,7 +7368,7 @@
         ]
       }
     ],
-    "homing rifle ammo": [
+    "Homing Rifle Ammo": [
       {
         "name": "Homing Rifle Ammo",
         "time": 24,
@@ -7659,7 +7395,7 @@
         ]
       }
     ],
-    "rifle ammo": [
+    "Rifle Ammo": [
       {
         "name": "Rifle Ammo",
         "time": 12,
@@ -7686,7 +7422,7 @@
         ]
       }
     ],
-    "chainsaw": [
+    "Chainsaw": [
       {
         "name": "Chainsaw",
         "time": 60,
@@ -7720,7 +7456,7 @@
         ]
       }
     ],
-    "factory cart™": [
+    "Factory Cart™": [
       {
         "name": "Factory Cart™",
         "time": 20,
@@ -7750,7 +7486,7 @@
         ]
       }
     ],
-    "gas filter": [
+    "Gas Filter": [
       {
         "name": "Gas Filter",
         "time": 8,
@@ -7781,7 +7517,7 @@
         ]
       }
     ],
-    "iodine infused filter": [
+    "Iodine Infused Filter": [
       {
         "name": "Iodine Infused Filter",
         "time": 16,
@@ -7812,7 +7548,7 @@
         ]
       }
     ],
-    "gas mask": [
+    "Gas Mask": [
       {
         "name": "Gas Mask",
         "time": 60,
@@ -7842,7 +7578,7 @@
         ]
       }
     ],
-    "golden factory cart™": [
+    "Golden Factory Cart™": [
       {
         "name": "Golden Factory Cart™",
         "time": 20,
@@ -7872,7 +7608,7 @@
         ]
       }
     ],
-    "black powder": [
+    "Black Powder": [
       {
         "name": "Black Powder",
         "time": 4,
@@ -7899,7 +7635,7 @@
         ]
       }
     ],
-    "hazmat suit": [
+    "Hazmat Suit": [
       {
         "name": "Hazmat Suit",
         "time": 120,
@@ -7933,7 +7669,7 @@
         ]
       }
     ],
-    "hover pack": [
+    "Hover Pack": [
       {
         "name": "Hover Pack",
         "time": 120,
@@ -7967,7 +7703,7 @@
         ]
       }
     ],
-    "jetpack": [
+    "Jetpack": [
       {
         "name": "Jetpack",
         "time": 120,
@@ -8001,7 +7737,7 @@
         ]
       }
     ],
-    "medicinal inhaler": [
+    "Medicinal Inhaler": [
       {
         "name": "Protein Inhaler",
         "time": 20,
@@ -8107,7 +7843,7 @@
         ]
       }
     ],
-    "cluster nobelisk": [
+    "Cluster Nobelisk": [
       {
         "name": "Cluster Nobelisk",
         "time": 24,
@@ -8134,7 +7870,7 @@
         ]
       }
     ],
-    "nobelisk detonator": [
+    "Nobelisk Detonator": [
       {
         "name": "Nobelisk Detonator",
         "time": 80,
@@ -8164,7 +7900,7 @@
         ]
       }
     ],
-    "gas nobelisk": [
+    "Gas Nobelisk": [
       {
         "name": "Gas Nobelisk",
         "time": 12,
@@ -8191,7 +7927,7 @@
         ]
       }
     ],
-    "nuke nobelisk": [
+    "Nuke Nobelisk": [
       {
         "name": "Nuke Nobelisk",
         "time": 120,
@@ -8226,7 +7962,7 @@
         ]
       }
     ],
-    "pulse nobelisk": [
+    "Pulse Nobelisk": [
       {
         "name": "Pulse Nobelisk",
         "time": 60,
@@ -8253,7 +7989,7 @@
         ]
       }
     ],
-    "nobelisk": [
+    "Nobelisk": [
       {
         "name": "Nobelisk",
         "time": 6,
@@ -8280,7 +8016,7 @@
         ]
       }
     ],
-    "object scanner": [
+    "Object Scanner": [
       {
         "name": "Object Scanner",
         "time": 40,
@@ -8310,7 +8046,7 @@
         ]
       }
     ],
-    "parachute": [
+    "Parachute": [
       {
         "name": "Parachute",
         "time": 20,
@@ -8336,7 +8072,7 @@
         ]
       }
     ],
-    "portable miner": [
+    "Portable Miner": [
       {
         "name": "Portable Miner",
         "time": 40,
@@ -8362,7 +8098,7 @@
         ]
       }
     ],
-    "rebar gun": [
+    "Rebar Gun": [
       {
         "name": "Rebar Gun",
         "time": 60,
@@ -8392,7 +8128,7 @@
         ]
       }
     ],
-    "explosive rebar": [
+    "Explosive Rebar": [
       {
         "name": "Explosive Rebar",
         "time": 12,
@@ -8423,7 +8159,7 @@
         ]
       }
     ],
-    "shatter rebar": [
+    "Shatter Rebar": [
       {
         "name": "Shatter Rebar",
         "time": 12,
@@ -8450,7 +8186,7 @@
         ]
       }
     ],
-    "stun rebar": [
+    "Stun Rebar": [
       {
         "name": "Stun Rebar",
         "time": 6,
@@ -8477,7 +8213,7 @@
         ]
       }
     ],
-    "rifle": [
+    "Rifle": [
       {
         "name": "Rifle",
         "time": 120,
@@ -8511,7 +8247,7 @@
         ]
       }
     ],
-    "iron rebar": [
+    "Iron Rebar": [
       {
         "name": "Iron Rebar",
         "time": 4,
@@ -8534,7 +8270,7 @@
         ]
       }
     ],
-    "xeno-basher": [
+    "Xeno-Basher": [
       {
         "name": "Xeno-Basher",
         "time": 80,
@@ -8568,7 +8304,7 @@
         ]
       }
     ],
-    "xeno-zapper": [
+    "Xeno-Zapper": [
       {
         "name": "Xeno-Zapper",
         "time": 40,
@@ -8602,7 +8338,7 @@
         ]
       }
     ],
-    "zipline": [
+    "Zipline": [
       {
         "name": "Zipline",
         "time": 40,
@@ -8638,1544 +8374,1286 @@
     ]
   },
   "items": {
-    "zipline": {
-      "name": "Zipline",
-      "sinkPoints": 5284,
-      "description": "Slot: Hand\n\nProvides faster traversal in factories by allowing Pioneers to zip along Power lines.\nActivate the Zipline and aim at a nearby Power Line to connect to it.",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "beacon": {
-      "name": "Beacon",
-      "sinkPoints": 320,
-      "description": "PENDING REMOVAL\nThis item will (likely) be removed in a future update.\n\nCurrently only used as an ingredient in an alternative recipe.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
-      ]
-    },
-    "gas mask": {
-      "name": "Gas Mask",
-      "sinkPoints": 55000,
-      "description": "Allows Pioneers to breathe normally while in toxic gas areas.\nConsumes Gas Filters from the inventory when in use.",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "hazmat suit": {
-      "name": "Hazmat Suit",
-      "sinkPoints": 54100,
-      "description": "Shields Pioneers from the adverse effects of radiation. \nConsumes Iodine Infused Filters from the inventory while worn in radioactive areas.",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "hover pack": {
-      "name": "Hover Pack",
-      "sinkPoints": 413920,
-      "description": "Power consumption: 100 MW\n\nAllows for vertical movement and hovering in mid-air to improve building efficiency and factory traversal. Wirelessly connects to nearby power connections, such as Power Poles and Buildings, for power consumption.\n\nSlow-fall: Hold {Jump_Drift} after losing connection mid-air.\nDisable Hoverpack: Double tap {Crouch} while hovering.",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "jetpack": {
-      "name": "Jetpack",
-      "sinkPoints": 49580,
-      "description": "The Jetpack allows Pioneers to travel through the air with increased control.\nConsumes Fuel when used and automatically refills the Fuel from the inventory, when on the ground.",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "blade runners": {
-      "name": "Blade Runners",
-      "sinkPoints": 4988,
-      "description": "An exoskeleton for the lower legs that assists movement, allowing Pioneers to sprint faster and jump higher.\nAlso dampens the impact of landing.",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "nobelisk detonator": {
-      "name": "Nobelisk Detonator",
-      "sinkPoints": 39520,
-      "description": "A remote-control device used to handle and detonate Nobelisks.",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "object scanner": {
-      "name": "Object Scanner",
-      "sinkPoints": 3080,
-      "description": "Slot: Hands\n\nScans the area for a set item. Beeps at a rate proportional to proximity and direction.",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "rifle": {
-      "name": "Rifle",
-      "sinkPoints": 99160,
-      "description": "A long-range, rapid fire weapon. Specifically designed to deliver adequate performance within the designated work area.",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "xeno-zapper": {
-      "name": "Xeno-Zapper",
-      "sinkPoints": 1880,
-      "description": "Standard issue electroshock self-defense weapon for melee range.",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "xeno-basher": {
-      "name": "Xeno-Basher",
-      "sinkPoints": 18800,
-      "description": "Heavy electroshock self-defense weapon for melee range.",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "portable miner": {
-      "name": "Portable Miner",
-      "sinkPoints": 56,
-      "description": "Can be set up on a resource node to automatically extract the resource. Note that it has limited storage space.",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
-      ]
-    },
-    "organic data capsule": {
-      "name": "Organic Data Capsule",
-      "sinkPoints": null,
-      "description": "This data capsule translates organic chemicals into readable alien genetics information.\nUsed for researching alien organisms.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "alien protein": {
-      "name": "Alien Protein",
-      "sinkPoints": null,
-      "description": "Ground down Alien Remains in a neat little package.\nUsed for medical purposed and to research alien organisms.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "alumina solution": {
-      "name": "Alumina Solution",
-      "sinkPoints": 20,
-      "description": "Dissolved Alumina, extracted from Bauxite. Can be further refined into Aluminum Scrap for Aluminum Ingot production.",
-      "stackSize": 50000,
-      "liquid": true,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "aluminum casing": {
-      "name": "Aluminum Casing",
-      "sinkPoints": 393,
-      "description": "A versatile container cast from Aluminum Ingots.",
-      "stackSize": 200,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "aluminum ingot": {
-      "name": "Aluminum Ingot",
-      "sinkPoints": 131,
-      "description": "Aluminum Ingots are made from Aluminum Scrap, which is refined from Alumina Solution.\nUsed to produce specialized aluminum-based parts.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "heat sink": {
-      "name": "Heat Sink",
-      "sinkPoints": 2804,
-      "description": "Used to dissipate heat faster.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "alclad aluminum sheet": {
-      "name": "Alclad Aluminum Sheet",
-      "sinkPoints": 266,
-      "description": "Thin, lightweight, and highly durable sheets that are mainly used for products that require high heat conduction or a high specific strength.",
-      "stackSize": 200,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "aluminum scrap": {
-      "name": "Aluminum Scrap",
-      "sinkPoints": 27,
-      "description": "Aluminum Scrap is pure aluminum refined from Alumina. Can be smelted down to Aluminum Ingots for industrial usage.",
-      "stackSize": 500,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "battery": {
-      "name": "Battery",
-      "sinkPoints": 465,
-      "description": "Primarily used as fuel for Drones and Vehicles.",
-      "stackSize": 200,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "paleberry": {
-      "name": "Paleberry",
-      "sinkPoints": 0,
-      "description": "Slot: Hands\nConsumable\n\nCan be eaten to restore one health segment.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "solid biofuel": {
-      "name": "Solid Biofuel",
-      "sinkPoints": 48,
-      "description": "The most energy-efficient form of solid biomass. Can be used as fuel for the Chainsaw.",
-      "stackSize": 200,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "cable": {
-      "name": "Cable",
-      "sinkPoints": 24,
-      "description": "Used for crafting.\nPrimarily used to build power lines.",
-      "stackSize": 200,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "turbo rifle ammo": {
-      "name": "Turbo Rifle Ammo",
-      "sinkPoints": null,
-      "description": "Lightweight, compact, and volatile. These rounds provide extreme capacity and fire rates, at the cost of accuracy.",
-      "stackSize": 500,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
-      ]
-    },
-    "homing rifle ammo": {
-      "name": "Homing Rifle Ammo",
-      "sinkPoints": null,
-      "description": "The bullet guidance system, build into this ammunition, allows it to accurately hit any target within the reticle area.\nEspecially useful when dealing with agile threats, or for Pioneers who can't be bothered to aim properly.",
-      "stackSize": 500,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
-      ]
-    },
-    "rifle ammo": {
-      "name": "Rifle Ammo",
-      "sinkPoints": 664,
-      "description": "Standard issue Rifle ammunition, useful for establishing dominance.",
-      "stackSize": 500,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
-      ]
-    },
-    "concrete": {
-      "name": "Concrete",
-      "sinkPoints": 12,
-      "description": "Used for building.\nGood for stable foundations.",
-      "stackSize": 500,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "chainsaw": {
-      "name": "Chainsaw",
-      "sinkPoints": 2760,
-      "description": "Slot: Hands\nFuel: Biofuel\n\nUsed to clear an area of flora that is too difficult to remove by hand.",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "ai limiter": {
+    "AI Limiter": {
       "name": "AI Limiter",
       "sinkPoints": 920,
       "description": "AI Limiters are super advanced electronics that are used to control AIs and keep them from evolving in malicious ways.",
       "stackSize": 100,
       "liquid": false,
-      "recipeIn": [
+      "recipeTypes": [
         "inMachineRecipes",
         "inHandRecipes"
       ]
     },
-    "circuit board": {
-      "name": "Circuit Board",
-      "sinkPoints": 696,
-      "description": "Circuit Boards are advanced electronics that are used in a plethora of different ways.",
-      "stackSize": 200,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "coal": {
-      "name": "Coal",
-      "sinkPoints": 3,
-      "description": "Mainly used as fuel for vehicles & coal generators and for steel production.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "color cartridge": {
-      "name": "Color Cartridge",
-      "sinkPoints": 10,
-      "description": "Used for applying Patterns to structures with the Customizer.\n\n(Patterns can be purchased in the AWESOME Shop.)",
-      "stackSize": 200,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "compacted coal": {
-      "name": "Compacted Coal",
-      "sinkPoints": 28,
-      "description": "A much more efficient alternative for Coal. Used as fuel for vehicles & coal generators.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "supercomputer": {
-      "name": "Supercomputer",
-      "sinkPoints": 99576,
-      "description": "The supercomputer is the next-gen version of the computer.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "computer": {
-      "name": "Computer",
-      "sinkPoints": 17260,
-      "description": "A Computer is a complex logic machine that is used to control advanced behaviour in machines.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "cooling system": {
-      "name": "Cooling System",
-      "sinkPoints": 12006,
-      "description": "Used to keep temperatures of advanced parts and buildings from exceeding to inefficient levels.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "copper powder": {
-      "name": "Copper Powder",
-      "sinkPoints": 72,
-      "description": "Ground down Copper Ingots.\nThe high natural density of Copper, combined with the granularity of the powder, make this part fit for producing Nuclear Pasta in the Particle Accelerator.",
-      "stackSize": 500,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "copper ingot": {
-      "name": "Copper Ingot",
-      "sinkPoints": 6,
-      "description": "Used for crafting.\nCrafted into the most basic parts.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "copper sheet": {
-      "name": "Copper Sheet",
-      "sinkPoints": 24,
-      "description": "Used for crafting.\nPrimarily used for pipelines due to its high corrosion resistance.",
-      "stackSize": 200,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "crystal oscillator": {
-      "name": "Crystal Oscillator",
-      "sinkPoints": 3072,
-      "description": "A crystal oscillator is an electronic oscillator circuit that uses the mechanical resonance of a vibrating crystal to create an electrical signal with a precise frequency.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "power shard": {
-      "name": "Power Shard",
-      "sinkPoints": 0,
-      "description": "Mucus from the power slugs compressed into a solid crystal-like shard. \nIt radiates a strange power.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "blue power slug": {
-      "name": "Blue Power Slug",
-      "sinkPoints": 0,
-      "description": "A strange slug radiating a weak strange power.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "yellow power slug": {
-      "name": "Yellow Power Slug",
-      "sinkPoints": 0,
-      "description": "A strange slug radiating a strange power.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "purple power slug": {
-      "name": "Purple Power Slug",
-      "sinkPoints": 0,
-      "description": "A strange slug radiating a powerful strange power.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "electromagnetic control rod": {
-      "name": "Electromagnetic Control Rod",
-      "sinkPoints": 2560,
-      "description": "Control Rods regulate power output via electromagnetism.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "fabric": {
-      "name": "Fabric",
-      "sinkPoints": 140,
-      "description": "Used for equipment crafting.\nFlexible but durable fabric.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "gas filter": {
-      "name": "Gas Filter",
-      "sinkPoints": 830,
-      "description": "Used in the Gas Mask to filter out toxics and pollutants from the air.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
-      ]
-    },
-    "flower petals": {
-      "name": "Flower Petals",
-      "sinkPoints": 10,
-      "description": "Used for crafting.\nColorful native flower petals.",
-      "stackSize": 500,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "empty canister": {
-      "name": "Empty Canister",
-      "sinkPoints": 60,
-      "description": "Used to package fluids for transportation.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "packaged fuel": {
-      "name": "Packaged Fuel",
-      "sinkPoints": 270,
-      "description": "Fuel, packaged for alternative transport. Can be used as fuel for Vehicles or the Jetpack.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "empty fluid tank": {
-      "name": "Empty Fluid Tank",
-      "sinkPoints": 225,
-      "description": "Used to package gases and volatile liquids for transportation.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "biomass": {
-      "name": "Biomass",
-      "sinkPoints": 12,
-      "description": "Primarily used as fuel.\nBiomass burners and vehicles can use it for power.\nBiomass is much more energy-efficient than raw biological matter.",
-      "stackSize": 200,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "caterium ingot": {
-      "name": "Caterium Ingot",
-      "sinkPoints": 42,
-      "description": "Caterium Ingots are smelted from Caterium Ore. Caterium Ingots are mostly used for advanced electronics.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "golden factory cart™": {
-      "name": "Golden Factory Cart™",
+    "Organic Data Capsule": {
+      "name": "Organic Data Capsule",
       "sinkPoints": null,
-      "description": "The one and only Golden FICSIT Factory Cart™\n\nYou have now officially ascended. \nGo forth now, Master of Spaghetti, God of the Factory, Sinker of Cups, Employee of the Planet... travel in STYLE!",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "factory cart™": {
-      "name": "Factory Cart™",
-      "sinkPoints": 1552,
-      "description": "The one and only FICSIT Factory Cart™\nNow with special - FICSIT Foundation only - Grip Wheels, for an even smoother and faster factory floor experience!",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "smokeless powder": {
-      "name": "Smokeless Powder",
-      "sinkPoints": null,
-      "description": "An explosive powder that is commonly used to produce modern firearms.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "black powder": {
-      "name": "Black Powder",
-      "sinkPoints": 50,
-      "description": "An explosive powder that is commonly used to produce simple explosives.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
-      ]
-    },
-    "hub parts": {
-      "name": "HUB Parts",
-      "sinkPoints": 0,
-      "description": "The parts required to build the basic structure of the HUB.",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "iodine infused filter": {
-      "name": "Iodine Infused Filter",
-      "sinkPoints": 2718,
-      "description": "Used in the Hazmat Suit to absorb radioactive particles.",
+      "description": "This data capsule translates organic chemicals into readable alien genetics information.\nUsed for researching alien organisms.",
       "stackSize": 50,
       "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
-      ]
-    },
-    "heavy oil residue": {
-      "name": "Heavy Oil Residue",
-      "sinkPoints": 30,
-      "description": "A by-product of Plastic and Rubber production. Can be further refined into Fuel and Petroleum Coke.",
-      "stackSize": 50000,
-      "liquid": true,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "high-speed connector": {
-      "name": "High-Speed Connector",
-      "sinkPoints": 3776,
-      "description": "The high-speed connector connects several cables and wires in a very efficient way. Uses a standard pattern so its applications are many and varied.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
+      "recipeTypes": [
         "inMachineRecipes",
         "inHandRecipes"
       ]
     },
-    "quickwire": {
-      "name": "Quickwire",
-      "sinkPoints": 17,
-      "description": "Caterium's high conductivity and resistance to corrosion makes it ideal for small, advanced electronics.",
-      "stackSize": 500,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "hog remains": {
-      "name": "Hog Remains",
-      "sinkPoints": 0,
-      "description": "The carapace of the alien Hog creature.\nUsed for MAM research.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "iron ingot": {
-      "name": "Iron Ingot",
-      "sinkPoints": 2,
-      "description": "Used for crafting.\nCrafted into the most basic parts.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "reinforced iron plate": {
+    "Reinforced Iron Plate": {
       "name": "Reinforced Iron Plate",
       "sinkPoints": 120,
       "description": "Used for crafting.\nA sturdier and more durable Iron Plate.",
       "stackSize": 100,
       "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
+      "recipeTypes": [
+        "inMachineRecipes"
       ]
     },
-    "iron plate": {
-      "name": "Iron Plate",
-      "sinkPoints": 6,
-      "description": "Used for crafting.\nOne of the most basic parts.",
+    "Aluminum Casing": {
+      "name": "Aluminum Casing",
+      "sinkPoints": 393,
+      "description": "A versatile container cast from Aluminum Ingots.",
       "stackSize": 200,
       "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "iron rod": {
-      "name": "Iron Rod",
-      "sinkPoints": 4,
-      "description": "Used for crafting.\nOne of the most basic parts.",
-      "stackSize": 200,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "screw": {
-      "name": "Screw",
-      "sinkPoints": 2,
-      "description": "Used for crafting.\nOne of the most basic parts.",
-      "stackSize": 500,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "leaves": {
-      "name": "Leaves",
-      "sinkPoints": 3,
-      "description": "Primarily used as fuel.\nBiomass Burners and vehicles can use it for power.",
-      "stackSize": 500,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "liquid biofuel": {
-      "name": "Liquid Biofuel",
-      "sinkPoints": 261,
-      "description": "Liquid Biofuel can be used to generate power or packaged to be used as fuel for Vehicles.",
-      "stackSize": 50000,
-      "liquid": true,
-      "recipeIn": [
+      "recipeTypes": [
         "inMachineRecipes"
       ]
     },
-    "fuel": {
-      "name": "Fuel",
-      "sinkPoints": 75,
-      "description": "Fuel can be used to generate power or packaged to be used as fuel for Vehicles or the Jetpack.",
-      "stackSize": 50000,
-      "liquid": true,
-      "recipeIn": [
+    "Portable Miner": {
+      "name": "Portable Miner",
+      "sinkPoints": 56,
+      "description": "Can be set up on a resource node to automatically extract the resource. Note that it has limited storage space.",
+      "stackSize": 1,
+      "liquid": false,
+      "recipeTypes": [
         "inMachineRecipes"
       ]
     },
-    "crude oil": {
-      "name": "Crude Oil",
-      "sinkPoints": 30,
-      "description": "Crude Oil is refined into all kinds of Oil-based resources, like Fuel and Plastic.",
-      "stackSize": 50000,
-      "liquid": true,
-      "recipeIn": [
+    "Beacon": {
+      "name": "Beacon",
+      "sinkPoints": 320,
+      "description": "PENDING REMOVAL\nThis item will (likely) be removed in a future update.\n\nCurrently only used as an ingredient in an alternative recipe.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
         "inMachineRecipes"
       ]
     },
-    "turbofuel": {
-      "name": "Turbofuel",
-      "sinkPoints": 225,
-      "description": "A more efficient alternative to Fuel. Can be used to generate power or packaged to be used as fuel for Vehicles.",
-      "stackSize": 50000,
-      "liquid": true,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "medicinal inhaler": {
-      "name": "Medicinal Inhaler",
-      "sinkPoints": 67,
-      "description": "Fully restores health when used.\n\nThe FICSIT Medicinal Inhaler can be produced from a variety of different ingredients.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "fused modular frame": {
-      "name": "Fused Modular Frame",
-      "sinkPoints": 62840,
-      "description": "A corrosion resistant, nitride hardened, highly robust, yet lightweight modular frame.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "heavy modular frame": {
-      "name": "Heavy Modular Frame",
-      "sinkPoints": 11520,
-      "description": "A more robust multi-purpose frame.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "radio control unit": {
-      "name": "Radio Control Unit",
-      "sinkPoints": 32908,
-      "description": "Enhances and directs radio signals.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "modular frame": {
+    "Modular Frame": {
       "name": "Modular Frame",
       "sinkPoints": 408,
       "description": "Used for crafting.\nMulti-purpose building block.",
       "stackSize": 50,
       "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
+      "recipeTypes": [
+        "inMachineRecipes"
       ]
     },
-    "turbo motor": {
-      "name": "Turbo Motor",
-      "sinkPoints": 242720,
-      "description": "The Turbo Motor is a more complex, and more powerful, version of the regular Motor.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "motor": {
-      "name": "Motor",
-      "sinkPoints": 1520,
-      "description": "The Motor creates a mechanical force that is used to move things from machines to vehicles.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "mycelia": {
-      "name": "Mycelia",
-      "sinkPoints": 10,
-      "description": "Used for crafting.\nBiomass Burners and vehicles can use it for power.",
+    "Cable": {
+      "name": "Cable",
+      "sinkPoints": 24,
+      "description": "Used for crafting.\nPrimarily used to build power lines.",
       "stackSize": 200,
       "liquid": false,
-      "recipeIn": []
-    },
-    "nitric acid": {
-      "name": "Nitric Acid",
-      "sinkPoints": 94,
-      "description": "Produced by reaction of Nitrogen Gas with Water. Its high corrosiveness and oxidizing properties make it an excellent choice for refinement and fuel production processes.",
-      "stackSize": 50000,
-      "liquid": true,
-      "recipeIn": [
+      "recipeTypes": [
         "inMachineRecipes"
       ]
     },
-    "nitrogen gas": {
-      "name": "Nitrogen Gas",
-      "sinkPoints": 10,
-      "description": "Nitrogen can be used in a variety of ways, such as metallurgy, cooling, and Nitric Acid production. On Massage-2(AB)b, it can be extracted from underground gas wells.",
-      "stackSize": 50000,
-      "liquid": true,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "cluster nobelisk": {
-      "name": "Cluster Nobelisk",
-      "sinkPoints": null,
-      "description": "A Nobelisk that detonates into multiple smaller explosions. Practical when clearing out large areas of vegetation and other inconveniences.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
-      ]
-    },
-    "nobelisk": {
-      "name": "Nobelisk",
-      "sinkPoints": 980,
-      "description": "A simple explosive, useful for clearing boulders, vegetation, and other obstacles.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
-      ]
-    },
-    "gas nobelisk": {
-      "name": "Gas Nobelisk",
-      "sinkPoints": null,
-      "description": "Instead of a regular explosion, this Nobelisk creates a deadly gas cloud.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
-      ]
-    },
-    "nuke nobelisk": {
-      "name": "Nuke Nobelisk",
-      "sinkPoints": null,
-      "description": "This Nobelisk uses a nuclear fission reaction to generate a massive explosion.\n\nWARNING: Ensure all FICSIT property is clear of the blast zone before detonation.\n",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
-      ]
-    },
-    "pulse nobelisk": {
-      "name": "Pulse Nobelisk",
-      "sinkPoints": null,
-      "description": "Instead of a regular explosion, this Nobelisk generates a powerful shockwave.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
-      ]
-    },
-    "non-fissile uranium": {
-      "name": "Non-fissile Uranium",
-      "sinkPoints": 0,
-      "description": "The isotope Uranium-238 is non-fissile, meaning it cannot be used for nuclear fission. It can, however, be conversed into fissile Plutonium in the Particle Accelerator.\n\nCaution: Mildly Radioactive.",
-      "stackSize": 500,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "uranium fuel rod": {
-      "name": "Uranium Fuel Rod",
-      "sinkPoints": 44092,
-      "description": "Used as fuel for the Nuclear Power Plant.\n\nCaution: Produces radioactive Uranium Waste when consumed.\nCaution: Moderately Radioactive.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "uranium waste": {
-      "name": "Uranium Waste",
-      "sinkPoints": 0,
-      "description": "The by-product of consuming Uranium Fuel Rods in the Nuclear Power Plant.\nNon-fissible Uranium can be extracted. Handle with caution.\n\nCaution: HIGHLY Radioactive.",
-      "stackSize": 500,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "beryl nut": {
-      "name": "Beryl Nut",
-      "sinkPoints": 0,
-      "description": "Slot: Hands\nConsumable\n\nCan be eaten to restore half a health segment.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "bauxite": {
-      "name": "Bauxite",
-      "sinkPoints": 8,
-      "description": "Bauxite is used to produce Alumina, which can be further refined into the Aluminum Scrap required to produce Aluminum Ingots.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "copper ore": {
-      "name": "Copper Ore",
-      "sinkPoints": 3,
-      "description": "Used for crafting.\nBasic resource mainly used for electricity.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "caterium ore": {
-      "name": "Caterium Ore",
-      "sinkPoints": 7,
-      "description": "Caterium Ore is smelted into Caterium Ingots. Caterium Ingots are mostly used for advanced electronics.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "iron ore": {
-      "name": "Iron Ore",
-      "sinkPoints": 1,
-      "description": "Used for crafting.\nThe most essential basic resource.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "uranium": {
-      "name": "Uranium",
-      "sinkPoints": 35,
-      "description": "Uranium is a radioactive element. \nUsed to produce Encased Uranium Cells for Uranium Fuel Rods.\n\nCaution: Moderately Radioactive.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "packaged alumina solution": {
-      "name": "Packaged Alumina Solution",
-      "sinkPoints": 160,
-      "description": "Alumina Solution, packaged for alternative transport.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "packaged liquid biofuel": {
-      "name": "Packaged Liquid Biofuel",
-      "sinkPoints": 370,
-      "description": "Liquid Biofuel, packaged for alternative transport. Can be used as fuel for Vehicles.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "packaged nitric acid": {
-      "name": "Packaged Nitric Acid",
-      "sinkPoints": 412,
-      "description": "Nitric Acid, packaged for alternative transport.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "packaged nitrogen gas": {
-      "name": "Packaged Nitrogen Gas",
-      "sinkPoints": 312,
-      "description": "Nitrogen Gas, packaged for alternative transport.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "packaged heavy oil residue": {
-      "name": "Packaged Heavy Oil Residue",
-      "sinkPoints": 180,
-      "description": "Heavy Oil Residue, packaged for alternative transport. Can be used as fuel for Vehicles.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "packaged oil": {
-      "name": "Packaged Oil",
-      "sinkPoints": 180,
-      "description": "Crude Oil, packaged for alternative transport. Can be used as fuel for Vehicles.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "packaged sulfuric acid": {
-      "name": "Packaged Sulfuric Acid",
-      "sinkPoints": 152,
-      "description": "Sulfuric Acid, packaged for alternative transport.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "packaged water": {
-      "name": "Packaged Water",
-      "sinkPoints": 130,
-      "description": "Water, packaged for alternative transport.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "parachute": {
-      "name": "Parachute",
-      "sinkPoints": 608,
-      "description": "Slot: Body\nConsumable\n\nSlows down your fall when activated in mid-air.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "petroleum coke": {
-      "name": "Petroleum Coke",
-      "sinkPoints": 20,
-      "description": "Used for crafting.\nA carbon-rich material distilled from Heavy Oil Residue. \nUsed as a less efficient coal replacement or for aluminum refinement.",
+    "Circuit Board": {
+      "name": "Circuit Board",
+      "sinkPoints": 696,
+      "description": "Circuit Boards are advanced electronics that are used in a plethora of different ways.",
       "stackSize": 200,
       "liquid": false,
-      "recipeIn": [
+      "recipeTypes": [
         "inMachineRecipes"
       ]
     },
-    "plastic": {
-      "name": "Plastic",
-      "sinkPoints": 75,
-      "description": "A versatile and easy to manufacture material that can be used for a lot of things.",
+    "Battery": {
+      "name": "Battery",
+      "sinkPoints": 465,
+      "description": "Primarily used as fuel for Drones and Vehicles.",
       "stackSize": 200,
       "liquid": false,
-      "recipeIn": [
+      "recipeTypes": [
         "inMachineRecipes"
       ]
     },
-    "encased plutonium cell": {
-      "name": "Encased Plutonium Cell",
-      "sinkPoints": 0,
-      "description": "Plutonium Cells are concrete encased Plutonium Pellets.\nUsed to produce Plutonium Fuel Rods for Nuclear Power production.\n\nCaution: Moderately Radioactive.",
-      "stackSize": 200,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "plutonium fuel rod": {
-      "name": "Plutonium Fuel Rod",
-      "sinkPoints": 153184,
-      "description": "Used as fuel for the Nuclear Power Plant.\n\nCaution: Produces radioactive Plutonium Waste when consumed.\nCaution: HIGHLY Radioactive.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "plutonium pellet": {
-      "name": "Plutonium Pellet",
-      "sinkPoints": 0,
-      "description": "Produced in the Particle Accelerator through conversion of Non-fissile Uranium.\nUsed to produce Encased Plutonium Cells for Plutonium Fuel Rods.\n\nPower Usage: 250-750 MW (500 MW average).\nCaution: Moderately Radioactive.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "plutonium waste": {
-      "name": "Plutonium Waste",
-      "sinkPoints": 0,
-      "description": "The by-product of consuming Plutonium Fuel Rods in the Nuclear Power Plant.\nNeeds to be stored in a safe location. Handle with caution.\n\nCaution: EXTREMELY Radioactive.",
-      "stackSize": 500,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "polymer resin": {
-      "name": "Polymer Resin",
-      "sinkPoints": 12,
-      "description": "Used for crafting.\nA by-product of oil refinement into fuel. Commonly used to manufacture plastics.",
-      "stackSize": 200,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "pressure conversion cube": {
-      "name": "Pressure Conversion Cube",
-      "sinkPoints": 257312,
-      "description": "Converts outgoing force into internal pressure. Required to contain unstable, high-energy matter.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "quartz crystal": {
-      "name": "Quartz Crystal",
-      "sinkPoints": 50,
-      "description": "Derived from Raw Quartz. Used in the production of advanced radar technology and high-quality display screens.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "raw quartz": {
-      "name": "Raw Quartz",
-      "sinkPoints": 15,
-      "description": "Raw Quartz can be processed into Quartz Crystals and Silica, which both offer a variety of applications.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "rebar gun": {
-      "name": "Rebar Gun",
-      "sinkPoints": 1968,
-      "description": "Improvised ranged weapon for self-defense. Has to be reloaded after each use.",
-      "stackSize": 1,
-      "liquid": false,
-      "recipeIn": [
-        "inWorkshopRecipes"
-      ]
-    },
-    "explosive rebar": {
-      "name": "Explosive Rebar",
-      "sinkPoints": null,
-      "description": "Explodes on impact, dealing heavy damage.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
-      ]
-    },
-    "shatter rebar": {
-      "name": "Shatter Rebar",
-      "sinkPoints": null,
-      "description": "This rebar fractures when shot, launching deadly debris in a wide spread but with limited range.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
-      ]
-    },
-    "stun rebar": {
-      "name": "Stun Rebar",
-      "sinkPoints": null,
-      "description": "Electrocutes the target on impact, stunning it for a short time.\n\nStun duration: 5 seconds",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
-      ]
-    },
-    "ficsit coupon": {
-      "name": "FICSIT Coupon",
-      "sinkPoints": 1,
-      "description": "A special FICSIT bonus program Coupon, obtained through the AWESOME Sink. Can be redeemed in the AWESOME Shop for bonus milestones and rewards",
-      "stackSize": 500,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "rotor": {
-      "name": "Rotor",
-      "sinkPoints": 140,
-      "description": "Used for crafting.\nThe moving parts of a motor.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "rubber": {
-      "name": "Rubber",
+    "Empty Canister": {
+      "name": "Empty Canister",
       "sinkPoints": 60,
-      "description": "Rubber is a material that is very flexible and has a lot of friction.",
-      "stackSize": 200,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "bacon agaric": {
-      "name": "Bacon Agaric",
-      "sinkPoints": 0,
-      "description": "Slot: Hands\nConsumable\n\nCan be eaten to restore two health segments.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "silica": {
-      "name": "Silica",
-      "sinkPoints": 20,
-      "description": "Derived from Raw Quartz. Commonly used to create glass structures, advanced refinement processes, and alternative production of electronics.",
-      "stackSize": 200,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
-      ]
-    },
-    "smart plating": {
-      "name": "Smart Plating",
-      "sinkPoints": 520,
-      "description": "Project Part #1. Ship with the Space Elevator to complete phases of Project Assembly.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "versatile framework": {
-      "name": "Versatile Framework",
-      "sinkPoints": 1176,
-      "description": "Project Part #2. Ship with the Space Elevator to complete phases of Project Assembly.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "automated wiring": {
-      "name": "Automated Wiring",
-      "sinkPoints": 1440,
-      "description": "Project Part #3. Ship with the Space Elevator to complete phases of Project Assembly.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "modular engine": {
-      "name": "Modular Engine",
-      "sinkPoints": 9960,
-      "description": "Project Part #4. Ship with the Space Elevator to complete phases of Project Assembly.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "adaptive control unit": {
-      "name": "Adaptive Control Unit",
-      "sinkPoints": 86120,
-      "description": "Project Part #5. Ship with the Space Elevator to complete phases of Project Assembly.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "magnetic field generator": {
-      "name": "Magnetic Field Generator",
-      "sinkPoints": 15650,
-      "description": "Project Part #7. Ship with the Space Elevator to complete phases of Project Assembly.\n\nThese modular generators use superconducting magnets and vast amounts of electricity to produce an easily expandable and powerful magnetic field.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "assembly director system": {
-      "name": "Assembly Director System",
-      "sinkPoints": 543632,
-      "description": "Project Part #6. Ship with the Space Elevator to complete phases of Project Assembly.\n\nThis extremely fast and precise computing system is specifically designed to direct the Project Assembly: Assembly Phase.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "thermal propulsion rocket": {
-      "name": "Thermal Propulsion Rocket",
-      "sinkPoints": 732956,
-      "description": "Project Part #8. Ship with the Space Elevator to complete phases of Project Assembly.\n\nUses extreme heat to produce the high pressure plasma required to get Project Assembly into motion.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "nuclear pasta": {
-      "name": "Nuclear Pasta",
-      "sinkPoints": 543424,
-      "description": "Project Part #9. Ship with the Space Elevator to complete phases of Project Assembly.\nPower Usage: 500-1500 MW (1000 MW average).\n\nNuclear Pasta is extremely dense degenerate matter, formed when extreme pressure forces protons and electrons together into neutrons. It is theorized to exist naturally within the crust of neutron stars.",
-      "stackSize": 50,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "iron rebar": {
-      "name": "Iron Rebar",
-      "sinkPoints": 8,
-      "description": "A simple iron rebar that can be shot using the Rebar Gun, for self-defense purposes.",
+      "description": "Used to package fluids for transportation.",
       "stackSize": 100,
       "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inWorkshopRecipes"
+      "recipeTypes": [
+        "inMachineRecipes"
       ]
     },
-    "plasma spitter remains": {
-      "name": "Plasma Spitter Remains",
-      "sinkPoints": 0,
-      "description": "The remains of a plasma spitting alien creature.\nUsed for MAM research.",
-      "stackSize": 50,
+    "Iron Plate": {
+      "name": "Iron Plate",
+      "sinkPoints": 6,
+      "description": "Used for crafting.\nOne of the most basic parts.",
+      "stackSize": 200,
       "liquid": false,
-      "recipeIn": []
-    },
-    "stator": {
-      "name": "Stator",
-      "sinkPoints": 240,
-      "description": "Used for crafting.\nThe static parts of a motor.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
+      "recipeTypes": [
+        "inMachineRecipes"
       ]
     },
-    "steel ingot": {
+    "Steel Ingot": {
       "name": "Steel Ingot",
       "sinkPoints": 8,
       "description": "Steel Ingots are made from Iron Ore that's been smelted with Coal. They are made into several parts used in building construction.",
       "stackSize": 100,
       "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
+      "recipeTypes": [
+        "inMachineRecipes"
       ]
     },
-    "steel pipe": {
-      "name": "Steel Pipe",
-      "sinkPoints": 24,
-      "description": "Steel Pipes are used most often when constructing a little more advanced buildings.",
-      "stackSize": 200,
+    "Computer": {
+      "name": "Computer",
+      "sinkPoints": 17260,
+      "description": "A Computer is a complex logic machine that is used to control advanced behaviour in machines.",
+      "stackSize": 50,
       "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
+      "recipeTypes": [
+        "inMachineRecipes"
       ]
     },
-    "encased industrial beam": {
+    "Concrete": {
+      "name": "Concrete",
+      "sinkPoints": 12,
+      "description": "Used for building.\nGood for stable foundations.",
+      "stackSize": 500,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Cooling System": {
+      "name": "Cooling System",
+      "sinkPoints": 12006,
+      "description": "Used to keep temperatures of advanced parts and buildings from exceeding to inefficient levels.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Copper Ingot": {
+      "name": "Copper Ingot",
+      "sinkPoints": 6,
+      "description": "Used for crafting.\nCrafted into the most basic parts.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Rotor": {
+      "name": "Rotor",
+      "sinkPoints": 140,
+      "description": "Used for crafting.\nThe moving parts of a motor.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Crystal Oscillator": {
+      "name": "Crystal Oscillator",
+      "sinkPoints": 3072,
+      "description": "A crystal oscillator is an electronic oscillator circuit that uses the mechanical resonance of a vibrating crystal to create an electrical signal with a precise frequency.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Fuel": {
+      "name": "Fuel",
+      "sinkPoints": 75,
+      "description": "Fuel can be used to generate power or packaged to be used as fuel for Vehicles or the Jetpack.",
+      "stackSize": 50000,
+      "liquid": true,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Packaged Fuel": {
+      "name": "Packaged Fuel",
+      "sinkPoints": 270,
+      "description": "Fuel, packaged for alternative transport. Can be used as fuel for Vehicles or the Jetpack.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Motor": {
+      "name": "Motor",
+      "sinkPoints": 1520,
+      "description": "The Motor creates a mechanical force that is used to move things from machines to vehicles.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Aluminum Scrap": {
+      "name": "Aluminum Scrap",
+      "sinkPoints": 27,
+      "description": "Aluminum Scrap is pure aluminum refined from Alumina. Can be smelted down to Aluminum Ingots for industrial usage.",
+      "stackSize": 500,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Electromagnetic Control Rod": {
+      "name": "Electromagnetic Control Rod",
+      "sinkPoints": 2560,
+      "description": "Control Rods regulate power output via electromagnetism.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Encased Industrial Beam": {
       "name": "Encased Industrial Beam",
       "sinkPoints": 632,
       "description": "Encased Industrial Beams utilizes the compressive strength of concrete and tensile strength of steel simultaneously.\nMostly used as a stable basis for constructing buildings.",
       "stackSize": 100,
       "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
+      "recipeTypes": [
+        "inMachineRecipes"
       ]
     },
-    "steel beam": {
-      "name": "Steel Beam",
-      "sinkPoints": 64,
-      "description": "Steel Beams are used most often when constructing a little more advanced buildings.",
-      "stackSize": 200,
+    "Compacted Coal": {
+      "name": "Compacted Coal",
+      "sinkPoints": 28,
+      "description": "A much more efficient alternative for Coal. Used as fuel for vehicles & coal generators.",
+      "stackSize": 100,
       "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes",
-        "inHandRecipes"
+      "recipeTypes": [
+        "inMachineRecipes"
       ]
     },
-    "stinger remains": {
-      "name": "Stinger Remains",
-      "sinkPoints": null,
-      "description": "The remains of whatever that creepy thing was.\nUsed for MAM research.",
+    "Non-fissile Uranium": {
+      "name": "Non-fissile Uranium",
+      "sinkPoints": 0,
+      "description": "The isotope Uranium-238 is non-fissile, meaning it cannot be used for nuclear fission. It can, however, be conversed into fissile Plutonium in the Particle Accelerator.\n\nCaution: Mildly Radioactive.",
+      "stackSize": 500,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Versatile Framework": {
+      "name": "Versatile Framework",
+      "sinkPoints": 1176,
+      "description": "Project Part #2. Ship with the Space Elevator to complete phases of Project Assembly.",
       "stackSize": 50,
       "liquid": false,
-      "recipeIn": []
-    },
-    "limestone": {
-      "name": "Limestone",
-      "sinkPoints": 2,
-      "description": "Used for crafting.\nBasic resource mainly used for stable foundations.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "sulfur": {
-      "name": "Sulfur",
-      "sinkPoints": 11,
-      "description": "Sulfur is primarily used for Black Powder.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": []
-    },
-    "sulfuric acid": {
-      "name": "Sulfuric Acid",
-      "sinkPoints": 16,
-      "description": "A mineral acid produced by combining Sulfur and Water in a complex reaction. Primarily used in refinement processes and Battery production.",
-      "stackSize": 50000,
-      "liquid": true,
-      "recipeIn": [
+      "recipeTypes": [
         "inMachineRecipes"
       ]
     },
-    "packaged turbofuel": {
-      "name": "Packaged Turbofuel",
-      "sinkPoints": 570,
-      "description": "Turbofuel, packaged for alternative transport. Can be used as fuel for Vehicles.",
-      "stackSize": 100,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "encased uranium cell": {
-      "name": "Encased Uranium Cell",
-      "sinkPoints": 147,
-      "description": "Uranium Cells are produced from Uranium Ore. \nUsed to produce Uranium Fuel Rods for Nuclear Power production.\n\nCaution: Mildly Radioactive.",
-      "stackSize": 200,
-      "liquid": false,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "water": {
-      "name": "Water",
-      "sinkPoints": 5,
-      "description": "It's water.",
-      "stackSize": 50000,
-      "liquid": true,
-      "recipeIn": [
-        "inMachineRecipes"
-      ]
-    },
-    "wire": {
+    "Wire": {
       "name": "Wire",
       "sinkPoints": 6,
       "description": "Used for crafting.\nOne of the most basic parts.",
       "stackSize": 500,
       "liquid": false,
-      "recipeIn": [
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Black Powder": {
+      "name": "Black Powder",
+      "sinkPoints": 50,
+      "description": "An explosive powder that is commonly used to produce simple explosives.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Fused Modular Frame": {
+      "name": "Fused Modular Frame",
+      "sinkPoints": 62840,
+      "description": "A corrosion resistant, nitride hardened, highly robust, yet lightweight modular frame.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Heat Sink": {
+      "name": "Heat Sink",
+      "sinkPoints": 2804,
+      "description": "Used to dissipate heat faster.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Heavy Modular Frame": {
+      "name": "Heavy Modular Frame",
+      "sinkPoints": 11520,
+      "description": "A more robust multi-purpose frame.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Heavy Oil Residue": {
+      "name": "Heavy Oil Residue",
+      "sinkPoints": 30,
+      "description": "A by-product of Plastic and Rubber production. Can be further refined into Fuel and Petroleum Coke.",
+      "stackSize": 50000,
+      "liquid": true,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Polymer Resin": {
+      "name": "Polymer Resin",
+      "sinkPoints": 12,
+      "description": "Used for crafting.\nA by-product of oil refinement into fuel. Commonly used to manufacture plastics.",
+      "stackSize": 200,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "High-Speed Connector": {
+      "name": "High-Speed Connector",
+      "sinkPoints": 3776,
+      "description": "The high-speed connector connects several cables and wires in a very efficient way. Uses a standard pattern so its applications are many and varied.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Automated Wiring": {
+      "name": "Automated Wiring",
+      "sinkPoints": 1440,
+      "description": "Project Part #3. Ship with the Space Elevator to complete phases of Project Assembly.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Iron Ingot": {
+      "name": "Iron Ingot",
+      "sinkPoints": 2,
+      "description": "Used for crafting.\nCrafted into the most basic parts.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Encased Plutonium Cell": {
+      "name": "Encased Plutonium Cell",
+      "sinkPoints": 0,
+      "description": "Plutonium Cells are concrete encased Plutonium Pellets.\nUsed to produce Plutonium Fuel Rods for Nuclear Power production.\n\nCaution: Moderately Radioactive.",
+      "stackSize": 200,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Uranium Fuel Rod": {
+      "name": "Uranium Fuel Rod",
+      "sinkPoints": 44092,
+      "description": "Used as fuel for the Nuclear Power Plant.\n\nCaution: Produces radioactive Uranium Waste when consumed.\nCaution: Moderately Radioactive.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Supercomputer": {
+      "name": "Supercomputer",
+      "sinkPoints": 99576,
+      "description": "The supercomputer is the next-gen version of the computer.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Smart Plating": {
+      "name": "Smart Plating",
+      "sinkPoints": 520,
+      "description": "Project Part #1. Ship with the Space Elevator to complete phases of Project Assembly.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Plastic": {
+      "name": "Plastic",
+      "sinkPoints": 75,
+      "description": "A versatile and easy to manufacture material that can be used for a lot of things.",
+      "stackSize": 200,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Plutonium Fuel Rod": {
+      "name": "Plutonium Fuel Rod",
+      "sinkPoints": 153184,
+      "description": "Used as fuel for the Nuclear Power Plant.\n\nCaution: Produces radioactive Plutonium Waste when consumed.\nCaution: HIGHLY Radioactive.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Fabric": {
+      "name": "Fabric",
+      "sinkPoints": 140,
+      "description": "Used for equipment crafting.\nFlexible but durable fabric.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Caterium Ingot": {
+      "name": "Caterium Ingot",
+      "sinkPoints": 42,
+      "description": "Caterium Ingots are smelted from Caterium Ore. Caterium Ingots are mostly used for advanced electronics.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Quartz Crystal": {
+      "name": "Quartz Crystal",
+      "sinkPoints": 50,
+      "description": "Derived from Raw Quartz. Used in the production of advanced radar technology and high-quality display screens.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Quickwire": {
+      "name": "Quickwire",
+      "sinkPoints": 17,
+      "description": "Caterium's high conductivity and resistance to corrosion makes it ideal for small, advanced electronics.",
+      "stackSize": 500,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Radio Control Unit": {
+      "name": "Radio Control Unit",
+      "sinkPoints": 32908,
+      "description": "Enhances and directs radio signals.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Rubber": {
+      "name": "Rubber",
+      "sinkPoints": 60,
+      "description": "Rubber is a material that is very flexible and has a lot of friction.",
+      "stackSize": 200,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Screw": {
+      "name": "Screw",
+      "sinkPoints": 2,
+      "description": "Used for crafting.\nOne of the most basic parts.",
+      "stackSize": 500,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Silica": {
+      "name": "Silica",
+      "sinkPoints": 20,
+      "description": "Derived from Raw Quartz. Commonly used to create glass structures, advanced refinement processes, and alternative production of electronics.",
+      "stackSize": 200,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Alumina Solution": {
+      "name": "Alumina Solution",
+      "sinkPoints": 20,
+      "description": "Dissolved Alumina, extracted from Bauxite. Can be further refined into Aluminum Scrap for Aluminum Ingot production.",
+      "stackSize": 50000,
+      "liquid": true,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Stator": {
+      "name": "Stator",
+      "sinkPoints": 240,
+      "description": "Used for crafting.\nThe static parts of a motor.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Copper Sheet": {
+      "name": "Copper Sheet",
+      "sinkPoints": 24,
+      "description": "Used for crafting.\nPrimarily used for pipelines due to its high corrosion resistance.",
+      "stackSize": 200,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Iron Rod": {
+      "name": "Iron Rod",
+      "sinkPoints": 4,
+      "description": "Used for crafting.\nOne of the most basic parts.",
+      "stackSize": 200,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Turbofuel": {
+      "name": "Turbofuel",
+      "sinkPoints": 225,
+      "description": "A more efficient alternative to Fuel. Can be used to generate power or packaged to be used as fuel for Vehicles.",
+      "stackSize": 50000,
+      "liquid": true,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Turbo Motor": {
+      "name": "Turbo Motor",
+      "sinkPoints": 242720,
+      "description": "The Turbo Motor is a more complex, and more powerful, version of the regular Motor.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Encased Uranium Cell": {
+      "name": "Encased Uranium Cell",
+      "sinkPoints": 147,
+      "description": "Uranium Cells are produced from Uranium Ore. \nUsed to produce Uranium Fuel Rods for Nuclear Power production.\n\nCaution: Mildly Radioactive.",
+      "stackSize": 200,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Alclad Aluminum Sheet": {
+      "name": "Alclad Aluminum Sheet",
+      "sinkPoints": 266,
+      "description": "Thin, lightweight, and highly durable sheets that are mainly used for products that require high heat conduction or a high specific strength.",
+      "stackSize": 200,
+      "liquid": false,
+      "recipeTypes": [
         "inMachineRecipes",
         "inHandRecipes"
       ]
     },
-    "wood": {
-      "name": "Wood",
-      "sinkPoints": 30,
-      "description": "Primarily used as fuel.\nBiomass Burners and vehicles can use it for power.",
+    "Solid Biofuel": {
+      "name": "Solid Biofuel",
+      "sinkPoints": 48,
+      "description": "The most energy-efficient form of solid biomass. Can be used as fuel for the Chainsaw.",
       "stackSize": 200,
       "liquid": false,
-      "recipeIn": []
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inHandRecipes"
+      ]
+    },
+    "Biomass": {
+      "name": "Biomass",
+      "sinkPoints": 12,
+      "description": "Primarily used as fuel.\nBiomass burners and vehicles can use it for power.\nBiomass is much more energy-efficient than raw biological matter.",
+      "stackSize": 200,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inHandRecipes"
+      ]
+    },
+    "Blade Runners": {
+      "name": "Blade Runners",
+      "sinkPoints": 4988,
+      "description": "An exoskeleton for the lower legs that assists movement, allowing Pioneers to sprint faster and jump higher.\nAlso dampens the impact of landing.",
+      "stackSize": 1,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
+    },
+    "Turbo Rifle Ammo": {
+      "name": "Turbo Rifle Ammo",
+      "sinkPoints": null,
+      "description": "Lightweight, compact, and volatile. These rounds provide extreme capacity and fire rates, at the cost of accuracy.",
+      "stackSize": 500,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Homing Rifle Ammo": {
+      "name": "Homing Rifle Ammo",
+      "sinkPoints": null,
+      "description": "The bullet guidance system, build into this ammunition, allows it to accurately hit any target within the reticle area.\nEspecially useful when dealing with agile threats, or for Pioneers who can't be bothered to aim properly.",
+      "stackSize": 500,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inWorkshopRecipes"
+      ]
+    },
+    "Rifle Ammo": {
+      "name": "Rifle Ammo",
+      "sinkPoints": 664,
+      "description": "Standard issue Rifle ammunition, useful for establishing dominance.",
+      "stackSize": 500,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inWorkshopRecipes"
+      ]
+    },
+    "Chainsaw": {
+      "name": "Chainsaw",
+      "sinkPoints": 2760,
+      "description": "Slot: Hands\nFuel: Biofuel\n\nUsed to clear an area of flora that is too difficult to remove by hand.",
+      "stackSize": 1,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
+    },
+    "Color Cartridge": {
+      "name": "Color Cartridge",
+      "sinkPoints": 10,
+      "description": "Used for applying Patterns to structures with the Customizer.\n\n(Patterns can be purchased in the AWESOME Shop.)",
+      "stackSize": 200,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inHandRecipes"
+      ]
+    },
+    "Copper Powder": {
+      "name": "Copper Powder",
+      "sinkPoints": 72,
+      "description": "Ground down Copper Ingots.\nThe high natural density of Copper, combined with the granularity of the powder, make this part fit for producing Nuclear Pasta in the Particle Accelerator.",
+      "stackSize": 500,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inHandRecipes"
+      ]
+    },
+    "Factory Cart™": {
+      "name": "Factory Cart™",
+      "sinkPoints": 1552,
+      "description": "The one and only FICSIT Factory Cart™\nNow with special - FICSIT Foundation only - Grip Wheels, for an even smoother and faster factory floor experience!",
+      "stackSize": 1,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
+    },
+    "Gas Filter": {
+      "name": "Gas Filter",
+      "sinkPoints": 830,
+      "description": "Used in the Gas Mask to filter out toxics and pollutants from the air.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inWorkshopRecipes"
+      ]
+    },
+    "Iodine Infused Filter": {
+      "name": "Iodine Infused Filter",
+      "sinkPoints": 2718,
+      "description": "Used in the Hazmat Suit to absorb radioactive particles.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inWorkshopRecipes"
+      ]
+    },
+    "Empty Fluid Tank": {
+      "name": "Empty Fluid Tank",
+      "sinkPoints": 225,
+      "description": "Used to package gases and volatile liquids for transportation.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inHandRecipes"
+      ]
+    },
+    "Gas Mask": {
+      "name": "Gas Mask",
+      "sinkPoints": 55000,
+      "description": "Allows Pioneers to breathe normally while in toxic gas areas.\nConsumes Gas Filters from the inventory when in use.",
+      "stackSize": 1,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
+    },
+    "Golden Factory Cart™": {
+      "name": "Golden Factory Cart™",
+      "sinkPoints": null,
+      "description": "The one and only Golden FICSIT Factory Cart™\n\nYou have now officially ascended. \nGo forth now, Master of Spaghetti, God of the Factory, Sinker of Cups, Employee of the Planet... travel in STYLE!",
+      "stackSize": 1,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
+    },
+    "Smokeless Powder": {
+      "name": "Smokeless Powder",
+      "sinkPoints": null,
+      "description": "An explosive powder that is commonly used to produce modern firearms.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Hazmat Suit": {
+      "name": "Hazmat Suit",
+      "sinkPoints": 54100,
+      "description": "Shields Pioneers from the adverse effects of radiation. \nConsumes Iodine Infused Filters from the inventory while worn in radioactive areas.",
+      "stackSize": 1,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
+    },
+    "Hover Pack": {
+      "name": "Hover Pack",
+      "sinkPoints": 413920,
+      "description": "Power consumption: 100 MW\n\nAllows for vertical movement and hovering in mid-air to improve building efficiency and factory traversal. Wirelessly connects to nearby power connections, such as Power Poles and Buildings, for power consumption.\n\nSlow-fall: Hold {Jump_Drift} after losing connection mid-air.\nDisable Hoverpack: Double tap {Crouch} while hovering.",
+      "stackSize": 1,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
+    },
+    "Aluminum Ingot": {
+      "name": "Aluminum Ingot",
+      "sinkPoints": 131,
+      "description": "Aluminum Ingots are made from Aluminum Scrap, which is refined from Alumina Solution.\nUsed to produce specialized aluminum-based parts.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inHandRecipes"
+      ]
+    },
+    "Jetpack": {
+      "name": "Jetpack",
+      "sinkPoints": 49580,
+      "description": "The Jetpack allows Pioneers to travel through the air with increased control.\nConsumes Fuel when used and automatically refills the Fuel from the inventory, when on the ground.",
+      "stackSize": 1,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
+    },
+    "Liquid Biofuel": {
+      "name": "Liquid Biofuel",
+      "sinkPoints": 261,
+      "description": "Liquid Biofuel can be used to generate power or packaged to be used as fuel for Vehicles.",
+      "stackSize": 50000,
+      "liquid": true,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Medicinal Inhaler": {
+      "name": "Medicinal Inhaler",
+      "sinkPoints": 67,
+      "description": "Fully restores health when used.\n\nThe FICSIT Medicinal Inhaler can be produced from a variety of different ingredients.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
+    },
+    "Nitric Acid": {
+      "name": "Nitric Acid",
+      "sinkPoints": 94,
+      "description": "Produced by reaction of Nitrogen Gas with Water. Its high corrosiveness and oxidizing properties make it an excellent choice for refinement and fuel production processes.",
+      "stackSize": 50000,
+      "liquid": true,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Cluster Nobelisk": {
+      "name": "Cluster Nobelisk",
+      "sinkPoints": null,
+      "description": "A Nobelisk that detonates into multiple smaller explosions. Practical when clearing out large areas of vegetation and other inconveniences.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inWorkshopRecipes"
+      ]
+    },
+    "Nobelisk Detonator": {
+      "name": "Nobelisk Detonator",
+      "sinkPoints": 39520,
+      "description": "A remote-control device used to handle and detonate Nobelisks.",
+      "stackSize": 1,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
+    },
+    "Gas Nobelisk": {
+      "name": "Gas Nobelisk",
+      "sinkPoints": null,
+      "description": "Instead of a regular explosion, this Nobelisk creates a deadly gas cloud.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inWorkshopRecipes"
+      ]
+    },
+    "Nuke Nobelisk": {
+      "name": "Nuke Nobelisk",
+      "sinkPoints": null,
+      "description": "This Nobelisk uses a nuclear fission reaction to generate a massive explosion.\n\nWARNING: Ensure all FICSIT property is clear of the blast zone before detonation.\n",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inWorkshopRecipes"
+      ]
+    },
+    "Pulse Nobelisk": {
+      "name": "Pulse Nobelisk",
+      "sinkPoints": null,
+      "description": "Instead of a regular explosion, this Nobelisk generates a powerful shockwave.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inWorkshopRecipes"
+      ]
+    },
+    "Nobelisk": {
+      "name": "Nobelisk",
+      "sinkPoints": 980,
+      "description": "A simple explosive, useful for clearing boulders, vegetation, and other obstacles.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inWorkshopRecipes"
+      ]
+    },
+    "Object Scanner": {
+      "name": "Object Scanner",
+      "sinkPoints": 3080,
+      "description": "Slot: Hands\n\nScans the area for a set item. Beeps at a rate proportional to proximity and direction.",
+      "stackSize": 1,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
+    },
+    "Packaged Alumina Solution": {
+      "name": "Packaged Alumina Solution",
+      "sinkPoints": 160,
+      "description": "Alumina Solution, packaged for alternative transport.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Packaged Liquid Biofuel": {
+      "name": "Packaged Liquid Biofuel",
+      "sinkPoints": 370,
+      "description": "Liquid Biofuel, packaged for alternative transport. Can be used as fuel for Vehicles.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Packaged Oil": {
+      "name": "Packaged Oil",
+      "sinkPoints": 180,
+      "description": "Crude Oil, packaged for alternative transport. Can be used as fuel for Vehicles.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Packaged Nitric Acid": {
+      "name": "Packaged Nitric Acid",
+      "sinkPoints": 412,
+      "description": "Nitric Acid, packaged for alternative transport.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Packaged Nitrogen Gas": {
+      "name": "Packaged Nitrogen Gas",
+      "sinkPoints": 312,
+      "description": "Nitrogen Gas, packaged for alternative transport.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Packaged Heavy Oil Residue": {
+      "name": "Packaged Heavy Oil Residue",
+      "sinkPoints": 180,
+      "description": "Heavy Oil Residue, packaged for alternative transport. Can be used as fuel for Vehicles.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Packaged Sulfuric Acid": {
+      "name": "Packaged Sulfuric Acid",
+      "sinkPoints": 152,
+      "description": "Sulfuric Acid, packaged for alternative transport.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Packaged Turbofuel": {
+      "name": "Packaged Turbofuel",
+      "sinkPoints": 570,
+      "description": "Turbofuel, packaged for alternative transport. Can be used as fuel for Vehicles.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Packaged Water": {
+      "name": "Packaged Water",
+      "sinkPoints": 130,
+      "description": "Water, packaged for alternative transport.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Parachute": {
+      "name": "Parachute",
+      "sinkPoints": 608,
+      "description": "Slot: Body\nConsumable\n\nSlows down your fall when activated in mid-air.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
+    },
+    "Petroleum Coke": {
+      "name": "Petroleum Coke",
+      "sinkPoints": 20,
+      "description": "Used for crafting.\nA carbon-rich material distilled from Heavy Oil Residue. \nUsed as a less efficient coal replacement or for aluminum refinement.",
+      "stackSize": 200,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Plutonium Pellet": {
+      "name": "Plutonium Pellet",
+      "sinkPoints": 0,
+      "description": "Produced in the Particle Accelerator through conversion of Non-fissile Uranium.\nUsed to produce Encased Plutonium Cells for Plutonium Fuel Rods.\n\nPower Usage: 250-750 MW (500 MW average).\nCaution: Moderately Radioactive.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Power Shard": {
+      "name": "Power Shard",
+      "sinkPoints": 0,
+      "description": "Mucus from the power slugs compressed into a solid crystal-like shard. \nIt radiates a strange power.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inHandRecipes"
+      ]
+    },
+    "Pressure Conversion Cube": {
+      "name": "Pressure Conversion Cube",
+      "sinkPoints": 257312,
+      "description": "Converts outgoing force into internal pressure. Required to contain unstable, high-energy matter.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inHandRecipes"
+      ]
+    },
+    "Alien Protein": {
+      "name": "Alien Protein",
+      "sinkPoints": null,
+      "description": "Ground down Alien Remains in a neat little package.\nUsed for medical purposed and to research alien organisms.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inHandRecipes"
+      ]
+    },
+    "Rebar Gun": {
+      "name": "Rebar Gun",
+      "sinkPoints": 1968,
+      "description": "Improvised ranged weapon for self-defense. Has to be reloaded after each use.",
+      "stackSize": 1,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
+    },
+    "Explosive Rebar": {
+      "name": "Explosive Rebar",
+      "sinkPoints": null,
+      "description": "Explodes on impact, dealing heavy damage.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inWorkshopRecipes"
+      ]
+    },
+    "Shatter Rebar": {
+      "name": "Shatter Rebar",
+      "sinkPoints": null,
+      "description": "This rebar fractures when shot, launching deadly debris in a wide spread but with limited range.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inWorkshopRecipes"
+      ]
+    },
+    "Stun Rebar": {
+      "name": "Stun Rebar",
+      "sinkPoints": null,
+      "description": "Electrocutes the target on impact, stunning it for a short time.\n\nStun duration: 5 seconds",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inWorkshopRecipes"
+      ]
+    },
+    "Modular Engine": {
+      "name": "Modular Engine",
+      "sinkPoints": 9960,
+      "description": "Project Part #4. Ship with the Space Elevator to complete phases of Project Assembly.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Adaptive Control Unit": {
+      "name": "Adaptive Control Unit",
+      "sinkPoints": 86120,
+      "description": "Project Part #5. Ship with the Space Elevator to complete phases of Project Assembly.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Magnetic Field Generator": {
+      "name": "Magnetic Field Generator",
+      "sinkPoints": 15650,
+      "description": "Project Part #7. Ship with the Space Elevator to complete phases of Project Assembly.\n\nThese modular generators use superconducting magnets and vast amounts of electricity to produce an easily expandable and powerful magnetic field.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Assembly Director System": {
+      "name": "Assembly Director System",
+      "sinkPoints": 543632,
+      "description": "Project Part #6. Ship with the Space Elevator to complete phases of Project Assembly.\n\nThis extremely fast and precise computing system is specifically designed to direct the Project Assembly: Assembly Phase.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Thermal Propulsion Rocket": {
+      "name": "Thermal Propulsion Rocket",
+      "sinkPoints": 732956,
+      "description": "Project Part #8. Ship with the Space Elevator to complete phases of Project Assembly.\n\nUses extreme heat to produce the high pressure plasma required to get Project Assembly into motion.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Nuclear Pasta": {
+      "name": "Nuclear Pasta",
+      "sinkPoints": 543424,
+      "description": "Project Part #9. Ship with the Space Elevator to complete phases of Project Assembly.\nPower Usage: 500-1500 MW (1000 MW average).\n\nNuclear Pasta is extremely dense degenerate matter, formed when extreme pressure forces protons and electrons together into neutrons. It is theorized to exist naturally within the crust of neutron stars.",
+      "stackSize": 50,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Rifle": {
+      "name": "Rifle",
+      "sinkPoints": 99160,
+      "description": "A long-range, rapid fire weapon. Specifically designed to deliver adequate performance within the designated work area.",
+      "stackSize": 1,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
+    },
+    "Iron Rebar": {
+      "name": "Iron Rebar",
+      "sinkPoints": 8,
+      "description": "A simple iron rebar that can be shot using the Rebar Gun, for self-defense purposes.",
+      "stackSize": 100,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inWorkshopRecipes"
+      ]
+    },
+    "Steel Beam": {
+      "name": "Steel Beam",
+      "sinkPoints": 64,
+      "description": "Steel Beams are used most often when constructing a little more advanced buildings.",
+      "stackSize": 200,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inHandRecipes"
+      ]
+    },
+    "Steel Pipe": {
+      "name": "Steel Pipe",
+      "sinkPoints": 24,
+      "description": "Steel Pipes are used most often when constructing a little more advanced buildings.",
+      "stackSize": 200,
+      "liquid": false,
+      "recipeTypes": [
+        "inMachineRecipes",
+        "inHandRecipes"
+      ]
+    },
+    "Sulfuric Acid": {
+      "name": "Sulfuric Acid",
+      "sinkPoints": 16,
+      "description": "A mineral acid produced by combining Sulfur and Water in a complex reaction. Primarily used in refinement processes and Battery production.",
+      "stackSize": 50000,
+      "liquid": true,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Nitrogen Gas": {
+      "name": "Nitrogen Gas",
+      "sinkPoints": 10,
+      "description": "Nitrogen can be used in a variety of ways, such as metallurgy, cooling, and Nitric Acid production. On Massage-2(AB)b, it can be extracted from underground gas wells.",
+      "stackSize": 50000,
+      "liquid": true,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Crude Oil": {
+      "name": "Crude Oil",
+      "sinkPoints": 30,
+      "description": "Crude Oil is refined into all kinds of Oil-based resources, like Fuel and Plastic.",
+      "stackSize": 50000,
+      "liquid": true,
+      "recipeTypes": [
+        "inMachineRecipes"
+      ]
+    },
+    "Xeno-Basher": {
+      "name": "Xeno-Basher",
+      "sinkPoints": 18800,
+      "description": "Heavy electroshock self-defense weapon for melee range.",
+      "stackSize": 1,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
+    },
+    "Xeno-Zapper": {
+      "name": "Xeno-Zapper",
+      "sinkPoints": 1880,
+      "description": "Standard issue electroshock self-defense weapon for melee range.",
+      "stackSize": 1,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
+    },
+    "Zipline": {
+      "name": "Zipline",
+      "sinkPoints": 5284,
+      "description": "Slot: Hand\n\nProvides faster traversal in factories by allowing Pioneers to zip along Power lines.\nActivate the Zipline and aim at a nearby Power Line to connect to it.",
+      "stackSize": 1,
+      "liquid": false,
+      "recipeTypes": [
+        "inWorkshopRecipes"
+      ]
     }
   },
   "generators": {
-    "biomass burner": {
+    "Biomass Burner": {
       "name": "Biomass Burner",
       "powerProduction": 30,
       "waterToPowerRatio": 0,
@@ -10198,7 +9676,7 @@
         "Stinger Remains"
       ]
     },
-    "coal generator": {
+    "Coal Generator": {
       "name": "Coal Generator",
       "powerProduction": 75,
       "waterToPowerRatio": 10,
@@ -10208,7 +9686,7 @@
         "Petroleum Coke"
       ]
     },
-    "fuel generator": {
+    "Fuel Generator": {
       "name": "Fuel Generator",
       "powerProduction": 150,
       "waterToPowerRatio": 0,
@@ -10218,13 +9696,13 @@
         "Liquid Biofuel"
       ]
     },
-    "geothermal generator": {
+    "Geothermal Generator": {
       "name": "Geothermal Generator",
       "powerProduction": 0,
       "waterToPowerRatio": 0,
       "fuel": []
     },
-    "nuclear power plant": {
+    "Nuclear Power Plant": {
       "name": "Nuclear Power Plant",
       "powerProduction": 2500,
       "waterToPowerRatio": 2,
@@ -10235,7 +9713,7 @@
     }
   },
   "miners": {
-    "miner mk1": {
+    "Miner Mk1": {
       "name": "Miner Mk1",
       "itemsPerCycle": 1,
       "extractCycleTime": 1,
@@ -10251,7 +9729,7 @@
         "Sulfur"
       ]
     },
-    "miner mk2": {
+    "Miner Mk2": {
       "name": "Miner Mk2",
       "itemsPerCycle": 1,
       "extractCycleTime": 0.5,
@@ -10267,7 +9745,7 @@
         "Sulfur"
       ]
     },
-    "miner mk3": {
+    "Miner Mk3": {
       "name": "Miner Mk3",
       "itemsPerCycle": 1,
       "extractCycleTime": 0.25,
@@ -10283,7 +9761,7 @@
         "Sulfur"
       ]
     },
-    "oil pump": {
+    "Oil Pump": {
       "name": "Oil Pump",
       "itemsPerCycle": 2000,
       "extractCycleTime": 1,
@@ -10293,83 +9771,83 @@
     }
   },
   "machines": {
-    "assembler": {
+    "Assembler": {
       "name": "Assembler",
       "description": "Crafts two parts into another part.\n\nCan be automated by feeding parts into it with a conveyor belt connected to the input. The produced parts can be automatically extracted by connecting a conveyor belt to the output.",
       "powerConsumption": 15
     },
-    "blender": {
+    "Blender": {
       "name": "Blender",
       "description": "The Blender is capable of blending fluids and combining them with solid parts in various processes.\nHead Lift: 10 meters.\n(Allows fluids to be transported 10 meters upwards).\n\nContains both Conveyor Belt and Pipe inputs and outputs.",
       "powerConsumption": 75
     },
-    "constructor": {
+    "Constructor": {
       "name": "Constructor",
       "description": "Crafts one part into another part.\n\nCan be automated by feeding parts into it with a conveyor belt connected to the input. The produced parts can be automatically extracted by connecting a conveyor belt to the output.",
       "powerConsumption": 4
     },
-    "foundry": {
+    "Foundry": {
       "name": "Foundry",
       "description": "Smelts two resources into alloy ingots.\n\nCan be automated by feeding ore into it with a conveyor belt connected to the inputs. The produced ingots can be automatically extracted by connecting a conveyor belt to the output.",
       "powerConsumption": 16
     },
-    "particle accelerator": {
+    "Particle Accelerator": {
       "name": "Particle Accelerator",
       "description": "The FICSIT Particle Accelerator uses electromagnetic fields to propel particles to very high speeds and energies. The specific design allows for a variety of processes, such as matter generation and conversion.\n\nWarning: Power usage is extremely high, unstable, and varies per recipe.",
       "powerConsumption": 875
     },
-    "mam": {
+    "MAM": {
       "name": "MAM",
       "description": "The Molecular Analysis Machine is used to analyse new and exotic materials found on alien planets.\nR&D will assist Pioneers through the MAM to turn any valuable data into usable research options and new technologies."
     },
-    "manufacturer": {
+    "Manufacturer": {
       "name": "Manufacturer",
       "description": "Crafts three or four parts into another part.\n\nCan be automated by feeding parts into it with a conveyor belt connected to the input. The produced parts can be automatically extracted by connecting a conveyor belt to the output.",
       "powerConsumption": 55
     },
-    "refinery": {
+    "Refinery": {
       "name": "Refinery",
       "description": "Refines fluid and/or solid parts into other parts.\nHead Lift: 10 meters.\n(Allows fluids to be transported 10 meters upwards.)\n\nContains both a Conveyor Belt and Pipe input and output, to allow for the automation of various recipes.",
       "powerConsumption": 30
     },
-    "packager": {
+    "Packager": {
       "name": "Packager",
       "description": "Used for the packaging and unpacking of fluids.\nHead Lift: 10 meters.\n(Allows fluids to be transported 10 meters upwards.)\n\nContains both a Conveyor Belt and Pipe input and output, to allow for the automation of various recipes.",
       "powerConsumption": 10
     },
-    "awesome shop": {
+    "AWESOME Shop": {
       "name": "AWESOME Shop",
       "description": "Redeem your FICSIT Coupons here! \nFor those employees going the extra kilometer we have set aside special bonus milestones and rewards! Get your Coupons in the AWESOME Sink program now!\n\n*No refunds possible."
     },
-    "awesome sink": {
+    "AWESOME Sink": {
       "name": "AWESOME Sink",
       "description": "Got excess resources? Fear not, for FICSIT does not waste! The newly developed AWESOME Sink turns any useful part straight into research data, as fast as you can supply it! \nParticipating pioneers will be compensated with Coupons to be spend at the AWESOME Shop.",
       "powerConsumption": 30
     },
-    "smelter": {
+    "Smelter": {
       "name": "Smelter",
       "description": "Smelts ore into ingots.\n\nCan be automated by feeding ore into it with a conveyor belt connected to the input. The produced ingots can be automatically extracted by connecting a conveyor belt to the output.",
       "powerConsumption": 4
     },
-    "space elevator": {
+    "Space Elevator": {
       "name": "Space Elevator",
       "description": "Requires deliveries of special Project Parts to complete Phases of Project Assembly.\nCompleting Phases in the Space Elevator will unlock new Tiers in the HUB Terminal."
     },
-    "the hub": {
+    "The HUB": {
       "name": "The HUB",
       "description": "The heart of your factory. This is where you complete FICSIT milestones to unlock additional blueprints of buildings, vehicles, parts, equipment etc."
     },
-    "craft bench": {
+    "Craft Bench": {
       "name": "Craft Bench",
       "description": "Allows you to manually craft a large range of different parts. \nThese parts can then be used in construction of different factory buildings, vehicles and equipment."
     },
-    "equipment workshop": {
+    "Equipment Workshop": {
       "name": "Equipment Workshop",
       "description": "Used to manually craft equipment."
     }
   },
   "research": {
-    "hog research": {
+    "Hog Research": {
       "name": "Hog Research",
       "time": 3,
       "unlock": {
@@ -10377,7 +9855,8 @@
         "handSlots": 0,
         "recipes": [
           "Hog Protein"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10386,7 +9865,7 @@
         }
       ]
     },
-    "the rebar gun": {
+    "The Rebar Gun": {
       "name": "The Rebar Gun",
       "time": 3,
       "unlock": {
@@ -10395,7 +9874,8 @@
         "recipes": [
           "Rebar Gun",
           "Iron Rebar"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10412,13 +9892,14 @@
         }
       ]
     },
-    "expanded toolbelt": {
+    "Expanded Toolbelt": {
       "name": "Expanded Toolbelt",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 1,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -10431,7 +9912,7 @@
         }
       ]
     },
-    "bio-organic properties": {
+    "Bio-Organic Properties": {
       "name": "Bio-Organic Properties",
       "time": 3,
       "unlock": {
@@ -10440,7 +9921,8 @@
         "recipes": [
           "Organic Data Capsule",
           "Biomass (Alien Protein)"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10453,7 +9935,7 @@
         }
       ]
     },
-    "hatcher research": {
+    "Hatcher Research": {
       "name": "Hatcher Research",
       "time": 3,
       "unlock": {
@@ -10461,7 +9943,8 @@
         "handSlots": 0,
         "recipes": [
           "Hatcher Protein"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10470,13 +9953,14 @@
         }
       ]
     },
-    "structural analysis": {
+    "Structural Analysis": {
       "name": "Structural Analysis",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -10489,7 +9973,7 @@
         }
       ]
     },
-    "spitter research": {
+    "Spitter Research": {
       "name": "Spitter Research",
       "time": 3,
       "unlock": {
@@ -10497,7 +9981,8 @@
         "handSlots": 0,
         "recipes": [
           "Spitter Protein"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10506,7 +9991,7 @@
         }
       ]
     },
-    "stinger research": {
+    "Stinger Research": {
       "name": "Stinger Research",
       "time": 3,
       "unlock": {
@@ -10514,7 +9999,8 @@
         "handSlots": 0,
         "recipes": [
           "Stinger Protein"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10523,13 +10009,14 @@
         }
       ]
     },
-    "hostile organism detection": {
+    "Hostile Organism Detection": {
       "name": "Hostile Organism Detection",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -10546,7 +10033,7 @@
         }
       ]
     },
-    "protein inhaler": {
+    "Protein Inhaler": {
       "name": "Protein Inhaler",
       "time": 3,
       "unlock": {
@@ -10554,7 +10041,8 @@
         "handSlots": 0,
         "recipes": [
           "Protein Inhaler"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10571,13 +10059,14 @@
         }
       ]
     },
-    "inflated pocket dimension": {
+    "Inflated Pocket Dimension": {
       "name": "Inflated Pocket Dimension",
       "time": 3,
       "unlock": {
         "inventorySlots": 6,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -10590,13 +10079,14 @@
         }
       ]
     },
-    "caterium": {
+    "Caterium": {
       "name": "Caterium",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -10605,7 +10095,7 @@
         }
       ]
     },
-    "caterium ingots": {
+    "Caterium Ingots": {
       "name": "Caterium Ingots",
       "time": 3,
       "unlock": {
@@ -10613,7 +10103,8 @@
         "handSlots": 0,
         "recipes": [
           "Caterium Ingot"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10622,7 +10113,7 @@
         }
       ]
     },
-    "zipline": {
+    "Zipline": {
       "name": "Zipline",
       "time": 3,
       "unlock": {
@@ -10630,7 +10121,8 @@
         "handSlots": 0,
         "recipes": [
           "Zipline"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10643,7 +10135,7 @@
         }
       ]
     },
-    "quickwire": {
+    "Quickwire": {
       "name": "Quickwire",
       "time": 3,
       "unlock": {
@@ -10651,7 +10143,8 @@
         "handSlots": 0,
         "recipes": [
           "Quickwire"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10660,7 +10153,7 @@
         }
       ]
     },
-    "stun rebar": {
+    "Stun Rebar": {
       "name": "Stun Rebar",
       "time": 3,
       "unlock": {
@@ -10668,7 +10161,8 @@
         "handSlots": 0,
         "recipes": [
           "Stun Rebar"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10681,13 +10175,14 @@
         }
       ]
     },
-    "caterium electronics": {
+    "Caterium Electronics": {
       "name": "Caterium Electronics",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -10696,7 +10191,7 @@
         }
       ]
     },
-    "smart splitter": {
+    "Smart Splitter": {
       "name": "Smart Splitter",
       "time": 3,
       "unlock": {
@@ -10704,7 +10199,8 @@
         "handSlots": 0,
         "recipes": [
           "Smart Splitter"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10717,7 +10213,7 @@
         }
       ]
     },
-    "power switch": {
+    "Power Switch": {
       "name": "Power Switch",
       "time": 3,
       "unlock": {
@@ -10725,7 +10221,8 @@
         "handSlots": 0,
         "recipes": [
           "Power Switch"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10738,7 +10235,7 @@
         }
       ]
     },
-    "ai limiter": {
+    "AI Limiter": {
       "name": "AI Limiter",
       "time": 3,
       "unlock": {
@@ -10746,7 +10243,8 @@
         "handSlots": 0,
         "recipes": [
           "AI Limiter"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10759,7 +10257,7 @@
         }
       ]
     },
-    "power poles mk.2": {
+    "Power Poles Mk.2": {
       "name": "Power Poles Mk.2",
       "time": 3,
       "unlock": {
@@ -10767,7 +10265,8 @@
         "handSlots": 0,
         "recipes": [
           "Power Pole Mk.2"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10776,7 +10275,7 @@
         }
       ]
     },
-    "blade runners": {
+    "Blade Runners": {
       "name": "Blade Runners",
       "time": 3,
       "unlock": {
@@ -10784,7 +10283,8 @@
         "handSlots": 0,
         "recipes": [
           "Blade Runners"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10797,7 +10297,7 @@
         }
       ]
     },
-    "high-speed connector": {
+    "High-Speed Connector": {
       "name": "High-Speed Connector",
       "time": 3,
       "unlock": {
@@ -10805,7 +10305,8 @@
         "handSlots": 0,
         "recipes": [
           "High-Speed Connector"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10818,7 +10319,7 @@
         }
       ]
     },
-    "supercomputer": {
+    "Supercomputer": {
       "name": "Supercomputer",
       "time": 3,
       "unlock": {
@@ -10826,7 +10327,8 @@
         "handSlots": 0,
         "recipes": [
           "Supercomputer"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10843,7 +10345,7 @@
         }
       ]
     },
-    "power poles mk.3": {
+    "Power Poles Mk.3": {
       "name": "Power Poles Mk.3",
       "time": 3,
       "unlock": {
@@ -10851,7 +10353,8 @@
         "handSlots": 0,
         "recipes": [
           "Power Pole Mk.3"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10864,7 +10367,7 @@
         }
       ]
     },
-    "bullet guidance system": {
+    "Bullet Guidance System": {
       "name": "Bullet Guidance System",
       "time": 3,
       "unlock": {
@@ -10872,7 +10375,8 @@
         "handSlots": 0,
         "recipes": [
           "Homing Rifle Ammo"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10885,7 +10389,7 @@
         }
       ]
     },
-    "programmable splitter": {
+    "Programmable Splitter": {
       "name": "Programmable Splitter",
       "time": 3,
       "unlock": {
@@ -10893,7 +10397,8 @@
         "handSlots": 0,
         "recipes": [
           "Programmable Splitter"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10906,7 +10411,7 @@
         }
       ]
     },
-    "geothermal generator": {
+    "Geothermal Generator": {
       "name": "Geothermal Generator",
       "time": 3,
       "unlock": {
@@ -10914,7 +10419,8 @@
         "handSlots": 0,
         "recipes": [
           "Geothermal Generator"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10931,13 +10437,14 @@
         }
       ]
     },
-    "flower petals": {
+    "Flower Petals": {
       "name": "Flower Petals",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -10946,7 +10453,7 @@
         }
       ]
     },
-    "color cartridges": {
+    "Color Cartridges": {
       "name": "Color Cartridges",
       "time": 3,
       "unlock": {
@@ -10954,7 +10461,8 @@
         "handSlots": 0,
         "recipes": [
           "Color Cartridge"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10963,13 +10471,14 @@
         }
       ]
     },
-    "hard drive": {
+    "Hard Drive": {
       "name": "Hard Drive",
       "time": 600,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -10978,7 +10487,7 @@
         }
       ]
     },
-    "mycelia": {
+    "Mycelia": {
       "name": "Mycelia",
       "time": 3,
       "unlock": {
@@ -10986,7 +10495,8 @@
         "handSlots": 0,
         "recipes": [
           "Biomass (Mycelia)"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -10995,7 +10505,7 @@
         }
       ]
     },
-    "synthethic polyester fabric": {
+    "Synthethic Polyester Fabric": {
       "name": "Synthethic Polyester Fabric",
       "time": 3,
       "unlock": {
@@ -11003,7 +10513,8 @@
         "handSlots": 0,
         "recipes": [
           "Alternate: Polyester Fabric"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11016,7 +10527,7 @@
         }
       ]
     },
-    "fabric": {
+    "Fabric": {
       "name": "Fabric",
       "time": 3,
       "unlock": {
@@ -11024,7 +10535,8 @@
         "handSlots": 0,
         "recipes": [
           "Fabric"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11037,7 +10549,7 @@
         }
       ]
     },
-    "parachute": {
+    "Parachute": {
       "name": "Parachute",
       "time": 3,
       "unlock": {
@@ -11045,7 +10557,8 @@
         "handSlots": 0,
         "recipes": [
           "Parachute"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11058,13 +10571,14 @@
         }
       ]
     },
-    "medical properties": {
+    "Medical Properties": {
       "name": "Medical Properties",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -11077,7 +10591,7 @@
         }
       ]
     },
-    "vitamin inhaler": {
+    "Vitamin Inhaler": {
       "name": "Vitamin Inhaler",
       "time": 3,
       "unlock": {
@@ -11085,7 +10599,8 @@
         "handSlots": 0,
         "recipes": [
           "Vitamin Inhaler"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11098,7 +10613,7 @@
         }
       ]
     },
-    "therapeutic inhaler": {
+    "Therapeutic Inhaler": {
       "name": "Therapeutic Inhaler",
       "time": 3,
       "unlock": {
@@ -11106,7 +10621,8 @@
         "handSlots": 0,
         "recipes": [
           "Therapeutic Inhaler"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11123,7 +10639,7 @@
         }
       ]
     },
-    "toxic cellular modification": {
+    "Toxic Cellular Modification": {
       "name": "Toxic Cellular Modification",
       "time": 3,
       "unlock": {
@@ -11131,7 +10647,8 @@
         "handSlots": 0,
         "recipes": [
           "Gas Nobelisk"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11148,13 +10665,14 @@
         }
       ]
     },
-    "paleberry": {
+    "Paleberry": {
       "name": "Paleberry",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -11163,13 +10681,14 @@
         }
       ]
     },
-    "beryl nut": {
+    "Beryl Nut": {
       "name": "Beryl Nut",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -11178,13 +10697,14 @@
         }
       ]
     },
-    "bacon agaric": {
+    "Bacon Agaric": {
       "name": "Bacon Agaric",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -11193,13 +10713,14 @@
         }
       ]
     },
-    "nutritional processor": {
+    "Nutritional Processor": {
       "name": "Nutritional Processor",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -11216,7 +10737,7 @@
         }
       ]
     },
-    "nutritional inhaler": {
+    "Nutritional Inhaler": {
       "name": "Nutritional Inhaler",
       "time": 3,
       "unlock": {
@@ -11224,7 +10745,8 @@
         "handSlots": 0,
         "recipes": [
           "Nutritional Inhaler"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11241,7 +10763,7 @@
         }
       ]
     },
-    "blue power slugs": {
+    "Blue Power Slugs": {
       "name": "Blue Power Slugs",
       "time": 3,
       "unlock": {
@@ -11249,7 +10771,8 @@
         "handSlots": 0,
         "recipes": [
           "Power Shard (1)"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11258,13 +10781,14 @@
         }
       ]
     },
-    "overclock production": {
+    "Overclock Production": {
       "name": "Overclock Production",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -11281,13 +10805,14 @@
         }
       ]
     },
-    "slug scanning": {
+    "Slug Scanning": {
       "name": "Slug Scanning",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -11304,7 +10829,7 @@
         }
       ]
     },
-    "yellow power shards": {
+    "Yellow Power Shards": {
       "name": "Yellow Power Shards",
       "time": 3,
       "unlock": {
@@ -11312,7 +10837,8 @@
         "handSlots": 0,
         "recipes": [
           "Power Shard (2)"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11329,7 +10855,7 @@
         }
       ]
     },
-    "purple power shards": {
+    "Purple Power Shards": {
       "name": "Purple Power Shards",
       "time": 3,
       "unlock": {
@@ -11337,7 +10863,8 @@
         "handSlots": 0,
         "recipes": [
           "Power Shard (5)"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11354,13 +10881,14 @@
         }
       ]
     },
-    "quartz": {
+    "Quartz": {
       "name": "Quartz",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -11369,7 +10897,7 @@
         }
       ]
     },
-    "quartz crystals": {
+    "Quartz Crystals": {
       "name": "Quartz Crystals",
       "time": 3,
       "unlock": {
@@ -11377,7 +10905,8 @@
         "handSlots": 0,
         "recipes": [
           "Quartz Crystal"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11386,7 +10915,7 @@
         }
       ]
     },
-    "silica": {
+    "Silica": {
       "name": "Silica",
       "time": 3,
       "unlock": {
@@ -11394,7 +10923,8 @@
         "handSlots": 0,
         "recipes": [
           "Silica"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11403,7 +10933,7 @@
         }
       ]
     },
-    "shatter rebar": {
+    "Shatter Rebar": {
       "name": "Shatter Rebar",
       "time": 3,
       "unlock": {
@@ -11411,7 +10941,8 @@
         "handSlots": 0,
         "recipes": [
           "Shatter Rebar"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11424,7 +10955,7 @@
         }
       ]
     },
-    "crystal oscillator": {
+    "Crystal Oscillator": {
       "name": "Crystal Oscillator",
       "time": 3,
       "unlock": {
@@ -11432,7 +10963,8 @@
         "handSlots": 0,
         "recipes": [
           "Crystal Oscillator"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11445,13 +10977,14 @@
         }
       ]
     },
-    "the explorer": {
+    "The Explorer": {
       "name": "The Explorer",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -11464,7 +10997,7 @@
         }
       ]
     },
-    "explosive resonance application": {
+    "Explosive Resonance Application": {
       "name": "Explosive Resonance Application",
       "time": 3,
       "unlock": {
@@ -11472,7 +11005,8 @@
         "handSlots": 0,
         "recipes": [
           "Pulse Nobelisk"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11485,13 +11019,14 @@
         }
       ]
     },
-    "signal systems": {
+    "Signal Systems": {
       "name": "Signal Systems",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -11504,13 +11039,14 @@
         }
       ]
     },
-    "radio signal scanning": {
+    "Radio Signal Scanning": {
       "name": "Radio Signal Scanning",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -11527,7 +11063,7 @@
         }
       ]
     },
-    "radar technology": {
+    "Radar Technology": {
       "name": "Radar Technology",
       "time": 3,
       "unlock": {
@@ -11535,7 +11071,8 @@
         "handSlots": 0,
         "recipes": [
           "Radar Tower"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11552,13 +11089,14 @@
         }
       ]
     },
-    "sulfur": {
+    "Sulfur": {
       "name": "Sulfur",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -11567,7 +11105,7 @@
         }
       ]
     },
-    "black powder": {
+    "Black Powder": {
       "name": "Black Powder",
       "time": 3,
       "unlock": {
@@ -11575,7 +11113,8 @@
         "handSlots": 0,
         "recipes": [
           "Black Powder"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11588,13 +11127,14 @@
         }
       ]
     },
-    "volatile applications": {
+    "Volatile Applications": {
       "name": "Volatile Applications",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -11603,7 +11143,7 @@
         }
       ]
     },
-    "the nobelisk detonator": {
+    "The Nobelisk Detonator": {
       "name": "The Nobelisk Detonator",
       "time": 3,
       "unlock": {
@@ -11612,7 +11152,8 @@
         "recipes": [
           "Nobelisk Detonator",
           "Nobelisk"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11635,7 +11176,8 @@
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -11648,7 +11190,7 @@
         }
       ]
     },
-    "smokeless powder": {
+    "Smokeless Powder": {
       "name": "Smokeless Powder",
       "time": 3,
       "unlock": {
@@ -11656,7 +11198,8 @@
         "handSlots": 0,
         "recipes": [
           "Smokeless Powder"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11669,7 +11212,7 @@
         }
       ]
     },
-    "the rifle": {
+    "The Rifle": {
       "name": "The Rifle",
       "time": 3,
       "unlock": {
@@ -11678,7 +11221,8 @@
         "recipes": [
           "Rifle",
           "Rifle Ammo"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11695,7 +11239,7 @@
         }
       ]
     },
-    "explosive rebar": {
+    "Explosive Rebar": {
       "name": "Explosive Rebar",
       "time": 3,
       "unlock": {
@@ -11703,7 +11247,8 @@
         "handSlots": 0,
         "recipes": [
           "Explosive Rebar"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11720,7 +11265,7 @@
         }
       ]
     },
-    "cluster nobelisk": {
+    "Cluster Nobelisk": {
       "name": "Cluster Nobelisk",
       "time": 3,
       "unlock": {
@@ -11728,7 +11273,8 @@
         "handSlots": 0,
         "recipes": [
           "Cluster Nobelisk"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11741,7 +11287,7 @@
         }
       ]
     },
-    "nuclear deterrent development": {
+    "Nuclear Deterrent Development": {
       "name": "Nuclear Deterrent Development",
       "time": 3,
       "unlock": {
@@ -11749,7 +11295,8 @@
         "handSlots": 0,
         "recipes": [
           "Nuke Nobelisk"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11766,7 +11313,7 @@
         }
       ]
     },
-    "turbo rifle ammo": {
+    "Turbo Rifle Ammo": {
       "name": "Turbo Rifle Ammo",
       "time": 3,
       "unlock": {
@@ -11774,7 +11321,8 @@
         "handSlots": 0,
         "recipes": [
           "Turbo Rifle Ammo"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11791,7 +11339,7 @@
         }
       ]
     },
-    "compacted coal": {
+    "Compacted Coal": {
       "name": "Compacted Coal",
       "time": 3,
       "unlock": {
@@ -11799,7 +11347,8 @@
         "handSlots": 0,
         "recipes": [
           "Alternate: Compacted Coal"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11816,13 +11365,14 @@
         }
       ]
     },
-    "experimental power generation": {
+    "Experimental Power Generation": {
       "name": "Experimental Power Generation",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {
@@ -11839,7 +11389,7 @@
         }
       ]
     },
-    "turbo fuel": {
+    "Turbo Fuel": {
       "name": "Turbo Fuel",
       "time": 3,
       "unlock": {
@@ -11848,7 +11398,8 @@
         "recipes": [
           "Turbofuel",
           "Packaged Turbofuel"
-        ]
+        ],
+        "items": []
       },
       "cost": [
         {
@@ -11865,13 +11416,14 @@
         }
       ]
     },
-    "it's snowing!": {
+    "It's snowing!": {
       "name": "It's snowing!",
       "time": 3,
       "unlock": {
         "inventorySlots": 0,
         "handSlots": 0,
-        "recipes": []
+        "recipes": [],
+        "items": []
       },
       "cost": [
         {

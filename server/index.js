@@ -1,36 +1,39 @@
 import express from "express";
 import path from "path";
-import fs from "fs";
+import { promises as fs } from "fs";
 import { fileURLToPath } from "url";
-const server = express();
-const port = process.env.PORT ?? 3000;
-const ip = process.env.IP;
+
+const PORT = process.env.PORT ?? 3000;
+const IP = process.env.IP;
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const basePath = "/satisfactory-recipes";
+
+const server = express();
 const router = express.Router();
 
-router.get("/header", (req, res) => {
+router.get("/products", async (req, res) => {
   const data = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "data/newData.json"))
+    await fs.readFile(path.join(__dirname, "data/newData.json"))
   );
-  res.send(Object.keys(data[req.query.type]));
+  res.json(Object.keys(data[req.query.type]));
 });
 
-router.get("/advanced", (req, res) => {
+router.get("/search", async (req, res) => {
   const key = req.query.key;
   const type = req.query.type;
 
   const data = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "data/newData.json"))
+    await fs.readFile(path.join(__dirname, "data/newData.json"))
   );
 
   if (key == "all") {
-    res.send(data[type]);
+    res.json(data[type]);
   } else if (Object.keys(data[type]).includes(key)) {
-    res.send(data[type][key]);
+    res.json(data[type][key]);
   } else {
-    res.status(503).send("You entered an invalid key!");
+    res.status(400).json({ message: "You entered an invalid key!" });
   }
 });
 
@@ -38,6 +41,6 @@ router.use(express.static(path.join(__dirname, "../client")));
 router.use(express.static(path.join(__dirname, "/data")));
 server.use(basePath, router);
 
-server.listen(port, ip, () => {
-  console.log("Listening to port", port);
+server.listen(PORT, IP, () => {
+  console.log("Listening to port", PORT);
 });

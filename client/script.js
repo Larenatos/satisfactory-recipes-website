@@ -1,7 +1,6 @@
-const baseUrl = "http://localhost:3000/satisfactory-recipes";
-// const baseUrl = "https://lare.alwaysdata.net/satisfactory-recipes";
+const baseUrl = "/satisfactory-recipes";
 
-const [contentBox] = document.getElementsByClassName("content");
+const [resultBox] = document.getElementsByClassName("search-results");
 const [errorText] = document.getElementsByClassName("error");
 
 const displayRecipes = async (type) => {
@@ -11,12 +10,12 @@ const displayRecipes = async (type) => {
 };
 
 const displayRecipeList = (data) => {
-  contentBox.innerHTML = "";
+  resultBox.innerHTML = "";
 
   for (const [item, recipes] of Object.entries(data)) {
-    const groupName = document.createElement("h1");
-    groupName.innerText = item;
-    contentBox.append(groupName);
+    const productName = document.createElement("h2");
+    productName.innerText = item;
+    resultBox.append(productName);
 
     for (const recipe of recipes) {
       displayRecipe(recipe);
@@ -26,7 +25,7 @@ const displayRecipeList = (data) => {
 
 const displayRecipe = (data) => {
   const list = document.createElement("ul");
-  list.classList.add("list");
+  list.classList.add("top-level-list");
 
   const name = document.createElement("li");
   name.innerText = `name: ${data["name"]}`;
@@ -41,11 +40,11 @@ const displayRecipe = (data) => {
   producedIn.innerText = "produced in:";
 
   const producedInUl = document.createElement("ul");
-  for (const building of data["producedIn"]) {
-    const build = document.createElement("li");
-    build.innerText = building;
+  for (const machine of data["producedIn"]) {
+    const machineElement = document.createElement("li");
+    machineElement.innerText = machine;
 
-    producedInUl.append(build);
+    producedInUl.append(machineElement);
   }
   producedIn.append(producedInUl);
 
@@ -54,10 +53,10 @@ const displayRecipe = (data) => {
 
   const productsUl = document.createElement("ul");
   for (const product of data["products"]) {
-    const item = document.createElement("li");
-    item.innerText = `${product["item"]} (${product["amount"]})`;
+    const productElement = document.createElement("li");
+    productElement.innerText = `${product["item"]} (${product["amount"]})`;
 
-    productsUl.append(item);
+    productsUl.append(productElement);
   }
   productsLi.append(productsUl);
 
@@ -65,15 +64,15 @@ const displayRecipe = (data) => {
   ingredientsLi.innerText = "ingredients:";
   const ingredientsUl = document.createElement("ul");
   for (const ingredient of data["ingredients"]) {
-    const item = document.createElement("li");
-    item.innerText = `${ingredient["item"]} (${ingredient["amount"]})`;
+    const ingredientElement = document.createElement("li");
+    ingredientElement.innerText = `${ingredient["item"]} (${ingredient["amount"]})`;
 
-    ingredientsUl.append(item);
+    ingredientsUl.append(ingredientElement);
   }
   ingredientsLi.append(ingredientsUl);
 
   list.append(name, time, alternate, producedIn, productsLi, ingredientsLi);
-  contentBox.append(list);
+  resultBox.append(list);
 };
 
 const displayItem = (data, list) => {
@@ -102,7 +101,7 @@ const displayItem = (data, list) => {
   recipeIn.append(recipeInUl);
 
   list.append(sinkPoints, description, stackSize, liquid, recipeIn);
-  contentBox.append(list);
+  resultBox.append(list);
 };
 
 const displayGenerator = (data, list) => {
@@ -125,7 +124,7 @@ const displayGenerator = (data, list) => {
   fuel.append(fuelUl);
 
   list.append(power, waterRatio, fuel);
-  contentBox.append(list);
+  resultBox.append(list);
 };
 
 const displayMachine = (data, list) => {
@@ -140,7 +139,7 @@ const displayMachine = (data, list) => {
     list.append(power);
   }
 
-  contentBox.append(list);
+  resultBox.append(list);
 };
 
 const displayMiner = (data, list) => {
@@ -163,7 +162,7 @@ const displayMiner = (data, list) => {
   resources.append(resourcesUl);
 
   list.append(cycle, cycleTime, resources);
-  contentBox.append(list);
+  resultBox.append(list);
 };
 
 const displayResearch = (data, list) => {
@@ -209,19 +208,19 @@ const displayResearch = (data, list) => {
   cost.append(costUl);
 
   list.append(time, unlocks, cost);
-  contentBox.append(list);
+  resultBox.append(list);
 };
 
-const displayKeys = async () => {
+const displayPossibleKeys = async () => {
   const dataType = document.getElementById("dataType").value;
-  const response = await fetch(`${baseUrl}/header?type=${dataType}`);
+  const response = await fetch(`${baseUrl}/products?type=${dataType}`);
   const data = await response.json();
-  contentBox.innerHTML = "";
+  resultBox.innerHTML = "";
 
   for (const item of data) {
-    const text = document.createElement("h3");
-    text.innerText = item;
-    contentBox.append(text);
+    const key = document.createElement("h4");
+    key.innerText = item;
+    resultBox.append(key);
   }
 };
 
@@ -255,12 +254,12 @@ const displayAll = (type, data) => {
   }
 
   for (const [k, value] of Object.entries(data)) {
-    const header = document.createElement("h2");
+    const header = document.createElement("h3");
     header.innerText = value["name"];
-    contentBox.append(header);
+    resultBox.append(header);
 
     const list = document.createElement("ul");
-    list.classList.add("list");
+    list.classList.add("top-level-list");
 
     const name = document.createElement("li");
     name.innerText = `name: ${value["name"]}`;
@@ -270,35 +269,36 @@ const displayAll = (type, data) => {
   }
 };
 
-const dataRequest = async () => {
+const displaySearchResults = async () => {
   errorText.innerText = "";
   const dataType = document.getElementById("dataType").value;
-  const dataKey = document.getElementById("dataKey").value;
+  const input = document.getElementById("dataKey").value;
 
   const response = await fetch(
-    `${baseUrl}/advanced?type=${dataType}&key=${dataKey.toLowerCase()}`
+    `${baseUrl}/search?type=${dataType}&key=${input}`
   );
 
-  if (response.status == 503) {
-    errorText.innerText = await response.text();
+  if (response.status == 400) {
+    const { message } = await response.json();
+    errorText.innerText = message;
     return;
   }
 
   const data = await response.json();
 
-  contentBox.innerHTML = "";
+  resultBox.innerHTML = "";
 
-  if (dataKey == "all") {
+  if (input == "all") {
     displayAll(dataType, data);
     return;
   }
 
-  const header = document.createElement("h1");
-  header.innerText = dataKey.charAt(0).toUpperCase() + dataKey.slice(1);
-  contentBox.append(header);
+  const header = document.createElement("h2");
+  header.innerText = input.charAt(0).toUpperCase() + input.slice(1);
+  resultBox.append(header);
 
   const list = document.createElement("ul");
-  list.classList.add("list");
+  list.classList.add("top-level-list");
 
   const name = document.createElement("li");
   name.innerText = `name: ${data["name"]}`;

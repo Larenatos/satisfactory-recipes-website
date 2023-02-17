@@ -6,23 +6,23 @@
   <body>
     <header>
       <h1>Satisfactory Recipes</h1>
-      <div class="header_underline"></div>
+      <div class="header-underline"></div>
     </header>
-    <div class="container">
+    <main>
       <div class="buttons">
         <button onclick="displayRecipes('base')">Base Recipes</button>
         <button onclick="displayRecipes('alternate')">Alternate Recipes</button>
       </div>
       <div class="row">
         <div class="search">
-          <h2>Advanced search</h2>
+          <h2>Search</h2>
           <label>Choose the type of data:</label>
           <select id="dataType">
-            <option value="inMachineRecipes">Machine Recipe</option>
-            <option value="inHandRecipes">Hand Recipe</option>
-            <option value="inWorkshopRecipes">Workshop Recipe</option>
-            <option value="items">item</option>
-            <option value="generators">Generator</option>
+            <option value="inMachineRecipes">Machine Recipes</option>
+            <option value="inHandRecipes">Craft Bench Recipes</option>
+            <option value="inWorkshopRecipes">Workshop Recipes</option>
+            <option value="items">Item</option>
+            <option value="generators">Power Generator</option>
             <option value="miners">Miner</option>
             <option value="machines">Machine</option>
             <option value="research">Research tree</option>
@@ -33,14 +33,14 @@
           <label>Enter "all" to get everything from selected type.</label>
           <input type="text" id="dataKey" />
           <p class="error"></p>
-          <button onclick="displayKeys()">
-            Show possible entries from selected data type
+          <button onclick="displayPossibleKeys()">
+            Show possible entries for selected data type
           </button>
-          <button onclick="dataRequest()">Send</button>
+          <button onclick="displaySearchResults()">Search</button>
         </div>
-        <div class="content"></div>
+        <div class="search-results"></div>
       </div>
-    </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

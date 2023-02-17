@@ -2,75 +2,77 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
+const getDisplayName = (source) => {
+  return items[source.item].name;
+};
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const data = JSON.parse(fs.readFileSync(path.join(__dirname, "data.json")));
+const { recipes, items, buildings } = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "data.json"))
+);
 
-let baseRecipes = {};
-let alternateRecipes = {};
+const baseRecipes = {};
+const alternateRecipes = {};
 
-for (const [k, v] of Object.entries(data["recipes"])) {
-  if (!(v["inMachine"] || v["inHand"] || v["inWorkshop"])) {
+for (const [, recipe] of Object.entries(recipes)) {
+  if (!(recipe.inMachine || recipe.inHand || recipe.inWorkshop)) {
     continue;
   }
 
-  let target;
-  if (v["alternate"]) {
-    target = alternateRecipes;
-  } else {
-    target = baseRecipes;
-  }
+  const target = recipe.alternate ? alternateRecipes : baseRecipes;
 
-  for (const product of v["products"]) {
-    const name = data["items"][product["item"]]["name"];
+  for (const product of recipe.products) {
+    const name = getDisplayName(product);
+
+    if (["Coal", "Water", "Biomass"].includes(name)) {
+      continue;
+    }
     if (!target[name]) {
       target[name] = [];
     }
+
     const ingredients = [];
     const products = [];
     const producedIn = [];
 
-    for (const ingredient of v["ingredients"]) {
+    for (const ingredient of recipe.ingredients) {
       ingredients.push({
-        item: data["items"][ingredient["item"]]["name"],
-        amount: ingredient["amount"],
+        item: getDisplayName(ingredient),
+        amount: ingredient.amount,
       });
     }
 
-    for (const product of v["products"]) {
+    for (const product of recipe.products) {
       products.push({
-        item: data["items"][product["item"]]["name"],
-        amount: product["amount"],
+        item: getDisplayName(product),
+        amount: product.amount,
       });
     }
 
-    if (v["inMachine"]) {
-      producedIn.push(data["buildings"][v["producedIn"]]["name"]);
+    if (recipe.inMachine) {
+      producedIn.push(buildings[recipe.producedIn].name);
     }
-    if (v["inHand"]) {
+    if (recipe.inHand) {
       producedIn.push("Craft Bench");
     }
-    if (v["inWorkshop"]) {
+    if (recipe.inWorkshop) {
       producedIn.push("Equipment Workshop");
     }
 
     target[name].push({
-      name: v["name"],
-      time: v["time"],
-      alternate: v["alternate"],
-      producedIn: producedIn,
-      ingredients: ingredients,
-      products: products,
+      name: recipe.name,
+      time: recipe.time,
+      alternate: recipe.alternate,
+      producedIn,
+      ingredients,
+      products,
     });
   }
 }
 
-for (const item of ["Coal", "Water", "Biomass"]) {
-  delete baseRecipes[item];
-  delete alternateRecipes[item];
-}
+// TODO: remove indentation to reduce file size
+let baseRecipesString = JSON.stringify(baseRecipes, null, 2);
+fs.writeFileSync("baseRecipes.json", baseRecipesString);
 
-let baseRecipesData = JSON.stringify(baseRecipes, null, 2);
-fs.writeFileSync("baseRecipes.json", baseRecipesData);
-
-let alternateRecipesData = JSON.stringify(alternateRecipes, null, 2);
-fs.writeFileSync("alternateRecipes.json", alternateRecipesData);
+let alternateRecipesString = JSON.stringify(alternateRecipes, null, 2);
+fs.writeFileSync("alternateRecipes.json", alternateRecipesString);
