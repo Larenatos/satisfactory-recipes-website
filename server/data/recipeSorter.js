@@ -71,8 +71,8 @@ for (const [, recipe] of Object.entries(recipes)) {
 }
 
 // TODO: remove indentation to reduce file size
-let baseRecipesString = JSON.stringify(baseRecipes, null, 2);
-fs.writeFileSync("baseRecipes.json", baseRecipesString);
+let baseRecipesString = JSON.stringify(baseRecipes);
+fs.writeFileSync("jsonFiles/baseRecipes.json", baseRecipesString);
 
-let alternateRecipesString = JSON.stringify(alternateRecipes, null, 2);
-fs.writeFileSync("alternateRecipes.json", alternateRecipesString);
+let alternateRecipesString = JSON.stringify(alternateRecipes);
+fs.writeFileSync("jsonFiles/alternateRecipes.json", alternateRecipesString);

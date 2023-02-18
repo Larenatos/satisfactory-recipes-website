@@ -15,7 +15,7 @@ const router = express.Router();
 
 router.get("/products", async (req, res) => {
   const data = JSON.parse(
-    await fs.readFile(path.join(__dirname, "data/newData.json"))
+    await fs.readFile(path.join(__dirname, "data/jsonFiles/filteredData.json"))
   );
   res.json(Object.keys(data[req.query.type]));
 });
@@ -25,7 +25,7 @@ router.get("/search", async (req, res) => {
   const type = req.query.type;
 
   const data = JSON.parse(
-    await fs.readFile(path.join(__dirname, "data/newData.json"))
+    await fs.readFile(path.join(__dirname, "data/jsonFiles/filteredData.json"))
   );
 
   if (key == "all") {
@@ -42,7 +42,7 @@ router.get("/search", async (req, res) => {
 });
 
 router.use(express.static(path.join(__dirname, "../client")));
-router.use(express.static(path.join(__dirname, "/data")));
+router.use(express.static(path.join(__dirname, "/data/jsonFiles")));
 server.use(basePath, router);
 
 server.listen(PORT, IP, () => {
