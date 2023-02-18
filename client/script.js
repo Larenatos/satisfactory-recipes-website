@@ -17,24 +17,29 @@ const displayRecipeList = (data) => {
     productName.innerText = item;
     resultBox.append(productName);
 
+    const recipeInfos = document.createElement("div");
+
     for (const recipe of recipes) {
+      const recipeName = document.createElement("h3");
+      recipeName.innerText = recipe.name;
+
       const list = document.createElement("ul");
       list.classList.add("top-level-list");
 
       const name = document.createElement("li");
-      name.innerText = `name: ${recipe["name"]}`;
+      name.innerText = `name: ${recipe.name}`;
 
       const time = document.createElement("li");
-      time.innerText = `time to process: ${recipe["time"]}s`;
+      time.innerText = `time to process: ${recipe.time}s`;
 
       const alternate = document.createElement("li");
-      alternate.innerText = `alternate: ${recipe["alternate"]}`;
+      alternate.innerText = `alternate: ${recipe.alternate}`;
 
       const producedIn = document.createElement("li");
       producedIn.innerText = "produced in:";
 
       const producedInUl = document.createElement("ul");
-      for (const machine of recipe["producedIn"]) {
+      for (const machine of recipe.producedIn) {
         const machineElement = document.createElement("li");
         machineElement.innerText = machine;
 
@@ -46,9 +51,9 @@ const displayRecipeList = (data) => {
       productsLi.innerText = "products:";
 
       const productsUl = document.createElement("ul");
-      for (const product of recipe["products"]) {
+      for (const product of recipe.products) {
         const productElement = document.createElement("li");
-        productElement.innerText = `${product["item"]} (${product["amount"]})`;
+        productElement.innerText = `${product.item} (${product.amount})`;
 
         productsUl.append(productElement);
       }
@@ -58,17 +63,18 @@ const displayRecipeList = (data) => {
       ingredientsLi.innerText = "ingredients:";
 
       const ingredientsUl = document.createElement("ul");
-      for (const ingredient of recipe["ingredients"]) {
+      for (const ingredient of recipe.ingredients) {
         const ingredientElement = document.createElement("li");
-        ingredientElement.innerText = `${ingredient["item"]} (${ingredient["amount"]})`;
+        ingredientElement.innerText = `${ingredient.item} (${ingredient.amount})`;
 
         ingredientsUl.append(ingredientElement);
       }
       ingredientsLi.append(ingredientsUl);
 
       list.append(name, time, alternate, producedIn, productsLi, ingredientsLi);
-      resultBox.append(list);
+      recipeInfos.append(recipeName, list);
     }
+    resultBox.append(recipeInfos);
   }
 };
 
@@ -80,6 +86,12 @@ const displayPossibleKeys = async () => {
   for (const item of data) {
     const key = document.createElement("h4");
     key.innerText = item;
+
+    key.addEventListener("click", () => {
+      document.getElementById("dataKey").value = item;
+      displaySearchResults();
+    });
+
     resultBox.append(key);
   }
 };
