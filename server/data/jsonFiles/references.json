@@ -1,0 +1,510 @@
+{
+  "AI Limiter": [
+    "AI Limiter"
+  ],
+  "Organic Data Capsule": [
+    "Organic Data Capsule"
+  ],
+  "Reinforced Iron Plate": [
+    "Alternate: Adhered Iron Plate",
+    "Alternate: Bolted Iron Plate",
+    "Alternate: Stitched Iron Plate",
+    "Reinforced Iron Plate"
+  ],
+  "Aluminum Casing": [
+    "Alternate: Alclad Casing",
+    "Aluminum Casing"
+  ],
+  "Portable Miner": [
+    "Alternate: Automated Miner",
+    "Portable Miner"
+  ],
+  "Beacon": [
+    "Alternate: Crystal Beacon",
+    "Beacon"
+  ],
+  "Modular Frame": [
+    "Alternate: Bolted Frame",
+    "Alternate: Steeled Frame",
+    "Modular Frame"
+  ],
+  "Cable": [
+    "Alternate: Insulated Cable",
+    "Alternate: Quickwire Cable",
+    "Alternate: Coated Cable",
+    "Cable"
+  ],
+  "Circuit Board": [
+    "Alternate: Silicon Circuit Board",
+    "Alternate: Caterium Circuit Board",
+    "Alternate: Electrode Circuit Board",
+    "Circuit Board"
+  ],
+  "Battery": [
+    "Alternate: Classic Battery",
+    "Battery"
+  ],
+  "Coal": [
+    "Alternate: Charcoal",
+    "Alternate: Biocoal"
+  ],
+  "Empty Canister": [
+    "Alternate: Coated Iron Canister",
+    "Alternate: Steel Canister",
+    "Empty Canister",
+    "Unpackage Alumina Solution",
+    "Unpackage Liquid Biofuel",
+    "Unpackage Fuel",
+    "Unpackage Heavy Oil Residue",
+    "Unpackage Oil",
+    "Unpackage Sulfuric Acid",
+    "Unpackage Turbofuel",
+    "Unpackage Water"
+  ],
+  "Iron Plate": [
+    "Alternate: Coated Iron Plate",
+    "Alternate: Steel Coated Plate",
+    "Iron Plate"
+  ],
+  "Steel Ingot": [
+    "Alternate: Coke Steel Ingot",
+    "Alternate: Solid Steel Ingot",
+    "Alternate: Compacted Steel Ingot",
+    "Steel Ingot"
+  ],
+  "Computer": [
+    "Alternate: Caterium Computer",
+    "Alternate: Crystal Computer",
+    "Computer"
+  ],
+  "Concrete": [
+    "Alternate: Fine Concrete",
+    "Alternate: Rubber Concrete",
+    "Alternate: Wet Concrete",
+    "Concrete"
+  ],
+  "Cooling System": [
+    "Alternate: Cooling Device",
+    "Cooling System"
+  ],
+  "Copper Ingot": [
+    "Alternate: Copper Alloy Ingot",
+    "Alternate: Pure Copper Ingot",
+    "Copper Ingot"
+  ],
+  "Rotor": [
+    "Alternate: Copper Rotor",
+    "Alternate: Steel Rotor",
+    "Rotor"
+  ],
+  "Crystal Oscillator": [
+    "Alternate: Insulated Crystal Oscillator",
+    "Crystal Oscillator"
+  ],
+  "Fuel": [
+    "Alternate: Diluted Fuel",
+    "Fuel",
+    "Residual Fuel",
+    "Unpackage Fuel"
+  ],
+  "Packaged Fuel": [
+    "Alternate: Diluted Packaged Fuel",
+    "Packaged Fuel"
+  ],
+  "Motor": [
+    "Alternate: Electric Motor",
+    "Alternate: Rigour Motor",
+    "Motor"
+  ],
+  "Aluminum Scrap": [
+    "Alternate: Electrode - Aluminum Scrap",
+    "Alternate: Instant Scrap",
+    "Aluminum Scrap"
+  ],
+  "Water": [
+    "Alternate: Electrode - Aluminum Scrap",
+    "Alternate: Fertile Uranium",
+    "Alternate: Instant Scrap",
+    "Aluminum Scrap",
+    "Battery",
+    "Non-fissile Uranium",
+    "Unpackage Water"
+  ],
+  "Electromagnetic Control Rod": [
+    "Alternate: Electromagnetic Connection Rod",
+    "Electromagnetic Control Rod"
+  ],
+  "Encased Industrial Beam": [
+    "Alternate: Encased Industrial Pipe",
+    "Encased Industrial Beam"
+  ],
+  "Compacted Coal": [
+    "Alternate: Compacted Coal"
+  ],
+  "Non-fissile Uranium": [
+    "Alternate: Fertile Uranium",
+    "Non-fissile Uranium"
+  ],
+  "Versatile Framework": [
+    "Alternate: Flexible Framework",
+    "Versatile Framework"
+  ],
+  "Wire": [
+    "Alternate: Fused Wire",
+    "Alternate: Iron Wire",
+    "Alternate: Caterium Wire",
+    "Wire"
+  ],
+  "Black Powder": [
+    "Alternate: Fine Black Powder",
+    "Black Powder"
+  ],
+  "Fused Modular Frame": [
+    "Alternate: Heat-Fused Frame",
+    "Fused Modular Frame"
+  ],
+  "Heat Sink": [
+    "Alternate: Heat Exchanger",
+    "Heat Sink"
+  ],
+  "Heavy Modular Frame": [
+    "Alternate: Heavy Flexible Frame",
+    "Alternate: Heavy Encased Frame",
+    "Heavy Modular Frame"
+  ],
+  "Heavy Oil Residue": [
+    "Alternate: Heavy Oil Residue",
+    "Alternate: Polymer Resin",
+    "Plastic",
+    "Rubber",
+    "Unpackage Heavy Oil Residue"
+  ],
+  "Polymer Resin": [
+    "Alternate: Heavy Oil Residue",
+    "Alternate: Polymer Resin",
+    "Fuel"
+  ],
+  "High-Speed Connector": [
+    "Alternate: Silicon High-Speed Connector",
+    "High-Speed Connector"
+  ],
+  "Automated Wiring": [
+    "Alternate: Automated Speed Wiring",
+    "Automated Wiring"
+  ],
+  "Iron Ingot": [
+    "Alternate: Iron Alloy Ingot",
+    "Alternate: Pure Iron Ingot",
+    "Iron Ingot"
+  ],
+  "Encased Plutonium Cell": [
+    "Alternate: Instant Plutonium Cell",
+    "Encased Plutonium Cell"
+  ],
+  "Uranium Fuel Rod": [
+    "Alternate: Uranium Fuel Unit",
+    "Uranium Fuel Rod"
+  ],
+  "Supercomputer": [
+    "Alternate: OC Supercomputer",
+    "Alternate: Super-State Computer",
+    "Supercomputer"
+  ],
+  "Smart Plating": [
+    "Alternate: Plastic Smart Plating",
+    "Smart Plating"
+  ],
+  "Plastic": [
+    "Alternate: Recycled Plastic",
+    "Plastic",
+    "Residual Plastic"
+  ],
+  "Plutonium Fuel Rod": [
+    "Alternate: Plutonium Fuel Unit",
+    "Plutonium Fuel Rod"
+  ],
+  "Fabric": [
+    "Alternate: Polyester Fabric",
+    "Fabric"
+  ],
+  "Caterium Ingot": [
+    "Alternate: Pure Caterium Ingot",
+    "Caterium Ingot"
+  ],
+  "Quartz Crystal": [
+    "Alternate: Pure Quartz Crystal",
+    "Quartz Crystal"
+  ],
+  "Quickwire": [
+    "Alternate: Fused Quickwire",
+    "Quickwire"
+  ],
+  "Radio Control Unit": [
+    "Alternate: Radio Control System",
+    "Alternate: Radio Connection Unit",
+    "Radio Control Unit"
+  ],
+  "Rubber": [
+    "Alternate: Recycled Rubber",
+    "Residual Rubber",
+    "Rubber"
+  ],
+  "Screw": [
+    "Alternate: Steel Screw",
+    "Alternate: Cast Screw",
+    "Screw"
+  ],
+  "Silica": [
+    "Alternate: Cheap Silica",
+    "Alumina Solution",
+    "Silica"
+  ],
+  "Alumina Solution": [
+    "Alternate: Sloppy Alumina",
+    "Alumina Solution",
+    "Unpackage Alumina Solution"
+  ],
+  "Stator": [
+    "Alternate: Quickwire Stator",
+    "Stator"
+  ],
+  "Copper Sheet": [
+    "Alternate: Steamed Copper Sheet",
+    "Copper Sheet"
+  ],
+  "Iron Rod": [
+    "Alternate: Steel Rod",
+    "Iron Rod"
+  ],
+  "Turbofuel": [
+    "Alternate: Turbo Blend Fuel",
+    "Alternate: Turbo Heavy Fuel",
+    "Turbofuel",
+    "Unpackage Turbofuel"
+  ],
+  "Turbo Motor": [
+    "Alternate: Turbo Electric Motor",
+    "Alternate: Turbo Pressure Motor",
+    "Turbo Motor"
+  ],
+  "Encased Uranium Cell": [
+    "Alternate: Infused Uranium Cell",
+    "Encased Uranium Cell"
+  ],
+  "Alclad Aluminum Sheet": [
+    "Alclad Aluminum Sheet"
+  ],
+  "Solid Biofuel": [
+    "Solid Biofuel"
+  ],
+  "Biomass": [
+    "Biomass (Alien Protein)",
+    "Biomass (Leaves)",
+    "Biomass (Mycelia)",
+    "Biomass (Wood)"
+  ],
+  "Blade Runners": [
+    "Blade Runners"
+  ],
+  "Turbo Rifle Ammo": [
+    "Turbo Rifle Ammo"
+  ],
+  "Homing Rifle Ammo": [
+    "Homing Rifle Ammo"
+  ],
+  "Rifle Ammo": [
+    "Rifle Ammo"
+  ],
+  "Chainsaw": [
+    "Chainsaw"
+  ],
+  "Color Cartridge": [
+    "Color Cartridge"
+  ],
+  "Copper Powder": [
+    "Copper Powder"
+  ],
+  "Factory Cart™": [
+    "Factory Cart™"
+  ],
+  "Gas Filter": [
+    "Gas Filter"
+  ],
+  "Iodine Infused Filter": [
+    "Iodine Infused Filter"
+  ],
+  "Empty Fluid Tank": [
+    "Empty Fluid Tank",
+    "Unpackage Nitric Acid",
+    "Unpackage Nitrogen Gas"
+  ],
+  "Gas Mask": [
+    "Gas Mask"
+  ],
+  "Golden Factory Cart™": [
+    "Golden Factory Cart™"
+  ],
+  "Smokeless Powder": [
+    "Smokeless Powder"
+  ],
+  "Hazmat Suit": [
+    "Hazmat Suit"
+  ],
+  "Hover Pack": [
+    "Hover Pack"
+  ],
+  "Aluminum Ingot": [
+    "Aluminum Ingot",
+    "Alternate: Pure Aluminum Ingot"
+  ],
+  "Jetpack": [
+    "Jetpack"
+  ],
+  "Liquid Biofuel": [
+    "Liquid Biofuel",
+    "Unpackage Liquid Biofuel"
+  ],
+  "Medicinal Inhaler": [
+    "Protein Inhaler",
+    "Vitamin Inhaler",
+    "Nutritional Inhaler",
+    "Therapeutic Inhaler"
+  ],
+  "Nitric Acid": [
+    "Nitric Acid",
+    "Unpackage Nitric Acid"
+  ],
+  "Cluster Nobelisk": [
+    "Cluster Nobelisk"
+  ],
+  "Nobelisk Detonator": [
+    "Nobelisk Detonator"
+  ],
+  "Gas Nobelisk": [
+    "Gas Nobelisk"
+  ],
+  "Nuke Nobelisk": [
+    "Nuke Nobelisk"
+  ],
+  "Pulse Nobelisk": [
+    "Pulse Nobelisk"
+  ],
+  "Nobelisk": [
+    "Nobelisk"
+  ],
+  "Object Scanner": [
+    "Object Scanner"
+  ],
+  "Packaged Alumina Solution": [
+    "Packaged Alumina Solution"
+  ],
+  "Packaged Liquid Biofuel": [
+    "Packaged Liquid Biofuel"
+  ],
+  "Packaged Oil": [
+    "Packaged Oil"
+  ],
+  "Packaged Nitric Acid": [
+    "Packaged Nitric Acid"
+  ],
+  "Packaged Nitrogen Gas": [
+    "Packaged Nitrogen Gas"
+  ],
+  "Packaged Heavy Oil Residue": [
+    "Packaged Heavy Oil Residue"
+  ],
+  "Packaged Sulfuric Acid": [
+    "Packaged Sulfuric Acid"
+  ],
+  "Packaged Turbofuel": [
+    "Packaged Turbofuel"
+  ],
+  "Packaged Water": [
+    "Packaged Water"
+  ],
+  "Parachute": [
+    "Parachute"
+  ],
+  "Petroleum Coke": [
+    "Petroleum Coke"
+  ],
+  "Plutonium Pellet": [
+    "Plutonium Pellet"
+  ],
+  "Power Shard": [
+    "Power Shard (1)",
+    "Power Shard (2)",
+    "Power Shard (5)"
+  ],
+  "Pressure Conversion Cube": [
+    "Pressure Conversion Cube"
+  ],
+  "Alien Protein": [
+    "Hatcher Protein",
+    "Hog Protein",
+    "Spitter Protein",
+    "Stinger Protein"
+  ],
+  "Rebar Gun": [
+    "Rebar Gun"
+  ],
+  "Explosive Rebar": [
+    "Explosive Rebar"
+  ],
+  "Shatter Rebar": [
+    "Shatter Rebar"
+  ],
+  "Stun Rebar": [
+    "Stun Rebar"
+  ],
+  "Modular Engine": [
+    "Modular Engine"
+  ],
+  "Adaptive Control Unit": [
+    "Adaptive Control Unit"
+  ],
+  "Magnetic Field Generator": [
+    "Magnetic Field Generator"
+  ],
+  "Assembly Director System": [
+    "Assembly Director System"
+  ],
+  "Thermal Propulsion Rocket": [
+    "Thermal Propulsion Rocket"
+  ],
+  "Nuclear Pasta": [
+    "Nuclear Pasta"
+  ],
+  "Rifle": [
+    "Rifle"
+  ],
+  "Iron Rebar": [
+    "Iron Rebar"
+  ],
+  "Steel Beam": [
+    "Steel Beam"
+  ],
+  "Steel Pipe": [
+    "Steel Pipe"
+  ],
+  "Sulfuric Acid": [
+    "Sulfuric Acid",
+    "Unpackage Sulfuric Acid",
+    "Encased Uranium Cell"
+  ],
+  "Nitrogen Gas": [
+    "Unpackage Nitrogen Gas"
+  ],
+  "Crude Oil": [
+    "Unpackage Oil"
+  ],
+  "Xeno-Basher": [
+    "Xeno-Basher"
+  ],
+  "Xeno-Zapper": [
+    "Xeno-Zapper"
+  ],
+  "Zipline": [
+    "Zipline"
+  ]
+}
