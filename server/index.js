@@ -33,10 +33,7 @@ router.get("/search", async (req, res) => {
   for (const [product, recipes] of Object.entries(references)) {
     if (product.toLowerCase() == key) {
       const responseData = {};
-      responseData[product] = [];
-      for (const recipe of recipes) {
-        responseData[product].push(data[recipe]);
-      }
+      responseData[product] = recipes.map((recipe) => data[recipe]);
       res.json(responseData);
       return;
     }

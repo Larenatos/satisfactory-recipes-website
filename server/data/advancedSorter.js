@@ -30,22 +30,16 @@ for (const [, recipe] of Object.entries(data.recipes)) {
   }
 
   const name = recipe.name;
-  const ingredients = [];
-  const products = [];
 
-  for (const ingredient of recipe.ingredients) {
-    ingredients.push({
+  const ingredients = recipe.ingredients.map((ingredient) => {
+    return {
       item: getDisplayName(ingredient.item),
       amount: ingredient.amount,
-    });
-  }
+    };
+  });
 
-  for (const productProduct of recipe.products) {
-    const itemName = getDisplayName(productProduct.item);
-    products.push({
-      item: itemName,
-      amount: productProduct.amount,
-    });
+  const products = recipe.products.map((product) => {
+    const itemName = getDisplayName(product.item);
 
     if (!references[itemName]) {
       references[itemName] = [];
@@ -53,7 +47,12 @@ for (const [, recipe] of Object.entries(data.recipes)) {
     if (!references[itemName].includes(name)) {
       references[itemName].push(name);
     }
-  }
+
+    return {
+      item: itemName,
+      amount: product.amount,
+    };
+  });
 
   recipes[name] = {
     name,
@@ -64,12 +63,6 @@ for (const [, recipe] of Object.entries(data.recipes)) {
     products,
   };
 }
-
-const filteredData = {
-  inMachineRecipes: {},
-  inHandRecipes: {},
-  inWorkshopRecipes: {},
-};
 
 const recipesString = JSON.stringify(recipes);
 fs.writeFileSync("jsonFiles/recipes.json", recipesString);

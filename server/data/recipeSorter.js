@@ -31,24 +31,21 @@ for (const [, recipe] of Object.entries(recipes)) {
       target[name] = [];
     }
 
-    const ingredients = [];
-    const products = [];
-    const producedIn = [];
-
-    for (const ingredient of recipe.ingredients) {
-      ingredients.push({
+    const ingredients = recipe.ingredients.map((ingredient) => {
+      return {
         item: getDisplayName(ingredient),
         amount: ingredient.amount,
-      });
-    }
+      };
+    });
 
-    for (const product of recipe.products) {
-      products.push({
-        item: getDisplayName(product),
-        amount: product.amount,
-      });
-    }
+    const products = recipe.products.map((productProduct) => {
+      return {
+        item: getDisplayName(productProduct),
+        amount: productProduct.amount,
+      };
+    });
 
+    const producedIn = [];
     if (recipe.inMachine) {
       producedIn.push(buildings[recipe.producedIn].name);
     }

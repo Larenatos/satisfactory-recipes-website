@@ -137,6 +137,10 @@ img {
   overflow-y: scroll;
 }
 
+.search-results h2 {
+  font-size: 30px;
+}
+
 .search-results h2,
 .search-results h3 {
   color: var(--text);
