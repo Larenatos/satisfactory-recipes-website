@@ -293,15 +293,11 @@ const displaySearchResults = async () => {
     return;
   }
 
-  const header = document.createElement("h2");
-  header.innerText = input.charAt(0).toUpperCase() + input.slice(1);
-  resultBox.append(header);
-
   const list = document.createElement("ul");
   list.classList.add("top-level-list");
 
   const name = document.createElement("li");
-  name.innerText = `name: ${data["name"]}`;
+  name.innerText = `name: ${data.name}`;
   list.append(name);
 
   if (
@@ -310,6 +306,10 @@ const displaySearchResults = async () => {
     dataType == "inWorkshopRecipes"
   ) {
     for (const recipe of data) {
+      const header = document.createElement("h2");
+      header.innerText = recipe.name;
+      resultBox.append(header);
+
       displayRecipe(recipe, list);
     }
   } else if (dataType == "items") {

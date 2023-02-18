@@ -21,7 +21,7 @@ router.get("/products", async (req, res) => {
 });
 
 router.get("/search", async (req, res) => {
-  const key = req.query.key;
+  const key = req.query.key.toLowerCase();
   const type = req.query.type;
 
   const data = JSON.parse(
@@ -30,9 +30,13 @@ router.get("/search", async (req, res) => {
 
   if (key == "all") {
     res.json(data[type]);
-  } else if (Object.keys(data[type]).includes(key)) {
-    res.json(data[type][key]);
   } else {
+    for (const product of Object.keys(data[type])) {
+      if (product.toLowerCase() == key) {
+        res.json(data[type][product]);
+        return;
+      }
+    }
     res.status(400).json({ message: "You entered an invalid key!" });
   }
 });
