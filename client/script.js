@@ -21,59 +21,55 @@ const displayRecipeList = (data) => {
       const list = document.createElement("ul");
       list.classList.add("top-level-list");
 
-      const elements = displayRecipe(recipe);
-      list.append(...elements);
+      const name = document.createElement("li");
+      name.innerText = `name: ${recipe["name"]}`;
+
+      const time = document.createElement("li");
+      time.innerText = `time to process: ${recipe["time"]}s`;
+
+      const alternate = document.createElement("li");
+      alternate.innerText = `alternate: ${recipe["alternate"]}`;
+
+      const producedIn = document.createElement("li");
+      producedIn.innerText = "produced in:";
+
+      const producedInUl = document.createElement("ul");
+      for (const machine of recipe["producedIn"]) {
+        const machineElement = document.createElement("li");
+        machineElement.innerText = machine;
+
+        producedInUl.append(machineElement);
+      }
+      producedIn.append(producedInUl);
+
+      const productsLi = document.createElement("li");
+      productsLi.innerText = "products:";
+
+      const productsUl = document.createElement("ul");
+      for (const product of recipe["products"]) {
+        const productElement = document.createElement("li");
+        productElement.innerText = `${product["item"]} (${product["amount"]})`;
+
+        productsUl.append(productElement);
+      }
+      productsLi.append(productsUl);
+
+      const ingredientsLi = document.createElement("li");
+      ingredientsLi.innerText = "ingredients:";
+
+      const ingredientsUl = document.createElement("ul");
+      for (const ingredient of recipe["ingredients"]) {
+        const ingredientElement = document.createElement("li");
+        ingredientElement.innerText = `${ingredient["item"]} (${ingredient["amount"]})`;
+
+        ingredientsUl.append(ingredientElement);
+      }
+      ingredientsLi.append(ingredientsUl);
+
+      list.append(name, time, alternate, producedIn, productsLi, ingredientsLi);
       resultBox.append(list);
     }
   }
-};
-
-const displayRecipe = (data, list) => {
-  const name = document.createElement("li");
-  name.innerText = `name: ${data["name"]}`;
-
-  const time = document.createElement("li");
-  time.innerText = `time to process: ${data["time"]}s`;
-
-  const alternate = document.createElement("li");
-  alternate.innerText = `alternate: ${data["alternate"]}`;
-
-  const producedIn = document.createElement("li");
-  producedIn.innerText = "produced in:";
-
-  const producedInUl = document.createElement("ul");
-  for (const machine of data["producedIn"]) {
-    const machineElement = document.createElement("li");
-    machineElement.innerText = machine;
-
-    producedInUl.append(machineElement);
-  }
-  producedIn.append(producedInUl);
-
-  const productsLi = document.createElement("li");
-  productsLi.innerText = "products:";
-
-  const productsUl = document.createElement("ul");
-  for (const product of data["products"]) {
-    const productElement = document.createElement("li");
-    productElement.innerText = `${product["item"]} (${product["amount"]})`;
-
-    productsUl.append(productElement);
-  }
-  productsLi.append(productsUl);
-
-  const ingredientsLi = document.createElement("li");
-  ingredientsLi.innerText = "ingredients:";
-  const ingredientsUl = document.createElement("ul");
-  for (const ingredient of data["ingredients"]) {
-    const ingredientElement = document.createElement("li");
-    ingredientElement.innerText = `${ingredient["item"]} (${ingredient["amount"]})`;
-
-    ingredientsUl.append(ingredientElement);
-  }
-  ingredientsLi.append(ingredientsUl);
-
-  return [name, time, alternate, producedIn, productsLi, ingredientsLi];
 };
 
 const displayPossibleKeys = async () => {
@@ -101,18 +97,5 @@ const displaySearchResults = async () => {
   }
 
   const data = await response.json();
-  resultBox.innerHTML = "";
-
-  for (const recipe of data) {
-    const header = document.createElement("h2");
-    header.innerText = recipe.name;
-    resultBox.append(header);
-
-    const list = document.createElement("ul");
-    list.classList.add("top-level-list");
-
-    const elements = displayRecipe(recipe, list);
-    list.append(...elements);
-    resultBox.append(list);
-  }
+  displayRecipeList(data);
 };
