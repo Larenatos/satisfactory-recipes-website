@@ -15,30 +15,32 @@ const router = express.Router();
 
 router.get("/products", async (req, res) => {
   const data = JSON.parse(
-    await fs.readFile(path.join(__dirname, "data/jsonFiles/filteredData.json"))
+    await fs.readFile(path.join(__dirname, "data/jsonFiles/references.json"))
   );
-  res.json(Object.keys(data[req.query.type]));
+  res.json(Object.keys(data));
 });
 
 router.get("/search", async (req, res) => {
   const key = req.query.key.toLowerCase();
-  const type = req.query.type;
 
   const data = JSON.parse(
-    await fs.readFile(path.join(__dirname, "data/jsonFiles/filteredData.json"))
+    await fs.readFile(path.join(__dirname, "data/jsonFiles/recipes.json"))
+  );
+  const references = JSON.parse(
+    await fs.readFile(path.join(__dirname, "data/jsonFiles/references.json"))
   );
 
-  if (key == "all") {
-    res.json(data[type]);
-  } else {
-    for (const product of Object.keys(data[type])) {
-      if (product.toLowerCase() == key) {
-        res.json(data[type][product]);
-        return;
+  for (const [product, recipes] of Object.entries(references)) {
+    if (product.toLowerCase() == key) {
+      const responseArray = [];
+      for (const recipe of recipes) {
+        responseArray.push(data[recipe]);
       }
+      res.json(responseArray);
+      return;
     }
-    res.status(400).json({ message: "You entered an invalid key!" });
   }
+  res.status(400).json({ message: "You entered an invalid key!" });
 });
 
 router.use(express.static(path.join(__dirname, "../client")));

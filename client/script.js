@@ -76,8 +76,7 @@ const displayRecipe = (data) => {
 };
 
 const displayPossibleKeys = async () => {
-  const dataType = document.getElementById("dataType").value;
-  const response = await fetch(`${baseUrl}/products?type=${dataType}`);
+  const response = await fetch(`${baseUrl}/products`);
   const data = await response.json();
   resultBox.innerHTML = "";
 
@@ -90,12 +89,9 @@ const displayPossibleKeys = async () => {
 
 const displaySearchResults = async () => {
   errorText.innerText = "";
-  const dataType = document.getElementById("dataType").value;
   const input = document.getElementById("dataKey").value;
 
-  const response = await fetch(
-    `${baseUrl}/search?type=${dataType}&key=${input}`
-  );
+  const response = await fetch(`${baseUrl}/search?key=${input}`);
 
   if (response.status == 400) {
     const { message } = await response.json();
@@ -105,11 +101,6 @@ const displaySearchResults = async () => {
 
   const data = await response.json();
   resultBox.innerHTML = "";
-
-  if (input == "all") {
-    displayRecipeList(data);
-    return;
-  }
 
   const list = document.createElement("ul");
   list.classList.add("top-level-list");
