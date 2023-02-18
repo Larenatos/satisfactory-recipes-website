@@ -3,7 +3,17 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const getDisplayName = (item) => {
-  return data.items[item].name;
+  if (data.items[item]) {
+    return data.items[item].name;
+  } else {
+    if (!item.includes("Desc_")) {
+      item = `Desc_${item}`;
+    }
+    if (data.buildings[item]) {
+      return data.buildings[item].name;
+    }
+    return item;
+  }
 };
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -23,10 +33,6 @@ for (const [, recipe] of Object.entries(data.recipes)) {
   }
   if (recipe.inWorkshop) {
     producedIn.push("Equipment Workshop");
-  }
-
-  if (!producedIn.length) {
-    continue;
   }
 
   const name = recipe.name;
@@ -67,5 +73,5 @@ for (const [, recipe] of Object.entries(data.recipes)) {
 const recipesString = JSON.stringify(recipes);
 fs.writeFileSync("jsonFiles/recipes.json", recipesString);
 
-let referencesString = JSON.stringify(references);
+const referencesString = JSON.stringify(references);
 fs.writeFileSync("jsonFiles/references.json", referencesString);

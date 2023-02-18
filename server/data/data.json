@@ -29818,13 +29818,13 @@
         "height": 1
       }
     },
-    "Desc_Foundation_ConcretePolished_8x2_2_C": {
+    "Desc_Foundation_ConcretePolished_8x2_C": {
       "slug": "foundation-2m-polished",
       "name": "Foundation 2m",
       "description": "Provides a flat floor to build your factory on.\n\nBuildings on top of the foundation are adjusted to a grid, to make it easier to line them up to each other.\n\nSize: 8m x 2m",
       "categories": [],
       "buildMenuPriority": 0,
-      "className": "Desc_Foundation_ConcretePolished_8x2_2_C",
+      "className": "Desc_Foundation_ConcretePolished_8x2_C",
       "metadata": {},
       "size": {
         "width": 8,
