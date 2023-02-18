@@ -18,15 +18,17 @@ const displayRecipeList = (data) => {
     resultBox.append(productName);
 
     for (const recipe of recipes) {
-      displayRecipe(recipe);
+      const list = document.createElement("ul");
+      list.classList.add("top-level-list");
+
+      const elements = displayRecipe(recipe);
+      list.append(...elements);
+      resultBox.append(list);
     }
   }
 };
 
-const displayRecipe = (data) => {
-  const list = document.createElement("ul");
-  list.classList.add("top-level-list");
-
+const displayRecipe = (data, list) => {
   const name = document.createElement("li");
   name.innerText = `name: ${data["name"]}`;
 
@@ -71,8 +73,7 @@ const displayRecipe = (data) => {
   }
   ingredientsLi.append(ingredientsUl);
 
-  list.append(name, time, alternate, producedIn, productsLi, ingredientsLi);
-  resultBox.append(list);
+  return [name, time, alternate, producedIn, productsLi, ingredientsLi];
 };
 
 const displayPossibleKeys = async () => {
@@ -102,14 +103,16 @@ const displaySearchResults = async () => {
   const data = await response.json();
   resultBox.innerHTML = "";
 
-  const list = document.createElement("ul");
-  list.classList.add("top-level-list");
-
   for (const recipe of data) {
     const header = document.createElement("h2");
     header.innerText = recipe.name;
     resultBox.append(header);
 
-    displayRecipe(recipe, list);
+    const list = document.createElement("ul");
+    list.classList.add("top-level-list");
+
+    const elements = displayRecipe(recipe, list);
+    list.append(...elements);
+    resultBox.append(list);
   }
 };
