@@ -9,11 +9,7 @@
       <div class="header-underline"></div>
     </header>
     <main>
-      <div class="buttons">
-        <button onclick="displayRecipes('base')">Base Recipes</button>
-        <button onclick="displayRecipes('alternate')">Alternate Recipes</button>
-      </div>
-      <div class="row">
+      <div class="column">
         <div class="search">
           <h2>Search</h2>
           <label>Choose the type of data:</label>
@@ -38,8 +34,14 @@
           </button>
           <button onclick="displaySearchResults()">Search</button>
         </div>
-        <div class="search-results"></div>
+        <div class="buttons">
+          <button onclick="displayRecipes('base')">Base Recipes</button>
+          <button onclick="displayRecipes('alternate')">
+            Alternate Recipes
+          </button>
+        </div>
       </div>
+      <div class="search-results"></div>
     </main>
     <script src="script.js"></script>
   </body>
