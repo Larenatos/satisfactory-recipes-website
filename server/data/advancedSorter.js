@@ -9,6 +9,55 @@ const getDisplayName = (item) => {
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const data = JSON.parse(fs.readFileSync(path.join(__dirname, "data.json")));
 
+const recipes = {};
+
+for (const [, recipe] of Object.entries(data.recipes)) {
+  const producedIn = [];
+
+  if (recipe.inMachine) {
+    producedIn.push(data.buildings[recipe.producedIn].name);
+  }
+  if (recipe.inHand) {
+    producedIn.push("Craft Bench");
+  }
+  if (recipe.inWorkshop) {
+    producedIn.push("Equipment Workshop");
+  }
+
+  if (!producedIn.length) {
+    continue;
+  }
+
+  const ingredients = [];
+  const products = [];
+
+  for (const ingredient of recipe.ingredients) {
+    ingredients.push({
+      item: getDisplayName(ingredient.item),
+      amount: ingredient.amount,
+    });
+  }
+
+  for (const productProduct of recipe.products) {
+    const itemName = getDisplayName(productProduct.item);
+    products.push({
+      item: itemName,
+      amount: productProduct.amount,
+    });
+  }
+
+  const name = recipe.name;
+
+  recipes[name] = {
+    name,
+    time: recipe.time,
+    alternate: recipe.alternate,
+    producedIn,
+    ingredients,
+    products,
+  };
+}
+
 const filteredData = {
   inMachineRecipes: {},
   inHandRecipes: {},
@@ -78,6 +127,9 @@ for (const [, recipe] of Object.entries(data.recipes)) {
     }
   }
 }
+
+const recipesString = JSON.stringify(recipes);
+fs.writeFileSync("jsonFiles/recipes.json", recipesString);
 
 let finalData = JSON.stringify(filteredData);
 fs.writeFileSync("jsonFiles/filteredData.json", finalData);
