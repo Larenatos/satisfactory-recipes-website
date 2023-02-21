@@ -3,12 +3,6 @@ const baseUrl = "/satisfactory-recipes";
 const [resultBox] = document.getElementsByClassName("search-results");
 const [errorText] = document.getElementsByClassName("error");
 
-const displayRecipes = async (type) => {
-  const response = await fetch(`${baseUrl}/${type}Recipes.json`);
-  const data = await response.json();
-  displayRecipeList(data);
-};
-
 const displayRecipeList = (data) => {
   resultBox.innerHTML = "";
 
@@ -17,7 +11,7 @@ const displayRecipeList = (data) => {
     productName.innerText = item;
     resultBox.append(productName);
 
-    const recipeInfos = document.createElement("div");
+    const recipeDivs = document.createElement("div");
 
     for (const recipe of recipes) {
       const recipeName = document.createElement("h3");
@@ -72,28 +66,16 @@ const displayRecipeList = (data) => {
       ingredientsLi.append(ingredientsUl);
 
       list.append(name, time, alternate, producedIn, productsLi, ingredientsLi);
-      recipeInfos.append(recipeName, list);
+      recipeDivs.append(recipeName, list);
     }
-    resultBox.append(recipeInfos);
+    resultBox.append(recipeDivs);
   }
 };
 
-const displayPossibleKeys = async () => {
-  const response = await fetch(`${baseUrl}/products`);
+const displayRecipes = async (type) => {
+  const response = await fetch(`${baseUrl}/${type}Recipes.json`);
   const data = await response.json();
-  resultBox.innerHTML = "";
-
-  for (const item of data) {
-    const key = document.createElement("h4");
-    key.innerText = item;
-
-    key.addEventListener("click", () => {
-      document.getElementById("dataKey").value = item;
-      displaySearchResults();
-    });
-
-    resultBox.append(key);
-  }
+  displayRecipeList(data);
 };
 
 const displaySearchResults = async () => {
@@ -110,4 +92,22 @@ const displaySearchResults = async () => {
 
   const data = await response.json();
   displayRecipeList(data);
+};
+
+const displayAllKeys = async () => {
+  const response = await fetch(`${baseUrl}/products`);
+  const data = await response.json();
+  resultBox.innerHTML = "";
+
+  for (const item of data) {
+    const key = document.createElement("h4");
+    key.innerText = item;
+
+    key.addEventListener("click", () => {
+      document.getElementById("dataKey").value = item;
+      displaySearchResults();
+    });
+
+    resultBox.append(key);
+  }
 };

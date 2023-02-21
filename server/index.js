@@ -14,21 +14,19 @@ const server = express();
 const router = express.Router();
 
 router.get("/products", async (req, res) => {
-  const data = JSON.parse(
-    await fs.readFile(path.join(__dirname, "data/jsonFiles/references.json"))
-  );
+  const referencesPath = path.join(__dirname, "data/jsonFiles/references.json");
+  const data = JSON.parse(await fs.readFile(referencesPath));
   res.json(Object.keys(data));
 });
 
 router.get("/search", async (req, res) => {
   const key = req.query.key.toLowerCase();
 
-  const data = JSON.parse(
-    await fs.readFile(path.join(__dirname, "data/jsonFiles/recipes.json"))
-  );
-  const references = JSON.parse(
-    await fs.readFile(path.join(__dirname, "data/jsonFiles/references.json"))
-  );
+  const recipePath = path.join(__dirname, "data/jsonFiles/recipes.json");
+  const data = JSON.parse(await fs.readFile(recipePath));
+
+  const referencesPath = path.join(__dirname, "data/jsonFiles/references.json");
+  const references = JSON.parse(await fs.readFile(referencesPath));
 
   for (const [product, recipes] of Object.entries(references)) {
     if (product.toLowerCase() == key) {

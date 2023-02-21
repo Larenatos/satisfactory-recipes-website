@@ -3,21 +3,17 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const getDisplayName = (item) => {
-  if (data.items[item]) {
-    return data.items[item].name;
-  } else {
-    if (!item.includes("Desc_")) {
-      item = `Desc_${item}`;
-    }
-    if (data.buildings[item]) {
-      return data.buildings[item].name;
-    }
-    return item;
+  let displayName = data.items[item]?.name;
+  if (!displayName) {
+    displayName = data.buildings[item]?.name;
   }
+
+  return displayName ? displayName : item;
 };
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const data = JSON.parse(fs.readFileSync(path.join(__dirname, "data.json")));
+const dataPath = path.join(__dirname, "data.json");
+const data = JSON.parse(fs.readFileSync(dataPath));
 
 const recipes = {};
 const references = {};
