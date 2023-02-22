@@ -9,17 +9,17 @@
       <div class="header-underline"></div>
     </header>
     <main>
-      <div class="column">
+      <div class="sidebar">
         <img src="satisfactory.png" />
         <div class="search">
           <h2>Search</h2>
           <label>Enter the exact product you want below:</label>
-          <input type="text" id="dataKey" placeholder="Product" />
+          <input type="text" id="product-input" placeholder="Product" />
           <p class="error"></p>
-          <button onclick="displayAllKeys()">Show possible entries</button>
+          <button onclick="displayAllKeys()">Show all products</button>
           <button onclick="displaySearchResults()">Search</button>
         </div>
-        <div class="buttons">
+        <div class="bulk-recipe-buttons">
           <button onclick="displayRecipes('base')">Display Base Recipes</button>
           <button onclick="displayRecipes('alternate')">
             Display Alternate Recipes

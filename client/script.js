@@ -80,7 +80,7 @@ const displayRecipes = async (type) => {
 
 const displaySearchResults = async () => {
   errorText.innerText = "";
-  const input = document.getElementById("dataKey").value;
+  const input = document.getElementById("product-input").value;
 
   const response = await fetch(`${baseUrl}/search?key=${input}`);
 
@@ -104,7 +104,7 @@ const displayAllKeys = async () => {
     key.innerText = item;
 
     key.addEventListener("click", () => {
-      document.getElementById("dataKey").value = item;
+      document.getElementById("product-input").value = item;
       displaySearchResults();
     });
 
