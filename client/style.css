@@ -127,7 +127,7 @@ img {
   cursor: pointer;
 }
 
-.search-results {
+.result {
   width: 800px;
   height: 700px;
   margin-left: 200px;
@@ -136,23 +136,23 @@ img {
   overflow-y: scroll;
 }
 
-.search-results h2 {
+.result h2 {
   font-size: 30px;
 }
 
-.search-results h2,
-.search-results h3 {
+.result h2,
+.result h3 {
   color: var(--text);
   margin: 20px 0 0 30px;
 }
 
-.search-results h4 {
+.result h4 {
   font-size: 25px;
   margin: 20px 0 0 20px;
   cursor: pointer;
 }
 
-.search-results h4:hover {
+.result h4:hover {
   color: #c0c0c0;
 }
 

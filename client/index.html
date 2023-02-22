@@ -16,17 +16,19 @@
           <label>Enter the exact product you want below:</label>
           <input type="text" id="product-input" placeholder="Product" />
           <p class="error"></p>
-          <button onclick="displayAllKeys()">Show all products</button>
+          <button onclick="displayAllProducts()">Show all products</button>
           <button onclick="displaySearchResults()">Search</button>
         </div>
         <div class="bulk-recipe-buttons">
-          <button onclick="displayRecipes('base')">Display Base Recipes</button>
-          <button onclick="displayRecipes('alternate')">
+          <button onclick="displayBulkRecipes('base')">
+            Display Base Recipes
+          </button>
+          <button onclick="displayBulkRecipes('alternate')">
             Display Alternate Recipes
           </button>
         </div>
       </div>
-      <div class="search-results"></div>
+      <div class="result"></div>
     </main>
     <script src="script.js"></script>
   </body>
