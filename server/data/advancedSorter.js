@@ -3,12 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const getDisplayName = (item) => {
-  let displayName = data.items[item]?.name;
-  if (!displayName) {
-    displayName = data.buildings[item]?.name;
-  }
-
-  return displayName ? displayName : item;
+  return data.items[item]?.name ?? data.buildings[item]?.name ?? item;
 };
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -31,7 +26,7 @@ for (const [, recipe] of Object.entries(data.recipes)) {
     producedIn.push("Equipment Workshop");
   }
 
-  const name = recipe.name;
+  const recipeName = recipe.name;
 
   const ingredients = recipe.ingredients.map((ingredient) => {
     return {
@@ -40,26 +35,30 @@ for (const [, recipe] of Object.entries(data.recipes)) {
     };
   });
 
-  const products = recipe.products.map((product) => {
-    const itemName = getDisplayName(product.item);
+  const products = [];
 
-    if (!references[itemName]) {
-      references[itemName] = [];
-    }
-    if (!references[itemName].includes(name)) {
-      references[itemName].push(name);
+  for (const product of recipe.products) {
+    const productName = getDisplayName(product.item);
+
+    if (["Coal", "Water"].includes(productName)) {
+      continue;
     }
 
-    return {
-      item: itemName,
+    if (!references[productName]) {
+      references[productName] = [];
+    }
+    if (!references[productName].includes(recipeName)) {
+      references[productName].push(recipeName);
+    }
+
+    products.push({
+      item: productName,
       amount: product.amount,
-    };
-  });
+    });
+  }
 
-  recipes[name] = {
-    name,
+  recipes[recipeName] = {
     time: recipe.time,
-    alternate: recipe.alternate,
     producedIn,
     ingredients,
     products,

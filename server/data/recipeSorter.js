@@ -22,13 +22,13 @@ for (const [, recipe] of Object.entries(recipes)) {
   const target = recipe.alternate ? alternateRecipes : baseRecipes;
 
   for (const product of recipe.products) {
-    const name = getDisplayName(product);
+    const productName = getDisplayName(product);
 
-    if (["Coal", "Water", "Biomass"].includes(name)) {
+    if (["Coal", "Water", "Biomass"].includes(productName)) {
       continue;
     }
-    if (!target[name]) {
-      target[name] = [];
+    if (!target[productName]) {
+      target[productName] = [];
     }
 
     const ingredients = recipe.ingredients.map((ingredient) => {
@@ -56,10 +56,9 @@ for (const [, recipe] of Object.entries(recipes)) {
       producedIn.push("Equipment Workshop");
     }
 
-    target[name].push({
+    target[productName].push({
       name: recipe.name,
       time: recipe.time,
-      alternate: recipe.alternate,
       producedIn,
       ingredients,
       products,
@@ -67,7 +66,6 @@ for (const [, recipe] of Object.entries(recipes)) {
   }
 }
 
-// TODO: remove indentation to reduce file size
 let baseRecipesString = JSON.stringify(baseRecipes);
 fs.writeFileSync("jsonFiles/baseRecipes.json", baseRecipesString);
 

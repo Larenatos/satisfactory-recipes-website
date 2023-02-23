@@ -24,13 +24,18 @@ router.get("/products", async (req, res) => {
 router.get("/products/search", async (req, res) => {
   const input = req.query.input.toLowerCase();
 
-  const recipes = JSON.parse(await fs.readFile(recipePath));
   const references = JSON.parse(await fs.readFile(referencesPath));
 
   for (const [productName, recipeNames] of Object.entries(references)) {
     if (productName.toLowerCase() === input) {
+      const recipes = JSON.parse(await fs.readFile(recipePath));
       const response = {
-        [productName]: recipeNames.map((recipe) => recipes[recipe]),
+        [productName]: recipeNames.map((recipeName) => {
+          return {
+            name: recipeName,
+            ...recipes[recipeName],
+          };
+        }),
       };
       res.json(response);
       return;
