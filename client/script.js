@@ -1,15 +1,15 @@
-const baseUrl = "/satisfactory-recipes";
+const basePath = "/satisfactory-recipes";
 
 const [resultDiv] = document.getElementsByClassName("result");
 const [errorP] = document.getElementsByClassName("error");
 const productInput = document.getElementById("product-input");
 
-const displayRecipeList = (data) => {
+const displayRecipeList = (recipesByProduct) => {
   resultDiv.innerHTML = "";
 
-  for (const [item, recipes] of Object.entries(data)) {
+  for (const [productName, recipes] of Object.entries(recipesByProduct)) {
     const productH2 = document.createElement("h2");
-    productH2.innerText = item;
+    productH2.innerText = productName;
 
     const recipesDiv = document.createElement("div");
 
@@ -67,16 +67,16 @@ const displayRecipeList = (data) => {
 };
 
 const displayBulkRecipes = async (type) => {
-  const response = await fetch(`${baseUrl}/${type}Recipes.json`);
-  const data = await response.json();
-  displayRecipeList(data);
+  const response = await fetch(`${basePath}/${type}Recipes.json`);
+  const recipesByProduct = await response.json();
+  displayRecipeList(recipesByProduct);
 };
 
 const displaySearchResults = async () => {
   errorP.innerText = "";
   const input = productInput.value;
 
-  const response = await fetch(`${baseUrl}/search?key=${input}`);
+  const response = await fetch(`${basePath}/products/search?input=${input}`);
 
   if (response.status == 400) {
     const { message } = await response.json();
@@ -84,21 +84,21 @@ const displaySearchResults = async () => {
     return;
   }
 
-  const data = await response.json();
-  displayRecipeList(data);
+  const recipesByProduct = await response.json();
+  displayRecipeList(recipesByProduct);
 };
 
 const displayAllProducts = async () => {
-  const response = await fetch(`${baseUrl}/products`);
-  const data = await response.json();
+  const response = await fetch(`${basePath}/products`);
+  const productNames = await response.json();
   resultDiv.innerHTML = "";
 
-  for (const item of data) {
+  for (const productName of productNames) {
     const key = document.createElement("h4");
-    key.innerText = item;
+    key.innerText = productName;
 
     key.addEventListener("click", () => {
-      productInput.value = item;
+      productInput.value = productName;
       displaySearchResults();
     });
 

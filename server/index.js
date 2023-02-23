@@ -13,26 +13,26 @@ const basePath = "/satisfactory-recipes";
 const server = express();
 const router = express.Router();
 
+const referencesPath = path.join(__dirname, "data/jsonFiles/references.json");
+const recipePath = path.join(__dirname, "data/jsonFiles/recipes.json");
+
 router.get("/products", async (req, res) => {
-  const referencesPath = path.join(__dirname, "data/jsonFiles/references.json");
-  const data = JSON.parse(await fs.readFile(referencesPath));
-  res.json(Object.keys(data));
+  const references = JSON.parse(await fs.readFile(referencesPath));
+  res.json(Object.keys(references));
 });
 
-router.get("/search", async (req, res) => {
-  const key = req.query.key.toLowerCase();
+router.get("/products/search", async (req, res) => {
+  const input = req.query.input.toLowerCase();
 
-  const recipePath = path.join(__dirname, "data/jsonFiles/recipes.json");
-  const data = JSON.parse(await fs.readFile(recipePath));
-
-  const referencesPath = path.join(__dirname, "data/jsonFiles/references.json");
+  const recipes = JSON.parse(await fs.readFile(recipePath));
   const references = JSON.parse(await fs.readFile(referencesPath));
 
-  for (const [product, recipes] of Object.entries(references)) {
-    if (product.toLowerCase() == key) {
-      const responseData = {};
-      responseData[product] = recipes.map((recipe) => data[recipe]);
-      res.json(responseData);
+  for (const [productName, recipeNames] of Object.entries(references)) {
+    if (productName.toLowerCase() === input) {
+      const response = {
+        [productName]: recipeNames.map((recipe) => recipes[recipe]),
+      };
+      res.json(response);
       return;
     }
   }
