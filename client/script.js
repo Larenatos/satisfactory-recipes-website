@@ -117,7 +117,7 @@ const displayAllProducts = async () => {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     if (productInput.value) {
-      displaySearchResults();
+      getSearchResults();
     }
   }
 });
