@@ -1,6 +1,7 @@
 const basePath = "/satisfactory-recipes";
 
 const [resultDiv] = document.getElementsByClassName("result");
+const [oldProductNamesDiv] = document.getElementsByClassName("productNames");
 const [errorP] = document.getElementsByClassName("error");
 const productInput = document.getElementById("product-input");
 
@@ -91,10 +92,11 @@ const displaySearchResults = async () => {
 const displayAllProducts = async () => {
   const response = await fetch(`${basePath}/products`);
   const productNames = await response.json();
-  resultDiv.innerHTML = "";
+  const newProductNamesDiv = document.createElement("div");
+  newProductNamesDiv.classList.add("productNames");
 
   for (const productName of productNames) {
-    const key = document.createElement("h4");
+    const key = document.createElement("h3");
     key.innerText = productName;
 
     key.addEventListener("click", () => {
@@ -102,6 +104,9 @@ const displayAllProducts = async () => {
       displaySearchResults();
     });
 
-    resultDiv.append(key);
+    newProductNamesDiv.append(key);
   }
+  oldProductNamesDiv.replaceWith(newProductNamesDiv);
 };
+
+window.onload = displayAllProducts();

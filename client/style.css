@@ -128,9 +128,9 @@ img {
 }
 
 .result {
-  width: 800px;
+  width: 700px;
   height: 700px;
-  margin-left: 200px;
+  margin-left: 70px;
   border: 3px solid var(--primary);
   background-color: var(--primary);
   overflow-y: scroll;
@@ -146,17 +146,26 @@ img {
   margin: 20px 0 0 30px;
 }
 
-.result h4 {
-  font-size: 25px;
+.top-level-list {
+  font-size: 20px;
+  margin: 10px 0 0 30px;
+}
+
+.productNames {
+  width: 380px;
+  height: 700px;
+  margin-left: 70px;
+  border: 3px solid var(--primary);
+  background-color: var(--primary);
+  overflow-y: scroll;
+}
+
+.productNames h3 {
+  font-size: 20px;
   margin: 20px 0 0 20px;
   cursor: pointer;
 }
 
-.result h4:hover {
+.productNames h3:hover {
   color: #c0c0c0;
-}
-
-.top-level-list {
-  font-size: 20px;
-  margin: 10px 0 0 30px;
 }
