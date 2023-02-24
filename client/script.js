@@ -1,12 +1,12 @@
 const basePath = "/satisfactory-recipes";
 
-const [resultDiv] = document.getElementsByClassName("result");
-const [oldProductNamesDiv] = document.getElementsByClassName("productNames");
 const [errorP] = document.getElementsByClassName("error");
 const productInput = document.getElementById("product-input");
 
 const displayRecipeList = (recipesByProduct) => {
-  resultDiv.innerHTML = "";
+  const [oldResultDiv] = document.getElementsByClassName("result");
+  const newResultDiv = document.createElement("div");
+  newResultDiv.classList.add("result");
 
   for (const [productName, recipes] of Object.entries(recipesByProduct)) {
     const productH2 = document.createElement("h2");
@@ -63,17 +63,18 @@ const displayRecipeList = (recipesByProduct) => {
       recipeUl.append(timeLi, producedInLi, productsLi, ingredientsLi);
       recipesDiv.append(recipeH3, recipeUl);
     }
-    resultDiv.append(productH2, recipesDiv);
+    newResultDiv.append(productH2, recipesDiv);
   }
+  oldResultDiv.replaceWith(newResultDiv);
 };
 
-const displayBulkRecipes = async (type) => {
+const getBulkRecipes = async (type) => {
   const response = await fetch(`${basePath}/${type}Recipes.json`);
   const recipesByProduct = await response.json();
   displayRecipeList(recipesByProduct);
 };
 
-const displaySearchResults = async () => {
+const getSearchResults = async () => {
   if (!errorP.innerText == "") {
     errorP.innerText = "";
   }
@@ -94,6 +95,8 @@ const displaySearchResults = async () => {
 const displayAllProducts = async () => {
   const response = await fetch(`${basePath}/products`);
   const productNames = await response.json();
+
+  const [oldProductNamesDiv] = document.getElementsByClassName("productNames");
   const newProductNamesDiv = document.createElement("div");
   newProductNamesDiv.classList.add("productNames");
 

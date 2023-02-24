@@ -20,16 +20,14 @@
           <label>Enter the exact product you want below:</label>
           <br />
           <input type="text" id="product-input" placeholder="Product" />
-          <button onclick="displaySearchResults()">
+          <button onclick="getSearchResults()">
             <i class="fa fa-search"></i>
           </button>
           <p class="error"></p>
         </div>
         <div class="bulk-recipe-buttons">
-          <button onclick="displayBulkRecipes('base')">
-            Display Base Recipes
-          </button>
-          <button onclick="displayBulkRecipes('alternate')">
+          <button onclick="getBulkRecipes('base')">Display Base Recipes</button>
+          <button onclick="getBulkRecipes('alternate')">
             Display Alternate Recipes
           </button>
         </div>
