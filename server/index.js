@@ -22,12 +22,12 @@ router.get("/products", async (req, res) => {
 });
 
 router.get("/products/search", async (req, res) => {
-  const input = req.query.input.toLowerCase();
+  const input = req.query.input;
 
   const references = JSON.parse(await fs.readFile(referencesPath));
 
   for (const [productName, recipeNames] of Object.entries(references)) {
-    if (productName.toLowerCase() === input) {
+    if (productName.toLowerCase() === input.toLowerCase()) {
       const recipes = JSON.parse(await fs.readFile(recipePath));
       const response = {
         [productName]: recipeNames.map((recipeName) => {
@@ -41,7 +41,7 @@ router.get("/products/search", async (req, res) => {
       return;
     }
   }
-  res.status(400).json({ message: "You entered an invalid key!" });
+  res.status(400).json({ message: `${input} is not a valid product` });
 });
 
 router.use(express.static(path.join(__dirname, "../client")));
