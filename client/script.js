@@ -74,7 +74,9 @@ const displayBulkRecipes = async (type) => {
 };
 
 const displaySearchResults = async () => {
-  errorP.innerText = "";
+  if (!errorP.innerText == "") {
+    errorP.innerText = "";
+  }
   const input = productInput.value;
 
   const response = await fetch(`${basePath}/products/search?input=${input}`);
@@ -108,5 +110,13 @@ const displayAllProducts = async () => {
   }
   oldProductNamesDiv.replaceWith(newProductNamesDiv);
 };
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    if (productInput.value) {
+      displaySearchResults();
+    }
+  }
+});
 
 window.onload = displayAllProducts();
