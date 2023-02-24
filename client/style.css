@@ -30,7 +30,7 @@ header h1 {
 
 .header-underline {
   width: 700px;
-  height: 8px;
+  height: 5px;
   background-color: var(--text);
   margin: 0 auto;
 }

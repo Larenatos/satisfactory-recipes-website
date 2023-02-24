@@ -106,7 +106,7 @@ const displayAllProducts = async () => {
 
     key.addEventListener("click", () => {
       productInput.value = productName;
-      displaySearchResults();
+      getSearchResults();
     });
 
     newProductNamesDiv.append(key);
