@@ -48,7 +48,11 @@ for (const [, recipe] of Object.entries(data.recipes)) {
       references[productName] = [];
     }
     if (!references[productName].includes(recipeName)) {
-      references[productName].push(recipeName);
+      if (!recipeName.includes("Alternate")) {
+        references[productName] = [recipeName, ...references[productName]];
+      } else {
+        references[productName].push(recipeName);
+      }
     }
 
     products.push({
