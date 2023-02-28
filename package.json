@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Lare1426/interactive-website/issues"
   },
-  "homepage": "https://github.com/Lare1426/interactive-website#readme"
+  "homepage": "https://github.com/Lare1426/interactive-website#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
