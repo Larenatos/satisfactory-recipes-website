@@ -11,7 +11,10 @@ const dataPath = path.join(__dirname, "data.json");
 const data = JSON.parse(fs.readFileSync(dataPath));
 
 const recipes = {};
-const references = {};
+const references = {
+  asProduct: {},
+  asIngredient: {},
+};
 
 for (const [, recipe] of Object.entries(data.recipes)) {
   const producedIn = [];
@@ -27,13 +30,29 @@ for (const [, recipe] of Object.entries(data.recipes)) {
   }
 
   const recipeName = recipe.name;
+  const ingredients = [];
+  for (const ingredient of recipe.ingredients) {
+    const ingredientName = getDisplayName(ingredient.item);
 
-  const ingredients = recipe.ingredients.map((ingredient) => {
-    return {
-      item: getDisplayName(ingredient.item),
+    if (!references.asIngredient[ingredientName]) {
+      references.asIngredient[ingredientName] = [];
+    }
+    if (!references.asIngredient[ingredientName].includes(recipeName)) {
+      if (!recipeName.includes("Alternate")) {
+        references.asIngredient[ingredientName] = [
+          recipeName,
+          ...references.asIngredient[ingredientName],
+        ];
+      } else {
+        references.asIngredient[ingredientName].push(recipeName);
+      }
+    }
+
+    ingredients.push({
+      item: ingredientName,
       amount: ingredient.amount,
-    };
-  });
+    });
+  }
 
   const products = [];
 
@@ -44,14 +63,17 @@ for (const [, recipe] of Object.entries(data.recipes)) {
       continue;
     }
 
-    if (!references[productName]) {
-      references[productName] = [];
+    if (!references.asProduct[productName]) {
+      references.asProduct[productName] = [];
     }
-    if (!references[productName].includes(recipeName)) {
+    if (!references.asProduct[productName].includes(recipeName)) {
       if (!recipeName.includes("Alternate")) {
-        references[productName] = [recipeName, ...references[productName]];
+        references.asProduct[productName] = [
+          recipeName,
+          ...references.asProduct[productName],
+        ];
       } else {
-        references[productName].push(recipeName);
+        references.asProduct[productName].push(recipeName);
       }
     }
 

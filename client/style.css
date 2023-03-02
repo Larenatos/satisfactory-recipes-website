@@ -133,11 +133,16 @@ img {
 }
 
 .result h2 {
-  font-size: 30px;
+  font-size: 35px;
+  margin: 20px 0 0 20px;
 }
 
-.result h2,
 .result h3 {
+  font-size: 25px;
+}
+
+.result h3,
+.result h4 {
   color: var(--text);
   margin: 20px 0 0 30px;
 }

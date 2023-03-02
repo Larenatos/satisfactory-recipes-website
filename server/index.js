@@ -18,7 +18,14 @@ const recipePath = path.join(__dirname, "data/jsonFiles/recipes.json");
 
 router.get("/products", async (req, res) => {
   const references = JSON.parse(await fs.readFile(referencesPath));
-  res.json(Object.keys(references));
+  const products = Object.keys(references.asProduct);
+  for (const [ingredient, recipes] of Object.entries(references.asIngredient)) {
+    if (!products.includes(ingredient)) {
+      products.push(ingredient);
+    }
+  }
+  products.sort();
+  res.json(products);
 });
 
 router.get("/products/search", async (req, res) => {
@@ -26,17 +33,33 @@ router.get("/products/search", async (req, res) => {
 
   const references = JSON.parse(await fs.readFile(referencesPath));
 
-  for (const [productName, recipeNames] of Object.entries(references)) {
+  for (const [productName, recipeNames] of Object.entries(
+    references.asProduct
+  )) {
     if (productName.toLowerCase() === input.toLowerCase()) {
       const recipes = JSON.parse(await fs.readFile(recipePath));
       const response = {
-        [productName]: recipeNames.map((recipeName) => {
+        productName,
+        asProduct: recipeNames.map((recipeName) => {
           return {
             name: recipeName,
             ...recipes[recipeName],
           };
         }),
+        asIngredient: {},
       };
+
+      if (references.asIngredient[productName]) {
+        response.asIngredient = references.asIngredient[productName].map(
+          (recipeName) => {
+            return {
+              name: recipeName,
+              ...recipes[recipeName],
+            };
+          }
+        );
+      }
+
       res.json(response);
       return;
     }
