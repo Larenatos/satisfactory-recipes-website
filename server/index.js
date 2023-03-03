@@ -32,13 +32,15 @@ router.get("/products/search", async (req, res) => {
   const input = req.query.input;
 
   const references = JSON.parse(await fs.readFile(referencesPath));
+  const recipes = JSON.parse(await fs.readFile(recipePath));
+
+  let response;
 
   for (const [productName, recipeNames] of Object.entries(
     references.asProduct
   )) {
     if (productName.toLowerCase() === input.toLowerCase()) {
-      const recipes = JSON.parse(await fs.readFile(recipePath));
-      const response = {
+      response = {
         productName,
         asProduct: recipeNames.map((recipeName) => {
           return {
@@ -46,24 +48,35 @@ router.get("/products/search", async (req, res) => {
             ...recipes[recipeName],
           };
         }),
-        asIngredient: {},
       };
-
-      if (references.asIngredient[productName]) {
-        response.asIngredient = references.asIngredient[productName].map(
-          (recipeName) => {
-            return {
-              name: recipeName,
-              ...recipes[recipeName],
-            };
-          }
-        );
-      }
-
-      res.json(response);
-      return;
     }
   }
+
+  for (const [productName, recipeNames] of Object.entries(
+    references.asIngredient
+  )) {
+    if (productName.toLowerCase() === input.toLowerCase()) {
+      if (!response) {
+        response = {
+          productName,
+          asIngredient: [],
+        };
+      }
+
+      response.asIngredient = recipeNames.map((recipeName) => {
+        return {
+          name: recipeName,
+          ...recipes[recipeName],
+        };
+      });
+    }
+  }
+
+  if (response) {
+    res.json(response);
+    return;
+  }
+
   res.status(400).json({ message: `${input} is not a valid product` });
 });
 
