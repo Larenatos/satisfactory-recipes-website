@@ -16,7 +16,7 @@ triangle.setAttribute("points", "0,0 69,40 0,80");
 triangle.setAttribute("fill", "white");
 svg.append(triangle);
 
-const getRecipeElements = (recipesByProduct) => {
+const getRecipesDiv = (recipesByProduct) => {
   const recipes = recipesByProduct;
   const recipesDiv = document.createElement("div");
 
@@ -89,7 +89,7 @@ const displayRecipeList = (recipes) => {
   newResultDiv.classList.add("result");
 
   if (Array.isArray(recipes)) {
-    newResultDiv.append(getRecipeElements(recipes));
+    newResultDiv.append(getRecipesDiv(recipes));
   }
 
   if (recipes.productName) {
@@ -101,18 +101,19 @@ const displayRecipeList = (recipes) => {
   if (recipes.asProduct) {
     const asProduct = document.createElement("h3");
     asProduct.innerText = "As product:";
-    const productRecipes = getRecipeElements(recipes.asProduct);
 
     const productSvg = svg.cloneNode(true);
     asProduct.prepend(productSvg);
     productSvg.classList.add("rotated");
 
+    const asProductRecipes = getRecipesDiv(recipes.asProduct);
+
     asProduct.addEventListener("click", () => {
-      productRecipes.classList.toggle("hidden");
+      asProductRecipes.classList.toggle("hidden");
       productSvg.classList.toggle("rotated");
     });
 
-    newResultDiv.append(asProduct, productRecipes);
+    newResultDiv.append(asProduct, asProductRecipes);
   }
 
   if (recipes.asIngredient) {
@@ -123,14 +124,14 @@ const displayRecipeList = (recipes) => {
     asIngredient.prepend(ingredientSvg);
     ingredientSvg.classList.add("rotated");
 
-    const ingredientRecipes = getRecipeElements(recipes.asIngredient);
+    const asIngredientRecipes = getRecipesDiv(recipes.asIngredient);
 
     asIngredient.addEventListener("click", () => {
-      ingredientRecipes.classList.toggle("hidden");
+      asIngredientRecipes.classList.toggle("hidden");
       ingredientSvg.classList.toggle("rotated");
     });
 
-    newResultDiv.append(asIngredient, ingredientRecipes);
+    newResultDiv.append(asIngredient, asIngredientRecipes);
   }
 
   oldResultDiv.replaceWith(newResultDiv);

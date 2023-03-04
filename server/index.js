@@ -68,10 +68,9 @@ router.get("/products/search", async (req, res) => {
 
   if (response) {
     res.json(response);
-    return;
+  } else {
+    res.status(400).json({ message: `${input} is not a valid product` });
   }
-
-  res.status(400).json({ message: `${input} is not a valid product` });
 });
 
 router.use(express.static(path.join(__dirname, "../client")));
