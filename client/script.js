@@ -3,6 +3,19 @@ const basePath = "/satisfactory-recipes";
 const [errorP] = document.getElementsByClassName("error");
 const productInput = document.getElementById("product-input");
 
+const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+svg.setAttribute("viewBox", "0 0 70 80");
+svg.setAttribute("width", "25");
+svg.setAttribute("height", "25");
+
+const triangle = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "polygon"
+);
+triangle.setAttribute("points", "0,0 69,40 0,80");
+triangle.setAttribute("fill", "white");
+svg.append(triangle);
+
 const getRecipeElements = (recipesByProduct) => {
   const recipes = recipesByProduct;
   const recipesDiv = document.createElement("div");
@@ -11,12 +24,18 @@ const getRecipeElements = (recipesByProduct) => {
     const recipeH4 = document.createElement("h4");
     recipeH4.innerText = recipe.name;
 
+    const recipeNameSvg = svg.cloneNode(true);
+    recipeNameSvg.setAttribute("width", "15");
+    recipeNameSvg.setAttribute("height", "15");
+    recipeH4.prepend(recipeNameSvg);
+
     const recipeUl = document.createElement("ul");
     recipeUl.classList.add("top-level-list");
     recipeUl.classList.add("hidden");
 
     recipeH4.addEventListener("click", () => {
       recipeUl.classList.toggle("hidden");
+      recipeNameSvg.classList.toggle("rotated");
     });
 
     const timeLi = document.createElement("li");
@@ -84,8 +103,13 @@ const displayRecipeList = (recipes) => {
     asProduct.innerText = "As product:";
     const productRecipes = getRecipeElements(recipes.asProduct);
 
+    const productSvg = svg.cloneNode(true);
+    asProduct.prepend(productSvg);
+    productSvg.classList.add("rotated");
+
     asProduct.addEventListener("click", () => {
-      productRecipes.toggle("hidden");
+      productRecipes.classList.toggle("hidden");
+      productSvg.classList.toggle("rotated");
     });
 
     newResultDiv.append(asProduct, productRecipes);
@@ -95,10 +119,15 @@ const displayRecipeList = (recipes) => {
     const asIngredient = document.createElement("h3");
     asIngredient.innerText = "As ingredient:";
 
+    const ingredientSvg = svg.cloneNode(true);
+    asIngredient.prepend(ingredientSvg);
+    ingredientSvg.classList.add("rotated");
+
     const ingredientRecipes = getRecipeElements(recipes.asIngredient);
 
     asIngredient.addEventListener("click", () => {
-      ingredientRecipes.toggle("hidden");
+      ingredientRecipes.classList.toggle("hidden");
+      ingredientSvg.classList.toggle("rotated");
     });
 
     newResultDiv.append(asIngredient, ingredientRecipes);
