@@ -3,7 +3,7 @@ const basePath = "/satisfactory-recipes";
 const [errorP] = document.getElementsByClassName("error");
 const productInput = document.getElementById("product-input");
 
-const getRecipeDom = (recipesByProduct) => {
+const getRecipeElements = (recipesByProduct) => {
   const recipes = recipesByProduct;
   const recipesDiv = document.createElement("div");
 
@@ -13,6 +13,15 @@ const getRecipeDom = (recipesByProduct) => {
 
     const recipeUl = document.createElement("ul");
     recipeUl.classList.add("top-level-list");
+    recipeUl.classList.add("hidden");
+
+    recipeH4.addEventListener("click", () => {
+      if (recipeUl.className.includes("hidden")) {
+        recipeUl.classList.remove("hidden");
+      } else {
+        recipeUl.classList.add("hidden");
+      }
+    });
 
     const timeLi = document.createElement("li");
     timeLi.innerText = `Crafting time: ${recipe.time}s`;
@@ -59,95 +68,61 @@ const getRecipeDom = (recipesByProduct) => {
   return recipesDiv;
 };
 
-const displayRecipeList = (recipesByType) => {
+const displayRecipeList = (recipes) => {
   const [oldResultDiv] = document.getElementsByClassName("result");
   const newResultDiv = document.createElement("div");
   newResultDiv.classList.add("result");
 
-  if (recipesByType.asProduct) {
-    const asProduct = document.createElement("h2");
+  if (Array.isArray(recipes)) {
+    newResultDiv.append(getRecipeElements(recipes));
+  }
+
+  if (recipes.productName) {
+    const productText = document.createElement("h2");
+    productText.innerText = recipes.productName;
+    newResultDiv.append(productText);
+  }
+
+  if (recipes.asProduct) {
+    const asProduct = document.createElement("h3");
     asProduct.innerText = "As product:";
-    newResultDiv.append(asProduct, getRecipeDom(recipesByType.asProduct));
+    const productRecipes = getRecipeElements(recipes.asProduct);
+
+    asProduct.addEventListener("click", () => {
+      if (productRecipes.className.includes("hidden")) {
+        productRecipes.classList.remove("hidden");
+      } else {
+        productRecipes.classList.add("hidden");
+      }
+    });
+
+    newResultDiv.append(asProduct, productRecipes);
   }
 
-  if (recipesByType.asIngredient) {
-    const asIngredient = document.createElement("h2");
+  if (recipes.asIngredient) {
+    const asIngredient = document.createElement("h3");
     asIngredient.innerText = "As ingredient:";
-    newResultDiv.append(asIngredient, getRecipeDom(recipesByType.asIngredient));
+
+    const ingredientRecipes = getRecipeElements(recipes.asIngredient);
+
+    asIngredient.addEventListener("click", () => {
+      if (ingredientRecipes.className.includes("hidden")) {
+        ingredientRecipes.classList.remove("hidden");
+      } else {
+        ingredientRecipes.classList.add("hidden");
+      }
+    });
+
+    newResultDiv.append(asIngredient, ingredientRecipes);
   }
 
-  oldResultDiv.replaceWith(newResultDiv);
-};
-
-const displayBulkRecipeList = (recipesByProduct) => {
-  const [oldResultDiv] = document.getElementsByClassName("result");
-  const newResultDiv = document.createElement("div");
-  newResultDiv.classList.add("result");
-
-  for (const [productName, recipes] of Object.entries(recipesByProduct)) {
-    const productH3 = document.createElement("h3");
-    productH3.innerText = productName;
-
-    const recipesDiv = document.createElement("div");
-
-    for (const recipe of recipes) {
-      const recipeH4 = document.createElement("h4");
-      recipeH4.innerText = recipe.name;
-
-      const recipeUl = document.createElement("ul");
-      recipeUl.classList.add("top-level-list");
-
-      const timeLi = document.createElement("li");
-      timeLi.innerText = `Crafting time: ${recipe.time}s`;
-
-      const producedInLi = document.createElement("li");
-      producedInLi.innerText = "Produced in:";
-
-      const producedInUl = document.createElement("ul");
-      for (const machine of recipe.producedIn) {
-        const machineLi = document.createElement("li");
-        machineLi.innerText = machine;
-
-        producedInUl.append(machineLi);
-      }
-      producedInLi.append(producedInUl);
-
-      const productsLi = document.createElement("li");
-      productsLi.innerText = "Products:";
-
-      const productsUl = document.createElement("ul");
-      for (const product of recipe.products) {
-        const productLi = document.createElement("li");
-        productLi.innerText = `${product.item} (${product.amount})`;
-
-        productsUl.append(productLi);
-      }
-      productsLi.append(productsUl);
-
-      const ingredientsLi = document.createElement("li");
-      ingredientsLi.innerText = "Ingredients:";
-
-      const ingredientsUl = document.createElement("ul");
-      for (const ingredient of recipe.ingredients) {
-        const ingredientLi = document.createElement("li");
-        ingredientLi.innerText = `${ingredient.item} (${ingredient.amount})`;
-
-        ingredientsUl.append(ingredientLi);
-      }
-      ingredientsLi.append(ingredientsUl);
-
-      recipeUl.append(timeLi, producedInLi, productsLi, ingredientsLi);
-      recipesDiv.append(recipeH4, recipeUl);
-    }
-    newResultDiv.append(productH3, recipesDiv);
-  }
   oldResultDiv.replaceWith(newResultDiv);
 };
 
 const getBulkRecipes = async (type) => {
   const response = await fetch(`${basePath}/${type}Recipes.json`);
-  const recipesByProduct = await response.json();
-  displayBulkRecipeList(recipesByProduct);
+  const recipesArray = await response.json();
+  displayRecipeList(recipesArray);
 };
 
 const getSearchResults = async () => {

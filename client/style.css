@@ -133,18 +133,33 @@ img {
 }
 
 .result h2 {
-  font-size: 35px;
+  font-size: 40px;
   margin: 20px 0 0 20px;
 }
 
 .result h3 {
-  font-size: 25px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.result h4 {
+  font-size: 20px;
 }
 
 .result h3,
 .result h4 {
   color: var(--text);
   margin: 20px 0 0 30px;
+}
+
+.result h3:hover,
+.result h4:hover {
+  color: #c0c0c0;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
 
 .top-level-list {

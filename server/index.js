@@ -43,10 +43,7 @@ router.get("/products/search", async (req, res) => {
       response = {
         productName,
         asProduct: recipeNames.map((recipeName) => {
-          return {
-            name: recipeName,
-            ...recipes[recipeName],
-          };
+          return recipes[recipeName];
         }),
       };
     }
@@ -64,10 +61,7 @@ router.get("/products/search", async (req, res) => {
       }
 
       response.asIngredient = recipeNames.map((recipeName) => {
-        return {
-          name: recipeName,
-          ...recipes[recipeName],
-        };
+        return recipes[recipeName];
       });
     }
   }
