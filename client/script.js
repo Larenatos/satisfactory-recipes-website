@@ -16,11 +16,7 @@ const getRecipeElements = (recipesByProduct) => {
     recipeUl.classList.add("hidden");
 
     recipeH4.addEventListener("click", () => {
-      if (recipeUl.className.includes("hidden")) {
-        recipeUl.classList.remove("hidden");
-      } else {
-        recipeUl.classList.add("hidden");
-      }
+      recipeUl.classList.toggle("hidden");
     });
 
     const timeLi = document.createElement("li");
@@ -89,11 +85,7 @@ const displayRecipeList = (recipes) => {
     const productRecipes = getRecipeElements(recipes.asProduct);
 
     asProduct.addEventListener("click", () => {
-      if (productRecipes.className.includes("hidden")) {
-        productRecipes.classList.remove("hidden");
-      } else {
-        productRecipes.classList.add("hidden");
-      }
+      productRecipes.toggle("hidden");
     });
 
     newResultDiv.append(asProduct, productRecipes);
@@ -106,11 +98,7 @@ const displayRecipeList = (recipes) => {
     const ingredientRecipes = getRecipeElements(recipes.asIngredient);
 
     asIngredient.addEventListener("click", () => {
-      if (ingredientRecipes.className.includes("hidden")) {
-        ingredientRecipes.classList.remove("hidden");
-      } else {
-        ingredientRecipes.classList.add("hidden");
-      }
+      ingredientRecipes.toggle("hidden");
     });
 
     newResultDiv.append(asIngredient, ingredientRecipes);
