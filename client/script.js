@@ -16,6 +16,14 @@ triangle.setAttribute("points", "0,0 69,40 0,80");
 triangle.setAttribute("fill", "white");
 svg.append(triangle);
 
+const toggleMaxHeight = (element) => {
+  if (!element.style.maxHeight || element.style.maxHeight === "0px") {
+    element.style.maxHeight = element.scrollHeight + "px";
+  } else {
+    element.style.maxHeight = "0px";
+  }
+};
+
 const getRecipesDiv = (recipesByProduct) => {
   const recipes = recipesByProduct;
   const recipesDiv = document.createElement("div");
@@ -31,10 +39,10 @@ const getRecipesDiv = (recipesByProduct) => {
 
     const recipeUl = document.createElement("ul");
     recipeUl.classList.add("top-level-list");
-    recipeUl.classList.add("hidden");
 
     recipeH4.addEventListener("click", () => {
-      recipeUl.classList.toggle("hidden");
+      toggleMaxHeight(recipeUl);
+      recipesDiv.style.maxHeight = recipesDiv.scrollHeight + "px";
       recipeNameSvg.classList.toggle("rotated");
     });
 
@@ -104,12 +112,12 @@ const displayRecipeList = (recipes) => {
 
     const productSvg = svg.cloneNode(true);
     asProduct.prepend(productSvg);
-    productSvg.classList.add("rotated");
 
     const asProductRecipes = getRecipesDiv(recipes.asProduct);
+    asProductRecipes.classList.add("recipes-div");
 
     asProduct.addEventListener("click", () => {
-      asProductRecipes.classList.toggle("hidden");
+      toggleMaxHeight(asProductRecipes);
       productSvg.classList.toggle("rotated");
     });
 
@@ -122,12 +130,12 @@ const displayRecipeList = (recipes) => {
 
     const ingredientSvg = svg.cloneNode(true);
     asIngredient.prepend(ingredientSvg);
-    ingredientSvg.classList.add("rotated");
 
     const asIngredientRecipes = getRecipesDiv(recipes.asIngredient);
+    asIngredientRecipes.classList.add("recipes-div");
 
     asIngredient.addEventListener("click", () => {
-      asIngredientRecipes.classList.toggle("hidden");
+      toggleMaxHeight(asIngredientRecipes);
       ingredientSvg.classList.toggle("rotated");
     });
 
