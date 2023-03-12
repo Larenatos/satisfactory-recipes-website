@@ -188,7 +188,7 @@ svg {
   transition: max-height 0.2s ease-out;
 }
 
-.product-names {
+.item-names {
   width: 380px;
   height: 700px;
   margin-left: 70px;
@@ -197,12 +197,12 @@ svg {
   overflow-y: scroll;
 }
 
-.product-names h3 {
+.item-names h3 {
   font-size: 20px;
   margin: 20px 0 0 20px;
   cursor: pointer;
 }
 
-.product-names h3:hover {
+.item-names h3:hover {
   color: #c0c0c0;
 }

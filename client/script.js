@@ -16,29 +16,28 @@ triangle.setAttribute("points", "0,0 69,40 0,80");
 triangle.setAttribute("fill", "white");
 svg.append(triangle);
 
-const displayAllProducts = async () => {
+const displayAllItems = async () => {
   const response = await fetch(`${basePath}/items.json`);
-  const productNames = await response.json();
+  const itemNames = await response.json();
 
   const [mainEl] = document.getElementsByTagName("main");
-  const productNamesDiv = document.createElement("div");
-  productNamesDiv.classList.add("product-names");
+  const itemNamesDiv = document.createElement("div");
+  itemNamesDiv.classList.add("item-names");
 
-  for (const productName of productNames) {
-    const key = document.createElement("h3");
-    key.innerText = productName;
+  for (const itemName of itemNames) {
+    const item = document.createElement("h3");
+    item.innerText = itemName;
 
-    key.addEventListener("click", () => {
-      productInput.value = productName;
-      getSearchResults();
+    item.addEventListener("click", () => {
+      getSearchResults(itemName);
     });
 
-    productNamesDiv.append(key);
+    itemNamesDiv.append(item);
   }
-  mainEl.append(productNamesDiv);
+  mainEl.append(itemNamesDiv);
 };
 
-window.onload = displayAllProducts();
+window.onload = displayAllItems();
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
