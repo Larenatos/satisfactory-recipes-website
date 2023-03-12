@@ -14,54 +14,33 @@ const server = express();
 const router = express.Router();
 
 const referencesPath = path.join(__dirname, "data/json-files/references.json");
-const recipePath = path.join(__dirname, "data/json-files/recipes.json");
+const recipesPath = path.join(__dirname, "data/json-files/recipes.json");
 
-router.get("/products", async (req, res) => {
-  const references = JSON.parse(await fs.readFile(referencesPath));
-  const products = Object.keys(references.asProduct);
-  for (const [ingredient] of Object.entries(references.asIngredient)) {
-    if (!products.includes(ingredient)) {
-      products.push(ingredient);
-    }
-  }
-  products.sort();
-  res.json(products);
-});
-
-router.get("/products/search", async (req, res) => {
+router.get("/item-search", async (req, res) => {
   const { input } = req.query;
 
   const references = JSON.parse(await fs.readFile(referencesPath));
-  const recipes = JSON.parse(await fs.readFile(recipePath));
+  const recipes = JSON.parse(await fs.readFile(recipesPath));
 
   let searchResult;
 
-  for (const [productName, recipeNames] of Object.entries(
-    references.asProduct
-  )) {
-    if (productName.toLowerCase() === input.toLowerCase()) {
+  for (const [itemName, recipeNames] of Object.entries(references)) {
+    if (itemName.toLowerCase() === input.toLowerCase()) {
       searchResult = {
         productName,
-        asProduct: recipeNames.map((recipeName) => {
-          return recipes[recipeName];
-        }),
       };
-    }
-  }
 
-  for (const [productName, recipeNames] of Object.entries(
-    references.asIngredient
-  )) {
-    if (productName.toLowerCase() === input.toLowerCase()) {
-      if (!searchResult) {
-        searchResult = {
-          productName,
-        };
+      if (recipeNames.recipes) {
+        searchResult.recipes = recipeNames.recipes.map((recipeName) => {
+          return recipes[recipeName];
+        });
       }
 
-      searchResult.asIngredient = recipeNames.map((recipeName) => {
-        return recipes[recipeName];
-      });
+      if (recipeNames.usedIn) {
+        searchResult.recipes = recipeNames.usedIn.map((recipeName) => {
+          return recipes[recipeName];
+        });
+      }
     }
   }
 

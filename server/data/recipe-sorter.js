@@ -11,11 +11,9 @@ const dataPath = path.join(__dirname, "data.json");
 const data = JSON.parse(fs.readFileSync(dataPath));
 
 const recipes = {};
-const references = {
-  asProduct: {},
-  asIngredient: {},
-};
+const references = {};
 const alternateRecipes = [];
+const items = [];
 
 for (const [, recipe] of Object.entries(data.recipes)) {
   const producedIn = [];
@@ -39,14 +37,23 @@ for (const [, recipe] of Object.entries(data.recipes)) {
   for (const ingredient of recipe.ingredients) {
     const ingredientName = getDisplayName(ingredient.item);
 
-    if (!references.asIngredient[ingredientName]) {
-      references.asIngredient[ingredientName] = [];
+    if (!items[ingredientName]) {
+      items.push(ingredientName);
     }
-    if (!references.asIngredient[ingredientName].includes(recipeName)) {
+
+    if (!references[ingredientName]) {
+      references[ingredientName] = {
+        usedIn: [],
+      };
+    } else if (!references[ingredientName].usedIn) {
+      references[ingredientName].usedIn = [];
+    }
+
+    if (!references[ingredientName].usedIn.includes(recipeName)) {
       if (!recipe.alternate) {
-        references.asIngredient[ingredientName].unshift(recipeName);
+        references[ingredientName].usedIn.unshift(recipeName);
       } else {
-        references.asIngredient[ingredientName].push(recipeName);
+        references[ingredientName].usedIn.push(recipeName);
       }
     }
 
@@ -60,22 +67,24 @@ for (const [, recipe] of Object.entries(data.recipes)) {
 
   for (const product of recipe.products) {
     const productName = getDisplayName(product.item);
-    if (!productName) {
+
+    if (!productName || ["Coal", "Water"].includes(productName)) {
       continue;
     }
 
-    if (["Coal", "Water"].includes(productName)) {
-      continue;
+    if (!references[productName]) {
+      references[productName] = {
+        recipes: [],
+      };
+    } else if (!references[productName].recipes) {
+      references[productName].recipes = [];
     }
 
-    if (!references.asProduct[productName]) {
-      references.asProduct[productName] = [];
-    }
-    if (!references.asProduct[productName].includes(recipeName)) {
+    if (!references[productName].recipes.includes(recipeName)) {
       if (!recipe.alternate) {
-        references.asProduct[productName].unshift(recipeName);
+        references[productName].recipes.unshift(recipeName);
       } else {
-        references.asProduct[productName].push(recipeName);
+        references[productName].recipes.push(recipeName);
       }
     }
 
@@ -108,3 +117,6 @@ fs.writeFileSync("json-files/references.json", referencesString);
 
 let alternateRecipesString = JSON.stringify(alternateRecipes);
 fs.writeFileSync("json-files/alternate-recipes.json", alternateRecipesString);
+
+let itemsString = JSON.stringify(items);
+fs.writeFileSync("json-files/items.json", itemsString);

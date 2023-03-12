@@ -17,7 +17,7 @@ triangle.setAttribute("fill", "white");
 svg.append(triangle);
 
 const displayAllProducts = async () => {
-  const response = await fetch(`${basePath}/products`);
+  const response = await fetch(`${basePath}/items.json`);
   const productNames = await response.json();
 
   const [mainEl] = document.getElementsByTagName("main");
@@ -199,7 +199,7 @@ const getSearchResults = async () => {
   }
   const input = productInput.value;
 
-  const response = await fetch(`${basePath}/products/search?input=${input}`);
+  const response = await fetch(`${basePath}/item-search?input=${input}`);
 
   if (response.status == 400) {
     const { message } = await response.json();
