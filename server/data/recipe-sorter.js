@@ -3,7 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const getDisplayName = (item) => {
-  return data.items[item]?.name ?? data.buildings[item]?.name ?? item;
+  return data.items[item]?.name ?? data.buildings[item]?.name ?? false;
 };
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -60,6 +60,9 @@ for (const [, recipe] of Object.entries(data.recipes)) {
 
   for (const product of recipe.products) {
     const productName = getDisplayName(product.item);
+    if (!productName) {
+      continue;
+    }
 
     if (["Coal", "Water"].includes(productName)) {
       continue;
