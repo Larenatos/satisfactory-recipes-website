@@ -197,12 +197,18 @@ svg {
   overflow-y: scroll;
 }
 
-.item-names h3 {
+.item-names ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item-names ul li {
   font-size: 20px;
   margin: 20px 0 0 20px;
   cursor: pointer;
+  font-weight: bold;
 }
 
-.item-names h3:hover {
+.item-names ul li:hover {
   color: #c0c0c0;
 }

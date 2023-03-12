@@ -24,16 +24,19 @@ const displayAllItems = async () => {
   const itemNamesDiv = document.createElement("div");
   itemNamesDiv.classList.add("item-names");
 
+  const itemNameUl = document.createElement("ul");
   for (const itemName of itemNames) {
-    const item = document.createElement("h3");
+    const item = document.createElement("li");
     item.innerText = itemName;
 
     item.addEventListener("click", () => {
       displaySearchResults(itemName);
     });
 
-    itemNamesDiv.append(item);
+    itemNameUl.append(item);
   }
+  itemNamesDiv.append(itemNameUl);
+
   mainEl.append(itemNamesDiv);
 };
 

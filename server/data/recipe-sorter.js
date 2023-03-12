@@ -37,7 +37,7 @@ for (const [, recipe] of Object.entries(data.recipes)) {
   for (const ingredient of recipe.ingredients) {
     const ingredientName = getDisplayName(ingredient.item);
 
-    if (!items[ingredientName]) {
+    if (!items.includes(ingredientName)) {
       items.push(ingredientName);
     }
 
@@ -70,6 +70,10 @@ for (const [, recipe] of Object.entries(data.recipes)) {
 
     if (!productName || ["Coal", "Water"].includes(productName)) {
       continue;
+    }
+
+    if (!items.includes(productName)) {
+      items.push(productName);
     }
 
     if (!references[productName]) {
@@ -121,5 +125,6 @@ fs.writeFileSync(
   hardDriveRecipesString
 );
 
+items.sort();
 let itemsString = JSON.stringify(items);
 fs.writeFileSync("json-files/items.json", itemsString);
