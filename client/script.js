@@ -193,19 +193,27 @@ const displayBulkRecipes = async () => {
   oldResultDiv.replaceWith(newResultDiv);
 };
 
-const displaySearchResults = async () => {
+const displaySearchResults = async (exactItemName = null) => {
   if (!errorP.innerText == "") {
     errorP.innerText = "";
   }
-  const input = productInput.value;
 
-  const url = `${basePath}/comparison-item-search?input=${input}`;
-  const response = await fetch(url);
+  let response;
 
-  if (response.status == 400) {
-    const { message } = await response.json();
-    errorP.innerText = message;
-    return;
+  if (exactItemName) {
+    const url = `${basePath}/exact-item-search?item=${exactItemName}`;
+    response = await fetch(url);
+  } else {
+    const input = productInput.value;
+
+    const url = `${basePath}/comparison-item-search?input=${input}`;
+    response = await fetch(url);
+
+    if (response.status == 400) {
+      const { message } = await response.json();
+      errorP.innerText = message;
+      return;
+    }
   }
 
   const recipesByType = await response.json();

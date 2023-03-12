@@ -52,15 +52,25 @@ router.get("/comparison-item-search", async (req, res) => {
 });
 
 router.get("/exact-item-search", async (req, res) => {
-  const { input } = req.query;
+  const { item } = req.query;
 
   const recipes = JSON.parse(await fs.readFile(recipesPath));
+  const references = JSON.parse(await fs.readFile(referencesPath));
 
   let searchResult = {
-    itemName: input,
-    recipes: recipes[input].recipes,
-    usedIn: recipes[input].usedIn,
+    itemName: item,
   };
+
+  if (references[item].recipes) {
+    searchResult.recipes = references[item].recipes.map((recipeName) => {
+      return recipes[recipeName];
+    });
+  }
+  if (references[item].usedIn) {
+    searchResult.usedIn = references[item].usedIn.map((recipeName) => {
+      return recipes[recipeName];
+    });
+  }
 
   res.json(searchResult);
 });
