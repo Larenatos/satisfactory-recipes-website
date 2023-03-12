@@ -141,6 +141,19 @@ img {
   margin: 20px 0 0 20px;
 }
 
+.result h3,
+.result h4 {
+  color: var(--text);
+  margin: 20px 0 0 30px;
+  user-select: none;
+}
+
+.result h3:hover,
+.result h4:hover {
+  color: #c0c0c0;
+  cursor: pointer;
+}
+
 .result h3 {
   font-size: 30px;
   text-decoration: underline;
@@ -150,20 +163,9 @@ img {
   font-size: 20px;
 }
 
-.result h3,
-.result h4 {
-  color: var(--text);
-  margin: 20px 0 0 30px;
-}
-
-.result h3:hover,
-.result h4:hover {
-  color: #c0c0c0;
-  cursor: pointer;
-}
-
 svg {
   margin-right: 10px;
+  transition: transform 0.2s ease-out;
 }
 
 .rotated {
@@ -175,7 +177,6 @@ svg {
   margin: 10px 0 0 30px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
 }
 
 .recipes-div {
@@ -183,11 +184,11 @@ svg {
   max-height: 0;
 }
 
-.recipes-div-transition {
-  transition: max-height 0.3s ease-out;
+.result-transition {
+  transition: max-height 0.2s ease-out;
 }
 
-.productNames {
+.product-names {
   width: 380px;
   height: 700px;
   margin-left: 70px;
@@ -196,12 +197,12 @@ svg {
   overflow-y: scroll;
 }
 
-.productNames h3 {
+.product-names h3 {
   font-size: 20px;
   margin: 20px 0 0 20px;
   cursor: pointer;
 }
 
-.productNames h3:hover {
+.product-names h3:hover {
   color: #c0c0c0;
 }

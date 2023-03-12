@@ -15,7 +15,6 @@ const references = {
   asProduct: {},
   asIngredient: {},
 };
-const baseRecipes = [];
 const alternateRecipes = [];
 
 for (const [, recipe] of Object.entries(data.recipes)) {
@@ -31,10 +30,7 @@ for (const [, recipe] of Object.entries(data.recipes)) {
     producedIn.push("Equipment Workshop");
   }
 
-  let target;
-  if (producedIn.length) {
-    target = recipe.alternate ? alternateRecipes : baseRecipes;
-  } else {
+  if (!producedIn.length) {
     producedIn.push("Build Gun");
   }
 
@@ -47,11 +43,8 @@ for (const [, recipe] of Object.entries(data.recipes)) {
       references.asIngredient[ingredientName] = [];
     }
     if (!references.asIngredient[ingredientName].includes(recipeName)) {
-      if (!recipeName.includes("Alternate")) {
-        references.asIngredient[ingredientName] = [
-          recipeName,
-          ...references.asIngredient[ingredientName],
-        ];
+      if (!recipe.alternate) {
+        references.asIngredient[ingredientName].unshift(recipeName);
       } else {
         references.asIngredient[ingredientName].push(recipeName);
       }
@@ -76,11 +69,8 @@ for (const [, recipe] of Object.entries(data.recipes)) {
       references.asProduct[productName] = [];
     }
     if (!references.asProduct[productName].includes(recipeName)) {
-      if (!recipeName.includes("Alternate")) {
-        references.asProduct[productName] = [
-          recipeName,
-          ...references.asProduct[productName],
-        ];
+      if (!recipe.alternate) {
+        references.asProduct[productName].unshift(recipeName);
       } else {
         references.asProduct[productName].push(recipeName);
       }
@@ -102,19 +92,16 @@ for (const [, recipe] of Object.entries(data.recipes)) {
 
   recipes[recipeName] = newRecipe;
 
-  if (target) {
-    target.push(newRecipe);
+  if (recipe.alternate) {
+    alternateRecipes.push(newRecipe);
   }
 }
 
 const recipesString = JSON.stringify(recipes);
-fs.writeFileSync("jsonFiles/recipes.json", recipesString);
+fs.writeFileSync("json-files/recipes.json", recipesString);
 
 const referencesString = JSON.stringify(references);
-fs.writeFileSync("jsonFiles/references.json", referencesString);
-
-let baseRecipesString = JSON.stringify(baseRecipes);
-fs.writeFileSync("jsonFiles/baseRecipes.json", baseRecipesString);
+fs.writeFileSync("json-files/references.json", referencesString);
 
 let alternateRecipesString = JSON.stringify(alternateRecipes);
-fs.writeFileSync("jsonFiles/alternateRecipes.json", alternateRecipesString);
+fs.writeFileSync("json-files/alternate-recipes.json", alternateRecipesString);

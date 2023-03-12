@@ -16,17 +16,47 @@ triangle.setAttribute("points", "0,0 69,40 0,80");
 triangle.setAttribute("fill", "white");
 svg.append(triangle);
 
-const toggleMaxHeight = (element, parent) => {
+const displayAllProducts = async () => {
+  const response = await fetch(`${basePath}/products`);
+  const productNames = await response.json();
+
+  const [mainEl] = document.getElementsByTagName("main");
+  const productNamesDiv = document.createElement("div");
+  productNamesDiv.classList.add("product-names");
+
+  for (const productName of productNames) {
+    const key = document.createElement("h3");
+    key.innerText = productName;
+
+    key.addEventListener("click", () => {
+      productInput.value = productName;
+      getSearchResults();
+    });
+
+    productNamesDiv.append(key);
+  }
+  mainEl.append(productNamesDiv);
+};
+
+window.onload = displayAllProducts();
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    if (productInput.value) {
+      getSearchResults();
+    }
+  }
+});
+
+const toggleMaxHeight = (element, parent = null) => {
   if (!element.style.maxHeight || element.style.maxHeight === "0px") {
     const elementScrollHeight = element.scrollHeight;
     element.style.maxHeight = elementScrollHeight + "px";
 
     if (parent) {
-      const parentScrollHeight =
+      const updatedParentScrollHeight =
         Number(elementScrollHeight) + Number(parent.scrollHeight);
-      parent.classList.remove("recipes-div-transition");
-      parent.style.maxHeight = String(parentScrollHeight);
-      parent.classList.add("recipes-div-transition");
+      parent.style.maxHeight = String(updatedParentScrollHeight) + "px";
     }
   } else {
     element.style.maxHeight = "0px";
@@ -47,7 +77,7 @@ const getRecipesDiv = (recipesByProduct) => {
     recipeNameH4.prepend(recipeNameSvg);
 
     const recipeUl = document.createElement("ul");
-    recipeUl.classList.add("top-level-list");
+    recipeUl.classList.add("top-level-list", "result-transition");
 
     recipeNameH4.addEventListener("click", async () => {
       requestAnimationFrame(() => {
@@ -108,6 +138,8 @@ const displayRecipeList = (recipes) => {
 
   if (Array.isArray(recipes)) {
     newResultDiv.append(getRecipesDiv(recipes));
+    oldResultDiv.replaceWith(newResultDiv);
+    return;
   }
 
   if (recipes.productName) {
@@ -124,7 +156,7 @@ const displayRecipeList = (recipes) => {
     asProduct.prepend(productSvg);
 
     const asProductRecipesDiv = getRecipesDiv(recipes.asProduct);
-    asProductRecipesDiv.classList.add("recipes-div", "recipes-div-transition");
+    asProductRecipesDiv.classList.add("recipes-div", "result-transition");
 
     asProduct.addEventListener("click", () => {
       toggleMaxHeight(asProductRecipesDiv);
@@ -142,10 +174,7 @@ const displayRecipeList = (recipes) => {
     asIngredient.prepend(ingredientSvg);
 
     const asIngredientRecipesDiv = getRecipesDiv(recipes.asIngredient);
-    asIngredientRecipesDiv.classList.add(
-      "recipes-div",
-      "recipes-div-transition"
-    );
+    asIngredientRecipesDiv.classList.add("recipes-div", "result-transition");
 
     asIngredient.addEventListener("click", () => {
       toggleMaxHeight(asIngredientRecipesDiv);
@@ -159,7 +188,7 @@ const displayRecipeList = (recipes) => {
 };
 
 const getBulkRecipes = async (type) => {
-  const response = await fetch(`${basePath}/${type}Recipes.json`);
+  const response = await fetch(`${basePath}/${type}-recipes.json`);
   const recipesArray = await response.json();
   displayRecipeList(recipesArray);
 };
@@ -181,35 +210,3 @@ const getSearchResults = async () => {
   const recipesByType = await response.json();
   displayRecipeList(recipesByType);
 };
-
-const displayAllProducts = async () => {
-  const response = await fetch(`${basePath}/products`);
-  const productNames = await response.json();
-
-  const [oldProductNamesDiv] = document.getElementsByClassName("productNames");
-  const newProductNamesDiv = document.createElement("div");
-  newProductNamesDiv.classList.add("productNames");
-
-  for (const productName of productNames) {
-    const key = document.createElement("h3");
-    key.innerText = productName;
-
-    key.addEventListener("click", () => {
-      productInput.value = productName;
-      getSearchResults();
-    });
-
-    newProductNamesDiv.append(key);
-  }
-  oldProductNamesDiv.replaceWith(newProductNamesDiv);
-};
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") {
-    if (productInput.value) {
-      getSearchResults();
-    }
-  }
-});
-
-window.onload = displayAllProducts();

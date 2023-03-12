@@ -13,13 +13,13 @@ const basePath = "/satisfactory-recipes";
 const server = express();
 const router = express.Router();
 
-const referencesPath = path.join(__dirname, "data/jsonFiles/references.json");
-const recipePath = path.join(__dirname, "data/jsonFiles/recipes.json");
+const referencesPath = path.join(__dirname, "data/json-files/references.json");
+const recipePath = path.join(__dirname, "data/json-files/recipes.json");
 
 router.get("/products", async (req, res) => {
   const references = JSON.parse(await fs.readFile(referencesPath));
   const products = Object.keys(references.asProduct);
-  for (const [ingredient, recipes] of Object.entries(references.asIngredient)) {
+  for (const [ingredient] of Object.entries(references.asIngredient)) {
     if (!products.includes(ingredient)) {
       products.push(ingredient);
     }
@@ -29,18 +29,18 @@ router.get("/products", async (req, res) => {
 });
 
 router.get("/products/search", async (req, res) => {
-  const input = req.query.input;
+  const { input } = req.query;
 
   const references = JSON.parse(await fs.readFile(referencesPath));
   const recipes = JSON.parse(await fs.readFile(recipePath));
 
-  let response;
+  let searchResult;
 
   for (const [productName, recipeNames] of Object.entries(
     references.asProduct
   )) {
     if (productName.toLowerCase() === input.toLowerCase()) {
-      response = {
+      searchResult = {
         productName,
         asProduct: recipeNames.map((recipeName) => {
           return recipes[recipeName];
@@ -53,28 +53,27 @@ router.get("/products/search", async (req, res) => {
     references.asIngredient
   )) {
     if (productName.toLowerCase() === input.toLowerCase()) {
-      if (!response) {
-        response = {
+      if (!searchResult) {
+        searchResult = {
           productName,
-          asIngredient: [],
         };
       }
 
-      response.asIngredient = recipeNames.map((recipeName) => {
+      searchResult.asIngredient = recipeNames.map((recipeName) => {
         return recipes[recipeName];
       });
     }
   }
 
-  if (response) {
-    res.json(response);
+  if (searchResult) {
+    res.json(searchResult);
   } else {
     res.status(400).json({ message: `${input} is not a valid product` });
   }
 });
 
 router.use(express.static(path.join(__dirname, "../client")));
-router.use(express.static(path.join(__dirname, "/data/jsonFiles")));
+router.use(express.static(path.join(__dirname, "/data/json-files")));
 server.use(basePath, router);
 
 server.listen(PORT, IP, () => {
