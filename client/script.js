@@ -29,7 +29,7 @@ const displayAllItems = async () => {
     item.innerText = itemName;
 
     item.addEventListener("click", () => {
-      getSearchResults(itemName);
+      displaySearchResults(itemName);
     });
 
     itemNamesDiv.append(item);
@@ -42,7 +42,7 @@ window.onload = displayAllItems();
 document.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     if (productInput.value) {
-      getSearchResults();
+      displaySearchResults();
     }
   }
 });
@@ -62,11 +62,18 @@ const toggleMaxHeight = (element, parent = null) => {
   }
 };
 
-const getRecipesDiv = (recipesByProduct) => {
-  const recipes = recipesByProduct;
-  const recipesDiv = document.createElement("div");
+const toggleRecipeHeight = (recipeUl, recipesDiv, recipeNameSvg) => {
+  requestAnimationFrame(() => {
+    toggleMaxHeight(recipeUl, recipesDiv);
+    recipeNameSvg.classList.toggle("rotated");
+  });
+};
 
-  for (const recipe of recipes) {
+const makeRecipesDiv = (recipeInfos) => {
+  const recipesDiv = document.createElement("div");
+  let baseRecipes = [];
+
+  for (const recipe of recipeInfos) {
     const recipeNameH4 = document.createElement("h4");
     recipeNameH4.innerText = recipe.name;
 
@@ -77,13 +84,6 @@ const getRecipesDiv = (recipesByProduct) => {
 
     const recipeUl = document.createElement("ul");
     recipeUl.classList.add("top-level-list", "result-transition");
-
-    recipeNameH4.addEventListener("click", async () => {
-      requestAnimationFrame(() => {
-        toggleMaxHeight(recipeUl, recipesDiv);
-        recipeNameSvg.classList.toggle("rotated");
-      });
-    });
 
     const timeLi = document.createElement("li");
     timeLi.innerText = `Crafting time: ${recipe.time}s`;
@@ -126,64 +126,54 @@ const getRecipesDiv = (recipesByProduct) => {
 
     recipeUl.append(timeLi, producedInLi, productsLi, ingredientsLi);
     recipesDiv.append(recipeNameH4, recipeUl);
+
+    if (!recipe.name.includes("Alternate")) {
+      baseRecipes.push([recipeUl, recipesDiv, recipeNameSvg]);
+    }
+
+    recipeNameH4.addEventListener("click", () => {
+      toggleRecipeHeight(recipeUl, recipesDiv, recipeNameSvg);
+    });
   }
-  return recipesDiv;
+  return [recipesDiv, baseRecipes];
 };
 
-const displayRecipeList = (recipes) => {
-  const [oldResultDiv] = document.getElementsByClassName("result");
-  const newResultDiv = document.createElement("div");
-  newResultDiv.classList.add("result");
+const getRecipesElements = (recipeInfos) => {
+  const recipesH3 = document.createElement("h3");
+  recipesH3.innerText = "Recipes:";
 
-  if (Array.isArray(recipes)) {
-    newResultDiv.append(getRecipesDiv(recipes));
-    oldResultDiv.replaceWith(newResultDiv);
-    return;
-  }
+  const recipeSvg = svg.cloneNode(true);
+  recipesH3.prepend(recipeSvg);
 
-  if (recipes.productName) {
-    const productText = document.createElement("h2");
-    productText.innerText = recipes.productName;
-    newResultDiv.append(productText);
-  }
+  const [RecipesDiv, baseRecipes] = makeRecipesDiv(recipeInfos);
+  RecipesDiv.classList.add("recipes-div", "result-transition");
 
-  if (recipes.asProduct) {
-    const asProduct = document.createElement("h3");
-    asProduct.innerText = "As product:";
+  toggleMaxHeight(RecipesDiv);
 
-    const productSvg = svg.cloneNode(true);
-    asProduct.prepend(productSvg);
+  recipesH3.addEventListener("click", () => {
+    toggleMaxHeight(RecipesDiv);
+    recipeSvg.classList.toggle("rotated");
+  });
 
-    const asProductRecipesDiv = getRecipesDiv(recipes.asProduct);
-    asProductRecipesDiv.classList.add("recipes-div", "result-transition");
+  return [recipesH3, RecipesDiv, baseRecipes, recipeSvg];
+};
 
-    asProduct.addEventListener("click", () => {
-      toggleMaxHeight(asProductRecipesDiv);
-      productSvg.classList.toggle("rotated");
-    });
+const getUsedInElements = (recipeInfos) => {
+  const usedIn = document.createElement("h3");
+  usedIn.innerText = "Used in:";
 
-    newResultDiv.append(asProduct, asProductRecipesDiv);
-  }
+  const ingredientSvg = svg.cloneNode(true);
+  usedIn.prepend(ingredientSvg);
 
-  if (recipes.asIngredient) {
-    const asIngredient = document.createElement("h3");
-    asIngredient.innerText = "As ingredient:";
+  const [usedInRecipesDiv] = makeRecipesDiv(recipeInfos);
+  usedInRecipesDiv.classList.add("recipes-div", "result-transition");
 
-    const ingredientSvg = svg.cloneNode(true);
-    asIngredient.prepend(ingredientSvg);
+  usedIn.addEventListener("click", () => {
+    toggleMaxHeight(usedInRecipesDiv);
+    ingredientSvg.classList.toggle("rotated");
+  });
 
-    const asIngredientRecipesDiv = getRecipesDiv(recipes.asIngredient);
-    asIngredientRecipesDiv.classList.add("recipes-div", "result-transition");
-
-    asIngredient.addEventListener("click", () => {
-      toggleMaxHeight(asIngredientRecipesDiv);
-      ingredientSvg.classList.toggle("rotated");
-    });
-
-    newResultDiv.append(asIngredient, asIngredientRecipesDiv);
-  }
-
-  oldResultDiv.replaceWith(newResultDiv);
+  return [usedIn, usedInRecipesDiv];
 };
 
 const getBulkRecipes = async () => {
@@ -192,7 +182,7 @@ const getBulkRecipes = async () => {
   displayRecipeList(recipesArray);
 };
 
-const getSearchResults = async () => {
+const displaySearchResults = async () => {
   if (!errorP.innerText == "") {
     errorP.innerText = "";
   }
@@ -208,5 +198,40 @@ const getSearchResults = async () => {
   }
 
   const recipesByType = await response.json();
-  displayRecipeList(recipesByType);
+
+  const newResultDiv = document.createElement("div");
+  newResultDiv.classList.add("result");
+
+  const productText = document.createElement("h2");
+  productText.innerText = recipesByType.itemName;
+  newResultDiv.append(productText);
+
+  let baseRecipes;
+  let recipeSvg;
+
+  if (recipesByType.recipes) {
+    const recipesElements = getRecipesElements(recipesByType.recipes);
+    console.log(recipesElements);
+
+    newResultDiv.append(recipesElements[0], recipesElements[1]);
+
+    recipeSvg = recipesElements[3];
+    baseRecipes = recipesElements[2];
+  }
+  if (recipesByType.usedIn) {
+    const usedInElements = getUsedInElements(recipesByType.usedIn);
+    newResultDiv.append(...usedInElements);
+  }
+
+  const [oldResultDiv] = document.getElementsByClassName("result");
+  requestAnimationFrame(() => {
+    oldResultDiv.replaceWith(newResultDiv);
+  });
+
+  if (baseRecipes) {
+    recipeSvg.classList.add("rotated");
+    for (const baseRecipe of baseRecipes) {
+      toggleRecipeHeight(...baseRecipe);
+    }
+  }
 };

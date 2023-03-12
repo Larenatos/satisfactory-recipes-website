@@ -57,7 +57,7 @@ router.get("/exact-item-search", async (req, res) => {
   const recipes = JSON.parse(await fs.readFile(recipesPath));
 
   let searchResult = {
-    itemName,
+    itemName: input,
     recipes: recipes[input].recipes,
     usedIn: recipes[input].usedIn,
   };
