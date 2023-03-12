@@ -176,10 +176,18 @@ const getUsedInElements = (recipeInfos) => {
   return [usedIn, usedInRecipesDiv];
 };
 
-const getBulkRecipes = async () => {
+const displayBulkRecipes = async () => {
   const response = await fetch(`${basePath}/recipes-from-hard-drives.json`);
   const recipesArray = await response.json();
-  displayRecipeList(recipesArray);
+
+  const newResultDiv = document.createElement("div");
+  newResultDiv.classList.add("result");
+
+  const [recipesDiv] = makeRecipesDiv(recipesArray);
+  newResultDiv.append(recipesDiv);
+
+  const [oldResultDiv] = document.getElementsByClassName("result");
+  oldResultDiv.replaceWith(newResultDiv);
 };
 
 const displaySearchResults = async () => {
