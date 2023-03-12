@@ -187,8 +187,8 @@ const displayRecipeList = (recipes) => {
   oldResultDiv.replaceWith(newResultDiv);
 };
 
-const getBulkRecipes = async (type) => {
-  const response = await fetch(`${basePath}/${type}-recipes.json`);
+const getBulkRecipes = async () => {
+  const response = await fetch(`${basePath}/recipes-from-hard-drives.json`);
   const recipesArray = await response.json();
   displayRecipeList(recipesArray);
 };
@@ -199,7 +199,8 @@ const getSearchResults = async () => {
   }
   const input = productInput.value;
 
-  const response = await fetch(`${basePath}/item-search?input=${input}`);
+  const url = `${basePath}/comparison-item-search?input=${input}`;
+  const response = await fetch(url);
 
   if (response.status == 400) {
     const { message } = await response.json();

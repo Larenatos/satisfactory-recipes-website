@@ -12,7 +12,7 @@ const data = JSON.parse(fs.readFileSync(dataPath));
 
 const recipes = {};
 const references = {};
-const alternateRecipes = [];
+const recipesFromHardDrives = [];
 const items = [];
 
 for (const [, recipe] of Object.entries(data.recipes)) {
@@ -105,7 +105,7 @@ for (const [, recipe] of Object.entries(data.recipes)) {
   recipes[recipeName] = newRecipe;
 
   if (recipe.alternate) {
-    alternateRecipes.push(newRecipe);
+    recipesFromHardDrives.push(newRecipe);
   }
 }
 
@@ -115,8 +115,11 @@ fs.writeFileSync("json-files/recipes.json", recipesString);
 const referencesString = JSON.stringify(references);
 fs.writeFileSync("json-files/references.json", referencesString);
 
-let alternateRecipesString = JSON.stringify(alternateRecipes);
-fs.writeFileSync("json-files/alternate-recipes.json", alternateRecipesString);
+let hardDriveRecipesString = JSON.stringify(recipesFromHardDrives);
+fs.writeFileSync(
+  "json-files/recipes-from-hard-drives.json",
+  hardDriveRecipesString
+);
 
 let itemsString = JSON.stringify(items);
 fs.writeFileSync("json-files/items.json", itemsString);

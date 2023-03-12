@@ -16,7 +16,7 @@ const router = express.Router();
 const referencesPath = path.join(__dirname, "data/json-files/references.json");
 const recipesPath = path.join(__dirname, "data/json-files/recipes.json");
 
-router.get("/item-search", async (req, res) => {
+router.get("/comparison-item-search", async (req, res) => {
   const { input } = req.query;
 
   const references = JSON.parse(await fs.readFile(referencesPath));
@@ -27,7 +27,7 @@ router.get("/item-search", async (req, res) => {
   for (const [itemName, recipeNames] of Object.entries(references)) {
     if (itemName.toLowerCase() === input.toLowerCase()) {
       searchResult = {
-        productName,
+        itemName,
       };
 
       if (recipeNames.recipes) {
@@ -37,7 +37,7 @@ router.get("/item-search", async (req, res) => {
       }
 
       if (recipeNames.usedIn) {
-        searchResult.recipes = recipeNames.usedIn.map((recipeName) => {
+        searchResult.usedIn = recipeNames.usedIn.map((recipeName) => {
           return recipes[recipeName];
         });
       }
@@ -49,6 +49,20 @@ router.get("/item-search", async (req, res) => {
   } else {
     res.status(400).json({ message: `${input} is not a valid product` });
   }
+});
+
+router.get("/exact-item-search", async (req, res) => {
+  const { input } = req.query;
+
+  const recipes = JSON.parse(await fs.readFile(recipesPath));
+
+  let searchResult = {
+    itemName,
+    recipes: recipes[input].recipes,
+    usedIn: recipes[input].usedIn,
+  };
+
+  res.json(searchResult);
 });
 
 router.use(express.static(path.join(__dirname, "../client")));
