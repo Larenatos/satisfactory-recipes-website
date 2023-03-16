@@ -3,7 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const getDisplayName = (item) => {
-  return data.items[item]?.name ?? data.buildings[item]?.name ?? false;
+  return data.items[item]?.name ?? data.buildings[item]?.name;
 };
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -19,7 +19,7 @@ for (const [, recipe] of Object.entries(data.recipes)) {
   const producedIn = [];
 
   if (recipe.inMachine) {
-    producedIn.push(data.buildings[recipe.producedIn].name);
+    producedIn.push(getDisplayName(recipe.producedIn));
   }
   if (recipe.inHand) {
     producedIn.push("Craft Bench");
@@ -113,17 +113,16 @@ for (const [, recipe] of Object.entries(data.recipes)) {
   }
 }
 
-const recipesString = JSON.stringify(recipes);
-fs.writeFileSync("json-files/recipes.json", recipesString);
+const recipeStore = {
+  recipes,
+  references,
+};
 
-const referencesString = JSON.stringify(references);
-fs.writeFileSync("json-files/references.json", referencesString);
+const recipeStoreString = JSON.stringify(recipeStore);
+fs.writeFileSync("json-files/recipe-store.json", recipeStoreString);
 
 let hardDriveRecipesString = JSON.stringify(recipesFromHardDrives);
-fs.writeFileSync(
-  "json-files/recipes-from-hard-drives.json",
-  hardDriveRecipesString
-);
+fs.writeFileSync("json-files/hard-drive-recipes.json", hardDriveRecipesString);
 
 items.sort();
 let itemsString = JSON.stringify(items);

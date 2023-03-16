@@ -10,20 +10,20 @@
     </header>
     <main>
       <div class="sidebar">
-        <img src="satisfactory.png" />
+        <img src="assets/satisfactory.png" />
         <div class="search">
           <h2>Search</h2>
           <label>Enter the exact product you want below:</label>
           <input type="text" id="product-input" placeholder="Product" />
-          <button onclick="displaySearchResults()"></button>
+          <button id="item-search"></button>
           <p class="error"></p>
         </div>
         <div class="bulk-recipe-buttons">
-          <button onclick="displayBulkRecipes()">Recipes from hard drives</button>
+          <button id="bulk-recipe">Recipes from hard drives</button>
         </div>
       </div>
       <div class="result"></div>
     </main>
-    <script src="script.js"></script>
+    <script src="scripts/index.js" type="module"></script>
   </body>
 </html>

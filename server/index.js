@@ -13,14 +13,17 @@ const basePath = "/satisfactory-recipes";
 const server = express();
 const router = express.Router();
 
-const referencesPath = path.join(__dirname, "data/json-files/references.json");
-const recipesPath = path.join(__dirname, "data/json-files/recipes.json");
+const recipeStorePath = path.join(
+  __dirname,
+  "data/json-files/recipe-store.json"
+);
 
-router.get("/comparison-item-search", async (req, res) => {
+router.get("/item/search", async (req, res) => {
   const { input } = req.query;
 
-  const references = JSON.parse(await fs.readFile(referencesPath));
-  const recipes = JSON.parse(await fs.readFile(recipesPath));
+  const { recipes, references } = JSON.parse(
+    await fs.readFile(recipeStorePath)
+  );
 
   let searchResult;
 
@@ -41,33 +44,33 @@ router.get("/comparison-item-search", async (req, res) => {
           return recipes[recipeName];
         });
       }
+
+      return res.json(searchResult);
     }
   }
 
-  if (searchResult) {
-    res.json(searchResult);
-  } else {
-    res.status(400).json({ message: `${input} is not a valid product` });
-  }
+  res.status(400).json({ message: `${input} is not a valid product` });
 });
 
-router.get("/exact-item-search", async (req, res) => {
-  const { item } = req.query;
+router.get("/item/:itemName", async (req, res) => {
+  const { itemName } = req.params;
 
-  const recipes = JSON.parse(await fs.readFile(recipesPath));
-  const references = JSON.parse(await fs.readFile(referencesPath));
+  const { recipes, references } = JSON.parse(
+    await fs.readFile(recipeStorePath)
+  );
 
   let searchResult = {
-    itemName: item,
+    itemName,
   };
 
-  if (references[item].recipes) {
-    searchResult.recipes = references[item].recipes.map((recipeName) => {
+  if (references[itemName].recipes) {
+    searchResult.recipes = references[itemName].recipes.map((recipeName) => {
       return recipes[recipeName];
     });
   }
-  if (references[item].usedIn) {
-    searchResult.usedIn = references[item].usedIn.map((recipeName) => {
+
+  if (references[itemName].usedIn) {
+    searchResult.usedIn = references[itemName].usedIn.map((recipeName) => {
       return recipes[recipeName];
     });
   }

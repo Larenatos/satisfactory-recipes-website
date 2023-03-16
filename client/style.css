@@ -88,7 +88,7 @@ img {
 
 .search button {
   background-color: var(--tertiary);
-  background-image: url(searchIcon.png);
+  background-image: url(assets/searchIcon.png);
   background-size: 25px;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,7 +144,6 @@ img {
 .result h3,
 .result h4 {
   color: var(--text);
-  margin: 20px 0 0 30px;
   user-select: none;
 }
 
@@ -156,11 +155,13 @@ img {
 
 .result h3 {
   font-size: 30px;
+  margin: 20px 0 0 30px;
   text-decoration: underline;
 }
 
 .result h4 {
   font-size: 20px;
+  margin: 20px 0 0 50px;
 }
 
 svg {
@@ -174,7 +175,7 @@ svg {
 
 .top-level-list {
   font-size: 20px;
-  margin: 10px 0 0 30px;
+  margin: 10px 0 0 50px;
   max-height: 0;
   overflow: hidden;
 }
