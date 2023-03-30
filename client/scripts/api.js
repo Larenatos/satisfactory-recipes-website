@@ -13,7 +13,7 @@ const getItemSearch = async (input) => {
 };
 
 const getItem = async (itemName) => {
-  const response = await fetch(`${basePath}/item/${itemName}`);
+  const response = await fetch(`${basePath}/item?itemName=${itemName}`);
   return response.json();
 };
 

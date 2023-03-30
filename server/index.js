@@ -52,8 +52,8 @@ router.get("/item/search", async (req, res) => {
   res.status(400).json({ message: `${input} is not a valid product` });
 });
 
-router.get("/item/:itemName", async (req, res) => {
-  const { itemName } = req.params;
+router.get("/item", async (req, res) => {
+  const { itemName } = req.query;
 
   const { recipes, references } = JSON.parse(
     await fs.readFile(recipeStorePath)
